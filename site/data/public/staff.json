@@ -4,7 +4,7 @@
   "summary": {
     "permanentEmployees": 36,
     "scheduledSpecialists": 5,
-    "servicePartners": 3,
+    "servicePartners": 6,
     "departments": 9
   },
   "people": [
@@ -642,6 +642,24 @@
       "name": "The Stave",
       "type": "Event-service provider",
       "remit": "Trained bar and event staff for recording sessions and larger evenings."
+    },
+    {
+      "id": "kx",
+      "name": "KX",
+      "type": "Training & wellness provider",
+      "remit": "Contracted training, recovery and wellness specialists. Reece Maddox is Alex’s usual trainer through KX; additional provision is booked when required."
+    },
+    {
+      "id": "rhubarb-events",
+      "name": "Rhubarb Events",
+      "type": "Catering partner",
+      "remit": "Additional chefs, waiters and event-support teams for larger dinners and parties, working to Rafael’s culinary standards and Crispin’s service plan."
+    },
+    {
+      "id": "miloco",
+      "name": "Miloco",
+      "type": "Studio-support partner",
+      "remit": "Technical servicing, fault escalation, additional session assistance, booked engineering cover and access to suitable external studios when a project needs them."
     }
   ]
 }
