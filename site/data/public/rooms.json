@@ -1,0 +1,1974 @@
+{
+  "schemaVersion": 1,
+  "tour": [
+    {
+      "id": "exterior",
+      "name": "Estate & Exterior",
+      "short": "Site & Arrival",
+      "plan": "images/albury/exterior/06-no34-acquisition-projection.webp",
+      "rooms": [
+        {
+          "path": "images/albury/exterior/06-no34-acquisition-projection.webp",
+          "title": "The Cedars — Future Landscape Proposal",
+          "description": "Future post-renovation concept, not the August 2025 opening condition. The Cedars remains a separate detached staff house with its own street entrance and enclosed private garden; proposed landscaping adds a kitchen garden, event lawn and controlled connection to Albury. Its garden is approximately 0.7 acre. At story opening it is empty and unconnected; an integrated capacity near 500 remains a future possibility, not an outdoor-only capacity.",
+          "roomName": "The Cedars — Future Landscape Proposal",
+          "roomId": "the-cedars-future-landscape-proposal"
+        },
+        {
+          "path": "images/albury/exterior/03-drone-property-boundaries-terrace-v2.webp",
+          "title": "Existing Site — Before Landscape Works",
+          "description": "The illustrative pre-works aerial shows Albury and detached No. 34 as separate plots before the new staff-house enclosure, kitchen garden, hedge arch and unified rear landscape are formed.",
+          "roomName": "Existing Site — Before Landscape Works",
+          "roomId": "existing-site-before-landscape-works"
+        },
+        {
+          "path": "images/albury/exterior/04-street-arrival.webp",
+          "title": "Street Arrival",
+          "description": "From just inside the open gates, the broad approach, balanced frontage and single formal entrance establish Albury as one residence rather than two adjoining houses.",
+          "roomName": "Street Arrival",
+          "roomId": "street-arrival"
+        },
+        {
+          "path": "images/albury/exterior/02-front-elevation-current.webp",
+          "title": "Front Elevation",
+          "description": "The unified Upper Phillimore frontage reads as one exceptionally broad Victorian residence while retaining the measured rhythm of the original Nos. 30 and 32 pair.",
+          "roomName": "Front Elevation",
+          "roomId": "front-elevation"
+        },
+        {
+          "path": "images/albury/exterior/05-front-elevation-blue-hour.webp",
+          "title": "Front Elevation at Blue Hour",
+          "description": "Restrained window light and the entrance lanterns give the restored public frontage an inhabited evening presence without turning it into an event façade.",
+          "roomName": "Front Elevation",
+          "roomId": "front-elevation"
+        },
+        {
+          "path": "images/albury/exterior/01-rear-mews-current.webp",
+          "title": "Duchess of Bedford Walk Mews",
+          "description": "The screened rear service frontage contains the secure vehicle ramp, controlled personnel entrance and secondary service access without exposing the garden or principal rooms.",
+          "roomName": "Duchess of Bedford Walk Mews",
+          "roomId": "duchess-of-bedford-walk-mews"
+        }
+      ]
+    },
+    {
+      "id": "lower-basement",
+      "name": "Lower Basement",
+      "short": "LB −2",
+      "plan": "images/albury/floor-plans/lower-basement.svg",
+      "rooms": [
+        {
+          "path": "images/albury/lower-basement/00-spa-arrival-gallery.webp",
+          "title": "Spa Arrival Gallery",
+          "description": "The quiet threshold to a fully subterranean private wellness floor, lit entirely from within.",
+          "roomName": "Spa Arrival Gallery",
+          "roomId": "spa-arrival-gallery"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/00-spa-arrival-gallery.webp",
+          "title": "Spa Arrival Gallery — Additional View",
+          "description": "An additional viewpoint of the same spa arrival gallery, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Spa Arrival Gallery",
+          "roomId": "spa-arrival-gallery"
+        },
+        {
+          "path": "images/albury/lower-basement/01-lap-pool.webp",
+          "title": "25-Metre Lap Pool",
+          "description": "A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight.",
+          "roomName": "25-Metre Lap Pool",
+          "roomId": "25-metre-lap-pool"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/01-lap-pool.webp",
+          "title": "25-Metre Lap Pool — Additional View",
+          "description": "An additional viewpoint of the same 25-metre lap pool, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "25-Metre Lap Pool",
+          "roomId": "25-metre-lap-pool"
+        },
+        {
+          "path": "images/albury/lower-basement/13-morning-laps.webp",
+          "title": "Morning Laps",
+          "description": "A swimmer halfway through the house's twenty-five-metre pool, with wake, wet footprints and a waiting robe turning the wellness floor into a credible daily training environment.",
+          "roomName": "25-Metre Lap Pool",
+          "roomId": "25-metre-lap-pool"
+        },
+        {
+          "path": "images/albury/lower-basement/02-wellness-hydration-lounge.webp",
+          "title": "Wellness & Hydration Lounge",
+          "description": "A calm central pause for water, electrolytes and recovery between training zones.",
+          "roomName": "Wellness & Hydration Lounge",
+          "roomId": "wellness-hydration-lounge"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/02-wellness-hydration-lounge.webp",
+          "title": "Wellness & Hydration Lounge — Additional View",
+          "description": "An additional viewpoint of the same wellness & hydration lounge, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Wellness & Hydration Lounge",
+          "roomId": "wellness-hydration-lounge"
+        },
+        {
+          "path": "images/albury/lower-basement/03-professional-gym.webp",
+          "title": "Professional Gym",
+          "description": "A trainer-ready strength, conditioning and cardio room sized for a complete daily programme.",
+          "roomName": "Professional Gym",
+          "roomId": "professional-gym"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/03-professional-gym.webp",
+          "title": "Professional Gym — Additional View",
+          "description": "An additional viewpoint of the same professional gym, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Professional Gym",
+          "roomId": "professional-gym"
+        },
+        {
+          "path": "images/albury/lower-basement/14-training-session.webp",
+          "title": "Training Session",
+          "description": "A resident and strength coach occupy only one rack within the deliberately oversized performance gym, keeping its true lower-basement scale visible.",
+          "roomName": "Professional Gym",
+          "roomId": "professional-gym"
+        },
+        {
+          "path": "images/albury/lower-basement/04-sauna.webp",
+          "title": "Sauna",
+          "description": "Honeyed timber, tiered benches and low concealed light form the dry-heat stage of the circuit.",
+          "roomName": "Sauna",
+          "roomId": "sauna"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/04-sauna.webp",
+          "title": "Sauna — Additional View",
+          "description": "An additional viewpoint of the same sauna, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Sauna",
+          "roomId": "sauna"
+        },
+        {
+          "path": "images/albury/lower-basement/05-steam-room.webp",
+          "title": "Steam Room",
+          "description": "A separate dark stone and mosaic chamber with integrated benches and contained sound.",
+          "roomName": "Steam Room",
+          "roomId": "steam-room"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/05-steam-room.webp",
+          "title": "Steam Room — Additional View",
+          "description": "An additional viewpoint of the same steam room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Steam Room",
+          "roomId": "steam-room"
+        },
+        {
+          "path": "images/albury/lower-basement/06-cold-plunge.webp",
+          "title": "Cold Plunge",
+          "description": "A dedicated temperature-controlled immersion pool beside the thermal rooms.",
+          "roomName": "Cold Plunge",
+          "roomId": "cold-plunge"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/06-cold-plunge.webp",
+          "title": "Cold Plunge — Additional View",
+          "description": "An additional viewpoint of the same cold plunge, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Cold Plunge",
+          "roomId": "cold-plunge"
+        },
+        {
+          "path": "images/albury/lower-basement/07-recovery-mobility-lounge.webp",
+          "title": "Recovery & Mobility Lounge",
+          "description": "Stretching, compression and heated loungers turn training into a complete cooldown routine.",
+          "roomName": "Recovery & Mobility Lounge",
+          "roomId": "recovery-mobility-lounge"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/07-recovery-mobility-lounge.webp",
+          "title": "Recovery & Mobility Lounge — Additional View",
+          "description": "An additional viewpoint of the same recovery & mobility lounge, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Recovery & Mobility Lounge",
+          "roomId": "recovery-mobility-lounge"
+        },
+        {
+          "path": "images/albury/lower-basement/08-treatment-room.webp",
+          "title": "Treatment Room",
+          "description": "A private room for massage, physio and scheduled recovery appointments.",
+          "roomName": "Treatment Room",
+          "roomId": "treatment-room"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/08-treatment-room.webp",
+          "title": "Treatment Room — Additional View",
+          "description": "An additional viewpoint of the same treatment room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Treatment Room",
+          "roomId": "treatment-room"
+        },
+        {
+          "path": "images/albury/lower-basement/09-pool-changing-shower-suite.webp",
+          "title": "Pool Changing Suite",
+          "description": "Private changing, rainfall showers, illuminated lockers and grooming space keep wet circulation contained.",
+          "roomName": "Pool Changing Suite",
+          "roomId": "pool-changing-suite"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/09-pool-changing-shower-suite.webp",
+          "title": "Pool Changing Suite — Additional View",
+          "description": "An additional viewpoint of the same pool changing suite, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Pool Changing Suite",
+          "roomId": "pool-changing-suite"
+        },
+        {
+          "path": "images/albury/lower-basement/10-reserve-wine-bourbon-cellar.webp",
+          "title": "Reserve Wine & Spirits Cellar",
+          "description": "A sealed, independently conditioned reserve of approximately 1,900 bottles: diverse working and ageworthy wines, 78 individually scheduled trophy bottles and large formats, rare fortified wines and spirits, and 72 Hatfield Alex Wilson 21-Year bottles confined to a separately alarmed inner vault.",
+          "roomName": "Reserve Wine & Spirits Cellar",
+          "roomId": "reserve-wine-spirits-cellar"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/10-reserve-wine-bourbon-cellar.webp",
+          "title": "Reserve Wine & Spirits Cellar — Additional View",
+          "description": "An additional viewpoint of the same reserve wine & spirits cellar, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Reserve Wine & Spirits Cellar",
+          "roomId": "reserve-wine-spirits-cellar"
+        },
+        {
+          "path": "images/albury/lower-basement/10a-secure-trophy-reserve-detail.webp",
+          "title": "Cellar — Trophy Reserve & Hatfield Vault",
+          "description": "Rare wine, Champagne and wooden cases remain visibly distinct from the locked inner Hatfield allocation. The stone inspection table, bottle cradle and ledger make this an actively managed archive rather than a branded display room.",
+          "roomName": "Reserve Wine & Spirits Cellar",
+          "roomId": "reserve-wine-spirits-cellar"
+        },
+        {
+          "path": "images/albury/lower-basement/11-plant-water-systems.webp",
+          "title": "Plant & Water Systems",
+          "description": "The redundant pumps, filtration, air handling and controls that make the subterranean spa work.",
+          "roomName": "Plant & Water Systems",
+          "roomId": "plant-water-systems"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/11-plant-water-systems.webp",
+          "title": "Plant & Water Systems — Additional View",
+          "description": "An additional viewpoint of the same plant & water systems, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Plant & Water Systems",
+          "roomId": "plant-water-systems"
+        },
+        {
+          "path": "images/albury/lower-basement/12-lower-escape-service-passage.webp",
+          "title": "Protected Service Passage",
+          "description": "The essential protected route linking wellness, cellar, plant and the rear service core.",
+          "roomName": "Protected Service Passage",
+          "roomId": "protected-service-passage"
+        },
+        {
+          "path": "images/albury/lower-basement/new-views/12-lower-escape-service-passage.webp",
+          "title": "Protected Service Passage — Additional View",
+          "description": "An additional viewpoint of the same protected service passage, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Protected Service Passage",
+          "roomId": "protected-service-passage"
+        },
+        {
+          "title": "25-Metre Lap Pool — Closer Perspective",
+          "description": "A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/25-metre-lap-pool-closer-perspective.webp",
+          "roomName": "25-Metre Lap Pool",
+          "roomId": "25-metre-lap-pool"
+        },
+        {
+          "title": "Professional Gym — Closer Perspective",
+          "description": "A trainer-ready strength, conditioning and cardio room sized for a complete daily programme. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/professional-gym-closer-perspective.webp",
+          "roomName": "Professional Gym",
+          "roomId": "professional-gym"
+        }
+      ]
+    },
+    {
+      "id": "upper-basement",
+      "name": "Upper Basement",
+      "short": "Lower Ground",
+      "plan": "images/albury/floor-plans/upper-basement.svg",
+      "rooms": [
+        {
+          "path": "images/albury/upper-basement/bar-games-room-coherent/01-southwest-overview.webp",
+          "title": "Bar & Games Room — Spatial Master",
+          "description": "The controlling view of the 60-by-38-foot room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance.",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room"
+        },
+        {
+          "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/01-southwest-overview.webp",
+          "title": "Bar & Games Room — Spatial Master — Additional View",
+          "description": "An additional viewpoint of the same bar & games room — spatial master, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room"
+        },
+        {
+          "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/02-public-bar-run-2026-09-06.webp",
+          "title": "Bar & Games Room — Along the Bar",
+          "description": "Looking north along the public side of the straight east-wall bar, with the navy lounge and poker area to the left and the Welmar on the rear wall.",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room"
+        },
+        {
+          "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/03-behind-bar-2026-09-06.webp",
+          "title": "Bar & Games Room — Behind the Bar",
+          "description": "From the service aisle across the limestone counter into the games room: public stools on the far side, billiards southwest, the central lounge, poker and the northwest pinball recess.",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room"
+        },
+        {
+          "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/07-shuffleboard-piano-2026-09-06.webp",
+          "title": "Bar & Games Room — Shuffleboard & Welmar",
+          "description": "A closer view of the north games wall, with the shuffleboard to the left and the old Welmar pub upright to its right.",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room"
+        },
+        {
+          "path": "images/albury/upper-basement/bar-games-room-coherent/08-nightclub-mode.webp",
+          "title": "Bar & Games Room — Nightclub Mode",
+          "description": "The same fixed eight-stool bar and northwest DJ recess, with games, piano, lounge furniture and rug removed for the clear dance floor. KAWS remains in place; standing tables stay at the perimeter.",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room"
+        },
+        {
+          "path": "images/albury/upper-basement/01b-cinema-approach-lobby.webp",
+          "title": "Cinema Approach",
+          "description": "A blackened-oak and navy transition carrying the club floor's art and metalwork into the cinema; the first glimpse is of the same navy-to-black seating used inside.",
+          "roomName": "Cinema Approach",
+          "roomId": "cinema-approach"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/01b-cinema-approach-lobby.webp",
+          "title": "Cinema Approach — Additional View",
+          "description": "An additional viewpoint of the same cinema approach, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Cinema Approach",
+          "roomId": "cinema-approach"
+        },
+        {
+          "path": "images/albury/upper-basement/cinema.webp",
+          "title": "Cinema",
+          "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts.",
+          "roomName": "Cinema",
+          "roomId": "cinema"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/cinema.webp",
+          "title": "Cinema — Additional View",
+          "description": "An additional viewpoint of the same cinema, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Cinema",
+          "roomId": "cinema"
+        },
+        {
+          "path": "images/albury/upper-basement/17-screening-in-progress.webp",
+          "title": "Screening in Progress",
+          "description": "Eleven friends settle across the stepped navy seating as a staff member works quietly at the rear minibar; the image retains enough ambient light for the room itself to remain legible.",
+          "roomName": "Cinema",
+          "roomId": "cinema"
+        },
+        {
+          "path": "images/albury/upper-basement/02-wine-bourbon-tasting-room.webp",
+          "title": "Wine & Spirits Tasting Room",
+          "description": "A formal ten-seat room with a monumental Kentucky-limestone table, green-and-tobacco leather chairs, walnut and bronze-mesh storage, an abstract copper still-coil light and geological spring artwork. Hatfield bourbon sits within a serious mixed wine and spirits programme; Limestone Springs appears only in the chilled mixer niche.",
+          "roomName": "Wine & Spirits Tasting Room",
+          "roomId": "wine-spirits-tasting-room"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/02-wine-bourbon-tasting-room.webp",
+          "title": "Wine & Spirits Tasting Room — Additional View",
+          "description": "An additional viewpoint of the same wine & spirits tasting room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Wine & Spirits Tasting Room",
+          "roomId": "wine-spirits-tasting-room"
+        },
+        {
+          "path": "images/albury/upper-basement/03-wine-bourbon-lounge.webp",
+          "title": "Wine & Spirits Listening Lounge",
+          "description": "A two-chair bottle-green and walnut retreat inspired by the private intimacy of Hatfield's Stave: worn leather, Persian rug, records, proper hi-fi, shaded lamps and a discreet Limestone Springs mixer drawer. The secured trophy reserve remains one floor below.",
+          "roomName": "Wine & Spirits Listening Lounge",
+          "roomId": "wine-spirits-listening-lounge"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/03-wine-bourbon-lounge.webp",
+          "title": "Wine & Spirits Listening Lounge — Additional View",
+          "description": "An additional viewpoint of the same wine & spirits listening lounge, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Wine & Spirits Listening Lounge",
+          "roomId": "wine-spirits-listening-lounge"
+        },
+        {
+          "path": "images/albury/upper-basement/04-powder-room.webp",
+          "title": "Powder Room",
+          "description": "An intentionally photogenic jewel box of high-gloss oxblood lacquer, sculpted black marble, a huge rounded brass mirror and flattering fluted light—the room guests inevitably photograph and post.",
+          "roomName": "Powder Room",
+          "roomId": "powder-room"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/04-powder-room.webp",
+          "title": "Powder Room — Additional View",
+          "description": "An additional viewpoint of the same powder room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Powder Room",
+          "roomId": "powder-room"
+        },
+        {
+          "path": "images/albury/upper-basement/05-service-kitchen-pantry.webp",
+          "title": "Event Kitchen & Pantry",
+          "description": "A discreet plating and service kitchen that supports the entertaining floor and large house events.",
+          "roomName": "Event Kitchen & Pantry",
+          "roomId": "event-kitchen-pantry"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/05-service-kitchen-pantry.webp",
+          "title": "Event Kitchen & Pantry — Additional View",
+          "description": "An additional viewpoint of the same event kitchen & pantry, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Event Kitchen & Pantry",
+          "roomId": "event-kitchen-pantry"
+        },
+        {
+          "path": "images/albury/upper-basement/18-dinner-service-below-stairs.webp",
+          "title": "Dinner Service Below Stairs",
+          "description": "Chef, assistant and footman plate and dispatch one course from the event kitchen, showing how dinner reaches the principal rooms without visible catering infrastructure.",
+          "roomName": "Event Kitchen & Pantry",
+          "roomId": "event-kitchen-pantry"
+        },
+        {
+          "path": "images/albury/upper-basement/06-staff-office.webp",
+          "title": "Staff Office",
+          "description": "The quiet operational centre for schedules, room readiness and house coordination.",
+          "roomName": "Staff Office",
+          "roomId": "staff-office"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/06-staff-office.webp",
+          "title": "Staff Office — Additional View",
+          "description": "An additional viewpoint of the same staff office, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Staff Office",
+          "roomId": "staff-office"
+        },
+        {
+          "path": "images/albury/upper-basement/07-mews-garage-loading-court.webp",
+          "title": "Mews Garage & Loading Court",
+          "description": "Alex's midnight-green 2025 Aston Martin Vanquish sits beside the modern Range Rover household fleet, with secure charging and a dry service apron reached from the screened rear mews entrance.",
+          "roomName": "Mews Garage & Loading Court",
+          "roomId": "mews-garage-loading-court"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/07-mews-garage-loading-court.webp",
+          "title": "Mews Garage & Loading Court — Additional View",
+          "description": "An additional viewpoint of the same mews garage & loading court, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Mews Garage & Loading Court",
+          "roomId": "mews-garage-loading-court"
+        },
+        {
+          "path": "images/albury/upper-basement/08-security-mews-vestibule.webp",
+          "title": "Security & Mews Vestibule",
+          "description": "The access-control point for people, vehicles, packages, contractors and deliveries.",
+          "roomName": "Security & Mews Vestibule",
+          "roomId": "security-mews-vestibule"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/08-security-mews-vestibule.webp",
+          "title": "Security & Mews Vestibule — Additional View",
+          "description": "An additional viewpoint of the same security & mews vestibule, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Security & Mews Vestibule",
+          "roomId": "security-mews-vestibule"
+        },
+        {
+          "path": "images/albury/upper-basement/09-delivery-staging.webp",
+          "title": "Delivery & Staging",
+          "description": "Rolling racks, garment bags, flowers and instrument cases wait beside the goods lift without crossing the house.",
+          "roomName": "Delivery & Staging",
+          "roomId": "delivery-staging"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/09-delivery-staging.webp",
+          "title": "Delivery & Staging — Additional View",
+          "description": "An additional viewpoint of the same delivery & staging, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Delivery & Staging",
+          "roomId": "delivery-staging"
+        },
+        {
+          "path": "images/albury/upper-basement/15-mews-service-movement.webp",
+          "title": "Mews Service Movement",
+          "description": "Garments, flowers and instrument cases move in one controlled line from the secure mews side toward delivery staging and the goods lift.",
+          "roomName": "Mews Garage & Loading Court",
+          "roomId": "mews-garage-loading-court"
+        },
+        {
+          "path": "images/albury/upper-basement/10-laundry-garment-care.webp",
+          "title": "Laundry & Garment Care",
+          "description": "Professional washing, steaming, pressing and hanging infrastructure for the house and wardrobe.",
+          "roomName": "Laundry & Garment Care",
+          "roomId": "laundry-garment-care"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/10-laundry-garment-care.webp",
+          "title": "Laundry & Garment Care — Additional View",
+          "description": "An additional viewpoint of the same laundry & garment care, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Laundry & Garment Care",
+          "roomId": "laundry-garment-care"
+        },
+        {
+          "path": "images/albury/upper-basement/11-staff-room-changing.webp",
+          "title": "Staff Room & Changing",
+          "description": "A proper place for shift staff to eat, change and pause away from service corridors.",
+          "roomName": "Staff Room & Changing",
+          "roomId": "staff-room-changing"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/11-staff-room-changing.webp",
+          "title": "Staff Room & Changing — Additional View",
+          "description": "An additional viewpoint of the same staff room & changing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Staff Room & Changing",
+          "roomId": "staff-room-changing"
+        },
+        {
+          "path": "images/albury/upper-basement/14-staff-overnight-room.webp",
+          "title": "Staff Overnight Room",
+          "description": "A single bed and chair provide a private on-call rest point beside the staff room; it uses the floor’s existing shower and remains separate from longer-term staff accommodation at No. 34.",
+          "roomName": "Staff Overnight Room",
+          "roomId": "staff-overnight-room"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/14-staff-overnight-room.webp",
+          "title": "Staff Overnight Room — Additional View",
+          "description": "An additional viewpoint of the same staff overnight room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Staff Overnight Room",
+          "roomId": "staff-overnight-room"
+        },
+        {
+          "path": "images/albury/upper-basement/12-service-core.webp",
+          "title": "Service Core",
+          "description": "The protected back stair and goods-lift junction connecting every working level of the house.",
+          "roomName": "Service Core",
+          "roomId": "service-core"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/12-service-core.webp",
+          "title": "Service Core — Additional View",
+          "description": "An additional viewpoint of the same service core, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Service Core",
+          "roomId": "service-core"
+        },
+        {
+          "path": "images/albury/upper-basement/12a-housekeeping-store.webp",
+          "title": "Housekeeping Store",
+          "description": "Ordered supplies, linen and equipment positioned at the centre of the service route.",
+          "roomName": "Housekeeping Store",
+          "roomId": "housekeeping-store"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/12a-housekeeping-store.webp",
+          "title": "Housekeeping Store — Additional View",
+          "description": "An additional viewpoint of the same housekeeping store, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Housekeeping Store",
+          "roomId": "housekeeping-store"
+        },
+        {
+          "path": "images/albury/upper-basement/12b-refuse-recycling-holding.webp",
+          "title": "Refuse & Recycling Holding",
+          "description": "A sealed, ventilated holding room allowing waste to leave through the mews without entering principal circulation.",
+          "roomName": "Refuse & Recycling Holding",
+          "roomId": "refuse-recycling-holding"
+        },
+        {
+          "path": "images/albury/upper-basement/new-views/12b-refuse-recycling-holding.webp",
+          "title": "Refuse & Recycling Holding — Additional View",
+          "description": "An additional viewpoint of the same refuse & recycling holding, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Refuse & Recycling Holding",
+          "roomId": "refuse-recycling-holding"
+        },
+        {
+          "title": "Before dessert — House at Work",
+          "description": "Lemon tart and raspberries are plated at the upper-basement service-kitchen island, ready for service.",
+          "path": "images/albury-culinary/dessert-service.webp",
+          "roomName": "Event Kitchen & Pantry",
+          "roomId": "event-kitchen-pantry"
+        },
+        {
+          "title": "Between stays — House at Work",
+          "description": "Towels and table linen are folded at the laundry worktable, with garment care kept in its own service space.",
+          "path": "images/albury-culinary/laundry-working.webp",
+          "roomName": "Laundry & Garment Care",
+          "roomId": "laundry-garment-care"
+        },
+        {
+          "title": "Bar & Games Room — Closer Perspective",
+          "description": "The controlling view of the 60-by-38-foot room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/bar-games-room-closer-perspective.webp",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room"
+        },
+        {
+          "title": "Cinema — Closer Perspective",
+          "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/cinema-closer-perspective.webp",
+          "roomName": "Cinema",
+          "roomId": "cinema"
+        },
+        {
+          "title": "Wine & Spirits Tasting Room — Closer Perspective",
+          "description": "A formal ten-seat room with a monumental Kentucky-limestone table, green-and-tobacco leather chairs, walnut and bronze-mesh storage, an abstract copper still-coil light and geological spring artwork. Hatfield bourbon sits within a serious mixed wine and spirits programme; Limestone Springs appears only in the chilled mixer niche. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/wine-spirits-tasting-room-closer-perspective.webp",
+          "roomName": "Wine & Spirits Tasting Room",
+          "roomId": "wine-spirits-tasting-room"
+        },
+        {
+          "title": "Wine & Spirits Listening Lounge — Closer Perspective",
+          "description": "A two-chair bottle-green and walnut retreat inspired by the private intimacy of Hatfield's Stave: worn leather, Persian rug, records, proper hi-fi, shaded lamps and a discreet Limestone Springs mixer drawer. The secured trophy reserve remains one floor below. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/wine-spirits-listening-lounge-closer-perspective.webp",
+          "roomName": "Wine & Spirits Listening Lounge",
+          "roomId": "wine-spirits-listening-lounge"
+        },
+        {
+          "title": "Event Kitchen & Pantry — Closer Perspective",
+          "description": "A discreet plating and service kitchen that supports the entertaining floor and large house events. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/event-kitchen-pantry-closer-perspective.webp",
+          "roomName": "Event Kitchen & Pantry",
+          "roomId": "event-kitchen-pantry"
+        },
+        {
+          "title": "Linen Transfer at the Goods Lift",
+          "description": "The protected back stair and goods-lift junction connecting every working level of the house. An illustrative scene of the route in everyday use; the people shown are unnamed.",
+          "path": "images/albury/guide-expansion/goods-lift-in-use.webp",
+          "roomName": "Service Core",
+          "roomId": "service-core"
+        }
+      ]
+    },
+    {
+      "id": "raised-ground",
+      "name": "Raised Ground",
+      "short": "Daily House",
+      "plan": "images/albury/floor-plans/raised-ground.svg",
+      "rooms": [
+        {
+          "path": "images/albury/ground-floor/01-entrance-hall.webp",
+          "title": "Entrance / Reception Hall",
+          "description": "A broad, style-forward double-villa arrival with sculptural contemporary light, art and seating, plus enough clear space for flowers, greetings and major party circulation.",
+          "roomName": "Entrance / Reception Hall",
+          "roomId": "entrance-reception-hall"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/01-entrance-hall.webp",
+          "title": "Entrance / Reception Hall — Additional View",
+          "description": "An additional viewpoint of the same entrance / reception hall, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Entrance / Reception Hall",
+          "roomId": "entrance-reception-hall"
+        },
+        {
+          "path": "images/albury/ground-floor/16-raised-ground-circulation-view.webp",
+          "title": "Raised-Ground Circulation",
+          "description": "The reception, new stair and garden light read together from the central junction without collapsing the double-villa plan into a false straight corridor.",
+          "roomName": "Entrance / Reception Hall",
+          "roomId": "entrance-reception-hall"
+        },
+        {
+          "path": "images/albury/ground-floor/02-main-stair-hall.webp",
+          "title": "New Main Stair Hall",
+          "description": "An entirely new architectural stair and contemporary-art spine for the merged house: dramatic, youthful and free of preserved-staircase sentiment.",
+          "roomName": "New Main Stair Hall",
+          "roomId": "new-main-stair-hall"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/02-main-stair-hall.webp",
+          "title": "New Main Stair Hall — Additional View",
+          "description": "An additional viewpoint of the same new main stair hall, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "New Main Stair Hall",
+          "roomId": "new-main-stair-hall"
+        },
+        {
+          "path": "images/albury/ground-floor/15-main-stair-top-down.webp",
+          "title": "Main Stair from Above",
+          "description": "Looking down through successive landings makes the pale plaster, slim black rails, oxblood-edged runner, art wall and suspended amber glass read as one new architectural composition.",
+          "roomName": "New Main Stair Hall",
+          "roomId": "new-main-stair-hall"
+        },
+        {
+          "path": "images/albury/ground-floor/17-passenger-lift-threshold.webp",
+          "title": "Passenger Lift Threshold",
+          "description": "A dark-walnut and bronze passenger cabin opens directly beside the principal stair, serving every level without resembling the separate working goods lift.",
+          "roomName": "Passenger Lift Threshold",
+          "roomId": "passenger-lift-threshold"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/17-passenger-lift-threshold.webp",
+          "title": "Passenger Lift Threshold — Additional View",
+          "description": "An additional viewpoint of the same passenger lift threshold, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Passenger Lift Threshold",
+          "roomId": "passenger-lift-threshold"
+        },
+        {
+          "path": "images/albury/ground-floor/09-formal-drawing-room.webp",
+          "title": "Formal Drawing Room",
+          "description": "The principal composed reception room, built from low sculptural sofas, collectible contemporary chairs and movable drinks tables rather than an inherited-looking traditional suite.",
+          "roomName": "Formal Drawing Room",
+          "roomId": "formal-drawing-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/09-formal-drawing-room.webp",
+          "title": "Formal Drawing Room — Additional View",
+          "description": "An additional viewpoint of the same formal drawing room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Formal Drawing Room",
+          "roomId": "formal-drawing-room"
+        },
+        {
+          "path": "images/albury/ground-floor/09a-guest-salon-media-room.webp",
+          "title": "Guest Salon / Media Room",
+          "description": "An independent, enclosed room for friends, films and sport, with the large television concealed behind dark-oak panels.",
+          "roomName": "Guest Salon / Media Room",
+          "roomId": "guest-salon-media-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/09a-guest-salon-media-room.webp",
+          "title": "Guest Salon / Media Room — Additional View",
+          "description": "An additional viewpoint of the same guest salon / media room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Salon / Media Room",
+          "roomId": "guest-salon-media-room"
+        },
+        {
+          "path": "images/albury/ground-floor/05-music-room-house-grand.webp",
+          "title": "Music Room",
+          "description": "The informal social musical heart of the raised ground: the restored house grand is the inherited anchor, with a cello-and-guitar grouping, contemporary modular seating, vinyl and room for friends to gather.",
+          "roomName": "Music Room",
+          "roomId": "music-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/05-music-room-house-grand.webp",
+          "title": "Music Room — Additional View",
+          "description": "An additional viewpoint of the same music room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Music Room",
+          "roomId": "music-room"
+        },
+        {
+          "path": "images/albury/ground-floor/20-music-room-after-dinner.webp",
+          "title": "Music Room After Dinner",
+          "description": "Open scores, stools drawn to the house grand, used glasses and a discarded jacket show how an evening naturally gathers around the piano.",
+          "roomName": "Music Room",
+          "roomId": "music-room"
+        },
+        {
+          "path": "images/albury/ground-floor/06-kitchen-breakfast-room.webp",
+          "title": "Principal Kitchen & Breakfast Room",
+          "description": "Approximately 900 square feet, Albury’s daily production kitchen is a room-scale professional residential workspace rather than a domestic kitchen enlarged with expensive appliances. The 24-foot working wing has a 22-foot cooking-and-appliance wall and one 15-by-5-foot stool-free island, with visibly clear five-foot aisles on every side. The island provides separated mise-en-place stations, refrigerated drawers, shallow tool storage, a narrow dry-goods pull-out, prep sink, integrated waste and power; the rear wall carries a 180 cm range and full-width extraction, while tall green joinery conceals combi-steam and conventional ovens, warming drawers, full-height refrigeration and freezer storage. The garden-facing breakfast table occupies its own bay six feet beyond the island.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/06-kitchen-breakfast-room.webp",
+          "title": "Principal Kitchen & Breakfast Room — Additional View",
+          "description": "An additional viewpoint of the same principal kitchen & breakfast room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/18-kitchen-breakfast-in-use.webp",
+          "title": "Principal Kitchen — Brigade in Use",
+          "description": "The generous circulation is operational rather than decorative: Rafael stands wholly within the range-side aisle, Tolly works from the island’s open right-hand aisle with both feet on the floor, and Élodie occupies the separate rear prep counter beyond it. No member of the brigade shares or intersects the island footprint. Dean Wilkes handles wash-up, reset and deliveries through the service route; the butler’s pantry receives the pass, and the event kitchen below adds capacity for larger catered service.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/kitchen-coherent/01-reverse-overview.webp",
+          "title": "Principal Kitchen — Reverse Overview",
+          "description": "Looking back from the breakfast bay confirms the full working volume: the single island remains centred with clear circulation, the long range wall runs opposite it, and the appliance bank, rear prep station and service passage remain distinct rather than collapsing into one crowded wall.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/kitchen-coherent/02-cooking-wall-close-up.webp",
+          "title": "Principal Kitchen — Cooking Wall",
+          "description": "The 180 cm black range, twin ovens, full-width extraction, brass pot filler and deep landing counters form Rafael’s primary hot line. The island edge remains far enough away to preserve the working aisle for a second cook to pass safely behind him.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/kitchen-coherent/03-island-working-storage.webp",
+          "title": "Principal Kitchen — Island Workstation",
+          "description": "The stool-free island is a double-sided chef’s workbench rather than a monolithic showpiece: a compact prep sink, uninterrupted mise-en-place surface, refrigerated drawers, shallow tool storage, integrated waste and power, and a slim pull-out for frequently used dry ingredients all sit within its working face.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/kitchen-coherent/04-appliance-and-prep-zone.webp",
+          "title": "Principal Kitchen — Appliance & Prep Zone",
+          "description": "Paired conventional and combi-steam ovens, warming capacity and full-height refrigeration sit in one tall bank beside the separate rear prep zone, leaving the main floor and island aisles clear.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/kitchen-coherent/06-rear-prep-and-pass.webp",
+          "title": "Principal Kitchen — Rear Prep & Pass",
+          "description": "The secondary brigade station provides its own handwash sink, ingredient refrigeration, deep storage and an uninterrupted preparation and plating surface aligned with the discreet door to the butler’s pantry.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/kitchen-coherent/05-breakfast-bay.webp",
+          "title": "Kitchen Breakfast Bay",
+          "description": "The eight-seat garden-facing table belongs to a distinct domestic bay beyond the working room. Six feet of clear floor separates it from the island, while the right-wall credenza keeps breakfast coffee and ceramics out of the professional preparation zones.",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "path": "images/albury/ground-floor/07-dining-room.webp",
+          "title": "Dining Room",
+          "description": "A lived-in ten-seat room with tobacco leather chairs, contrasting host chairs and broad dark-bronze pendants, supported invisibly by the butler’s pantry and event kitchen.",
+          "roomName": "Dining Room",
+          "roomId": "dining-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/07-dining-room.webp",
+          "title": "Dining Room — Additional View",
+          "description": "An additional viewpoint of the same dining room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Dining Room",
+          "roomId": "dining-room"
+        },
+        {
+          "path": "images/albury/ground-floor/19-dining-service-in-progress.webp",
+          "title": "Dinner Service in Progress",
+          "description": "First courses, poured wine and quiet footman service bring the ten-seat dining room into its intended evening use.",
+          "roomName": "Dining Room",
+          "roomId": "dining-room"
+        },
+        {
+          "path": "images/albury/ground-floor/08-garden-room.webp",
+          "title": "Garden Room",
+          "description": "The television-free, garden-facing sitting room: daylight, major painting and broad doors onto the terrace.",
+          "roomName": "Garden Room",
+          "roomId": "garden-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/08-garden-room.webp",
+          "title": "Garden Room — Additional View",
+          "description": "An additional viewpoint of the same garden room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Garden Room",
+          "roomId": "garden-room"
+        },
+        {
+          "path": "images/albury/ground-floor/09-guest-cloakroom-powder.webp",
+          "title": "Guest Cloakroom & Powder Rooms",
+          "description": "A proper event-capable coat room and powder-room antechamber rather than one token WC.",
+          "roomName": "Guest Cloakroom & Powder Rooms",
+          "roomId": "guest-cloakroom-powder-rooms"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/09-guest-cloakroom-powder.webp",
+          "title": "Guest Cloakroom & Powder Rooms — Additional View",
+          "description": "An additional viewpoint of the same guest cloakroom & powder rooms, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Cloakroom & Powder Rooms",
+          "roomId": "guest-cloakroom-powder-rooms"
+        },
+        {
+          "path": "images/albury/ground-floor/10-butlers-pantry-service-lobby.webp",
+          "title": "Butler’s Pantry & Dining Service Lobby",
+          "description": "The working link between dining room, daily kitchen, event kitchen and goods lift.",
+          "roomName": "Butler’s Pantry & Dining Service Lobby",
+          "roomId": "butlers-pantry-dining-service-lobby"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/10-butlers-pantry-service-lobby.webp",
+          "title": "Butler’s Pantry & Dining Service Lobby — Additional View",
+          "description": "An additional viewpoint of the same butler’s pantry & dining service lobby, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Butler’s Pantry & Dining Service Lobby",
+          "roomId": "butlers-pantry-dining-service-lobby"
+        },
+        {
+          "path": "images/albury/ground-floor/11-boot-room.webp",
+          "title": "Boot Room",
+          "description": "A generous olive-green garden-side room for coats, umbrellas, baskets and wet London shoes.",
+          "roomName": "Boot Room",
+          "roomId": "boot-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/11-boot-room.webp",
+          "title": "Boot Room — Additional View",
+          "description": "An additional viewpoint of the same boot room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Boot Room",
+          "roomId": "boot-room"
+        },
+        {
+          "path": "images/albury/ground-floor/12-flower-room.webp",
+          "title": "Flower Room",
+          "description": "A real floristry workroom sized to support the house and its events, full of vases, buckets and arrangements in progress.",
+          "roomName": "Flower Room",
+          "roomId": "flower-room"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/12-flower-room.webp",
+          "title": "Flower Room — Additional View",
+          "description": "An additional viewpoint of the same flower room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Flower Room",
+          "roomId": "flower-room"
+        },
+        {
+          "path": "images/albury/ground-floor/21-friday-flowers.webp",
+          "title": "Friday Flowers",
+          "description": "The housekeeper and florist cut, build and sort the weekly arrangements at the long worktable before they move through the service spine.",
+          "roomName": "Flower Room",
+          "roomId": "flower-room"
+        },
+        {
+          "path": "images/albury/ground-floor/13-housekeeping-workroom.webp",
+          "title": "Housekeeping Workroom",
+          "description": "The raised-ground working base for day linen, equipment and immediate cleaning support.",
+          "roomName": "Housekeeping Workroom",
+          "roomId": "housekeeping-workroom"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/13-housekeeping-workroom.webp",
+          "title": "Housekeeping Workroom — Additional View",
+          "description": "An additional viewpoint of the same housekeeping workroom, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Housekeeping Workroom",
+          "roomId": "housekeeping-workroom"
+        },
+        {
+          "path": "images/albury/ground-floor/14-rear-service-landing.webp",
+          "title": "Rear Service Landing",
+          "description": "The broad back-stair and goods-lift junction that lets flowers, food and trolleys move without crossing principal rooms.",
+          "roomName": "Rear Service Landing",
+          "roomId": "rear-service-landing"
+        },
+        {
+          "path": "images/albury/ground-floor/new-views/14-rear-service-landing.webp",
+          "title": "Rear Service Landing — Additional View",
+          "description": "An additional viewpoint of the same rear service landing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Rear Service Landing",
+          "roomId": "rear-service-landing"
+        },
+        {
+          "title": "Before dinner — House at Work",
+          "description": "Glasses are polished and a tray assembled in the raised-ground butler’s pantry, close to the dining room.",
+          "path": "images/albury-culinary/pantry-service.webp",
+          "roomName": "Butler’s Pantry & Dining Service Lobby",
+          "roomId": "butlers-pantry-dining-service-lobby"
+        },
+        {
+          "title": "Entrance / Reception Hall — Closer Perspective",
+          "description": "A broad, style-forward double-villa arrival with sculptural contemporary light, art and seating, plus enough clear space for flowers, greetings and major party circulation. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/entrance-reception-hall-closer-perspective.webp",
+          "roomName": "Entrance / Reception Hall",
+          "roomId": "entrance-reception-hall"
+        },
+        {
+          "title": "Formal Drawing Room — Closer Perspective",
+          "description": "The principal composed reception room, built from low sculptural sofas, collectible contemporary chairs and movable drinks tables rather than an inherited-looking traditional suite. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/formal-drawing-room-closer-perspective.webp",
+          "roomName": "Formal Drawing Room",
+          "roomId": "formal-drawing-room"
+        },
+        {
+          "title": "Guest Salon / Media Room — Closer Perspective",
+          "description": "An independent, enclosed room for friends, films and sport, with the large television concealed behind dark-oak panels. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-salon-media-room-closer-perspective.webp",
+          "roomName": "Guest Salon / Media Room",
+          "roomId": "guest-salon-media-room"
+        },
+        {
+          "title": "Music Room — Closer Perspective",
+          "description": "The informal social musical heart of the raised ground: the restored house grand is the inherited anchor, with a cello-and-guitar grouping, contemporary modular seating, vinyl and room for friends to gather. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/music-room-closer-perspective.webp",
+          "roomName": "Music Room",
+          "roomId": "music-room"
+        },
+        {
+          "title": "Principal Kitchen & Breakfast Room — Closer Perspective",
+          "description": "Approximately 900 square feet, Albury’s daily production kitchen is a room-scale professional residential workspace rather than a domestic kitchen enlarged with expensive appliances. The 24-foot working wing has a 22-foot cooking-and-appliance wall and one 15-by-5-foot stool-free island, with visibly clear five-foot aisles on every side. The island provides separated mise-en-place stations, refrigerated drawers, shallow tool storage, a narrow dry-goods pull-out, prep sink, integrated waste and power; the rear wall carries a 180 cm range and full-width extraction, while tall green joinery conceals combi-steam and conventional ovens, warming drawers, full-height refrigeration and freezer storage. The garden-facing breakfast table occupies its own bay six feet beyond the island. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/principal-kitchen-breakfast-room-closer-perspective.webp",
+          "roomName": "Principal Kitchen & Breakfast Room",
+          "roomId": "principal-kitchen-breakfast-room"
+        },
+        {
+          "title": "Dining Room — Closer Perspective",
+          "description": "A lived-in ten-seat room with tobacco leather chairs, contrasting host chairs and broad dark-bronze pendants, supported invisibly by the butler’s pantry and event kitchen. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/dining-room-closer-perspective.webp",
+          "roomName": "Dining Room",
+          "roomId": "dining-room"
+        },
+        {
+          "title": "Garden Room — Closer Perspective",
+          "description": "The television-free, garden-facing sitting room: daylight, major painting and broad doors onto the terrace. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/garden-room-closer-perspective.webp",
+          "roomName": "Garden Room",
+          "roomId": "garden-room"
+        },
+        {
+          "title": "Guests on the Main Stair",
+          "description": "An entirely new architectural stair and contemporary-art spine for the merged house: dramatic, youthful and free of preserved-staircase sentiment. An illustrative scene of the route in everyday use; the people shown are unnamed.",
+          "path": "images/albury/guide-expansion/main-stair-in-use.webp",
+          "roomName": "New Main Stair Hall",
+          "roomId": "new-main-stair-hall"
+        },
+        {
+          "title": "Arriving at the Passenger Lift",
+          "description": "A dark-walnut and bronze passenger cabin opens directly beside the principal stair, serving every level without resembling the separate working goods lift. An illustrative scene of the route in everyday use; the people shown are unnamed.",
+          "path": "images/albury/guide-expansion/passenger-lift-in-use.webp",
+          "roomName": "Passenger Lift Threshold",
+          "roomId": "passenger-lift-threshold"
+        },
+        {
+          "title": "Linen on the Service Route",
+          "description": "The broad back-stair and goods-lift junction that lets flowers, food and trolleys move without crossing principal rooms. An illustrative scene of the route in everyday use; the people shown are unnamed.",
+          "path": "images/albury/guide-expansion/service-stair-in-use.webp",
+          "roomName": "Rear Service Landing",
+          "roomId": "rear-service-landing"
+        }
+      ]
+    },
+    {
+      "id": "music-nobile",
+      "name": "Music Nobile",
+      "short": "First Floor",
+      "plan": "images/albury/floor-plans/music-nobile.svg",
+      "rooms": [
+        {
+          "path": "images/albury/music-nobile/01-live-tracking-room.webp",
+          "title": "Live & Tracking Room",
+          "description": "The inherited double-height ballroom volume of No. 32, rebuilt as a floating live room with enough air and clear space for a full band or small string group.",
+          "roomName": "Live & Tracking Room",
+          "roomId": "live-tracking-room"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/01-live-tracking-room.webp",
+          "title": "Live & Tracking Room — Additional View",
+          "description": "An additional viewpoint of the same live & tracking room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Live & Tracking Room",
+          "roomId": "live-tracking-room"
+        },
+        {
+          "path": "images/albury/music-nobile/14-session-in-progress.webp",
+          "title": "Session in Progress",
+          "description": "Singer, pianist, rhythm section and engineer occupy the live room and control room as one working private session rather than a staged performance.",
+          "roomName": "Live & Tracking Room",
+          "roomId": "live-tracking-room"
+        },
+        {
+          "path": "images/albury/music-nobile/15-full-band-take.webp",
+          "title": "Full Band Take",
+          "description": "Alex at the grand piano, singer, rhythm section and two engineers use the live and control rooms as one technically credible recording environment.",
+          "roomName": "Live & Tracking Room",
+          "roomId": "live-tracking-room"
+        },
+        {
+          "path": "images/albury/music-nobile/02-control-room.webp",
+          "title": "Control Room",
+          "description": "A world-class console, serious monitoring and analogue outboard face the live room through a wide acoustic window.",
+          "roomName": "Control Room",
+          "roomId": "control-room"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/02-control-room.webp",
+          "title": "Control Room — Additional View",
+          "description": "An additional viewpoint of the same control room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Control Room",
+          "roomId": "control-room"
+        },
+        {
+          "path": "images/albury/music-nobile/03-vocal-booth.webp",
+          "title": "Vocal Booth",
+          "description": "A generously sized floating isolation room for focused vocal recording.",
+          "roomName": "Vocal Booth",
+          "roomId": "vocal-booth"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/03-vocal-booth.webp",
+          "title": "Vocal Booth — Additional View",
+          "description": "An additional viewpoint of the same vocal booth, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Vocal Booth",
+          "roomId": "vocal-booth"
+        },
+        {
+          "path": "images/albury/music-nobile/04-instrument-isolation-booth.webp",
+          "title": "Instrument Isolation Booth",
+          "description": "A flexible larger booth for amplifiers, brass, strings or upright bass.",
+          "roomName": "Instrument Isolation Booth",
+          "roomId": "instrument-isolation-booth"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/04-instrument-isolation-booth.webp",
+          "title": "Instrument Isolation Booth — Additional View",
+          "description": "An additional viewpoint of the same instrument isolation booth, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Instrument Isolation Booth",
+          "roomId": "instrument-isolation-booth"
+        },
+        {
+          "path": "images/albury/music-nobile/05-machine-room.webp",
+          "title": "Machine Room",
+          "description": "Silent computing, conversion, patching and power infrastructure live behind a sealed technical door.",
+          "roomName": "Machine Room",
+          "roomId": "machine-room"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/05-machine-room.webp",
+          "title": "Machine Room — Additional View",
+          "description": "An additional viewpoint of the same machine room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Machine Room",
+          "roomId": "machine-room"
+        },
+        {
+          "path": "images/albury/music-nobile/06-technical-equipment-storage.webp",
+          "title": "Technical & Instrument Storage",
+          "description": "Climate-controlled cases, microphones, stands and cables remain ready without cluttering the working rooms.",
+          "roomName": "Technical & Instrument Storage",
+          "roomId": "technical-instrument-storage"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/06-technical-equipment-storage.webp",
+          "title": "Technical & Instrument Storage — Additional View",
+          "description": "An additional viewpoint of the same technical & instrument storage, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Technical & Instrument Storage",
+          "roomId": "technical-instrument-storage"
+        },
+        {
+          "path": "images/albury/music-nobile/07-main-acoustic-lobby.webp",
+          "title": "Main Acoustic Lobby",
+          "description": "A double-door sound lock separates the floating studio shell from the new main stair and passenger lift.",
+          "roomName": "Main Acoustic Lobby",
+          "roomId": "main-acoustic-lobby"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/07-main-acoustic-lobby.webp",
+          "title": "Main Acoustic Lobby — Additional View",
+          "description": "An additional viewpoint of the same main acoustic lobby, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Main Acoustic Lobby",
+          "roomId": "main-acoustic-lobby"
+        },
+        {
+          "path": "images/albury/music-nobile/08-rear-acoustic-service-lobby.webp",
+          "title": "Rear Acoustic Service Lobby",
+          "description": "An extra-wide sound lock allows instruments and flight cases to arrive from the goods lift.",
+          "roomName": "Rear Acoustic Service Lobby",
+          "roomId": "rear-acoustic-service-lobby"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/08-rear-acoustic-service-lobby.webp",
+          "title": "Rear Acoustic Service Lobby — Additional View",
+          "description": "An additional viewpoint of the same rear acoustic service lobby, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Rear Acoustic Service Lobby",
+          "roomId": "rear-acoustic-service-lobby"
+        },
+        {
+          "path": "images/albury/music-nobile/09-rec-room.webp",
+          "title": "Rec Room",
+          "description": "The floor’s sole non-studio destination: dark leather seating, records, television, dining table and fitted bar.",
+          "roomName": "Rec Room",
+          "roomId": "rec-room"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/09-rec-room.webp",
+          "title": "Rec Room — Additional View",
+          "description": "An additional viewpoint of the same rec room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Rec Room",
+          "roomId": "rec-room"
+        },
+        {
+          "path": "images/albury/music-nobile/10-studio-wc.webp",
+          "title": "Studio WC",
+          "description": "A compact blackened-oak and dark-stone room inside the isolated suite.",
+          "roomName": "Studio WC",
+          "roomId": "studio-wc"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/10-studio-wc.webp",
+          "title": "Studio WC — Additional View",
+          "description": "An additional viewpoint of the same studio wc, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Studio WC",
+          "roomId": "studio-wc"
+        },
+        {
+          "path": "images/albury/music-nobile/11-coat-cupboard.webp",
+          "title": "Studio Cloak Room",
+          "description": "A proper walk-in coat and luggage room immediately inside the acoustic threshold.",
+          "roomName": "Studio Cloak Room",
+          "roomId": "studio-cloak-room"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/11-coat-cupboard.webp",
+          "title": "Studio Cloak Room — Additional View",
+          "description": "An additional viewpoint of the same studio cloak room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Studio Cloak Room",
+          "roomId": "studio-cloak-room"
+        },
+        {
+          "path": "images/albury/music-nobile/12-cleaning-store.webp",
+          "title": "Studio Cleaning Store",
+          "description": "A small dedicated support room keeps the working floor immaculate and self-contained.",
+          "roomName": "Studio Cleaning Store",
+          "roomId": "studio-cleaning-store"
+        },
+        {
+          "path": "images/albury/music-nobile/new-views/12-cleaning-store.webp",
+          "title": "Studio Cleaning Store — Additional View",
+          "description": "An additional viewpoint of the same studio cleaning store, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Studio Cleaning Store",
+          "roomId": "studio-cleaning-store"
+        },
+        {
+          "title": "Live & Tracking Room — Closer Perspective",
+          "description": "The inherited double-height ballroom volume of No. 32, rebuilt as a floating live room with enough air and clear space for a full band or small string group. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/live-tracking-room-closer-perspective.webp",
+          "roomName": "Live & Tracking Room",
+          "roomId": "live-tracking-room"
+        },
+        {
+          "title": "Control Room — Closer Perspective",
+          "description": "A world-class console, serious monitoring and analogue outboard face the live room through a wide acoustic window. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/control-room-closer-perspective.webp",
+          "roomName": "Control Room",
+          "roomId": "control-room"
+        },
+        {
+          "title": "Rec Room — Closer Perspective",
+          "description": "The floor’s sole non-studio destination: dark leather seating, records, television, dining table and fitted bar. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/rec-room-closer-perspective.webp",
+          "roomName": "Rec Room",
+          "roomId": "rec-room"
+        }
+      ]
+    },
+    {
+      "id": "second-floor",
+      "name": "Second Floor",
+      "short": "Senior Guests",
+      "plan": "images/albury/floor-plans/second-floor.svg",
+      "rooms": [
+        {
+          "path": "images/albury/second-floor/01-landing-current.webp",
+          "title": "Second-Floor Landing",
+          "description": "A broad cross-gallery with daylight on both sides makes the joined double-house footprint unmistakable.",
+          "roomName": "Second-Floor Landing",
+          "roomId": "second-floor-landing"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/01-landing-current.webp",
+          "title": "Second-Floor Landing — Additional View",
+          "description": "An additional viewpoint of the same second-floor landing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Second-Floor Landing",
+          "roomId": "second-floor-landing"
+        },
+        {
+          "path": "images/albury/second-floor/02-principal-guest-bedroom-current.webp",
+          "title": "Principal Guest Bedroom",
+          "description": "The senior guest bedroom includes a full sitting area, writing desk, fireplace and concealed television.",
+          "roomName": "Principal Guest Bedroom",
+          "roomId": "principal-guest-bedroom"
+        },
+        {
+          "path": "images/albury-house-items/travel/45-primary-guest-bedroom-welcome-v2.webp",
+          "title": "Principal Guest Bedroom — Complete Welcome",
+          "description": "The complete welcome in the principal guest bedroom: dressing gown, slippers, flannel, towel, socks, personal toiletries and grooming kits, stationery, food, Limestone Springs still and sparkling water, and selected travel drinkware gifts. The same provision shown in the larger second-floor room.",
+          "roomName": "Principal Guest Bedroom",
+          "roomId": "principal-guest-bedroom"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/02-principal-guest-bedroom-current.webp",
+          "title": "Principal Guest Bedroom — Additional View",
+          "description": "An additional viewpoint of the same principal guest bedroom, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Principal Guest Bedroom",
+          "roomId": "principal-guest-bedroom"
+        },
+        {
+          "path": "images/albury/second-floor/14-guest-arrival-turn-down.webp",
+          "title": "Guest Arrival Turn-Down",
+          "description": "Two attendants prepare flowers, water, robe and bed as a weekender and garment bag arrive, making the senior suite read as a privately hosted room rather than an empty hotel set.",
+          "roomName": "Principal Guest Bedroom",
+          "roomId": "principal-guest-bedroom"
+        },
+        {
+          "path": "images/albury/second-floor/13-principal-guest-room-turn.webp",
+          "title": "Principal Guest Room Turn",
+          "description": "A half-completed bed, discreet trolley, marked linen and welcome tray show the senior suite being prepared as a private-house room rather than a hotel product.",
+          "roomName": "Principal Guest Bedroom",
+          "roomId": "principal-guest-bedroom"
+        },
+        {
+          "path": "images/albury/second-floor/03-principal-guest-dressing-current.webp",
+          "title": "Principal Guest Dressing",
+          "description": "A proper month-long-stay dressing room with fitted wardrobes, packing island and luggage space.",
+          "roomName": "Principal Guest Dressing",
+          "roomId": "principal-guest-dressing"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/03-principal-guest-dressing-current.webp",
+          "title": "Principal Guest Dressing — Additional View",
+          "description": "An additional viewpoint of the same principal guest dressing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Principal Guest Dressing",
+          "roomId": "principal-guest-dressing"
+        },
+        {
+          "path": "images/albury/second-floor/04-principal-guest-bathroom-current.webp",
+          "title": "Principal Guest Bathroom",
+          "description": "A broad pale-stone bathroom with bath, walk-in shower and long double vanity.",
+          "roomName": "Principal Guest Bathroom",
+          "roomId": "principal-guest-bathroom"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/04-principal-guest-bathroom-current.webp",
+          "title": "Principal Guest Bathroom — Additional View",
+          "description": "An additional viewpoint of the same principal guest bathroom, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Principal Guest Bathroom",
+          "roomId": "principal-guest-bathroom"
+        },
+        {
+          "path": "images/albury/second-floor/12-principal-guest-suite-sequence.webp",
+          "title": "Principal Guest Suite Sequence",
+          "description": "From the dressing room, the bedroom sitting area and pale-stone bathroom remain legible through offset thresholds, demonstrating a genuine private apartment rather than three unrelated rooms.",
+          "roomName": "Principal Guest Bedroom",
+          "roomId": "principal-guest-bedroom"
+        },
+        {
+          "path": "images/albury/second-floor/05-guest-bedroom-2-current.webp",
+          "title": "Guest Bedroom Two",
+          "description": "The blue-grey garden suite balances a four-poster bed with a desk, fireplace and reading chair.",
+          "roomName": "Guest Bedroom Two",
+          "roomId": "guest-bedroom-two"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/05-guest-bedroom-2-current.webp",
+          "title": "Guest Bedroom Two — Additional View",
+          "description": "An additional viewpoint of the same guest bedroom two, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Bedroom Two",
+          "roomId": "guest-bedroom-two"
+        },
+        {
+          "path": "images/albury/second-floor/06-guest-bathroom-2-current.webp",
+          "title": "Guest Bathroom Two",
+          "description": "A restrained limestone shower room with dark-oak vanity, bench and bronze fittings.",
+          "roomName": "Guest Bathroom Two",
+          "roomId": "guest-bathroom-two"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/06-guest-bathroom-2-current.webp",
+          "title": "Guest Bathroom Two — Additional View",
+          "description": "An additional viewpoint of the same guest bathroom two, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Bathroom Two",
+          "roomId": "guest-bathroom-two"
+        },
+        {
+          "path": "images/albury/second-floor/07-guest-bedroom-3-current.webp",
+          "title": "Guest Bedroom Three",
+          "description": "Olive plaster, walnut and antique textile art give the second double suite its own adult character.",
+          "roomName": "Guest Bedroom Three",
+          "roomId": "guest-bedroom-three"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/07-guest-bedroom-3-current.webp",
+          "title": "Guest Bedroom Three — Additional View",
+          "description": "An additional viewpoint of the same guest bedroom three, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Bedroom Three",
+          "roomId": "guest-bedroom-three"
+        },
+        {
+          "path": "images/albury/second-floor/08-guest-bathroom-3-current.webp",
+          "title": "Guest Bathroom Three",
+          "description": "A warm-grey stone ensuite with a deep built-in bath and separate shower.",
+          "roomName": "Guest Bathroom Three",
+          "roomId": "guest-bathroom-three"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/08-guest-bathroom-3-current.webp",
+          "title": "Guest Bathroom Three — Additional View",
+          "description": "An additional viewpoint of the same guest bathroom three, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Bathroom Three",
+          "roomId": "guest-bathroom-three"
+        },
+        {
+          "path": "images/albury/second-floor/09-landing-powder-room.webp",
+          "title": "Landing Powder Room",
+          "description": "A clay-red jewel-box powder room serves the landing without sending visitors through a bedroom.",
+          "roomName": "Landing Powder Room",
+          "roomId": "landing-powder-room"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/09-landing-powder-room.webp",
+          "title": "Landing Powder Room — Additional View",
+          "description": "An additional viewpoint of the same landing powder room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Landing Powder Room",
+          "roomId": "landing-powder-room"
+        },
+        {
+          "path": "images/albury/second-floor/10-satellite-pantry-linen.webp",
+          "title": "Satellite Pantry & Linen",
+          "description": "The senior guest floor uses the quieter dusty-blue and bottle-green expression of the marked pantry line: caddies, cups, tray, napkins and pantry card remain restrained beside water, tea service and immediate-use linen.",
+          "roomName": "Satellite Pantry & Linen",
+          "roomId": "satellite-pantry-linen"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/10-satellite-pantry-linen.webp",
+          "title": "Satellite Pantry & Linen — Additional View",
+          "description": "An additional viewpoint of the same satellite pantry & linen, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Satellite Pantry & Linen",
+          "roomId": "satellite-pantry-linen"
+        },
+        {
+          "path": "images/albury/second-floor/11-rear-service-landing.webp",
+          "title": "Rear Service Landing",
+          "description": "The back stair and goods-lift arrival keeps linen and garment movement out of the guest gallery.",
+          "roomName": "Rear Service Landing",
+          "roomId": "rear-service-landing"
+        },
+        {
+          "path": "images/albury/second-floor/new-views/11-rear-service-landing.webp",
+          "title": "Rear Service Landing — Additional View",
+          "description": "An additional viewpoint of the same rear service landing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Rear Service Landing",
+          "roomId": "rear-service-landing"
+        },
+        {
+          "title": "Principal Guest Bedroom — Closer Perspective",
+          "description": "The senior guest bedroom includes a full sitting area, writing desk, fireplace and concealed television. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/principal-guest-bedroom-closer-perspective.webp",
+          "roomName": "Principal Guest Bedroom",
+          "roomId": "principal-guest-bedroom"
+        },
+        {
+          "title": "Guest Bedroom Two — Closer Perspective",
+          "description": "The blue-grey garden suite balances a four-poster bed with a desk, fireplace and reading chair. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-bedroom-two-closer-perspective.webp",
+          "roomName": "Guest Bedroom Two",
+          "roomId": "guest-bedroom-two"
+        },
+        {
+          "title": "Guest Bedroom Three — Closer Perspective",
+          "description": "Olive plaster, walnut and antique textile art give the second double suite its own adult character. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-bedroom-three-closer-perspective.webp",
+          "roomName": "Guest Bedroom Three",
+          "roomId": "guest-bedroom-three"
+        }
+      ]
+    },
+    {
+      "id": "third-floor",
+      "name": "Third Floor",
+      "short": "Friends & Musicians",
+      "plan": "images/albury/floor-plans/third-floor.svg",
+      "rooms": [
+        {
+          "path": "images/albury/third-floor/01-landing.webp",
+          "title": "Friends’ Floor Landing",
+          "description": "A broad, relaxed landing connects five compact ensuites, the shared salon and the rear working hub.",
+          "roomName": "Friends’ Floor Landing",
+          "roomId": "friends-floor-landing"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/01-landing.webp",
+          "title": "Friends’ Floor Landing — Additional View",
+          "description": "An additional viewpoint of the same friends’ floor landing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Friends’ Floor Landing",
+          "roomId": "friends-floor-landing"
+        },
+        {
+          "path": "images/albury/third-floor/02-guest-room-4.webp",
+          "title": "Guest Room Four",
+          "description": "A rust-accented double room with wardrobe, desk, luggage bench and private shower.",
+          "roomName": "Guest Room Four",
+          "roomId": "guest-room-four"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/02-guest-room-4.webp",
+          "title": "Guest Room Four — Additional View",
+          "description": "An additional viewpoint of the same guest room four, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Room Four",
+          "roomId": "guest-room-four"
+        },
+        {
+          "path": "images/albury-house-items/travel/44-complete-bedroom-welcome.webp",
+          "title": "Guest Room Four — Complete Welcome",
+          "description": "The complete overnight welcome laid out in Guest Room Four: dressing gown, slippers, flannel, hand towel, socks, personal bath and grooming kits, stationery, food and Limestone Springs still and sparkling water. This example also includes selected travel cup and reusable bottle gifts.",
+          "roomName": "Guest Room Four",
+          "roomId": "guest-room-four"
+        },
+        {
+          "path": "images/albury/third-floor/12-guest-room-4-ensuite.webp",
+          "title": "Guest Room Four — Ensuite",
+          "description": "The warm terrazzo shower room is compact but complete, remaining properly separated from the rust-accented bedroom by a private threshold.",
+          "roomName": "Guest Room Four",
+          "roomId": "guest-room-four"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/12-guest-room-4-ensuite.webp",
+          "title": "Guest Room Four — Ensuite — Additional View",
+          "description": "An additional viewpoint of the same guest room four — ensuite, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Room Four",
+          "roomId": "guest-room-four"
+        },
+        {
+          "path": "images/albury/third-floor/03-guest-room-5.webp",
+          "title": "Guest Room Five",
+          "description": "Cobalt and warm oak give this compact double ensuite a sharper, more graphic identity.",
+          "roomName": "Guest Room Five",
+          "roomId": "guest-room-five"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/03-guest-room-5.webp",
+          "title": "Guest Room Five — Additional View",
+          "description": "An additional viewpoint of the same guest room five, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Room Five",
+          "roomId": "guest-room-five"
+        },
+        {
+          "path": "images/albury/third-floor/04-guest-room-6.webp",
+          "title": "Guest Room Six",
+          "description": "A quieter sage room with blond oak, garden light and a terrazzo shower room.",
+          "roomName": "Guest Room Six",
+          "roomId": "guest-room-six"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/04-guest-room-6.webp",
+          "title": "Guest Room Six — Additional View",
+          "description": "An additional viewpoint of the same guest room six, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Room Six",
+          "roomId": "guest-room-six"
+        },
+        {
+          "path": "images/albury/third-floor/05-guest-room-7.webp",
+          "title": "Guest Room Seven",
+          "description": "Dusty rose, burgundy and a lit vanity make this room particularly useful during fashion week.",
+          "roomName": "Guest Room Seven",
+          "roomId": "guest-room-seven"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/05-guest-room-7.webp",
+          "title": "Guest Room Seven — Additional View",
+          "description": "An additional viewpoint of the same guest room seven, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Room Seven",
+          "roomId": "guest-room-seven"
+        },
+        {
+          "path": "images/albury/third-floor/13-guest-room-7-ensuite.webp",
+          "title": "Guest Room Seven — Ensuite",
+          "description": "Warm grey stone, burgundy-veined joinery and flattering light extend the bedroom palette into its private shower room.",
+          "roomName": "Guest Room Seven",
+          "roomId": "guest-room-seven"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/13-guest-room-7-ensuite.webp",
+          "title": "Guest Room Seven — Ensuite — Additional View",
+          "description": "An additional viewpoint of the same guest room seven — ensuite, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Room Seven",
+          "roomId": "guest-room-seven"
+        },
+        {
+          "path": "images/albury/third-floor/14-guest-room-7-fashion-week-configuration.webp",
+          "title": "Guest Room Seven — Fashion-Week Configuration",
+          "description": "A second proper temporary bed, rolling garment rail, steamer and luggage demonstrate the planned fashion-week overflow mode without blocking the ensuite or turning the room into a hotel twin.",
+          "roomName": "Guest Room Seven",
+          "roomId": "guest-room-seven"
+        },
+        {
+          "path": "images/albury/third-floor/06-guest-room-8.webp",
+          "title": "Guest Room Eight",
+          "description": "Charcoal, walnut and a yellow chair create the most playful of the five guest rooms.",
+          "roomName": "Guest Room Eight",
+          "roomId": "guest-room-eight"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/06-guest-room-8.webp",
+          "title": "Guest Room Eight — Additional View",
+          "description": "An additional viewpoint of the same guest room eight, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Room Eight",
+          "roomId": "guest-room-eight"
+        },
+        {
+          "path": "images/albury/third-floor/07-friends-salon.webp",
+          "title": "Friends’ Salon",
+          "description": "A large television, current games console, two full-size arcade cabinets, turntable, modular sofa and dining table make this the floor’s social centre.",
+          "roomName": "Friends’ Salon",
+          "roomId": "friends-salon"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/07-friends-salon.webp",
+          "title": "Friends’ Salon — Additional View",
+          "description": "An additional viewpoint of the same friends’ salon, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Friends’ Salon",
+          "roomId": "friends-salon"
+        },
+        {
+          "path": "images/albury/third-floor/15-friends-floor-at-midnight.webp",
+          "title": "Friends’ Floor at Midnight",
+          "description": "Alex and seven friends use the arcade, console, table and bar at once; pizza boxes, controllers and weekend bags make this the relaxed social floor the plan promises.",
+          "roomName": "Friends’ Salon",
+          "roomId": "friends-salon"
+        },
+        {
+          "path": "images/albury/third-floor/08-guest-pantry.webp",
+          "title": "Guest Pantry",
+          "description": "The self-service hub carries the fullest guest-floor palette: bottle-green, oxblood, dusty-blue and warm-ochre marked caddies, ceramics, biscuit tin, tray, napkins and tea towel, with colour-cued Rafael jars alongside coffee, tea, water and breakfast refrigeration.",
+          "roomName": "Guest Pantry",
+          "roomId": "guest-pantry"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/08-guest-pantry.webp",
+          "title": "Guest Pantry — Additional View",
+          "description": "An additional viewpoint of the same guest pantry, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Guest Pantry",
+          "roomId": "guest-pantry"
+        },
+        {
+          "path": "images/albury/third-floor/09-linen-housekeeping-workroom.webp",
+          "title": "Linen & Housekeeping Workroom",
+          "description": "The main upper-house workroom provides folding, steaming, linen storage and housekeeping support.",
+          "roomName": "Linen & Housekeeping Workroom",
+          "roomId": "linen-housekeeping-workroom"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/09-linen-housekeeping-workroom.webp",
+          "title": "Linen & Housekeeping Workroom — Additional View",
+          "description": "An additional viewpoint of the same linen & housekeeping workroom, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Linen & Housekeeping Workroom",
+          "roomId": "linen-housekeeping-workroom"
+        },
+        {
+          "path": "images/albury/third-floor/10-luggage-garment-store.webp",
+          "title": "Luggage & Garment Store",
+          "description": "Suitcases, garment bags, hat boxes and packing equipment are organised away from bedrooms and landings.",
+          "roomName": "Luggage & Garment Store",
+          "roomId": "luggage-garment-store"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/10-luggage-garment-store.webp",
+          "title": "Luggage & Garment Store — Additional View",
+          "description": "An additional viewpoint of the same luggage & garment store, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Luggage & Garment Store",
+          "roomId": "luggage-garment-store"
+        },
+        {
+          "path": "images/albury/third-floor/11-service-wc-rear-landing.webp",
+          "title": "Service WC & Rear Landing",
+          "description": "A discreet staff WC, rear stair and goods-lift landing complete the upper service spine.",
+          "roomName": "Service WC & Rear Landing",
+          "roomId": "service-wc-rear-landing"
+        },
+        {
+          "path": "images/albury/third-floor/new-views/11-service-wc-rear-landing.webp",
+          "title": "Service WC & Rear Landing — Additional View",
+          "description": "An additional viewpoint of the same service wc & rear landing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Service WC & Rear Landing",
+          "roomId": "service-wc-rear-landing"
+        },
+        {
+          "title": "Guest Room Four — Closer Perspective",
+          "description": "A rust-accented double room with wardrobe, desk, luggage bench and private shower. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-room-four-closer-perspective.webp",
+          "roomName": "Guest Room Four",
+          "roomId": "guest-room-four"
+        },
+        {
+          "title": "Guest Room Five — Closer Perspective",
+          "description": "Cobalt and warm oak give this compact double ensuite a sharper, more graphic identity. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-room-five-closer-perspective.webp",
+          "roomName": "Guest Room Five",
+          "roomId": "guest-room-five"
+        },
+        {
+          "title": "Guest Room Six — Closer Perspective",
+          "description": "A quieter sage room with blond oak, garden light and a terrazzo shower room. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-room-six-closer-perspective.webp",
+          "roomName": "Guest Room Six",
+          "roomId": "guest-room-six"
+        },
+        {
+          "title": "Guest Room Seven — Closer Perspective",
+          "description": "Dusty rose, burgundy and a lit vanity make this room particularly useful during fashion week. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-room-seven-closer-perspective.webp",
+          "roomName": "Guest Room Seven",
+          "roomId": "guest-room-seven"
+        },
+        {
+          "title": "Guest Room Eight — Closer Perspective",
+          "description": "Charcoal, walnut and a yellow chair create the most playful of the five guest rooms. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/guest-room-eight-closer-perspective.webp",
+          "roomName": "Guest Room Eight",
+          "roomId": "guest-room-eight"
+        },
+        {
+          "title": "Friends’ Salon — Closer Perspective",
+          "description": "A large television, current games console, two full-size arcade cabinets, turntable, modular sofa and dining table make this the floor’s social centre. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/friends-salon-closer-perspective.webp",
+          "roomName": "Friends’ Salon",
+          "roomId": "friends-salon"
+        }
+      ]
+    },
+    {
+      "id": "top-floor",
+      "name": "Top Floor",
+      "short": "Alex’s Private Suite",
+      "plan": "images/albury/floor-plans/top-floor.svg",
+      "rooms": [
+        {
+          "path": "images/albury/top-floor/01-private-vestibule-current.webp",
+          "title": "Private Vestibule",
+          "description": "A secure, informal arrival with trainers, coat and weekend bag makes the private apartment feel actively used.",
+          "roomName": "Private Vestibule",
+          "roomId": "private-vestibule"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/01-private-vestibule-current.webp",
+          "title": "Private Vestibule — Additional View",
+          "description": "An additional viewpoint of the same private vestibule, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Private Vestibule",
+          "roomId": "private-vestibule"
+        },
+        {
+          "path": "images/albury/top-floor/02-bedroom-current.webp",
+          "title": "Alex’s Bedroom",
+          "description": "Music, vinyl, games and current fashion give the bedroom the character of its twenty-two-year-old owner.",
+          "roomName": "Alex’s Bedroom",
+          "roomId": "alexs-bedroom"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/02-bedroom-current.webp",
+          "title": "Alex’s Bedroom — Additional View",
+          "description": "An additional viewpoint of the same alex’s bedroom, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Alex’s Bedroom",
+          "roomId": "alexs-bedroom"
+        },
+        {
+          "path": "images/albury/top-floor/03-principal-bathroom.webp",
+          "title": "Principal Bathroom",
+          "description": "One complete light-and-dark bathing suite replaces the previous duplicate bathrooms.",
+          "roomName": "Principal Bathroom",
+          "roomId": "principal-bathroom"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/03-principal-bathroom.webp",
+          "title": "Principal Bathroom — Additional View",
+          "description": "An additional viewpoint of the same principal bathroom, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Principal Bathroom",
+          "roomId": "principal-bathroom"
+        },
+        {
+          "path": "images/albury/top-floor/04-current-season-dressing.webp",
+          "title": "Current-Season Dressing",
+          "description": "The bright working wardrobe holds the clothes Alex actually wears now, with packing and accessory space.",
+          "roomName": "Current-Season Dressing",
+          "roomId": "current-season-dressing"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/04-current-season-dressing.webp",
+          "title": "Current-Season Dressing — Additional View",
+          "description": "An additional viewpoint of the same current-season dressing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Current-Season Dressing",
+          "roomId": "current-season-dressing"
+        },
+        {
+          "path": "images/albury/top-floor/12-bedroom-bath-dressing-sequence.webp",
+          "title": "Bedroom, Bathroom & Dressing Sequence",
+          "description": "Dark bedroom, single light-and-dark bathroom and current-season dressing room form one continuous daily suite without implying a duplicate bath or a second everyday wardrobe.",
+          "roomName": "Alex’s Bedroom",
+          "roomId": "alexs-bedroom"
+        },
+        {
+          "path": "images/albury/top-floor/05-fashion-archive.webp",
+          "title": "Fashion Archive",
+          "description": "Museum-grade cases, conservation storage and cataloguing protect the important collection separately from daily dressing.",
+          "roomName": "Fashion Archive",
+          "roomId": "fashion-archive"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/05-fashion-archive.webp",
+          "title": "Fashion Archive — Additional View",
+          "description": "An additional viewpoint of the same fashion archive, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Fashion Archive",
+          "roomId": "fashion-archive"
+        },
+        {
+          "path": "images/albury/top-floor/13-fashion-archive-working-pull.webp",
+          "title": "Fashion Archive Working Pull",
+          "description": "A selection rail, open archive drawer, handling gloves and contact sheets show a disciplined working pull without turning the archive into a second wardrobe.",
+          "roomName": "Fashion Archive",
+          "roomId": "fashion-archive"
+        },
+        {
+          "path": "images/albury/top-floor/06-private-lounge-current.webp",
+          "title": "Private Lounge",
+          "description": "A polished-ebony Steinway upright shares a relaxed room with a large television, current games console and vinyl; the arcade machines belong downstairs in the friends’ salon.",
+          "roomName": "Private Lounge",
+          "roomId": "private-lounge"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/06-private-lounge-current.webp",
+          "title": "Private Lounge — Additional View",
+          "description": "An additional viewpoint of the same private lounge, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Private Lounge",
+          "roomId": "private-lounge"
+        },
+        {
+          "path": "images/albury/top-floor/07-writing-room.webp",
+          "title": "Study & Writing Room",
+          "description": "An open laptop, nearfields, compact interface and desktop microphone sit beside Alex’s lightly worn Yamaha CP4 Stage: the same full-size weighted keyboard he acquired second-hand at fifteen, used at old Albury for When I Was Yours, took to Marylebone for the other three released songs, and brought back.",
+          "roomName": "Study & Writing Room",
+          "roomId": "study-writing-room"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/07-writing-room.webp",
+          "title": "Study & Writing Room — Additional View",
+          "description": "An additional viewpoint of the same study & writing room, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Study & Writing Room",
+          "roomId": "study-writing-room"
+        },
+        {
+          "path": "images/albury/top-floor/14-rough-demo-0213.webp",
+          "title": "Rough Demo, 2:13 A.M.",
+          "description": "Alex works alone at the original stage piano with one microphone, laptop and compact interface, preserving the modest private-demo scale that distinguishes this room from Music Nobile.",
+          "roomName": "Study & Writing Room",
+          "roomId": "study-writing-room"
+        },
+        {
+          "path": "images/albury/top-floor/11-writing-desk-detail.webp",
+          "title": "Writing Desk — Rough Demo Setup",
+          "description": "The close working view makes the modest two-input interface, desktop microphone, laptop waveform, headphones, lyric sheets and score pages explicit while remaining far smaller than Music Nobile.",
+          "roomName": "Study & Writing Room",
+          "roomId": "study-writing-room"
+        },
+        {
+          "path": "images/albury/top-floor/08-library-awards-secure-collection.webp",
+          "title": "Library, Awards & Secure Collection",
+          "description": "Rare books, scores and selected awards share a calm reading room with discreet access to secure storage.",
+          "roomName": "Library, Awards & Secure Collection",
+          "roomId": "library-awards-secure-collection"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/08-library-awards-secure-collection.webp",
+          "title": "Library, Awards & Secure Collection — Additional View",
+          "description": "An additional viewpoint of the same library, awards & secure collection, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Library, Awards & Secure Collection",
+          "roomId": "library-awards-secure-collection"
+        },
+        {
+          "path": "images/albury/top-floor/09-private-service-landing.webp",
+          "title": "Private Service Landing",
+          "description": "The household lift, rear stair, linen cupboards and garment rail support the apartment quietly.",
+          "roomName": "Private Service Landing",
+          "roomId": "private-service-landing"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/09-private-service-landing.webp",
+          "title": "Private Service Landing — Additional View",
+          "description": "An additional viewpoint of the same private service landing, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Private Service Landing",
+          "roomId": "private-service-landing"
+        },
+        {
+          "path": "images/albury/top-floor/10-roof-terrace.webp",
+          "title": "Roof Terrace",
+          "description": "A screened summer terrace overlooks only Kensington roofs, chimneys and mature treetops.",
+          "roomName": "Roof Terrace",
+          "roomId": "roof-terrace"
+        },
+        {
+          "path": "images/albury/top-floor/new-views/10-roof-terrace.webp",
+          "title": "Roof Terrace — Additional View",
+          "description": "An additional viewpoint of the same roof terrace, checked against its room reference for consistent fixed furnishings and openings.",
+          "roomName": "Roof Terrace",
+          "roomId": "roof-terrace"
+        },
+        {
+          "title": "Alex’s Bedroom — Closer Perspective",
+          "description": "Music, vinyl, games and current fashion give the bedroom the character of its twenty-two-year-old owner. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/alexs-bedroom-closer-perspective.webp",
+          "roomName": "Alex’s Bedroom",
+          "roomId": "alexs-bedroom"
+        },
+        {
+          "title": "Principal Bathroom — Closer Perspective",
+          "description": "One complete light-and-dark bathing suite replaces the previous duplicate bathrooms. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/principal-bathroom-closer-perspective.webp",
+          "roomName": "Principal Bathroom",
+          "roomId": "principal-bathroom"
+        },
+        {
+          "title": "Current-Season Dressing — Closer Perspective",
+          "description": "The bright working wardrobe holds the clothes Alex actually wears now, with packing and accessory space. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/current-season-dressing-closer-perspective.webp",
+          "roomName": "Current-Season Dressing",
+          "roomId": "current-season-dressing"
+        },
+        {
+          "title": "Fashion Archive — Closer Perspective",
+          "description": "Museum-grade cases, conservation storage and cataloguing protect the important collection separately from daily dressing. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/fashion-archive-closer-perspective.webp",
+          "roomName": "Fashion Archive",
+          "roomId": "fashion-archive"
+        },
+        {
+          "title": "Private Lounge — Closer Perspective",
+          "description": "A polished-ebony Steinway upright shares a relaxed room with a large television, current games console and vinyl; the arcade machines belong downstairs in the friends’ salon. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/private-lounge-closer-perspective.webp",
+          "roomName": "Private Lounge",
+          "roomId": "private-lounge"
+        },
+        {
+          "title": "Study & Writing Room — Closer Perspective",
+          "description": "An open laptop, nearfields, compact interface and desktop microphone sit beside Alex’s lightly worn Yamaha CP4 Stage: the same full-size weighted keyboard he acquired second-hand at fifteen, used at old Albury for When I Was Yours, took to Marylebone for the other three released songs, and brought back. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/study-writing-room-closer-perspective.webp",
+          "roomName": "Study & Writing Room",
+          "roomId": "study-writing-room"
+        },
+        {
+          "title": "Library, Awards & Secure Collection — Closer Perspective",
+          "description": "Rare books, scores and selected awards share a calm reading room with discreet access to secure storage. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/library-awards-secure-collection-closer-perspective.webp",
+          "roomName": "Library, Awards & Secure Collection",
+          "roomId": "library-awards-secure-collection"
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "name": "Garden",
+      "short": "Rear Exterior",
+      "plan": "images/albury/floor-plans/garden-masterplan.svg",
+      "rooms": [
+        {
+          "path": "images/albury/garden/01-overview-from-house-current.webp",
+          "title": "Garden Overview",
+          "description": "From the unified elevation, the 100-by-131-foot rear garden resolves into a 30-foot terrace, 68-by-65-foot open lawn, sixteen-foot side gardens and a deep planted far room.",
+          "roomName": "Garden & Lawn",
+          "roomId": "garden-lawn"
+        },
+        {
+          "path": "images/albury/garden/02-rear-terrace-current.webp",
+          "title": "Rear Terrace",
+          "description": "The 100-by-30-foot limestone terrace holds the fourteen-seat dining setting to the east and twelve-seat lounge to the west, divided by a fourteen-foot clear axis and exactly two taupe parasols.",
+          "roomName": "Rear Terrace",
+          "roomId": "rear-terrace"
+        },
+        {
+          "path": "images/albury/garden/03-looking-back-to-house-current.webp",
+          "title": "Looking Back to the House",
+          "description": "From the far-lawn threshold, the 65-foot lawn and broad unified elevation read at their full scale; the fixed Hepworth remains halfway down the west border.",
+          "roomName": "Garden & Lawn",
+          "roomId": "garden-lawn"
+        },
+        {
+          "path": "images/albury/garden/05-far-garden-salon-current.webp",
+          "title": "Far-Garden Salon",
+          "description": "The fixed ten-seat north-west salon sits beneath retained canopy and looks south across the full lawn; no sculpture occupies this room.",
+          "roomName": "Far-Garden Salon",
+          "roomId": "far-garden-salon"
+        },
+        {
+          "path": "images/albury/garden/10-no-34-boundary.webp",
+          "title": "Former No. 34 Boundary — Existing Condition",
+          "description": "The stock-brick wall, hedge, eight pleached limes and bronze-and-timber bench record the east boundary before the acquired grounds are opened into Albury through the new hedge arch and landscape works.",
+          "roomName": "Former No. 34 Boundary — Existing Condition",
+          "roomId": "former-no-34-boundary-existing-condition"
+        },
+        {
+          "path": "images/albury/garden/07-blue-hour-current.webp",
+          "title": "Garden at Blue Hour",
+          "description": "Residential step wash, shielded border lights, restrained tree uplight and one sculpture light preserve the same fixed geometry after sunset.",
+          "roomName": "Garden & Lawn",
+          "roomId": "garden-lawn"
+        },
+        {
+          "path": "images/albury/garden/12-marquee-event-configuration.webp",
+          "title": "Marquee Dinner Configuration",
+          "description": "A single ballasted 48-by-52-foot clear-span marquee centres one hundred dinner places on the lawn, retaining ten-foot side clearances, seven feet from the terrace and six feet before the far garden.",
+          "roomName": "Garden & Lawn",
+          "roomId": "garden-lawn"
+        },
+        {
+          "title": "Rear Terrace — Closer Perspective",
+          "description": "The 100-by-30-foot limestone terrace holds the fourteen-seat dining setting to the east and twelve-seat lounge to the west, divided by a fourteen-foot clear axis and exactly two taupe parasols. A closer perspective of the established arrangement.",
+          "path": "images/albury/guide-expansion/rear-terrace-closer-perspective.webp",
+          "roomName": "Rear Terrace",
+          "roomId": "rear-terrace"
+        }
+      ]
+    }
+  ]
+}

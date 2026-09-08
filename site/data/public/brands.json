@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "brands": [
+    {
+      "id": "limestone-springs",
+      "name": "Limestone Springs",
+      "locationLine": "Frankfort, Kentucky · Water, sodas & mixers",
+      "intro": "The water on the table, the bottles in the welcome basket and a cold Cream Soda from the fridge: a little of Kentucky, wherever the day takes you.",
+      "storyTitle": "From Frankfort to the table",
+      "story": [
+        "Limestone Springs was founded in Frankfort, Kentucky, in 2002. Its full beverage range launched in 2015, building a business in waters, sodas and mixers around Kentucky limestone-filtered water.",
+        "Part of Hatfield Group within Walker Holdings, it has a life well beyond the family’s own venues. Its bottles travel through hotels, restaurants, cocktail bars, shops and airports in more than thirty countries.",
+        "At Albury, still and sparkling water sit alongside properly brewed Cream Soda, Alex’s favourite soft drink. The producer’s blue labels remain part of the table."
+      ],
+      "externalUrl": "https://limestone-springs.vercel.app/",
+      "externalLabel": "Explore Limestone Springs ↗",
+      "productsTitle": "A few familiar bottles",
+      "products": [
+        {
+          "name": "Still Water",
+          "image": "images/albury-culinary/producers/limestone-still-water.webp",
+          "description": "Served with meals and included in the overnight welcome. Simple, chilled water in the familiar blue-labelled bottle."
+        },
+        {
+          "name": "Sparkling Water",
+          "image": "images/albury-culinary/producers/limestone-sparkling-water.webp",
+          "description": "For the table or a long drink, and paired with still water in the welcome basket."
+        },
+        {
+          "name": "Cream Soda",
+          "image": "images/albury-culinary/producers/limestone-cream-soda.webp",
+          "description": "Properly brewed and best enjoyed cold. A regular Albury choice in its own right."
+        }
+      ],
+      "moreTitle": "Beyond these three",
+      "more": "The wider range includes tonics, ginger beer and ginger ale, root beer, cola, lemon and blood-orange sodas. Browse the producer site for the range, or ask the team what is chilled at Albury.",
+      "related": {
+        "href": "ALBURY_HATFIELD.html",
+        "label": "Meet Hatfield →"
+      }
+    },
+    {
+      "id": "hatfield",
+      "name": "Hatfield",
+      "locationLine": "Bardstown, Kentucky · Since 1952",
+      "intro": "Kentucky bourbon with a long family history, and hospitality that carries it beyond the distillery.",
+      "storyTitle": "It starts in Bardstown",
+      "story": [
+        "James Hatfield founded the distillery in Bardstown, Kentucky, in 1952. Today, master distiller Carolyn Hatfield-Moore oversees the whiskey’s production, quality and maturation.",
+        "Hatfield Group belongs to Walker Holdings, with heritage protections preserving the Hatfield name and production standards. The wider group brings together spirits, wine and places to stay, eat and hear music, including Hatfield Inns, Still House and The Stave.",
+        "At Albury, Hatfield Original also finds its way into the kitchen’s bourbon–black cherry confiture. Single Barrel is Alex’s usual Hatfield pour."
+      ],
+      "externalUrl": "https://hatfield-group.vercel.app/",
+      "externalLabel": "Explore Hatfield Group ↗",
+      "productsTitle": "Two bottles to know",
+      "products": [
+        {
+          "name": "Hatfield Original",
+          "image": "images/albury-culinary/producers/hatfield-original.webp",
+          "description": "Four-year Kentucky straight bourbon · 80 proof (40% ABV). The core expression, familiar at the bar and in the kitchen’s preserving repertoire."
+        },
+        {
+          "name": "Hatfield Single Barrel",
+          "image": "images/albury-culinary/producers/hatfield-single-barrel.webp",
+          "description": "Eight-year bourbon · 94 proof (47% ABV). Bottled for individual barrel character; Alex’s usual Hatfield choice."
+        }
+      ],
+      "moreTitle": "A wider family",
+      "more": "Small Batch, Rye, Wheated Bourbon and Bottled in Bond sit alongside longer-aged and allocated expressions. Limestone Springs belongs to the same group, bringing Kentucky water, sodas and mixers to tables around the world.",
+      "related": {
+        "href": "ALBURY_LIMESTONE_SPRINGS.html",
+        "label": "Meet Limestone Springs →"
+      }
+    }
+  ]
+}

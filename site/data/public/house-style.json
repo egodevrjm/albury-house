@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "colours": [
+    {
+      "id": "bottle-green",
+      "name": "Bottle green",
+      "role": "The house signature",
+      "hex": "#203B2E"
+    },
+    {
+      "id": "oxblood",
+      "name": "Oxblood",
+      "role": "Leather, cloth & contrast",
+      "hex": "#642D36"
+    },
+    {
+      "id": "dusty-blue",
+      "name": "Dusty blue",
+      "role": "Ceramics & softer accents",
+      "hex": "#738793"
+    },
+    {
+      "id": "warm-ochre",
+      "name": "Warm ochre",
+      "role": "A warmer note",
+      "hex": "#B58B43"
+    },
+    {
+      "id": "warm-ivory",
+      "name": "Warm ivory",
+      "role": "Paper, linen & space",
+      "hex": "#F4F0E7"
+    },
+    {
+      "id": "muted-gold",
+      "name": "Muted gold",
+      "role": "Marks & fine details",
+      "hex": "#AD9062"
+    },
+    {
+      "id": "charcoal",
+      "name": "Charcoal",
+      "role": "Pantry labels & ink",
+      "hex": "#282827"
+    }
+  ],
+  "mark": {
+    "name": "Albury architectural house mark",
+    "masterImage": "images/albury/identity/house-mark-current.webp",
+    "clearSpaceGraphic": "site/identity/house-mark-clear-space.svg",
+    "rule": "Use the full architectural drawing at small, deliberate scale. Do not redraw, stretch, crop or substitute a monogram."
+  },
+  "expressions": {
+    "full": {
+      "name": "Full colour",
+      "image": "images/albury-house-items/travel/40-guest-stationery-pack-full-colour.webp",
+      "imageAlt": "Full-colour Albury stationery pack with green, oxblood and dusty-blue covers and ivory writing paper",
+      "caption": "Full colour · coloured bookcloth and covers, warm ivory paper, restrained metallic marks."
+    },
+    "ivory": {
+      "name": "Ivory led",
+      "image": "images/albury-house-items/travel/40-guest-stationery-pack-white-led.webp",
+      "imageAlt": "Ivory-led Albury stationery pack with narrow coloured details and the same architectural house mark",
+      "caption": "Ivory led · warm ivory surfaces, narrow coloured details, the same stationery inventory."
+    }
+  },
+  "scent": {
+    "status": "proposed",
+    "accord": [
+      "Bergamot",
+      "Black tea",
+      "Cedar",
+      "Vetiver"
+    ],
+    "description": "Bright citrus opening into dry tea and warm wood, with a quiet earthy finish. The intended impression is clean and lived-in, with little sweetness.",
+    "image": "images/albury-house-items/travel/41-selected-house-gifts-full-colour.webp"
+  }
+}

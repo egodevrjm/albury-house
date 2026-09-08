@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "content/public",
+  "resources": [
+    {
+      "id": "house",
+      "path": "site/data/public/house.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "rooms",
+      "path": "site/data/public/rooms.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "collections",
+      "path": "site/data/public/collections.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "staff",
+      "path": "site/data/public/staff.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "culinary",
+      "path": "site/data/public/culinary.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "hospitality",
+      "path": "site/data/public/hospitality.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "pantry",
+      "path": "site/data/public/pantry.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "brands",
+      "path": "site/data/public/brands.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "house-style",
+      "path": "site/data/public/house-style.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "house-at-work",
+      "path": "site/data/public/house-at-work.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "pages",
+      "path": "site/data/public/pages.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "navigation",
+      "path": "site/data/public/navigation.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
+      "id": "assets",
+      "path": "site/data/public/assets.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    }
+  ],
+  "privateResources": [
+    {
+      "id": "operations",
+      "source": "content/private/operations.json",
+      "visibility": "mcp-only",
+      "deployedWithWebsite": false
+    }
+  ],
+  "schedules": [
+    {
+      "id": "menus",
+      "path": "site/data/menus.csv",
+      "mimeType": "text/csv"
+    },
+    {
+      "id": "london-events",
+      "path": "site/data/london-events.csv",
+      "mimeType": "text/csv"
+    },
+    {
+      "id": "weather",
+      "path": "site/data/weather.csv",
+      "mimeType": "text/csv"
+    }
+  ]
+}

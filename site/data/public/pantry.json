@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2025-08-11",
+  "preparations": [
+    {
+      "id": "01-breakfast-preserves",
+      "title": "Breakfast Preserves",
+      "ids": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "path": "images/albury-produce/opening-range/01-breakfast-preserves.webp",
+      "description": "P01–P03 · Seville marmalade, strawberry and vanilla confiture, and raspberry confiture. Opening breakfast preserves; the marmalade comes from the January reserve."
+    },
+    {
+      "id": "02-summer-fruit",
+      "title": "Summer Fruit Preserves",
+      "ids": [
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "path": "images/albury-produce/opening-range/02-summer-fruit.webp",
+      "description": "P04–P06 · Apricot and vanilla, bourbon and black cherry, and blackcurrant preserves. Hatfield Original is credited on the cherry label."
+    },
+    {
+      "id": "03-curd-and-compote",
+      "title": "Curd & Compote",
+      "ids": [
+        "P07",
+        "P08"
+      ],
+      "path": "images/albury-produce/opening-range/03-curd-and-compote.webp",
+      "description": "P07–P08 · Lemon and verbena curd and peach and vanilla compote. Fresh chilled preparations for breakfast and pastry, labelled Keep Refrigerated."
+    },
+    {
+      "id": "04-table-condiments",
+      "title": "Table Condiments",
+      "ids": [
+        "P09",
+        "P10"
+      ],
+      "path": "images/albury-produce/opening-range/04-table-condiments.webp",
+      "description": "P09–P10 · Moutarde de la maison and tomato ketchup with red-wine vinegar. A mustard jar and practical sauce bottle for everyday table service."
+    },
+    {
+      "id": "05-pickles",
+      "title": "Cornichons, Shallots & Red Onions",
+      "ids": [
+        "P11",
+        "P12",
+        "P15"
+      ],
+      "path": "images/albury-produce/opening-range/05-pickles.webp",
+      "description": "P11, P12, P15 · Cornichons with tarragon, shallots in herb vinegar and quick-pickled red onions. The onion preparation remains chilled."
+    },
+    {
+      "id": "06-savoury-pantry",
+      "title": "Savoury Pantry",
+      "ids": [
+        "P13",
+        "P14",
+        "P16",
+        "P17"
+      ],
+      "path": "images/albury-produce/opening-range/06-savoury-pantry.webp",
+      "description": "P13–P14, P16–P17 · Onion confit, tomato and Espelette confit, beetroot with orange and coriander, and courgette with mustard seed. Stored according to each preparation; the beetroot is chilled."
+    },
+    {
+      "id": "07-breakfast-and-savoury-baking",
+      "title": "Granola, Crackers & Savoury Sablés",
+      "ids": [
+        "P18",
+        "P19",
+        "P20"
+      ],
+      "path": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp",
+      "description": "P18–P20 · Oat, almond and seed granola, seeded rye crackers, and Parmesan and black-pepper sablés. Dry storage jars sized for their contents."
+    },
+    {
+      "id": "08-biscuits-and-bar-snacks",
+      "title": "Biscuits & Bar Snacks",
+      "ids": [
+        "P21",
+        "P22",
+        "P23",
+        "P24"
+      ],
+      "path": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp",
+      "description": "P21–P24 · Butter shortbread, dark-chocolate and sea-salt sablés, rosemary and smoked-salt almonds, and lime-leaf and chilli cashews. Regular baking and bar-snack batches."
+    },
+    {
+      "id": "09-bar-preparations",
+      "title": "Cocktail Cherries, Syrup & Cordials",
+      "ids": [
+        "P25",
+        "P26",
+        "P27",
+        "P28"
+      ],
+      "path": "images/albury-produce/opening-range/09-bar-preparations.webp",
+      "description": "P25–P28 · Cocktail cherries, vanilla syrup, ginger and lemongrass cordial, and passion-fruit and lime cordial. House bar preparations; both cordials are kept refrigerated."
+    },
+    {
+      "id": "10-house-ice-creams",
+      "title": "House Ice Creams",
+      "ids": [
+        "P29",
+        "P30"
+      ],
+      "path": "images/albury-produce/opening-range/10-house-ice-creams.webp",
+      "description": "P29–P30 · Vanilla-bean and dark-chocolate ice creams in labelled freezer tubs. Shown open for the photograph; stored covered and frozen."
+    },
+    {
+      "id": "cordial-elderflower",
+      "title": "Elderflower & Lemon Cordial",
+      "ids": [
+        "P31"
+      ],
+      "path": "images/albury-culinary/cordial-elderflower.webp",
+      "description": "P31 · Core cordial; kept chilled."
+    },
+    {
+      "id": "cordial-raspberry",
+      "title": "Raspberry & Lemon Verbena Cordial",
+      "ids": [
+        "P32"
+      ],
+      "path": "images/albury-culinary/cordial-raspberry.webp",
+      "description": "P32 · Core cordial; kept chilled."
+    },
+    {
+      "id": "cordial-blackcurrant",
+      "title": "Blackcurrant & Bay Cordial",
+      "ids": [
+        "P33"
+      ],
+      "path": "images/albury-culinary/cordial-blackcurrant.webp",
+      "description": "P33 · Core cordial; kept chilled."
+    },
+    {
+      "id": "cordial-rhubarb",
+      "title": "Rhubarb & Orange Cordial",
+      "ids": [],
+      "path": "images/albury-culinary/cordial-rhubarb.webp",
+      "description": "Spring seasonal cordial; recipe and packaging reference."
+    },
+    {
+      "id": "cordial-blackberry",
+      "title": "Blackberry & Apple Cordial",
+      "ids": [],
+      "path": "images/albury-culinary/cordial-blackberry.webp",
+      "description": "Autumn seasonal cordial; recipe and packaging reference."
+    }
+  ]
+}

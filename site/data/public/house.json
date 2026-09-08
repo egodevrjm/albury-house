@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "name": "Albury House",
+  "address": "30–32 Upper Phillimore Gardens, Kensington, London",
+  "storyDate": "2025-08-11",
+  "purpose": "A London home for friends, music and entertaining.",
+  "facts": [
+    {
+      "value": "c. 50,000",
+      "label": "square feet internally"
+    },
+    {
+      "value": "7",
+      "label": "internal levels"
+    },
+    {
+      "value": "2",
+      "label": "joined basements"
+    },
+    {
+      "value": "100 × 131 ft",
+      "label": "walled rear garden"
+    },
+    {
+      "value": "No. 34",
+      "label": "acquired detached villa · future staff house"
+    },
+    {
+      "value": "c. 300",
+      "label": "current whole-house standing event capacity"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "No. 32 acquired; design and enabling begin."
+    },
+    {
+      "date": "2022",
+      "event": "Alex moves out; the principal reconstruction follows."
+    },
+    {
+      "date": "2025-07-01",
+      "event": "Professional handover to the household and AW Assets."
+    },
+    {
+      "date": "2025-08-08",
+      "event": "Alex takes occupation of the finished house."
+    }
+  ],
+  "levels": [
+    {
+      "id": "exterior",
+      "name": "Estate & Exterior",
+      "short": "Site & Arrival",
+      "plan": "images/albury/exterior/06-no34-acquisition-projection.webp",
+      "roomCount": 5
+    },
+    {
+      "id": "lower-basement",
+      "name": "Lower Basement",
+      "short": "LB −2",
+      "plan": "images/albury/floor-plans/lower-basement.svg",
+      "roomCount": 13
+    },
+    {
+      "id": "upper-basement",
+      "name": "Upper Basement",
+      "short": "Lower Ground",
+      "plan": "images/albury/floor-plans/upper-basement.svg",
+      "roomCount": 17
+    },
+    {
+      "id": "raised-ground",
+      "name": "Raised Ground",
+      "short": "Daily House",
+      "plan": "images/albury/floor-plans/raised-ground.svg",
+      "roomCount": 15
+    },
+    {
+      "id": "music-nobile",
+      "name": "Music Nobile",
+      "short": "First Floor",
+      "plan": "images/albury/floor-plans/music-nobile.svg",
+      "roomCount": 12
+    },
+    {
+      "id": "second-floor",
+      "name": "Second Floor",
+      "short": "Senior Guests",
+      "plan": "images/albury/floor-plans/second-floor.svg",
+      "roomCount": 11
+    },
+    {
+      "id": "third-floor",
+      "name": "Third Floor",
+      "short": "Friends & Musicians",
+      "plan": "images/albury/floor-plans/third-floor.svg",
+      "roomCount": 11
+    },
+    {
+      "id": "top-floor",
+      "name": "Top Floor",
+      "short": "Alex’s Private Suite",
+      "plan": "images/albury/floor-plans/top-floor.svg",
+      "roomCount": 10
+    },
+    {
+      "id": "garden",
+      "name": "Garden",
+      "short": "Rear Exterior",
+      "plan": "images/albury/floor-plans/garden-masterplan.svg",
+      "roomCount": 4
+    }
+  ]
+}

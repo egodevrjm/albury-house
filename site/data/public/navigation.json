@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "wordmark": {
+    "label": "ALBURY",
+    "href": "ALBURY_WELCOME.html"
+  },
+  "primary": [
+    "welcome"
+  ],
+  "house": [
+    "house-guide",
+    "room-tour",
+    "house-collections",
+    "house-style",
+    "house-at-work"
+  ],
+  "services": [
+    "kitchen",
+    "weekly-menus",
+    "london-calendar",
+    "weather"
+  ],
+  "activePageAliases": {
+    "kitchen-library": "kitchen",
+    "limestone-springs": "kitchen",
+    "hatfield": "kitchen"
+  }
+}

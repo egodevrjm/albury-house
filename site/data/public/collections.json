@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "collections": [
+    {
+      "id": "produce",
+      "name": "Pantry — Opening Collection",
+      "short": "Rafael Bellocq · 33 opening preparations + seasonal repertoire",
+      "plan": "images/albury-produce/opening-range/01-breakfast-preserves.webp",
+      "rooms": [
+        {
+          "path": "images/albury-produce/opening-range/01-breakfast-preserves.webp",
+          "title": "Breakfast Preserves",
+          "description": "P01–P03 · Seville marmalade, strawberry and vanilla confiture, and raspberry confiture. Opening breakfast preserves; the marmalade comes from the January reserve."
+        },
+        {
+          "path": "images/albury-produce/opening-range/02-summer-fruit.webp",
+          "title": "Summer Fruit Preserves",
+          "description": "P04–P06 · Apricot and vanilla, bourbon and black cherry, and blackcurrant preserves. Hatfield Original is credited on the cherry label."
+        },
+        {
+          "path": "images/albury-produce/opening-range/03-curd-and-compote.webp",
+          "title": "Curd & Compote",
+          "description": "P07–P08 · Lemon and verbena curd and peach and vanilla compote. Fresh chilled preparations for breakfast and pastry, labelled Keep Refrigerated."
+        },
+        {
+          "path": "images/albury-produce/opening-range/04-table-condiments.webp",
+          "title": "Table Condiments",
+          "description": "P09–P10 · Moutarde de la maison and tomato ketchup with red-wine vinegar. A mustard jar and practical sauce bottle for everyday table service."
+        },
+        {
+          "path": "images/albury-produce/opening-range/05-pickles.webp",
+          "title": "Cornichons, Shallots & Red Onions",
+          "description": "P11, P12, P15 · Cornichons with tarragon, shallots in herb vinegar and quick-pickled red onions. The onion preparation remains chilled."
+        },
+        {
+          "path": "images/albury-produce/opening-range/06-savoury-pantry.webp",
+          "title": "Savoury Pantry",
+          "description": "P13–P14, P16–P17 · Onion confit, tomato and Espelette confit, beetroot with orange and coriander, and courgette with mustard seed. Stored according to each preparation; the beetroot is chilled."
+        },
+        {
+          "path": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp",
+          "title": "Granola, Crackers & Savoury Sablés",
+          "description": "P18–P20 · Oat, almond and seed granola, seeded rye crackers, and Parmesan and black-pepper sablés. Dry storage jars sized for their contents."
+        },
+        {
+          "path": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp",
+          "title": "Biscuits & Bar Snacks",
+          "description": "P21–P24 · Butter shortbread, dark-chocolate and sea-salt sablés, rosemary and smoked-salt almonds, and lime-leaf and chilli cashews. Regular baking and bar-snack batches."
+        },
+        {
+          "path": "images/albury-produce/opening-range/09-bar-preparations.webp",
+          "title": "Cocktail Cherries, Syrup & Cordials",
+          "description": "P25–P28 · Cocktail cherries retain the charcoal-and-gold pantry jar with Rafael’s name and the house mark. Vanilla syrup and both cordials use short clear, gold-capped bottles with ivory/bottle-green ALBURY labels, without a chef name or house drawing. Both cordials are kept refrigerated."
+        },
+        {
+          "path": "images/albury-culinary/vanilla-syrup.webp",
+          "title": "Vanilla Syrup",
+          "description": "P26 · Vanilla syrup in the Albury drinks bottle: short clear glass, gold cap and ivory label. For mixed drinks, milkshakes and desserts."
+        },
+        {
+          "path": "images/albury-culinary/cordial-ginger.webp",
+          "title": "Ginger & Lemongrass Cordial",
+          "description": "P27 · The Albury cordial bottle with a sparkling-water serve. Kept chilled; also served with still water."
+        },
+        {
+          "path": "images/albury-culinary/cordial-passion.webp",
+          "title": "Passion Fruit & Lime Cordial",
+          "description": "P28 · The Albury cordial bottle with its tropical fruit and citrus serve. Kept chilled and diluted to taste."
+        },
+        {
+          "path": "images/albury-culinary/cordial-elderflower.webp",
+          "title": "Elderflower and lemon cordial",
+          "description": "P31 · Floral, light afternoon drinks and sparkling-water service. Short clear Albury bottle, gold cap and ivory label. Kept chilled; current service selection confirmed by the team."
+        },
+        {
+          "path": "images/albury-culinary/cordial-raspberry.webp",
+          "title": "Raspberry and lemon verbena cordial",
+          "description": "P32 · Fragrant berry drinks, terrace lunches and alcohol-free aperitifs. Short clear Albury bottle, gold cap and ivory label. Kept chilled; current service selection confirmed by the team."
+        },
+        {
+          "path": "images/albury-culinary/cordial-blackcurrant.webp",
+          "title": "Blackcurrant and bay cordial",
+          "description": "P33 · Deeper fruit drinks alongside food and bar service. Short clear Albury bottle, gold cap and ivory label. Kept chilled; current service selection confirmed by the team."
+        },
+        {
+          "path": "images/albury-culinary/cordial-rhubarb.webp",
+          "title": "Rhubarb & Orange Cordial — Spring Repertoire",
+          "description": "Seasonal recipe and packaging reference, not standing August opening stock. The same ivory-label Albury bottle; served chilled and diluted to taste."
+        },
+        {
+          "path": "images/albury-culinary/cordial-blackberry.webp",
+          "title": "Blackberry & Apple Cordial — Autumn Repertoire",
+          "description": "Seasonal recipe and packaging reference, not standing August opening stock. The same ivory-label Albury bottle; served chilled and diluted to taste."
+        },
+        {
+          "path": "images/albury-produce/opening-range/10-house-ice-creams.webp",
+          "title": "House Ice Creams",
+          "description": "P29–P30 · Vanilla-bean and dark-chocolate ice creams in labelled freezer tubs. Shown open for the photograph; stored covered and frozen."
+        }
+      ]
+    },
+    {
+      "id": "baking",
+      "name": "Bethan’s Baking",
+      "short": "Bread · Breakfast pastries · Afternoon baking",
+      "plan": "images/albury-culinary/bethan-bread.webp",
+      "rooms": [
+        {
+          "path": "images/albury-culinary/bethan-bread.webp",
+          "title": "Bread for the house",
+          "description": "Bethan Pritchard · Sourdough, seeded loaf and focaccia, baked for the table and everyday service. Established baking repertoire under Rafael; selection and batches follow service demand."
+        },
+        {
+          "path": "images/albury-culinary/bethan-morning-pastries.webp",
+          "title": "Morning pastries",
+          "description": "Bethan Pritchard · Croissants, pains au chocolat and brioche from the breakfast repertoire. Established baking repertoire under Rafael; selection and batches follow service demand."
+        },
+        {
+          "path": "images/albury-culinary/bethan-afternoon-baking.webp",
+          "title": "Something for the afternoon",
+          "description": "Bethan Pritchard · Lemon cake, madeleines and financiers for tea, coffee and something sweet between meals. Established baking repertoire under Rafael; selection and batches follow service demand."
+        }
+      ]
+    },
+    {
+      "id": "house-items-guest",
+      "name": "Guest Rooms",
+      "short": "Household Line · Guest Floor",
+      "plan": "images/albury-house-items/guest-floor/18-guest-floor-colour-expression.webp",
+      "rooms": [
+        {
+          "path": "images/albury-house-items/guest-floor/18-guest-floor-colour-expression.webp",
+          "title": "Guest-Floor House Expression — Full Colour",
+          "description": "Bottle green, oxblood, dusty blue and warm ochre form the material grounds across notebooks, correspondence folders, candle, slippers, cards, matches and socks; every custom surface retains the architectural house image."
+        },
+        {
+          "path": "images/albury-house-items/guest-floor/18-guest-floor-white-led-expression.webp",
+          "title": "Guest-Floor House Expression — White Led",
+          "description": "The same guest-floor objects become warm ivory, with house colour confined to book spines, elastics, piping, stitched lines, base rings and sock details."
+        },
+        {
+          "path": "images/albury-house-items/guest-floor/19-guest-pantry-colour-items.webp",
+          "title": "Guest-Pantry Caddies & Ceramics — Full Colour",
+          "description": "Tea, coffee, cocoa and biscuit caddies sit with coloured mugs, espresso cups, snack bowls, leather tray and textiles in the prominent four-colour house palette."
+        },
+        {
+          "path": "images/albury-house-items/guest-floor/19-guest-pantry-white-led-items.webp",
+          "title": "Guest-Pantry Caddies & Ceramics — White Led",
+          "description": "The same pantry family is principally warm ivory, identified by narrow coloured lid rings, ceramic rims, label rules, tray piping and woven textile bands."
+        },
+        {
+          "path": "images/albury-house-items/guest-floor/21-guest-floor-bathroom-full-colour.webp",
+          "title": "Guest Bathroom — Full Colour",
+          "description": "Richly coloured towels, a bottle-green waffle robe, marked vessels, slippers, soaps and candle give the complete bathroom provision its colour-led expression."
+        },
+        {
+          "path": "images/albury-house-items/guest-floor/21-guest-floor-bathroom-expression.webp",
+          "title": "Guest Bathroom — White Led",
+          "description": "White linen and robe surfaces remain dominant while woven marks, narrow edges, coloured vessels, candle and slipper piping carry the house identity."
+        }
+      ],
+      "pathPart": "/guest-floor/"
+    },
+    {
+      "id": "house-items-travel",
+      "name": "Travel & Departure",
+      "short": "Household Line · Guest Provision",
+      "plan": "images/albury-house-items/guest-floor/18-guest-floor-colour-expression.webp",
+      "rooms": [
+        {
+          "path": "images/albury-house-items/travel/22-five-part-30ml-bottle-family.webp",
+          "title": "30ml Bathroom Bottle Family — Full Colour",
+          "description": "Five coloured refillable bottles sit in a bottle-green pouch with oxblood piping for a staying guest's onward luggage."
+        },
+        {
+          "path": "images/albury-house-items/travel/22-five-part-30ml-bottle-family-white-led.webp",
+          "title": "30ml Bathroom Bottle Family — White Led",
+          "description": "The same five bottles and pouch become warm ivory, distinguished only by narrow coloured neck rings, base rings, piping and zip details."
+        },
+        {
+          "path": "images/albury-house-items/travel/23-grooming-toiletries-kit.webp",
+          "title": "Staying-Guest Grooming Kit — Full Colour",
+          "description": "The complete fitted grooming case uses bottle green and oxblood with coloured marked sleeves around bought-in practical consumables."
+        },
+        {
+          "path": "images/albury-house-items/travel/23-grooming-toiletries-kit-white-led.webp",
+          "title": "Staying-Guest Grooming Kit — White Led",
+          "description": "The unchanged grooming inventory moves into a warm-ivory case with narrow green piping, oxblood pulls and incidental coloured sleeve edges."
+        },
+        {
+          "path": "images/albury-house-items/travel/24-departure-carrier.webp",
+          "title": "Departure Carrier — Full Colour",
+          "description": "The hand-finished rigid-board carrier uses bottle-green bookcloth, oxblood gussets, black herringbone handles, warm-ivory tissue and a dusty-blue tag."
+        },
+        {
+          "path": "images/albury-house-items/travel/24-departure-carrier-white-led.webp",
+          "title": "Departure Carrier — White Led",
+          "description": "The same carrier uses warm-ivory bookcloth with one bottle-green edge line, restrained oxblood gussets and the dusty-blue tag."
+        },
+        {
+          "path": "images/albury-house-items/travel/25-tier-two-departure-provision.webp",
+          "title": "Optional Departure Assortment — Full Colour",
+          "description": "One optional gift assortment contains soap, striped flannel, cards, matchbook, postcard, Limestone Springs Cream Soda in its blue-and-ivory packaging, year-round Bourbon and Black Cherry confiture, house socks, pocket notebook and pen."
+        },
+        {
+          "path": "images/albury-house-items/travel/25-tier-two-departure-provision-white-led.webp",
+          "title": "Optional Departure Assortment — White Led",
+          "description": "The same optional gift contents sit with a warm-ivory carrier, white socks and notebook; narrow green, blue, oxblood and ochre details carry the house colours."
+        },
+        {
+          "path": "images/albury-house-items/travel/26-complete-staying-guest-travel-provision.webp",
+          "title": "Complete Staying-Guest Travel Provision — Full Colour",
+          "description": "The five-bottle pouch and complete grooming case use the strong house-colour material treatment for a staying guest's onward luggage."
+        },
+        {
+          "path": "images/albury-house-items/travel/26-complete-staying-guest-travel-provision-white-led.webp",
+          "title": "Complete Staying-Guest Travel Provision — White Led",
+          "description": "The same two-case inventory becomes warm ivory with colour confined to piping, zip pulls, woven bands and bottle rings."
+        },
+        {
+          "path": "images/albury-house-items/travel/39-guest-drinkware-gifts-full-colour.webp",
+          "title": "Travel Cup & Reusable Bottle Gifts — Full Colour",
+          "description": "Fresh personal gift stock: an Albury travel coffee cup and reusable bottle, offered separately or together. A guest keeps the gifted items and their box; loaned household drinkware remains with the house."
+        },
+        {
+          "path": "images/albury-house-items/travel/39-guest-drinkware-gifts-white-led.webp",
+          "title": "Travel Cup & Reusable Bottle Gifts — White Led",
+          "description": "Fresh personal gift stock: an Albury travel coffee cup and reusable bottle, offered separately or together. A guest keeps the gifted items and their box; loaned household drinkware remains with the house."
+        },
+        {
+          "path": "images/albury-house-items/travel/40-guest-stationery-pack-full-colour.webp",
+          "title": "Guest Stationery Pack — Full Colour",
+          "description": "A complete take-home folio: A5 and pocket notebooks, pen, pencil, writing paper, envelopes, correspondence cards, two postcards and bookmark. The folio belongs to the guest; the room correspondence folder stays."
+        },
+        {
+          "path": "images/albury-house-items/travel/40-guest-stationery-pack-white-led.webp",
+          "title": "Guest Stationery Pack — White Led",
+          "description": "A complete take-home folio: A5 and pocket notebooks, pen, pencil, writing paper, envelopes, correspondence cards, two postcards and bookmark. The folio belongs to the guest; the room correspondence folder stays."
+        },
+        {
+          "path": "images/albury-house-items/travel/41-selected-house-gifts-full-colour.webp",
+          "title": "Selected House Gifts — Full Colour",
+          "description": "Fresh boxed candle, mug, coaster set, larger notebook and waffle robe available as thoughtful selected gifts. This is a choice of gifts, not a compulsory bundle or used room equipment."
+        },
+        {
+          "path": "images/albury-house-items/travel/41-selected-house-gifts-white-led.webp",
+          "title": "Selected House Gifts — White Led",
+          "description": "Fresh boxed candle, mug, coaster set, larger notebook and waffle robe available as thoughtful selected gifts. This is a choice of gifts, not a compulsory bundle or used room equipment."
+        },
+        {
+          "path": "images/albury-house-items/travel/47-summer-party-guest-gift-pack.webp",
+          "title": "Summer Party — Guest Gift Pack",
+          "description": "One guest’s selection for the 25-person summer party: a travel cup, complete stationery folio, boxed house candle, playing cards, butter shortbread and Hatfield bourbon–black cherry confiture. Bottle-green carrier with gold house mark, black ribbon handles, ivory tissue and personal note. This occasion-specific pack is shown unpacked; it does not establish a mandatory gift bundle for every visit."
+        },
+        {
+          "path": "images/albury-house-items/travel/42-take-home-food-hamper-full-colour.webp",
+          "title": "Take-Home Food Hamper — Full Colour",
+          "description": "An example take-home food hamper: Seville marmalade, Hatfield bourbon and black cherry confiture, house mustard, rye crackers, shortbread and rosemary almonds. This gift basket and its contents belong to the recipient; selection and food handling suit the journey."
+        },
+        {
+          "path": "images/albury-house-items/travel/42-take-home-food-hamper-white-led.webp",
+          "title": "Take-Home Food Hamper — White Led",
+          "description": "An example take-home food hamper: Seville marmalade, Hatfield bourbon and black cherry confiture, house mustard, rye crackers, shortbread and rosemary almonds. This gift basket and its contents belong to the recipient; selection and food handling suit the journey."
+        },
+        {
+          "path": "images/albury-house-items/travel/45-primary-guest-bedroom-welcome-v2.webp",
+          "title": "Principal Guest Bedroom — Complete Welcome",
+          "description": "The complete welcome in the principal guest bedroom: dressing gown, slippers, flannel, towel, socks, personal toiletries and grooming kits, stationery, food, Limestone Springs still and sparkling water, and selected travel drinkware gifts. The same provision shown in the larger second-floor room."
+        },
+        {
+          "path": "images/albury-house-items/travel/44-complete-bedroom-welcome.webp",
+          "title": "Guest Room Four — Complete Welcome",
+          "description": "The complete overnight welcome laid out in Guest Room Four: dressing gown, slippers, flannel, hand towel, socks, personal bath and grooming kits, stationery, food and Limestone Springs still and sparkling water. This example also includes selected travel cup and reusable bottle gifts."
+        },
+        {
+          "path": "images/albury-house-items/travel/43-arrival-welcome-hamper-full-colour.webp",
+          "title": "Overnight Arrival Hamper — Full Colour",
+          "description": "Overnight welcome: Limestone Springs still and sparkling water in their original blue packaging; shortbread, chocolate sablés, rosemary almonds and seasonal fruit, with a complete guest stationery pack alongside. Food, drinks and stationery are for the guest; the lined wicker basket stays with the room."
+        },
+        {
+          "path": "images/albury-house-items/travel/43-arrival-welcome-hamper-white-led.webp",
+          "title": "Overnight Arrival Hamper — White Led",
+          "description": "Overnight welcome: Limestone Springs still and sparkling water in their original blue packaging; shortbread, chocolate sablés, rosemary almonds and seasonal fruit, with a complete guest stationery pack alongside. Food, drinks and stationery are for the guest; the lined wicker basket stays with the room."
+        }
+      ],
+      "pathPart": "/travel/"
+    },
+    {
+      "id": "house-items-table",
+      "name": "Table & Pantry",
+      "short": "Household Line · Tableware",
+      "plan": "images/albury-house-items/guest-floor/18-guest-floor-colour-expression.webp",
+      "rooms": [
+        {
+          "path": "images/albury-house-items/tableware/27-dinnerware-family-full-colour.webp",
+          "title": "Dinnerware Family — Full Colour",
+          "description": "Dinner, side and dessert plates, shallow dishes and bowls use bottle green, oxblood, dusty blue and warm ochre as their prominent ceramic grounds."
+        },
+        {
+          "path": "images/albury-house-items/tableware/27-dinnerware-family.webp",
+          "title": "Dinnerware Family — White Led",
+          "description": "The complete marked dinnerware family remains warm ivory, with identity carried by narrow coloured rims and selected small accent pieces."
+        },
+        {
+          "path": "images/albury-house-items/tableware/28-cups-saucers-espresso-service.webp",
+          "title": "Cups, Saucers & Espresso Service — Full Colour",
+          "description": "Tea, coffee and espresso forms use the four house colours as ceramic grounds, balanced by warm-ivory interiors and muted-gold marks."
+        },
+        {
+          "path": "images/albury-house-items/tableware/28-cups-saucers-espresso-service-white-led.webp",
+          "title": "Cups, Saucers & Espresso Service — White Led",
+          "description": "The same service is warm ivory throughout, with colour reduced to fine rims, handle lines and saucer-well rings."
+        },
+        {
+          "path": "images/albury-house-items/tableware/29-everyday-mugs-and-beakers.webp",
+          "title": "Everyday Mugs & Beakers — Full Colour",
+          "description": "A relaxed marked family for bedrooms, studies and guest pantries uses the four house colours as the ceramic bodies."
+        },
+        {
+          "path": "images/albury-house-items/tableware/29-everyday-mugs-and-beakers-white-led.webp",
+          "title": "Everyday Mugs & Beakers — White Led",
+          "description": "The same mugs and beakers become warm ivory with fine coloured handle stripes, vertical rules and base rings."
+        },
+        {
+          "path": "images/albury-house-items/tableware/30-pantry-storage-containers.webp",
+          "title": "Pantry Storage Containers — Full Colour",
+          "description": "Tea, coffee, cocoa, biscuit, sugar, flour, oats, rice and salt containers use the full material palette with clean labels and bronze rules."
+        },
+        {
+          "path": "images/albury-house-items/tableware/30-pantry-storage-containers-white-led.webp",
+          "title": "Pantry Storage Containers — White Led",
+          "description": "The unchanged working set becomes warm ivory, using narrow coloured lid rings and label rules as the only colour."
+        },
+        {
+          "path": "images/albury-house-items/tableware/31-serving-pieces-and-table-accessories-full-colour.webp",
+          "title": "Serving Pieces & Table Accessories — Full Colour",
+          "description": "Platters, bowls, tureen, jugs, sauce boat, egg cups and condiments use rich house-colour grounds with ivory interiors."
+        },
+        {
+          "path": "images/albury-house-items/tableware/31-serving-pieces-and-table-accessories.webp",
+          "title": "Serving Pieces & Table Accessories — White Led",
+          "description": "The same practical service remains warm ivory, with identity carried by narrow coloured rims and the architectural mark."
+        },
+        {
+          "path": "images/albury-house-items/tableware/32-portable-food-and-drink-containers.webp",
+          "title": "Portable Food & Drink Containers — Full Colour",
+          "description": "Travel cups, bottles, flasks, lunch tins, snack pots, boxes and carriers use the four house colours as durable material grounds."
+        },
+        {
+          "path": "images/albury-house-items/tableware/32-portable-food-and-drink-containers-white-led.webp",
+          "title": "Portable Food & Drink Containers — White Led",
+          "description": "The same portable family becomes warm ivory, with colour reduced to lid rings, handles, base bands, piping and cutlery-case edges."
+        }
+      ],
+      "pathPart": "/tableware/"
+    },
+    {
+      "id": "house-items-service",
+      "name": "Housemark & Service",
+      "short": "Household Line · Working Objects",
+      "plan": "images/albury-house-items/guest-floor/18-guest-floor-colour-expression.webp",
+      "rooms": [
+        {
+          "path": "images/albury-house-items/housemark/33-glassware-and-bar-service-full-colour.webp",
+          "title": "Glassware & Bar Service — Full Colour",
+          "description": "Selected tumblers, lowballs, coupes, carafes and decanters use restrained tinted glass, supported by coloured grips on the working bar tools."
+        },
+        {
+          "path": "images/albury-house-items/housemark/33-glassware-and-bar-service.webp",
+          "title": "Glassware & Bar Service — White/Clear Led",
+          "description": "Clear etched glass and engraved metal remain the dominant materials, with only quiet house-colour incidentals around the working service."
+        },
+        {
+          "path": "images/albury-house-items/housemark/34-breakfast-tea-coffee-service-full-colour.webp",
+          "title": "Breakfast, Tea & Coffee Service — Full Colour",
+          "description": "The complete working breakfast service distributes bottle green, oxblood, dusty blue and warm ochre across its marked ceramic and metal forms."
+        },
+        {
+          "path": "images/albury-house-items/housemark/34-breakfast-tea-coffee-service.webp",
+          "title": "Breakfast, Tea & Coffee Service — White Led",
+          "description": "The same service remains warm ivory, with fine coloured rims, lid details and textile lines connecting it to Rafael's pantry work."
+        },
+        {
+          "path": "images/albury-house-items/housemark/35-bathroom-hardware.webp",
+          "title": "Bathroom Hardware — Full Colour",
+          "description": "Vessels, dishes, trays, tissue cover, waste bin and laundry pieces use colour as their custom material expression."
+        },
+        {
+          "path": "images/albury-house-items/housemark/35-bathroom-hardware-white-led.webp",
+          "title": "Bathroom Hardware — White Led",
+          "description": "The same bathroom hardware becomes warm ivory, with colour confined to slim rims, lid rings, piping, tray edges and one woven line."
+        },
+        {
+          "path": "images/albury-house-items/housemark/36-picnic-and-outdoor-service.webp",
+          "title": "Picnic & Outdoor Service — Full Colour",
+          "description": "The service for four uses colour prominently across blanket, enamelware, flask, containers, cutlery rolls, napkins and bottle cooler."
+        },
+        {
+          "path": "images/albury-house-items/housemark/36-picnic-and-outdoor-service-white-led.webp",
+          "title": "Picnic & Outdoor Service — White Led",
+          "description": "The unchanged picnic service becomes warm ivory, with narrow blanket stripes, enamel rims, lid rings, handle wraps and textile bands."
+        },
+        {
+          "path": "images/albury-house-items/housemark/37-contemporary-desk-objects.webp",
+          "title": "Contemporary Desk Objects — Full Colour",
+          "description": "Leather, bookcloth and felt objects use the house palette around Alex's unchanged recording and writing technology."
+        },
+        {
+          "path": "images/albury-house-items/housemark/37-contemporary-desk-objects-white-led.webp",
+          "title": "Contemporary Desk Objects — White Led",
+          "description": "The same desk objects become warm ivory with colour confined to stitching, piping, spines, elastics and small case-end panels."
+        },
+        {
+          "path": "images/albury-house-items/housemark/46-robe-slippers-socks-five-colourways.webp",
+          "title": "Robes, Slippers & Socks — Five House Colours",
+          "description": "Matching waffle dressing gown, closed-toe slippers and ribbed house socks in bottle green, oxblood, dusty blue, warm ochre and warm ivory. The ivory set uses restrained bottle-green trim; all carry the architectural Albury mark."
+        },
+        {
+          "path": "images/albury-house-items/housemark/38-towels-dressing-gown-and-socks-full-colour.webp",
+          "title": "Towels, Dressing Gown & House Socks — Full Colour",
+          "description": "Bottle-green, dusty-blue, oxblood and ochre towels join a bottle-green waffle robe and three complete coloured sock pairs."
+        },
+        {
+          "path": "images/albury-house-items/housemark/38-towels-dressing-gown-and-socks.webp",
+          "title": "Towels, Dressing Gown & House Socks — White Led",
+          "description": "White towels and waffle robe remain dominant, using woven colour bands and piping beside complete bottle-green, dusty-blue and oxblood sock pairs."
+        }
+      ],
+      "pathPart": "/housemark/"
+    }
+  ]
+}

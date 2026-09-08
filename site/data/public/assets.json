@@ -1,0 +1,2060 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "images.albury.culinary.bethan.afternoon.baking",
+      "path": "images/albury-culinary/bethan-afternoon-baking.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.bethan.bread",
+      "path": "images/albury-culinary/bethan-bread.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.bethan.morning.pastries",
+      "path": "images/albury-culinary/bethan-morning-pastries.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.breakfast.eggs",
+      "path": "images/albury-culinary/breakfast-eggs.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.chicken.tarragon",
+      "path": "images/albury-culinary/chicken-tarragon.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.cordial.blackberry",
+      "path": "images/albury-culinary/cordial-blackberry.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.cordial.blackcurrant",
+      "path": "images/albury-culinary/cordial-blackcurrant.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.cordial.elderflower",
+      "path": "images/albury-culinary/cordial-elderflower.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.cordial.ginger",
+      "path": "images/albury-culinary/cordial-ginger.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.cordial.passion",
+      "path": "images/albury-culinary/cordial-passion.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.cordial.raspberry",
+      "path": "images/albury-culinary/cordial-raspberry.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.cordial.rhubarb",
+      "path": "images/albury-culinary/cordial-rhubarb.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.dessert.service",
+      "path": "images/albury-culinary/dessert-service.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.dry.martini",
+      "path": "images/albury-culinary/dry-martini.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.hake.dinner",
+      "path": "images/albury-culinary/hake-dinner.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.journey.food",
+      "path": "images/albury-culinary/journey-food.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.late.supper",
+      "path": "images/albury-culinary/late-supper.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.laundry.working",
+      "path": "images/albury-culinary/laundry-working.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.old.fashioned",
+      "path": "images/albury-culinary/old-fashioned.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.pantry.service",
+      "path": "images/albury-culinary/pantry-service.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.producers.hatfield.original",
+      "path": "images/albury-culinary/producers/hatfield-original.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.producers.hatfield.single.barrel",
+      "path": "images/albury-culinary/producers/hatfield-single-barrel.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.producers.limestone.cream.soda",
+      "path": "images/albury-culinary/producers/limestone-cream-soda.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.producers.limestone.sparkling.water",
+      "path": "images/albury-culinary/producers/limestone-sparkling-water.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.producers.limestone.still.water",
+      "path": "images/albury-culinary/producers/limestone-still-water.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.studio.break",
+      "path": "images/albury-culinary/studio-break.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.sweet.baking",
+      "path": "images/albury-culinary/sweet-baking.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.tommys.margarita",
+      "path": "images/albury-culinary/tommys-margarita.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.vanilla.syrup",
+      "path": "images/albury-culinary/vanilla-syrup.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.culinary.warm.toastie",
+      "path": "images/albury-culinary/warm-toastie.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.guest.floor.18.guest.floor.colour.expression",
+      "path": "images/albury-house-items/guest-floor/18-guest-floor-colour-expression.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.guest.floor.18.guest.floor.white.led.expression",
+      "path": "images/albury-house-items/guest-floor/18-guest-floor-white-led-expression.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.guest.floor.19.guest.pantry.colour.items",
+      "path": "images/albury-house-items/guest-floor/19-guest-pantry-colour-items.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.guest.floor.19.guest.pantry.white.led.items",
+      "path": "images/albury-house-items/guest-floor/19-guest-pantry-white-led-items.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.guest.floor.21.guest.floor.bathroom.expression",
+      "path": "images/albury-house-items/guest-floor/21-guest-floor-bathroom-expression.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.guest.floor.21.guest.floor.bathroom.full.colour",
+      "path": "images/albury-house-items/guest-floor/21-guest-floor-bathroom-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.33.glassware.and.bar.service.full.colour",
+      "path": "images/albury-house-items/housemark/33-glassware-and-bar-service-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.33.glassware.and.bar.service",
+      "path": "images/albury-house-items/housemark/33-glassware-and-bar-service.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.34.breakfast.tea.coffee.service.full.colour",
+      "path": "images/albury-house-items/housemark/34-breakfast-tea-coffee-service-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.34.breakfast.tea.coffee.service",
+      "path": "images/albury-house-items/housemark/34-breakfast-tea-coffee-service.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.35.bathroom.hardware.white.led",
+      "path": "images/albury-house-items/housemark/35-bathroom-hardware-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.35.bathroom.hardware",
+      "path": "images/albury-house-items/housemark/35-bathroom-hardware.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.36.picnic.and.outdoor.service.white.led",
+      "path": "images/albury-house-items/housemark/36-picnic-and-outdoor-service-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.36.picnic.and.outdoor.service",
+      "path": "images/albury-house-items/housemark/36-picnic-and-outdoor-service.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.37.contemporary.desk.objects.white.led",
+      "path": "images/albury-house-items/housemark/37-contemporary-desk-objects-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.37.contemporary.desk.objects",
+      "path": "images/albury-house-items/housemark/37-contemporary-desk-objects.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.38.towels.dressing.gown.and.socks.full.colour",
+      "path": "images/albury-house-items/housemark/38-towels-dressing-gown-and-socks-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.38.towels.dressing.gown.and.socks",
+      "path": "images/albury-house-items/housemark/38-towels-dressing-gown-and-socks.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.housemark.46.robe.slippers.socks.five.colourways",
+      "path": "images/albury-house-items/housemark/46-robe-slippers-socks-five-colourways.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.27.dinnerware.family.full.colour",
+      "path": "images/albury-house-items/tableware/27-dinnerware-family-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.27.dinnerware.family",
+      "path": "images/albury-house-items/tableware/27-dinnerware-family.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.28.cups.saucers.espresso.service.white.led",
+      "path": "images/albury-house-items/tableware/28-cups-saucers-espresso-service-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.28.cups.saucers.espresso.service",
+      "path": "images/albury-house-items/tableware/28-cups-saucers-espresso-service.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.29.everyday.mugs.and.beakers.white.led",
+      "path": "images/albury-house-items/tableware/29-everyday-mugs-and-beakers-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.29.everyday.mugs.and.beakers",
+      "path": "images/albury-house-items/tableware/29-everyday-mugs-and-beakers.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.30.pantry.storage.containers.white.led",
+      "path": "images/albury-house-items/tableware/30-pantry-storage-containers-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.30.pantry.storage.containers",
+      "path": "images/albury-house-items/tableware/30-pantry-storage-containers.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.31.serving.pieces.and.table.accessories.full.colour",
+      "path": "images/albury-house-items/tableware/31-serving-pieces-and-table-accessories-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.31.serving.pieces.and.table.accessories",
+      "path": "images/albury-house-items/tableware/31-serving-pieces-and-table-accessories.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.32.portable.food.and.drink.containers.white.led",
+      "path": "images/albury-house-items/tableware/32-portable-food-and-drink-containers-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.tableware.32.portable.food.and.drink.containers",
+      "path": "images/albury-house-items/tableware/32-portable-food-and-drink-containers.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.22.five.part.30ml.bottle.family.white.led",
+      "path": "images/albury-house-items/travel/22-five-part-30ml-bottle-family-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.22.five.part.30ml.bottle.family",
+      "path": "images/albury-house-items/travel/22-five-part-30ml-bottle-family.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.23.grooming.toiletries.kit.white.led",
+      "path": "images/albury-house-items/travel/23-grooming-toiletries-kit-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.23.grooming.toiletries.kit",
+      "path": "images/albury-house-items/travel/23-grooming-toiletries-kit.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.24.departure.carrier.white.led",
+      "path": "images/albury-house-items/travel/24-departure-carrier-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.24.departure.carrier",
+      "path": "images/albury-house-items/travel/24-departure-carrier.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.25.tier.two.departure.provision.white.led",
+      "path": "images/albury-house-items/travel/25-tier-two-departure-provision-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.25.tier.two.departure.provision",
+      "path": "images/albury-house-items/travel/25-tier-two-departure-provision.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.26.complete.staying.guest.travel.provision.white.led",
+      "path": "images/albury-house-items/travel/26-complete-staying-guest-travel-provision-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.26.complete.staying.guest.travel.provision",
+      "path": "images/albury-house-items/travel/26-complete-staying-guest-travel-provision.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.39.guest.drinkware.gifts.full.colour",
+      "path": "images/albury-house-items/travel/39-guest-drinkware-gifts-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.39.guest.drinkware.gifts.white.led",
+      "path": "images/albury-house-items/travel/39-guest-drinkware-gifts-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.40.guest.stationery.pack.full.colour",
+      "path": "images/albury-house-items/travel/40-guest-stationery-pack-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.40.guest.stationery.pack.white.led",
+      "path": "images/albury-house-items/travel/40-guest-stationery-pack-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.41.selected.house.gifts.full.colour",
+      "path": "images/albury-house-items/travel/41-selected-house-gifts-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.41.selected.house.gifts.white.led",
+      "path": "images/albury-house-items/travel/41-selected-house-gifts-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.42.take.home.food.hamper.full.colour",
+      "path": "images/albury-house-items/travel/42-take-home-food-hamper-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.42.take.home.food.hamper.white.led",
+      "path": "images/albury-house-items/travel/42-take-home-food-hamper-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.43.arrival.welcome.hamper.full.colour",
+      "path": "images/albury-house-items/travel/43-arrival-welcome-hamper-full-colour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.43.arrival.welcome.hamper.white.led",
+      "path": "images/albury-house-items/travel/43-arrival-welcome-hamper-white-led.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.44.complete.bedroom.welcome",
+      "path": "images/albury-house-items/travel/44-complete-bedroom-welcome.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.45.primary.guest.bedroom.welcome.v2",
+      "path": "images/albury-house-items/travel/45-primary-guest-bedroom-welcome-v2.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.house.items.travel.47.summer.party.guest.gift.pack",
+      "path": "images/albury-house-items/travel/47-summer-party-guest-gift-pack.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.01.breakfast.preserves",
+      "path": "images/albury-produce/opening-range/01-breakfast-preserves.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.02.summer.fruit",
+      "path": "images/albury-produce/opening-range/02-summer-fruit.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.03.curd.and.compote",
+      "path": "images/albury-produce/opening-range/03-curd-and-compote.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.04.table.condiments",
+      "path": "images/albury-produce/opening-range/04-table-condiments.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.05.pickles",
+      "path": "images/albury-produce/opening-range/05-pickles.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.06.savoury.pantry",
+      "path": "images/albury-produce/opening-range/06-savoury-pantry.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.07.breakfast.and.savoury.baking",
+      "path": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.08.biscuits.and.bar.snacks",
+      "path": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.09.bar.preparations",
+      "path": "images/albury-produce/opening-range/09-bar-preparations.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.produce.opening.range.10.house.ice.creams",
+      "path": "images/albury-produce/opening-range/10-house-ice-creams.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.exterior.01.rear.mews.current",
+      "path": "images/albury/exterior/01-rear-mews-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.exterior.02.front.elevation.current",
+      "path": "images/albury/exterior/02-front-elevation-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.exterior.03.drone.property.boundaries.terrace.v2",
+      "path": "images/albury/exterior/03-drone-property-boundaries-terrace-v2.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.exterior.04.street.arrival",
+      "path": "images/albury/exterior/04-street-arrival.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.exterior.05.front.elevation.blue.hour",
+      "path": "images/albury/exterior/05-front-elevation-blue-hour.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.exterior.06.no34.acquisition.projection",
+      "path": "images/albury/exterior/06-no34-acquisition-projection.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.floor.plans.garden.masterplan",
+      "path": "images/albury/floor-plans/garden-masterplan.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.lower.basement",
+      "path": "images/albury/floor-plans/lower-basement.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.music.nobile",
+      "path": "images/albury/floor-plans/music-nobile.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.raised.ground",
+      "path": "images/albury/floor-plans/raised-ground.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.second.floor",
+      "path": "images/albury/floor-plans/second-floor.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.third.floor",
+      "path": "images/albury/floor-plans/third-floor.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.top.floor",
+      "path": "images/albury/floor-plans/top-floor.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.upper.basement",
+      "path": "images/albury/floor-plans/upper-basement.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.garden.01.overview.from.house.current",
+      "path": "images/albury/garden/01-overview-from-house-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.garden.02.rear.terrace.current",
+      "path": "images/albury/garden/02-rear-terrace-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.garden.03.looking.back.to.house.current",
+      "path": "images/albury/garden/03-looking-back-to-house-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.garden.05.far.garden.salon.current",
+      "path": "images/albury/garden/05-far-garden-salon-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.garden.07.blue.hour.current",
+      "path": "images/albury/garden/07-blue-hour-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.garden.10.no.34.boundary",
+      "path": "images/albury/garden/10-no-34-boundary.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.garden.12.marquee.event.configuration",
+      "path": "images/albury/garden/12-marquee-event-configuration.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.01.entrance.hall",
+      "path": "images/albury/ground-floor/01-entrance-hall.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.02.main.stair.hall",
+      "path": "images/albury/ground-floor/02-main-stair-hall.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.05.music.room.house.grand",
+      "path": "images/albury/ground-floor/05-music-room-house-grand.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.06.kitchen.breakfast.room",
+      "path": "images/albury/ground-floor/06-kitchen-breakfast-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.07.dining.room",
+      "path": "images/albury/ground-floor/07-dining-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.08.garden.room",
+      "path": "images/albury/ground-floor/08-garden-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.09.formal.drawing.room",
+      "path": "images/albury/ground-floor/09-formal-drawing-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.09.guest.cloakroom.powder",
+      "path": "images/albury/ground-floor/09-guest-cloakroom-powder.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.09a.guest.salon.media.room",
+      "path": "images/albury/ground-floor/09a-guest-salon-media-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.10.butlers.pantry.service.lobby",
+      "path": "images/albury/ground-floor/10-butlers-pantry-service-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.11.boot.room",
+      "path": "images/albury/ground-floor/11-boot-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.12.flower.room",
+      "path": "images/albury/ground-floor/12-flower-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.13.housekeeping.workroom",
+      "path": "images/albury/ground-floor/13-housekeeping-workroom.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.14.rear.service.landing",
+      "path": "images/albury/ground-floor/14-rear-service-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.15.main.stair.top.down",
+      "path": "images/albury/ground-floor/15-main-stair-top-down.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.16.raised.ground.circulation.view",
+      "path": "images/albury/ground-floor/16-raised-ground-circulation-view.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.17.passenger.lift.threshold",
+      "path": "images/albury/ground-floor/17-passenger-lift-threshold.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.18.kitchen.breakfast.in.use",
+      "path": "images/albury/ground-floor/18-kitchen-breakfast-in-use.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.19.dining.service.in.progress",
+      "path": "images/albury/ground-floor/19-dining-service-in-progress.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.20.music.room.after.dinner",
+      "path": "images/albury/ground-floor/20-music-room-after-dinner.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.21.friday.flowers",
+      "path": "images/albury/ground-floor/21-friday-flowers.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.kitchen.coherent.01.reverse.overview",
+      "path": "images/albury/ground-floor/kitchen-coherent/01-reverse-overview.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.kitchen.coherent.02.cooking.wall.close.up",
+      "path": "images/albury/ground-floor/kitchen-coherent/02-cooking-wall-close-up.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.kitchen.coherent.03.island.working.storage",
+      "path": "images/albury/ground-floor/kitchen-coherent/03-island-working-storage.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.kitchen.coherent.04.appliance.and.prep.zone",
+      "path": "images/albury/ground-floor/kitchen-coherent/04-appliance-and-prep-zone.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.kitchen.coherent.05.breakfast.bay",
+      "path": "images/albury/ground-floor/kitchen-coherent/05-breakfast-bay.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.kitchen.coherent.06.rear.prep.and.pass",
+      "path": "images/albury/ground-floor/kitchen-coherent/06-rear-prep-and-pass.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.01.entrance.hall",
+      "path": "images/albury/ground-floor/new-views/01-entrance-hall.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.02.main.stair.hall",
+      "path": "images/albury/ground-floor/new-views/02-main-stair-hall.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.05.music.room.house.grand",
+      "path": "images/albury/ground-floor/new-views/05-music-room-house-grand.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.06.kitchen.breakfast.room",
+      "path": "images/albury/ground-floor/new-views/06-kitchen-breakfast-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.07.dining.room",
+      "path": "images/albury/ground-floor/new-views/07-dining-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.08.garden.room",
+      "path": "images/albury/ground-floor/new-views/08-garden-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.09.formal.drawing.room",
+      "path": "images/albury/ground-floor/new-views/09-formal-drawing-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.09.guest.cloakroom.powder",
+      "path": "images/albury/ground-floor/new-views/09-guest-cloakroom-powder.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.09a.guest.salon.media.room",
+      "path": "images/albury/ground-floor/new-views/09a-guest-salon-media-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.10.butlers.pantry.service.lobby",
+      "path": "images/albury/ground-floor/new-views/10-butlers-pantry-service-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.11.boot.room",
+      "path": "images/albury/ground-floor/new-views/11-boot-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.12.flower.room",
+      "path": "images/albury/ground-floor/new-views/12-flower-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.13.housekeeping.workroom",
+      "path": "images/albury/ground-floor/new-views/13-housekeeping-workroom.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.14.rear.service.landing",
+      "path": "images/albury/ground-floor/new-views/14-rear-service-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.ground.floor.new.views.17.passenger.lift.threshold",
+      "path": "images/albury/ground-floor/new-views/17-passenger-lift-threshold.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.25.metre.lap.pool.closer.perspective",
+      "path": "images/albury/guide-expansion/25-metre-lap-pool-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.alexs.bedroom.closer.perspective",
+      "path": "images/albury/guide-expansion/alexs-bedroom-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.bar.games.room.closer.perspective",
+      "path": "images/albury/guide-expansion/bar-games-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.cinema.closer.perspective",
+      "path": "images/albury/guide-expansion/cinema-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.control.room.closer.perspective",
+      "path": "images/albury/guide-expansion/control-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.current.season.dressing.closer.perspective",
+      "path": "images/albury/guide-expansion/current-season-dressing-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.dining.room.closer.perspective",
+      "path": "images/albury/guide-expansion/dining-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.entrance.reception.hall.closer.perspective",
+      "path": "images/albury/guide-expansion/entrance-reception-hall-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.event.kitchen.pantry.closer.perspective",
+      "path": "images/albury/guide-expansion/event-kitchen-pantry-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.fashion.archive.closer.perspective",
+      "path": "images/albury/guide-expansion/fashion-archive-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.formal.drawing.room.closer.perspective",
+      "path": "images/albury/guide-expansion/formal-drawing-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.friends.salon.closer.perspective",
+      "path": "images/albury/guide-expansion/friends-salon-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.garden.room.closer.perspective",
+      "path": "images/albury/guide-expansion/garden-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.goods.lift.in.use",
+      "path": "images/albury/guide-expansion/goods-lift-in-use.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.bedroom.three.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-bedroom-three-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.bedroom.two.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-bedroom-two-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.room.eight.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-room-eight-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.room.five.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-room-five-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.room.four.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-room-four-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.room.seven.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-room-seven-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.room.six.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-room-six-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.guest.salon.media.room.closer.perspective",
+      "path": "images/albury/guide-expansion/guest-salon-media-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.library.awards.secure.collection.closer.perspective",
+      "path": "images/albury/guide-expansion/library-awards-secure-collection-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.live.tracking.room.closer.perspective",
+      "path": "images/albury/guide-expansion/live-tracking-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.main.stair.in.use",
+      "path": "images/albury/guide-expansion/main-stair-in-use.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.music.room.closer.perspective",
+      "path": "images/albury/guide-expansion/music-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.passenger.lift.in.use",
+      "path": "images/albury/guide-expansion/passenger-lift-in-use.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.principal.bathroom.closer.perspective",
+      "path": "images/albury/guide-expansion/principal-bathroom-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.principal.guest.bedroom.closer.perspective",
+      "path": "images/albury/guide-expansion/principal-guest-bedroom-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.principal.kitchen.breakfast.room.closer.perspective",
+      "path": "images/albury/guide-expansion/principal-kitchen-breakfast-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.private.lounge.closer.perspective",
+      "path": "images/albury/guide-expansion/private-lounge-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.professional.gym.closer.perspective",
+      "path": "images/albury/guide-expansion/professional-gym-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.rear.terrace.closer.perspective",
+      "path": "images/albury/guide-expansion/rear-terrace-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.rec.room.closer.perspective",
+      "path": "images/albury/guide-expansion/rec-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.service.stair.in.use",
+      "path": "images/albury/guide-expansion/service-stair-in-use.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.study.writing.room.closer.perspective",
+      "path": "images/albury/guide-expansion/study-writing-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.wine.spirits.listening.lounge.closer.perspective",
+      "path": "images/albury/guide-expansion/wine-spirits-listening-lounge-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.guide.expansion.wine.spirits.tasting.room.closer.perspective",
+      "path": "images/albury/guide-expansion/wine-spirits-tasting-room-closer-perspective.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.identity.house.mark.current",
+      "path": "images/albury/identity/house-mark-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.00.spa.arrival.gallery",
+      "path": "images/albury/lower-basement/00-spa-arrival-gallery.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.01.lap.pool",
+      "path": "images/albury/lower-basement/01-lap-pool.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.02.wellness.hydration.lounge",
+      "path": "images/albury/lower-basement/02-wellness-hydration-lounge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.03.professional.gym",
+      "path": "images/albury/lower-basement/03-professional-gym.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.04.sauna",
+      "path": "images/albury/lower-basement/04-sauna.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.05.steam.room",
+      "path": "images/albury/lower-basement/05-steam-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.06.cold.plunge",
+      "path": "images/albury/lower-basement/06-cold-plunge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.07.recovery.mobility.lounge",
+      "path": "images/albury/lower-basement/07-recovery-mobility-lounge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.08.treatment.room",
+      "path": "images/albury/lower-basement/08-treatment-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.09.pool.changing.shower.suite",
+      "path": "images/albury/lower-basement/09-pool-changing-shower-suite.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.10.reserve.wine.bourbon.cellar",
+      "path": "images/albury/lower-basement/10-reserve-wine-bourbon-cellar.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.10a.secure.trophy.reserve.detail",
+      "path": "images/albury/lower-basement/10a-secure-trophy-reserve-detail.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.11.plant.water.systems",
+      "path": "images/albury/lower-basement/11-plant-water-systems.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.12.lower.escape.service.passage",
+      "path": "images/albury/lower-basement/12-lower-escape-service-passage.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.13.morning.laps",
+      "path": "images/albury/lower-basement/13-morning-laps.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.14.training.session",
+      "path": "images/albury/lower-basement/14-training-session.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.00.spa.arrival.gallery",
+      "path": "images/albury/lower-basement/new-views/00-spa-arrival-gallery.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.01.lap.pool",
+      "path": "images/albury/lower-basement/new-views/01-lap-pool.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.02.wellness.hydration.lounge",
+      "path": "images/albury/lower-basement/new-views/02-wellness-hydration-lounge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.03.professional.gym",
+      "path": "images/albury/lower-basement/new-views/03-professional-gym.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.04.sauna",
+      "path": "images/albury/lower-basement/new-views/04-sauna.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.05.steam.room",
+      "path": "images/albury/lower-basement/new-views/05-steam-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.06.cold.plunge",
+      "path": "images/albury/lower-basement/new-views/06-cold-plunge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.07.recovery.mobility.lounge",
+      "path": "images/albury/lower-basement/new-views/07-recovery-mobility-lounge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.08.treatment.room",
+      "path": "images/albury/lower-basement/new-views/08-treatment-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.09.pool.changing.shower.suite",
+      "path": "images/albury/lower-basement/new-views/09-pool-changing-shower-suite.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.10.reserve.wine.bourbon.cellar",
+      "path": "images/albury/lower-basement/new-views/10-reserve-wine-bourbon-cellar.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.11.plant.water.systems",
+      "path": "images/albury/lower-basement/new-views/11-plant-water-systems.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.lower.basement.new.views.12.lower.escape.service.passage",
+      "path": "images/albury/lower-basement/new-views/12-lower-escape-service-passage.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.01.live.tracking.room",
+      "path": "images/albury/music-nobile/01-live-tracking-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.02.control.room",
+      "path": "images/albury/music-nobile/02-control-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.03.vocal.booth",
+      "path": "images/albury/music-nobile/03-vocal-booth.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.04.instrument.isolation.booth",
+      "path": "images/albury/music-nobile/04-instrument-isolation-booth.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.05.machine.room",
+      "path": "images/albury/music-nobile/05-machine-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.06.technical.equipment.storage",
+      "path": "images/albury/music-nobile/06-technical-equipment-storage.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.07.main.acoustic.lobby",
+      "path": "images/albury/music-nobile/07-main-acoustic-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.08.rear.acoustic.service.lobby",
+      "path": "images/albury/music-nobile/08-rear-acoustic-service-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.09.rec.room",
+      "path": "images/albury/music-nobile/09-rec-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.10.studio.wc",
+      "path": "images/albury/music-nobile/10-studio-wc.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.11.coat.cupboard",
+      "path": "images/albury/music-nobile/11-coat-cupboard.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.12.cleaning.store",
+      "path": "images/albury/music-nobile/12-cleaning-store.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.14.session.in.progress",
+      "path": "images/albury/music-nobile/14-session-in-progress.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.15.full.band.take",
+      "path": "images/albury/music-nobile/15-full-band-take.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.01.live.tracking.room",
+      "path": "images/albury/music-nobile/new-views/01-live-tracking-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.02.control.room",
+      "path": "images/albury/music-nobile/new-views/02-control-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.03.vocal.booth",
+      "path": "images/albury/music-nobile/new-views/03-vocal-booth.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.04.instrument.isolation.booth",
+      "path": "images/albury/music-nobile/new-views/04-instrument-isolation-booth.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.05.machine.room",
+      "path": "images/albury/music-nobile/new-views/05-machine-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.06.technical.equipment.storage",
+      "path": "images/albury/music-nobile/new-views/06-technical-equipment-storage.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.07.main.acoustic.lobby",
+      "path": "images/albury/music-nobile/new-views/07-main-acoustic-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.08.rear.acoustic.service.lobby",
+      "path": "images/albury/music-nobile/new-views/08-rear-acoustic-service-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.09.rec.room",
+      "path": "images/albury/music-nobile/new-views/09-rec-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.10.studio.wc",
+      "path": "images/albury/music-nobile/new-views/10-studio-wc.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.11.coat.cupboard",
+      "path": "images/albury/music-nobile/new-views/11-coat-cupboard.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.music.nobile.new.views.12.cleaning.store",
+      "path": "images/albury/music-nobile/new-views/12-cleaning-store.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.01.landing.current",
+      "path": "images/albury/second-floor/01-landing-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.02.principal.guest.bedroom.current",
+      "path": "images/albury/second-floor/02-principal-guest-bedroom-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.03.principal.guest.dressing.current",
+      "path": "images/albury/second-floor/03-principal-guest-dressing-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.04.principal.guest.bathroom.current",
+      "path": "images/albury/second-floor/04-principal-guest-bathroom-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.05.guest.bedroom.2.current",
+      "path": "images/albury/second-floor/05-guest-bedroom-2-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.06.guest.bathroom.2.current",
+      "path": "images/albury/second-floor/06-guest-bathroom-2-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.07.guest.bedroom.3.current",
+      "path": "images/albury/second-floor/07-guest-bedroom-3-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.08.guest.bathroom.3.current",
+      "path": "images/albury/second-floor/08-guest-bathroom-3-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.09.landing.powder.room",
+      "path": "images/albury/second-floor/09-landing-powder-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.10.satellite.pantry.linen",
+      "path": "images/albury/second-floor/10-satellite-pantry-linen.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.11.rear.service.landing",
+      "path": "images/albury/second-floor/11-rear-service-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.12.principal.guest.suite.sequence",
+      "path": "images/albury/second-floor/12-principal-guest-suite-sequence.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.13.principal.guest.room.turn",
+      "path": "images/albury/second-floor/13-principal-guest-room-turn.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.14.guest.arrival.turn.down",
+      "path": "images/albury/second-floor/14-guest-arrival-turn-down.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.01.landing.current",
+      "path": "images/albury/second-floor/new-views/01-landing-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.02.principal.guest.bedroom.current",
+      "path": "images/albury/second-floor/new-views/02-principal-guest-bedroom-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.03.principal.guest.dressing.current",
+      "path": "images/albury/second-floor/new-views/03-principal-guest-dressing-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.04.principal.guest.bathroom.current",
+      "path": "images/albury/second-floor/new-views/04-principal-guest-bathroom-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.05.guest.bedroom.2.current",
+      "path": "images/albury/second-floor/new-views/05-guest-bedroom-2-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.06.guest.bathroom.2.current",
+      "path": "images/albury/second-floor/new-views/06-guest-bathroom-2-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.07.guest.bedroom.3.current",
+      "path": "images/albury/second-floor/new-views/07-guest-bedroom-3-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.08.guest.bathroom.3.current",
+      "path": "images/albury/second-floor/new-views/08-guest-bathroom-3-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.09.landing.powder.room",
+      "path": "images/albury/second-floor/new-views/09-landing-powder-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.10.satellite.pantry.linen",
+      "path": "images/albury/second-floor/new-views/10-satellite-pantry-linen.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.second.floor.new.views.11.rear.service.landing",
+      "path": "images/albury/second-floor/new-views/11-rear-service-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.01.ottilie.marchant",
+      "path": "images/albury/staff/01-ottilie-marchant.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.02.kit.peverell",
+      "path": "images/albury/staff/02-kit-peverell.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.03.mairi.elphinstone",
+      "path": "images/albury/staff/03-mairi-elphinstone.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.04.sabine.kroll",
+      "path": "images/albury/staff/04-sabine-kroll.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.05.priya.nandha",
+      "path": "images/albury/staff/05-priya-nandha.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.06.blythe.carrow",
+      "path": "images/albury/staff/06-blythe-carrow.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.07.rafael.bellocq",
+      "path": "images/albury/staff/07-rafael-bellocq.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.08.tolly.venn",
+      "path": "images/albury/staff/08-tolly-venn.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.09.crispin.vale",
+      "path": "images/albury/staff/09-crispin-vale.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.10.saskia.rooke",
+      "path": "images/albury/staff/10-saskia-rooke.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.11.niall.bracken",
+      "path": "images/albury/staff/11-niall-bracken.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.12.clem.frobisher",
+      "path": "images/albury/staff/12-clem-frobisher.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.13.denzil.pike",
+      "path": "images/albury/staff/13-denzil-pike.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.14.imogen.straker",
+      "path": "images/albury/staff/14-imogen-straker.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.15.leander.shaw",
+      "path": "images/albury/staff/15-leander-shaw.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.16.honor.ritson",
+      "path": "images/albury/staff/16-honor-ritson.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.17.marceline.quist",
+      "path": "images/albury/staff/17-marceline-quist.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.18.reece.maddox",
+      "path": "images/albury/staff/18-reece-maddox.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.19.louise.baines",
+      "path": "images/albury/staff/19-louise-baines.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.20.joanne.hall",
+      "path": "images/albury/staff/20-joanne-hall.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.21.amina.yusuf",
+      "path": "images/albury/staff/21-amina-yusuf.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.22.marta.zielinska",
+      "path": "images/albury/staff/22-marta-zielinska.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.23.frankie.doran",
+      "path": "images/albury/staff/23-frankie-doran.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.24.malik.thompson",
+      "path": "images/albury/staff/24-malik-thompson.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.25.leila.grant",
+      "path": "images/albury/staff/25-leila-grant.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.26.morgan.price",
+      "path": "images/albury/staff/26-morgan-price.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.27.elodie.martin",
+      "path": "images/albury/staff/27-elodie-martin.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.28.dean.wilkes",
+      "path": "images/albury/staff/28-dean-wilkes.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.29.harjit.sethi",
+      "path": "images/albury/staff/29-harjit-sethi.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.30.callum.reed",
+      "path": "images/albury/staff/30-callum-reed.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.31.nia.bennett",
+      "path": "images/albury/staff/31-nia-bennett.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.32.darren.cole",
+      "path": "images/albury/staff/32-darren-cole.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.33.leah.okafor",
+      "path": "images/albury/staff/33-leah-okafor.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.34.tomas.almeida",
+      "path": "images/albury/staff/34-tomas-almeida.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.35.martin.keane",
+      "path": "images/albury/staff/35-martin-keane.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.36.alice.hargreaves",
+      "path": "images/albury/staff/36-alice-hargreaves.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.37.owen.llewellyn",
+      "path": "images/albury/staff/37-owen-llewellyn.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.38.bethan.pritchard",
+      "path": "images/albury/staff/38-bethan-pritchard.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.39.gareth.palmer",
+      "path": "images/albury/staff/39-gareth-palmer.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.01.landing",
+      "path": "images/albury/third-floor/01-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.02.guest.room.4",
+      "path": "images/albury/third-floor/02-guest-room-4.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.03.guest.room.5",
+      "path": "images/albury/third-floor/03-guest-room-5.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.04.guest.room.6",
+      "path": "images/albury/third-floor/04-guest-room-6.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.05.guest.room.7",
+      "path": "images/albury/third-floor/05-guest-room-7.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.06.guest.room.8",
+      "path": "images/albury/third-floor/06-guest-room-8.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.07.friends.salon",
+      "path": "images/albury/third-floor/07-friends-salon.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.08.guest.pantry",
+      "path": "images/albury/third-floor/08-guest-pantry.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.09.linen.housekeeping.workroom",
+      "path": "images/albury/third-floor/09-linen-housekeeping-workroom.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.10.luggage.garment.store",
+      "path": "images/albury/third-floor/10-luggage-garment-store.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.11.service.wc.rear.landing",
+      "path": "images/albury/third-floor/11-service-wc-rear-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.12.guest.room.4.ensuite",
+      "path": "images/albury/third-floor/12-guest-room-4-ensuite.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.13.guest.room.7.ensuite",
+      "path": "images/albury/third-floor/13-guest-room-7-ensuite.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.14.guest.room.7.fashion.week.configuration",
+      "path": "images/albury/third-floor/14-guest-room-7-fashion-week-configuration.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.15.friends.floor.at.midnight",
+      "path": "images/albury/third-floor/15-friends-floor-at-midnight.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.01.landing",
+      "path": "images/albury/third-floor/new-views/01-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.02.guest.room.4",
+      "path": "images/albury/third-floor/new-views/02-guest-room-4.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.03.guest.room.5",
+      "path": "images/albury/third-floor/new-views/03-guest-room-5.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.04.guest.room.6",
+      "path": "images/albury/third-floor/new-views/04-guest-room-6.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.05.guest.room.7",
+      "path": "images/albury/third-floor/new-views/05-guest-room-7.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.06.guest.room.8",
+      "path": "images/albury/third-floor/new-views/06-guest-room-8.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.07.friends.salon",
+      "path": "images/albury/third-floor/new-views/07-friends-salon.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.08.guest.pantry",
+      "path": "images/albury/third-floor/new-views/08-guest-pantry.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.09.linen.housekeeping.workroom",
+      "path": "images/albury/third-floor/new-views/09-linen-housekeeping-workroom.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.10.luggage.garment.store",
+      "path": "images/albury/third-floor/new-views/10-luggage-garment-store.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.11.service.wc.rear.landing",
+      "path": "images/albury/third-floor/new-views/11-service-wc-rear-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.12.guest.room.4.ensuite",
+      "path": "images/albury/third-floor/new-views/12-guest-room-4-ensuite.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.third.floor.new.views.13.guest.room.7.ensuite",
+      "path": "images/albury/third-floor/new-views/13-guest-room-7-ensuite.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.01.private.vestibule.current",
+      "path": "images/albury/top-floor/01-private-vestibule-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.02.bedroom.current",
+      "path": "images/albury/top-floor/02-bedroom-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.03.principal.bathroom",
+      "path": "images/albury/top-floor/03-principal-bathroom.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.04.current.season.dressing",
+      "path": "images/albury/top-floor/04-current-season-dressing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.05.fashion.archive",
+      "path": "images/albury/top-floor/05-fashion-archive.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.06.private.lounge.current",
+      "path": "images/albury/top-floor/06-private-lounge-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.07.writing.room",
+      "path": "images/albury/top-floor/07-writing-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.08.library.awards.secure.collection",
+      "path": "images/albury/top-floor/08-library-awards-secure-collection.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.09.private.service.landing",
+      "path": "images/albury/top-floor/09-private-service-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.10.roof.terrace",
+      "path": "images/albury/top-floor/10-roof-terrace.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.11.writing.desk.detail",
+      "path": "images/albury/top-floor/11-writing-desk-detail.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.12.bedroom.bath.dressing.sequence",
+      "path": "images/albury/top-floor/12-bedroom-bath-dressing-sequence.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.13.fashion.archive.working.pull",
+      "path": "images/albury/top-floor/13-fashion-archive-working-pull.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.14.rough.demo.0213",
+      "path": "images/albury/top-floor/14-rough-demo-0213.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.01.private.vestibule.current",
+      "path": "images/albury/top-floor/new-views/01-private-vestibule-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.02.bedroom.current",
+      "path": "images/albury/top-floor/new-views/02-bedroom-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.03.principal.bathroom",
+      "path": "images/albury/top-floor/new-views/03-principal-bathroom.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.04.current.season.dressing",
+      "path": "images/albury/top-floor/new-views/04-current-season-dressing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.05.fashion.archive",
+      "path": "images/albury/top-floor/new-views/05-fashion-archive.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.06.private.lounge.current",
+      "path": "images/albury/top-floor/new-views/06-private-lounge-current.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.07.writing.room",
+      "path": "images/albury/top-floor/new-views/07-writing-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.08.library.awards.secure.collection",
+      "path": "images/albury/top-floor/new-views/08-library-awards-secure-collection.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.09.private.service.landing",
+      "path": "images/albury/top-floor/new-views/09-private-service-landing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.top.floor.new.views.10.roof.terrace",
+      "path": "images/albury/top-floor/new-views/10-roof-terrace.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.01b.cinema.approach.lobby",
+      "path": "images/albury/upper-basement/01b-cinema-approach-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.02.wine.bourbon.tasting.room",
+      "path": "images/albury/upper-basement/02-wine-bourbon-tasting-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.03.wine.bourbon.lounge",
+      "path": "images/albury/upper-basement/03-wine-bourbon-lounge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.04.powder.room",
+      "path": "images/albury/upper-basement/04-powder-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.05.service.kitchen.pantry",
+      "path": "images/albury/upper-basement/05-service-kitchen-pantry.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.06.staff.office",
+      "path": "images/albury/upper-basement/06-staff-office.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.07.mews.garage.loading.court",
+      "path": "images/albury/upper-basement/07-mews-garage-loading-court.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.08.security.mews.vestibule",
+      "path": "images/albury/upper-basement/08-security-mews-vestibule.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.09.delivery.staging",
+      "path": "images/albury/upper-basement/09-delivery-staging.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.10.laundry.garment.care",
+      "path": "images/albury/upper-basement/10-laundry-garment-care.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.11.staff.room.changing",
+      "path": "images/albury/upper-basement/11-staff-room-changing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.12.service.core",
+      "path": "images/albury/upper-basement/12-service-core.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.12a.housekeeping.store",
+      "path": "images/albury/upper-basement/12a-housekeeping-store.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.12b.refuse.recycling.holding",
+      "path": "images/albury/upper-basement/12b-refuse-recycling-holding.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.14.staff.overnight.room",
+      "path": "images/albury/upper-basement/14-staff-overnight-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.15.mews.service.movement",
+      "path": "images/albury/upper-basement/15-mews-service-movement.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.17.screening.in.progress",
+      "path": "images/albury/upper-basement/17-screening-in-progress.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.18.dinner.service.below.stairs",
+      "path": "images/albury/upper-basement/18-dinner-service-below-stairs.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.bar.games.room.coherent.01.southwest.overview",
+      "path": "images/albury/upper-basement/bar-games-room-coherent/01-southwest-overview.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.bar.games.room.coherent.08.nightclub.mode",
+      "path": "images/albury/upper-basement/bar-games-room-coherent/08-nightclub-mode.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.bar.games.room.coherent.new.views.01.southwest.overview",
+      "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/01-southwest-overview.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.bar.games.room.coherent.new.views.02.public.bar.run.2026.09.06",
+      "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/02-public-bar-run-2026-09-06.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.bar.games.room.coherent.new.views.03.behind.bar.2026.09.06",
+      "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/03-behind-bar-2026-09-06.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.bar.games.room.coherent.new.views.07.shuffleboard.piano.2026.09.06",
+      "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/07-shuffleboard-piano-2026-09-06.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.cinema",
+      "path": "images/albury/upper-basement/cinema.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.01b.cinema.approach.lobby",
+      "path": "images/albury/upper-basement/new-views/01b-cinema-approach-lobby.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.02.wine.bourbon.tasting.room",
+      "path": "images/albury/upper-basement/new-views/02-wine-bourbon-tasting-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.03.wine.bourbon.lounge",
+      "path": "images/albury/upper-basement/new-views/03-wine-bourbon-lounge.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.04.powder.room",
+      "path": "images/albury/upper-basement/new-views/04-powder-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.05.service.kitchen.pantry",
+      "path": "images/albury/upper-basement/new-views/05-service-kitchen-pantry.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.06.staff.office",
+      "path": "images/albury/upper-basement/new-views/06-staff-office.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.07.mews.garage.loading.court",
+      "path": "images/albury/upper-basement/new-views/07-mews-garage-loading-court.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.08.security.mews.vestibule",
+      "path": "images/albury/upper-basement/new-views/08-security-mews-vestibule.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.09.delivery.staging",
+      "path": "images/albury/upper-basement/new-views/09-delivery-staging.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.10.laundry.garment.care",
+      "path": "images/albury/upper-basement/new-views/10-laundry-garment-care.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.11.staff.room.changing",
+      "path": "images/albury/upper-basement/new-views/11-staff-room-changing.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.12.service.core",
+      "path": "images/albury/upper-basement/new-views/12-service-core.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.12a.housekeeping.store",
+      "path": "images/albury/upper-basement/new-views/12a-housekeeping-store.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.12b.refuse.recycling.holding",
+      "path": "images/albury/upper-basement/new-views/12b-refuse-recycling-holding.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.14.staff.overnight.room",
+      "path": "images/albury/upper-basement/new-views/14-staff-overnight-room.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.new.views.cinema",
+      "path": "images/albury/upper-basement/new-views/cinema.webp",
+      "format": "png"
+    },
+    {
+      "id": "site.diagrams.albury.circulation",
+      "path": "site/diagrams/albury-circulation.svg",
+      "format": "svg"
+    },
+    {
+      "id": "site.diagrams.albury.section",
+      "path": "site/diagrams/albury-section.svg",
+      "format": "svg"
+    },
+    {
+      "id": "site.identity.house.mark.clear.space",
+      "path": "site/identity/house-mark-clear-space.svg",
+      "format": "svg"
+    }
+  ]
+}

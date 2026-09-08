@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "principles": {
+    "guestKeeps": [
+      "Food and drinks",
+      "Issued personal slippers and socks",
+      "Personal stationery",
+      "Travel toiletries",
+      "Objects expressly selected as gifts"
+    ],
+    "staysWithHouse": [
+      "Reusable welcome basket",
+      "Working towels and room linen",
+      "Room robe unless a fresh example is expressly gifted",
+      "Tableware and room equipment"
+    ]
+  },
+  "collections": [
+    {
+      "id": "39-guest-drinkware-gifts",
+      "title": "Travel Cup & Reusable Bottle Gifts",
+      "path": "images/albury-house-items/travel/39-guest-drinkware-gifts-full-colour.webp",
+      "whitePath": "images/albury-house-items/travel/39-guest-drinkware-gifts-white-led.webp",
+      "description": "Fresh personal gift stock: an Albury travel coffee cup and reusable bottle, offered separately or together. A guest keeps the gifted items and their box; loaned household drinkware remains with the house."
+    },
+    {
+      "id": "40-guest-stationery-pack",
+      "title": "Guest Stationery Pack",
+      "path": "images/albury-house-items/travel/40-guest-stationery-pack-full-colour.webp",
+      "whitePath": "images/albury-house-items/travel/40-guest-stationery-pack-white-led.webp",
+      "description": "A complete take-home folio: A5 and pocket notebooks, pen, pencil, writing paper, envelopes, correspondence cards, two postcards and bookmark. The folio belongs to the guest; the room correspondence folder stays."
+    },
+    {
+      "id": "41-selected-house-gifts",
+      "title": "Selected House Gifts",
+      "path": "images/albury-house-items/travel/41-selected-house-gifts-full-colour.webp",
+      "whitePath": "images/albury-house-items/travel/41-selected-house-gifts-white-led.webp",
+      "description": "Fresh boxed candle, mug, coaster set, larger notebook and waffle robe available as thoughtful selected gifts. This is a choice of gifts, not a compulsory bundle or used room equipment."
+    },
+    {
+      "id": "42-take-home-food-hamper",
+      "title": "Take-Home Food Hamper",
+      "path": "images/albury-house-items/travel/42-take-home-food-hamper-full-colour.webp",
+      "whitePath": "images/albury-house-items/travel/42-take-home-food-hamper-white-led.webp",
+      "description": "An example take-home food hamper: Seville marmalade, Hatfield bourbon and black cherry confiture, house mustard, rye crackers, shortbread and rosemary almonds. This gift basket and its contents belong to the recipient; selection and food handling suit the journey."
+    },
+    {
+      "id": "43-arrival-welcome-hamper",
+      "title": "Overnight Arrival Hamper",
+      "path": "images/albury-house-items/travel/43-arrival-welcome-hamper-full-colour.webp",
+      "whitePath": "images/albury-house-items/travel/43-arrival-welcome-hamper-white-led.webp",
+      "description": "Overnight welcome: Limestone Springs still and sparkling water in their original blue packaging; shortbread, chocolate sablés, rosemary almonds and seasonal fruit, with a complete guest stationery pack alongside. Food, drinks and stationery are for the guest; the lined wicker basket stays with the room."
+    }
+  ]
+}

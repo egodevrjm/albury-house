@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "pages": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "href": "ALBURY_WELCOME.html"
+    },
+    {
+      "id": "house-guide",
+      "label": "House guide",
+      "href": "ALBURY_HOUSE_GUIDE.html"
+    },
+    {
+      "id": "room-tour",
+      "label": "Room tour",
+      "href": "ALBURY_HOUSE_TOUR.html"
+    },
+    {
+      "id": "house-collections",
+      "label": "House collections",
+      "href": "ALBURY_HOUSE_COLLECTIONS.html"
+    },
+    {
+      "id": "house-style",
+      "label": "House style",
+      "href": "ALBURY_HOUSE_STYLE.html"
+    },
+    {
+      "id": "house-at-work",
+      "label": "House at work",
+      "href": "ALBURY_HOUSE_AT_WORK.html"
+    },
+    {
+      "id": "kitchen",
+      "label": "Kitchen & Front of House",
+      "href": "ALBURY_CULINARY_MENU.html"
+    },
+    {
+      "id": "weekly-menus",
+      "label": "Weekly menus",
+      "href": "ALBURY_WEEKLY_MENUS.html"
+    },
+    {
+      "id": "london-calendar",
+      "label": "London calendar",
+      "href": "ALBURY_LONDON_CALENDAR.html"
+    },
+    {
+      "id": "weather",
+      "label": "Weather",
+      "href": "ALBURY_WEATHER.html"
+    },
+    {
+      "id": "limestone-springs",
+      "label": "Limestone Springs",
+      "href": "ALBURY_LIMESTONE_SPRINGS.html"
+    },
+    {
+      "id": "hatfield",
+      "label": "Hatfield",
+      "href": "ALBURY_HATFIELD.html"
+    },
+    {
+      "id": "kitchen-library",
+      "label": "Kitchen library",
+      "href": "ALBURY_KITCHEN_LIBRARY.html"
+    }
+  ]
+}

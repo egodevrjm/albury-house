@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "intro": "Quiet moments behind a house full of guests: plates finished, glasses polished and fresh linen ready for the next room.",
+  "scenes": [
+    {
+      "id": "before-dessert",
+      "title": "Before dessert",
+      "image": "images/albury-culinary/dessert-service.webp",
+      "description": "Lemon tart and raspberries are plated at the upper-basement service-kitchen island, ready for service.",
+      "roomHref": "ALBURY_HOUSE_TOUR.html#/upper-basement/05-service-kitchen-pantry"
+    },
+    {
+      "id": "before-dinner",
+      "title": "Before dinner",
+      "image": "images/albury-culinary/pantry-service.webp",
+      "description": "Glasses are polished and a tray assembled in the raised-ground butler’s pantry, close to the dining room.",
+      "roomHref": "ALBURY_HOUSE_TOUR.html#/raised-ground/10-butlers-pantry-service-lobby"
+    },
+    {
+      "id": "between-stays",
+      "title": "Between stays",
+      "image": "images/albury-culinary/laundry-working.webp",
+      "description": "Towels and table linen are folded at the laundry worktable, with garment care kept in its own service space.",
+      "roomHref": "ALBURY_HOUSE_TOUR.html#/upper-basement/10-laundry-garment-care"
+    }
+  ]
+}

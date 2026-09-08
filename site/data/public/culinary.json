@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2025-08-11",
+  "programme": {
+    "culinaryLead": "rafael-bellocq",
+    "frontOfHouseLead": "crispin-vale",
+    "pastryPantryLead": "bethan-pritchard",
+    "purpose": "Everyday meals, guests, studio sessions, dinners and parties."
+  },
+  "media": {
+    "breakfast-eggs": {
+      "id": "breakfast-eggs",
+      "title": "Scrambled eggs & sourdough",
+      "description": "Chives and slow-roasted tomatoes; yoghurt, granola and peach alongside.",
+      "category": "dish",
+      "image": "images/albury-culinary/breakfast-eggs.webp",
+      "imageAlt": "Scrambled eggs & sourdough"
+    },
+    "chicken-tarragon": {
+      "id": "chicken-tarragon",
+      "title": "Roast chicken & tarragon",
+      "description": "Little Gem, new potatoes and house-mustard dressing.",
+      "category": "dish",
+      "image": "images/albury-culinary/chicken-tarragon.webp",
+      "imageAlt": "Roast chicken & tarragon"
+    },
+    "hake-dinner": {
+      "id": "hake-dinner",
+      "title": "Hake, brown butter & capers",
+      "description": "Crushed Charlotte potatoes and fine green beans.",
+      "category": "dish",
+      "image": "images/albury-culinary/hake-dinner.webp",
+      "imageAlt": "Hake, brown butter & capers"
+    },
+    "bethan-bread": {
+      "id": "bethan-bread",
+      "title": "Bread for the house",
+      "description": "Sourdough, seeded loaf and focaccia, baked for the table and everyday service.",
+      "category": "baking",
+      "image": "images/albury-culinary/bethan-bread.webp",
+      "imageAlt": "Bread for the house"
+    },
+    "bethan-morning-pastries": {
+      "id": "bethan-morning-pastries",
+      "title": "Morning pastries",
+      "description": "Croissants, pains au chocolat and brioche from the breakfast repertoire.",
+      "category": "baking",
+      "image": "images/albury-culinary/bethan-morning-pastries.webp",
+      "imageAlt": "Morning pastries"
+    },
+    "bethan-afternoon-baking": {
+      "id": "bethan-afternoon-baking",
+      "title": "Something for the afternoon",
+      "description": "Lemon cake, madeleines and financiers for tea, coffee and something sweet between meals.",
+      "category": "baking",
+      "image": "images/albury-culinary/bethan-afternoon-baking.webp",
+      "imageAlt": "Something for the afternoon"
+    },
+    "warm-toastie": {
+      "id": "warm-toastie",
+      "title": "Something warm",
+      "description": "Soup with sourdough; a mushroom and Comté toastie with mustard and leaves; an omelette with toast; tomato and basil pasta.",
+      "category": "available",
+      "image": "images/albury-culinary/warm-toastie.webp",
+      "imageAlt": "Something warm"
+    },
+    "sweet-baking": {
+      "id": "sweet-baking",
+      "title": "Something sweet",
+      "description": "Butter shortbread, dark-chocolate sea-salt sablés, fruit, brownies and house ice cream.",
+      "category": "available",
+      "image": "images/albury-culinary/sweet-baking.webp",
+      "imageAlt": "Something sweet"
+    },
+    "studio-break": {
+      "id": "studio-break",
+      "title": "Studio breaks",
+      "description": "Sandwiches, bowls, salads and pasta served in the rec room during a break.",
+      "category": "available",
+      "image": "images/albury-culinary/studio-break.webp",
+      "imageAlt": "Studio breaks"
+    },
+    "journey-food": {
+      "id": "journey-food",
+      "title": "For the journey",
+      "description": "Breakfast bags, packed lunches and separately packed food gifts.",
+      "category": "available",
+      "image": "images/albury-culinary/journey-food.webp",
+      "imageAlt": "For the journey"
+    },
+    "late-supper": {
+      "id": "late-supper",
+      "title": "A late return",
+      "description": "Prepared food and service from the duty team when the household returns late.",
+      "category": "available",
+      "image": "images/albury-culinary/late-supper.webp",
+      "imageAlt": "A late return"
+    },
+    "vanilla-syrup": {
+      "id": "vanilla-syrup",
+      "title": "Vanilla syrup",
+      "description": "For mixed drinks, milkshakes and desserts.",
+      "category": "house drink",
+      "image": "images/albury-culinary/vanilla-syrup.webp",
+      "imageAlt": "Vanilla syrup"
+    },
+    "cordial-ginger": {
+      "id": "cordial-ginger",
+      "title": "Ginger & lemongrass",
+      "description": "Bright and gently warming. Shown with sparkling water and ice; still water is equally welcome.",
+      "category": "core cordial",
+      "image": "images/albury-culinary/cordial-ginger.webp",
+      "imageAlt": "Ginger & lemongrass"
+    },
+    "cordial-passion": {
+      "id": "cordial-passion",
+      "title": "Passion fruit & lime",
+      "description": "Tropical fruit with a sharp citrus finish. Chilled and diluted to taste.",
+      "category": "core cordial",
+      "image": "images/albury-culinary/cordial-passion.webp",
+      "imageAlt": "Passion fruit & lime"
+    },
+    "cordial-elderflower": {
+      "id": "cordial-elderflower",
+      "title": "Elderflower & lemon",
+      "description": "Light and floral. Sparkling water, ice and a slim lemon peel.",
+      "category": "core cordial",
+      "image": "images/albury-culinary/cordial-elderflower.webp",
+      "imageAlt": "Elderflower & lemon"
+    },
+    "cordial-raspberry": {
+      "id": "cordial-raspberry",
+      "title": "Raspberry & lemon verbena",
+      "description": "Fragrant summer berries. Particularly good with sparkling water and ice.",
+      "category": "core cordial",
+      "image": "images/albury-culinary/cordial-raspberry.webp",
+      "imageAlt": "Raspberry & lemon verbena"
+    },
+    "cordial-blackcurrant": {
+      "id": "cordial-blackcurrant",
+      "title": "Blackcurrant & bay",
+      "description": "Deep fruit with a restrained herbal finish. Still or sparkling water, alongside food.",
+      "category": "core cordial",
+      "image": "images/albury-culinary/cordial-blackcurrant.webp",
+      "imageAlt": "Blackcurrant & bay"
+    },
+    "cordial-rhubarb": {
+      "id": "cordial-rhubarb",
+      "title": "Rhubarb & orange · Spring",
+      "description": "Tart rhubarb and bright orange. Chilled with sparkling water and ice.",
+      "category": "seasonal cordial",
+      "image": "images/albury-culinary/cordial-rhubarb.webp",
+      "imageAlt": "Rhubarb & orange · Spring"
+    },
+    "cordial-blackberry": {
+      "id": "cordial-blackberry",
+      "title": "Blackberry & apple · Autumn",
+      "description": "Dark berries and orchard fruit. Served chilled with still or sparkling water.",
+      "category": "seasonal cordial",
+      "image": "images/albury-culinary/cordial-blackberry.webp",
+      "imageAlt": "Blackberry & apple · Autumn"
+    },
+    "tommys-margarita": {
+      "id": "tommys-margarita",
+      "title": "Tommy’s Margarita",
+      "description": "Tequila, fresh lime and agave. Shaken and served over ice.",
+      "category": "cocktail",
+      "image": "images/albury-culinary/tommys-margarita.webp",
+      "imageAlt": "Tommy’s Margarita"
+    },
+    "old-fashioned": {
+      "id": "old-fashioned",
+      "title": "Old Fashioned",
+      "description": "Bourbon, sugar and bitters, with orange peel over a large cube.",
+      "category": "cocktail",
+      "image": "images/albury-culinary/old-fashioned.webp",
+      "imageAlt": "Old Fashioned"
+    },
+    "dry-martini": {
+      "id": "dry-martini",
+      "title": "Dry Martini",
+      "description": "Gin and dry vermouth, stirred cold, with a lemon twist.",
+      "category": "cocktail",
+      "image": "images/albury-culinary/dry-martini.webp",
+      "imageAlt": "Dry Martini"
+    }
+  },
+  "mediaGroups": {
+    "summerTable": [
+      "breakfast-eggs",
+      "chicken-tarragon",
+      "hake-dinner"
+    ],
+    "bethanBaking": [
+      "bethan-bread",
+      "bethan-morning-pastries",
+      "bethan-afternoon-baking"
+    ],
+    "availableFood": [
+      "warm-toastie",
+      "chicken-tarragon",
+      "sweet-baking",
+      "studio-break",
+      "journey-food",
+      "late-supper"
+    ],
+    "coreHouseDrinks": [
+      "vanilla-syrup",
+      "cordial-ginger",
+      "cordial-passion",
+      "cordial-elderflower",
+      "cordial-raspberry",
+      "cordial-blackcurrant"
+    ],
+    "seasonalCordials": [
+      "cordial-rhubarb",
+      "cordial-blackberry"
+    ],
+    "cocktails": [
+      "tommys-margarita",
+      "old-fashioned",
+      "dry-martini"
+    ]
+  },
+  "availableFood": [
+    {
+      "title": "Something warm",
+      "description": "Soup with sourdough; a mushroom and Comté toastie with mustard and leaves; an omelette with toast; tomato and basil pasta.",
+      "mediaId": "warm-toastie"
+    },
+    {
+      "title": "A substantial plate",
+      "description": "Chicken club sandwich with pickles; chicken-and-rice bowl; roast-chicken and tarragon salad with new potatoes.",
+      "mediaId": "chicken-tarragon"
+    },
+    {
+      "title": "Something sweet",
+      "description": "Butter shortbread, dark-chocolate sea-salt sablés, fruit, brownies and house ice cream.",
+      "mediaId": "sweet-baking"
+    },
+    {
+      "title": "Studio breaks",
+      "description": "Sandwiches, bowls, salads and pasta can be served in the rec room during a break. Food and drinks stay away from recording equipment and instruments.",
+      "mediaId": "studio-break"
+    },
+    {
+      "title": "For the journey",
+      "description": "Breakfast bags, packed lunches and a separately packed food gift. Tell the team the departure time, journey and dietary requirements.",
+      "mediaId": "journey-food"
+    },
+    {
+      "title": "A late return",
+      "description": "The duty team arranges suitable prepared food and service. A late supper does not depend on Rafael personally being on duty.",
+      "mediaId": "late-supper"
+    }
+  ],
+  "featuredTeam": [
+    "rafael-bellocq",
+    "crispin-vale",
+    "bethan-pritchard"
+  ],
+  "serviceRoster": [
+    "elodie-martin",
+    "tolly-venn",
+    "dean-wilkes",
+    "gareth-palmer",
+    "lewis-donnelly",
+    "harjit-sethi",
+    "callum-reed",
+    "nia-bennett"
+  ]
+}
