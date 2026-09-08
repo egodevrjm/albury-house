@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "visibility": "mcp-only",
+  "asOf": "2025-08-11",
+  "summary": {
+    "openingItems": 33,
+    "seasonalRecipes": 2,
+    "imageGroups": 15
+  },
+  "openingItems": [
+    {
+      "id": "P01",
+      "name": "Seville bitter-orange marmalade",
+      "category": "fruit preserves",
+      "openingAvailability": "January production; retained approved reserve at opening",
+      "uses": "Breakfast, toast and selected gifts",
+      "labelFamily": "pantry",
+      "imageGroupId": "01-breakfast-preserves",
+      "image": "images/albury-produce/opening-range/01-breakfast-preserves.webp"
+    },
+    {
+      "id": "P02",
+      "name": "Strawberry and vanilla confiture",
+      "category": "fruit preserves",
+      "openingAvailability": "Summer batch in opening stock",
+      "uses": "Breakfast, yoghurt and pastry",
+      "labelFamily": "pantry",
+      "imageGroupId": "01-breakfast-preserves",
+      "image": "images/albury-produce/opening-range/01-breakfast-preserves.webp"
+    },
+    {
+      "id": "P03",
+      "name": "Raspberry confiture",
+      "category": "fruit preserves",
+      "openingAvailability": "Summer batch in opening stock",
+      "uses": "Breakfast, cakes and afternoon tea",
+      "labelFamily": "pantry",
+      "imageGroupId": "01-breakfast-preserves",
+      "image": "images/albury-produce/opening-range/01-breakfast-preserves.webp"
+    },
+    {
+      "id": "P04",
+      "name": "Apricot and vanilla preserve",
+      "category": "fruit preserves",
+      "openingAvailability": "Summer batch in opening stock",
+      "uses": "Breakfast and pastry glazing",
+      "labelFamily": "pantry",
+      "imageGroupId": "02-summer-fruit",
+      "image": "images/albury-produce/opening-range/02-summer-fruit.webp"
+    },
+    {
+      "id": "P05",
+      "name": "Bourbon and black cherry confiture",
+      "category": "fruit preserves",
+      "openingAvailability": "Standing recipe; summer reserve, replenished from suitable fruit supply",
+      "uses": "Cheese, breakfast and gifts; Hatfield bourbon remains credited as an ingredient",
+      "labelFamily": "pantry",
+      "imageGroupId": "02-summer-fruit",
+      "image": "images/albury-produce/opening-range/02-summer-fruit.webp"
+    },
+    {
+      "id": "P06",
+      "name": "Blackcurrant preserve",
+      "category": "fruit preserves",
+      "openingAvailability": "Summer batch in opening stock",
+      "uses": "Toast, yoghurt and cake filling",
+      "labelFamily": "pantry",
+      "imageGroupId": "02-summer-fruit",
+      "image": "images/albury-produce/opening-range/02-summer-fruit.webp"
+    },
+    {
+      "id": "P07",
+      "name": "Lemon and verbena curd",
+      "category": "chilled curds and compotes",
+      "openingAvailability": "Fresh chilled batches, replenished to demand",
+      "uses": "Breakfast, tartlets and sponge cakes",
+      "labelFamily": "pantry",
+      "imageGroupId": "03-curd-and-compote",
+      "image": "images/albury-produce/opening-range/03-curd-and-compote.webp"
+    },
+    {
+      "id": "P08",
+      "name": "Peach and vanilla compote",
+      "category": "chilled curds and compotes",
+      "openingAvailability": "Fresh chilled summer preparation",
+      "uses": "Yoghurt, pancakes and desserts",
+      "labelFamily": "pantry",
+      "imageGroupId": "03-curd-and-compote",
+      "image": "images/albury-produce/opening-range/03-curd-and-compote.webp"
+    },
+    {
+      "id": "P09",
+      "name": "Moutarde de la maison",
+      "category": "table condiments",
+      "openingAvailability": "Standing Dijon-led mustard with restrained whole seed",
+      "uses": "Table condiment, sandwiches and dressings",
+      "labelFamily": "pantry",
+      "imageGroupId": "04-table-condiments",
+      "image": "images/albury-produce/opening-range/04-table-condiments.webp"
+    },
+    {
+      "id": "P10",
+      "name": "Albury tomato ketchup",
+      "category": "table condiments",
+      "openingAvailability": "Standing tomato and red-wine-vinegar recipe",
+      "uses": "Breakfast, burgers, croquettes and late suppers",
+      "labelFamily": "pantry",
+      "imageGroupId": "04-table-condiments",
+      "image": "images/albury-produce/opening-range/04-table-condiments.webp"
+    },
+    {
+      "id": "P11",
+      "name": "Cornichons with tarragon",
+      "category": "pickles and savoury preserves",
+      "openingAvailability": "Summer production and replenished stock",
+      "uses": "Sandwiches, charcuterie and drinks snacks",
+      "labelFamily": "pantry",
+      "imageGroupId": "05-pickles",
+      "image": "images/albury-produce/opening-range/05-pickles.webp"
+    },
+    {
+      "id": "P12",
+      "name": "Shallots in thyme-and-tarragon vinegar",
+      "category": "pickles and savoury preserves",
+      "openingAvailability": "Standing preparation, replenished as needed",
+      "uses": "Cheese, cold meats and salads",
+      "labelFamily": "pantry",
+      "imageGroupId": "05-pickles",
+      "image": "images/albury-produce/opening-range/05-pickles.webp"
+    },
+    {
+      "id": "P13",
+      "name": "Confit d'oignons",
+      "category": "savoury confits",
+      "openingAvailability": "Regular production to demand",
+      "uses": "Cheese, pâté, sandwiches and savoury pastry",
+      "labelFamily": "pantry",
+      "imageGroupId": "06-savoury-pantry",
+      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+    },
+    {
+      "id": "P14",
+      "name": "Tomato and Espelette confit",
+      "category": "savoury confits",
+      "openingAvailability": "Summer production; held appropriately for its preparation",
+      "uses": "Eggs, grilled fish, vegetables and tartines",
+      "labelFamily": "pantry",
+      "imageGroupId": "06-savoury-pantry",
+      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+    },
+    {
+      "id": "P15",
+      "name": "Quick-pickled red onions",
+      "category": "pickles and savoury preserves",
+      "openingAvailability": "Fresh chilled batches",
+      "uses": "Tacos, grilled meats, salads and sandwiches",
+      "labelFamily": "pantry",
+      "imageGroupId": "05-pickles",
+      "image": "images/albury-produce/opening-range/05-pickles.webp"
+    },
+    {
+      "id": "P16",
+      "name": "Beetroot with orange and coriander",
+      "category": "pickles and savoury preserves",
+      "openingAvailability": "Chilled pickled vegetable preparation",
+      "uses": "Lunch salads, smoked fish and cold tables",
+      "labelFamily": "pantry",
+      "imageGroupId": "06-savoury-pantry",
+      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+    },
+    {
+      "id": "P17",
+      "name": "Courgette and mustard-seed pickle",
+      "category": "pickles and savoury preserves",
+      "openingAvailability": "Summer vegetable preparation",
+      "uses": "Sandwiches, cheese and picnic food",
+      "labelFamily": "pantry",
+      "imageGroupId": "06-savoury-pantry",
+      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+    },
+    {
+      "id": "P18",
+      "name": "Toasted oat, almond and seed granola",
+      "category": "breakfast pantry",
+      "openingAvailability": "Regular small dry batches",
+      "uses": "Breakfast and guest-pantry breakfast provision",
+      "labelFamily": "pantry",
+      "imageGroupId": "07-breakfast-and-savoury-baking",
+      "image": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp"
+    },
+    {
+      "id": "P19",
+      "name": "Seeded rye crackers",
+      "category": "crackers and savoury baking",
+      "openingAvailability": "Regular baking",
+      "uses": "Cheese, pâté and savoury snacks",
+      "labelFamily": "pantry",
+      "imageGroupId": "07-breakfast-and-savoury-baking",
+      "image": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp"
+    },
+    {
+      "id": "P20",
+      "name": "Parmesan and black-pepper sablés",
+      "category": "crackers and savoury baking",
+      "openingAvailability": "Regular baking",
+      "uses": "Drinks, studio breaks and small gifts",
+      "labelFamily": "pantry",
+      "imageGroupId": "07-breakfast-and-savoury-baking",
+      "image": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp"
+    },
+    {
+      "id": "P21",
+      "name": "Butter shortbread",
+      "category": "biscuits",
+      "openingAvailability": "Regular baking",
+      "uses": "Coffee, bedrooms on arrival and take-home food",
+      "labelFamily": "pantry",
+      "imageGroupId": "08-biscuits-and-bar-snacks",
+      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+    },
+    {
+      "id": "P22",
+      "name": "Dark chocolate and sea-salt sablés",
+      "category": "biscuits",
+      "openingAvailability": "Regular baking",
+      "uses": "Coffee, late evenings and take-home food",
+      "labelFamily": "pantry",
+      "imageGroupId": "08-biscuits-and-bar-snacks",
+      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+    },
+    {
+      "id": "P23",
+      "name": "Rosemary and smoked-salt almonds",
+      "category": "bar snacks",
+      "openingAvailability": "Regular small batches",
+      "uses": "Bar and rec-room service",
+      "labelFamily": "pantry",
+      "imageGroupId": "08-biscuits-and-bar-snacks",
+      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+    },
+    {
+      "id": "P24",
+      "name": "Lime-leaf and chilli cashews",
+      "category": "bar snacks",
+      "openingAvailability": "Regular small batches",
+      "uses": "Bar and informal gatherings",
+      "labelFamily": "pantry",
+      "imageGroupId": "08-biscuits-and-bar-snacks",
+      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+    },
+    {
+      "id": "P25",
+      "name": "Cocktail cherries",
+      "category": "bar garnish",
+      "openingAvailability": "Summer fruit preparation and replenished stock",
+      "uses": "Bar garnish; separate from black-cherry confiture",
+      "labelFamily": "pantry",
+      "imageGroupId": "09-bar-preparations",
+      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+    },
+    {
+      "id": "P26",
+      "name": "Vanilla syrup",
+      "category": "syrup",
+      "openingAvailability": "Regular bar preparation",
+      "uses": "Mixed drinks, milkshakes and desserts",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "09-bar-preparations",
+      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+    },
+    {
+      "id": "P27",
+      "name": "Ginger and lemongrass cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation",
+      "uses": "Alcohol-free drinks and cocktail components",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "09-bar-preparations",
+      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+    },
+    {
+      "id": "P28",
+      "name": "Passion-fruit and lime cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation",
+      "uses": "Alcohol-free drinks and cocktail components",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "09-bar-preparations",
+      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+    },
+    {
+      "id": "P29",
+      "name": "Vanilla-bean ice cream",
+      "category": "ice cream",
+      "openingAvailability": "Regular frozen production",
+      "uses": "Affogato, fruit, tarts and late-night bowls",
+      "labelFamily": "pantry",
+      "imageGroupId": "10-house-ice-creams",
+      "image": "images/albury-produce/opening-range/10-house-ice-creams.webp"
+    },
+    {
+      "id": "P30",
+      "name": "Dark-chocolate ice cream",
+      "category": "ice cream",
+      "openingAvailability": "Regular frozen production",
+      "uses": "Desserts and informal late-night service",
+      "labelFamily": "pantry",
+      "imageGroupId": "10-house-ice-creams",
+      "image": "images/albury-produce/opening-range/10-house-ice-creams.webp"
+    },
+    {
+      "id": "P31",
+      "name": "Elderflower and lemon cordial",
+      "category": "cordial",
+      "openingAvailability": "Early-summer recipe and retained approved reserve; replenished for service",
+      "uses": "Floral, light afternoon drinks and sparkling-water service",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-elderflower",
+      "image": "images/albury-culinary/cordial-elderflower.webp"
+    },
+    {
+      "id": "P32",
+      "name": "Raspberry and lemon verbena cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled summer batches",
+      "uses": "Fragrant berry drinks, terrace lunches and alcohol-free aperitifs",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-raspberry",
+      "image": "images/albury-culinary/cordial-raspberry.webp"
+    },
+    {
+      "id": "P33",
+      "name": "Blackcurrant and bay cordial",
+      "category": "cordial",
+      "openingAvailability": "Summer fruit recipe; regular chilled service batches",
+      "uses": "Deeper fruit drinks alongside food and bar service",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-blackcurrant",
+      "image": "images/albury-culinary/cordial-blackcurrant.webp"
+    }
+  ],
+  "seasonalRecipes": [
+    {
+      "id": "seasonal-rhubarb-orange-cordial",
+      "name": "Rhubarb and orange cordial",
+      "category": "cordial",
+      "season": "spring",
+      "openingAvailability": "Seasonal repertoire; not standing opening stock on 11 August 2025.",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-rhubarb",
+      "image": "images/albury-culinary/cordial-rhubarb.webp"
+    },
+    {
+      "id": "seasonal-blackberry-apple-cordial",
+      "name": "Blackberry and apple cordial",
+      "category": "cordial",
+      "season": "autumn",
+      "openingAvailability": "Seasonal repertoire; not standing opening stock on 11 August 2025.",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-blackberry",
+      "image": "images/albury-culinary/cordial-blackberry.webp"
+    }
+  ]
+}
