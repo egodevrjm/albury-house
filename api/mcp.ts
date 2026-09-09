@@ -7,6 +7,7 @@ import {
   getCollectionItem,
   getDateContext,
   getFloor,
+  getOutdoorArea,
   getGuestProvision,
   getImage,
   getMenuForDate,
@@ -22,6 +23,7 @@ import {
   listDrinks,
   listEvents,
   listFloors,
+  listOutdoorAreas,
   listPantry,
   listPartners,
   listRooms,
@@ -61,21 +63,36 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("list_floors", {
     title: "List Albury floors",
-    description: "List the estate/exterior, seven internal levels and garden with plan links and room counts.",
+    description: "List only Albury's seven internal floors, including both basements. Each has its chosen name and physical level. Exterior & Garden is one separate outdoor area; use list_outdoor_areas for it.",
     inputSchema: z.object({}), annotations: readOnly,
   }, async () => guarded(() => ({ floors: listFloors() })));
 
   server.registerTool("get_floor", {
     title: "Get an Albury floor",
-    description: "Return one floor, its plan, rooms and all linked room views.",
+    description: "Return one of the seven internal floors, its chosen name, physical level, plan and rooms. Accepts stable IDs, current names and legacy names. For Exterior & Garden use get_outdoor_area.",
     inputSchema: z.object({ floor_id: z.string().min(1) }), annotations: readOnly,
-  }, async ({ floor_id }) => guarded(() => getFloor(floor_id) ?? (() => { throw new Error(`No Albury floor found for ${floor_id}.`); })()));
+  }, async ({ floor_id }) => guarded(() => getFloor(floor_id) ?? (() => {
+    if (getOutdoorArea(floor_id)) throw new Error("Exterior & Garden is an outdoor area, not a floor. Use get_outdoor_area.");
+    throw new Error(`No Albury floor found for ${floor_id}.`);
+  })()));
+
+  server.registerTool("list_outdoor_areas", {
+    title: "List Albury outdoor areas",
+    description: "Return the single Exterior & Garden area covering the frontage, arrival, mews, terraces and garden. This is not an internal floor.",
+    inputSchema: z.object({}), annotations: readOnly,
+  }, async () => guarded(() => ({ outdoorAreas: listOutdoorAreas() })));
+
+  server.registerTool("get_outdoor_area", {
+    title: "Get Albury outdoor area",
+    description: "Return Exterior & Garden with its plans, outdoor spaces and image views. Accepts exterior, garden and the current area name; the old exterior and garden sections are combined.",
+    inputSchema: z.object({ area_id: z.string().min(1) }), annotations: readOnly,
+  }, async ({ area_id }) => guarded(() => getOutdoorArea(area_id) ?? (() => { throw new Error(`No Albury outdoor area found for ${area_id}.`); })()));
 
   server.registerTool("list_rooms", {
     title: "List Albury rooms",
-    description: "List coherent rooms, optionally on one floor or matching a query. Multiple photographs of the same room are grouped as views.",
-    inputSchema: z.object({ floor_id: z.string().optional(), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
-  }, async ({ floor_id, ...input }) => guarded(() => listRooms({ floorId: floor_id, ...input })));
+    description: "List coherent rooms and outdoor spaces, optionally by internal floor or outdoor area. Outdoor records have a section and outdoorAreaId, with floorId null. Multiple photographs of the same space are grouped as views.",
+    inputSchema: z.object({ floor_id: z.string().optional(), outdoor_area_id: z.string().optional(), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
+  }, async ({ floor_id, outdoor_area_id, ...input }) => guarded(() => listRooms({ floorId: floor_id, outdoorAreaId: outdoor_area_id, ...input })));
 
   server.registerTool("get_room", {
     title: "Get an Albury room",

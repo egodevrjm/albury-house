@@ -23,8 +23,21 @@ async function post(body: unknown) {
 test("MCP advertises the complete read-only Albury toolset", async () => {
   const response = await post({ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} });
   const names = response.result.tools.map((tool: { name: string }) => tool.name);
-  assert.equal(names.length, 25);
-  for (const name of ["get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "get_image", "get_events_for_date"]) assert.ok(names.includes(name), name);
+  assert.equal(names.length, 27);
+  for (const name of ["get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area"]) assert.ok(names.includes(name), name);
+});
+
+test("MCP counts seven floors and exposes the garden separately", async () => {
+  const call = async (name: string, args = {}) => (await post({ jsonrpc: "2.0", id: name, method: "tools/call", params: { name, arguments: args } })).result;
+  const summary = await call("get_albury_summary");
+  assert.equal(summary.structuredContent.totals.floors, 7);
+  assert.equal(summary.structuredContent.totals.outdoorAreas, 1);
+  const inside = await call("list_floors");
+  assert.equal(inside.structuredContent.floors.length, 7);
+  assert.ok(inside.structuredContent.floors.every((floor: { kind: string }) => floor.kind === "floor"));
+  const outside = await call("get_outdoor_area", { area_id: "garden" });
+  assert.equal(outside.structuredContent.name, "Exterior & Garden");
+  assert.equal(outside.structuredContent.level, null);
 });
 
 test("MCP menu and pantry calls return structured canonical records", async () => {

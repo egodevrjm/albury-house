@@ -2,59 +2,9 @@
   "schemaVersion": 1,
   "tour": [
     {
-      "id": "exterior",
-      "name": "Estate & Exterior",
-      "short": "Site & Arrival",
-      "plan": "images/albury/exterior/06-no34-acquisition-projection.webp",
-      "rooms": [
-        {
-          "path": "images/albury/exterior/06-no34-acquisition-projection.webp",
-          "title": "The Cedars — Future Landscape Proposal",
-          "description": "Future post-renovation concept, not the August 2025 opening condition. The Cedars remains a separate detached staff house with its own street entrance and enclosed private garden; proposed landscaping adds a kitchen garden, event lawn and controlled connection to Albury. Its garden is approximately 0.7 acre. At story opening it is empty and unconnected; an integrated capacity near 500 remains a future possibility, not an outdoor-only capacity.",
-          "roomName": "The Cedars — Future Landscape Proposal",
-          "roomId": "the-cedars-future-landscape-proposal"
-        },
-        {
-          "path": "images/albury/exterior/03-drone-property-boundaries-terrace-v2.webp",
-          "title": "Existing Site — Before Landscape Works",
-          "description": "The illustrative pre-works aerial shows Albury and detached No. 34 as separate plots before the new staff-house enclosure, kitchen garden, hedge arch and unified rear landscape are formed.",
-          "roomName": "Existing Site — Before Landscape Works",
-          "roomId": "existing-site-before-landscape-works"
-        },
-        {
-          "path": "images/albury/exterior/04-street-arrival.webp",
-          "title": "Street Arrival",
-          "description": "From just inside the open gates, the broad approach, balanced frontage and single formal entrance establish Albury as one residence rather than two adjoining houses.",
-          "roomName": "Street Arrival",
-          "roomId": "street-arrival"
-        },
-        {
-          "path": "images/albury/exterior/02-front-elevation-current.webp",
-          "title": "Front Elevation",
-          "description": "The unified Upper Phillimore frontage reads as one exceptionally broad Victorian residence while retaining the measured rhythm of the original Nos. 30 and 32 pair.",
-          "roomName": "Front Elevation",
-          "roomId": "front-elevation"
-        },
-        {
-          "path": "images/albury/exterior/05-front-elevation-blue-hour.webp",
-          "title": "Front Elevation at Blue Hour",
-          "description": "Restrained window light and the entrance lanterns give the restored public frontage an inhabited evening presence without turning it into an event façade.",
-          "roomName": "Front Elevation",
-          "roomId": "front-elevation"
-        },
-        {
-          "path": "images/albury/exterior/01-rear-mews-current.webp",
-          "title": "Duchess of Bedford Walk Mews",
-          "description": "The screened rear service frontage contains the secure vehicle ramp, controlled personnel entrance and secondary service access without exposing the garden or principal rooms.",
-          "roomName": "Duchess of Bedford Walk Mews",
-          "roomId": "duchess-of-bedford-walk-mews"
-        }
-      ]
-    },
-    {
       "id": "lower-basement",
-      "name": "Lower Basement",
-      "short": "LB −2",
+      "name": "Albury Spa",
+      "short": "Lower Basement",
       "plan": "images/albury/floor-plans/lower-basement.svg",
       "rooms": [
         {
@@ -274,12 +224,18 @@
           "roomName": "Professional Gym",
           "roomId": "professional-gym"
         }
+      ],
+      "level": "Lower Basement",
+      "kind": "floor",
+      "aliases": [
+        "Lower Basement",
+        "LB -2"
       ]
     },
     {
       "id": "upper-basement",
-      "name": "Upper Basement",
-      "short": "Lower Ground",
+      "name": "Club Alex",
+      "short": "Upper Basement",
       "plan": "images/albury/floor-plans/upper-basement.svg",
       "rooms": [
         {
@@ -625,12 +581,18 @@
           "roomName": "Service Core",
           "roomId": "service-core"
         }
+      ],
+      "level": "Upper Basement",
+      "kind": "floor",
+      "aliases": [
+        "Upper Basement",
+        "Lower Ground"
       ]
     },
     {
       "id": "raised-ground",
       "name": "Raised Ground",
-      "short": "Daily House",
+      "short": "Raised Ground",
       "plan": "images/albury/floor-plans/raised-ground.svg",
       "rooms": [
         {
@@ -1004,11 +966,16 @@
           "roomName": "Rear Service Landing",
           "roomId": "rear-service-landing"
         }
+      ],
+      "level": "Raised Ground",
+      "kind": "floor",
+      "aliases": [
+        "Raised Ground"
       ]
     },
     {
       "id": "music-nobile",
-      "name": "Music Nobile",
+      "name": "Studio Albury",
       "short": "First Floor",
       "plan": "images/albury/floor-plans/music-nobile.svg",
       "rooms": [
@@ -1215,12 +1182,19 @@
           "roomName": "Rec Room",
           "roomId": "rec-room"
         }
+      ],
+      "level": "First Floor",
+      "kind": "floor",
+      "aliases": [
+        "Music Nobile",
+        "First Floor",
+        "First Floor / Music Nobile"
       ]
     },
     {
       "id": "second-floor",
-      "name": "Second Floor",
-      "short": "Senior Guests",
+      "name": "Principal guest suites",
+      "short": "Second Floor",
       "plan": "images/albury/floor-plans/second-floor.svg",
       "rooms": [
         {
@@ -1426,12 +1400,18 @@
           "roomName": "Guest Bedroom Three",
           "roomId": "guest-bedroom-three"
         }
+      ],
+      "level": "Second Floor",
+      "kind": "floor",
+      "aliases": [
+        "Second Floor",
+        "Principal Guest Suites"
       ]
     },
     {
       "id": "third-floor",
-      "name": "Third Floor",
-      "short": "Friends & Musicians",
+      "name": "The Dorm",
+      "short": "Third Floor",
       "plan": "images/albury/floor-plans/third-floor.svg",
       "rooms": [
         {
@@ -1679,12 +1659,18 @@
           "roomName": "Friends’ Salon",
           "roomId": "friends-salon"
         }
+      ],
+      "level": "Third Floor",
+      "kind": "floor",
+      "aliases": [
+        "Third Floor",
+        "Friends' Floor"
       ]
     },
     {
       "id": "top-floor",
-      "name": "Top Floor",
-      "short": "Alex’s Private Suite",
+      "name": "Alex's Apartment",
+      "short": "Top Floor",
       "plan": "images/albury/floor-plans/top-floor.svg",
       "rooms": [
         {
@@ -1802,14 +1788,14 @@
         {
           "path": "images/albury/top-floor/14-rough-demo-0213.webp",
           "title": "Rough Demo, 2:13 A.M.",
-          "description": "Alex works alone at the original stage piano with one microphone, laptop and compact interface, preserving the modest private-demo scale that distinguishes this room from Music Nobile.",
+          "description": "Alex works alone at the original stage piano with one microphone, laptop and compact interface, preserving the modest private-demo scale that distinguishes this room from Studio Albury.",
           "roomName": "Study & Writing Room",
           "roomId": "study-writing-room"
         },
         {
           "path": "images/albury/top-floor/11-writing-desk-detail.webp",
           "title": "Writing Desk — Rough Demo Setup",
-          "description": "The close working view makes the modest two-input interface, desktop microphone, laptop waveform, headphones, lyric sheets and score pages explicit while remaining far smaller than Music Nobile.",
+          "description": "The close working view makes the modest two-input interface, desktop microphone, laptop waveform, headphones, lyric sheets and score pages explicit while remaining far smaller than Studio Albury.",
           "roomName": "Study & Writing Room",
           "roomId": "study-writing-room"
         },
@@ -1904,14 +1890,62 @@
           "roomName": "Library, Awards & Secure Collection",
           "roomId": "library-awards-secure-collection"
         }
+      ],
+      "level": "Top Floor",
+      "kind": "floor",
+      "aliases": [
+        "Top Floor",
+        "Alex’s Private Suite"
       ]
     },
     {
-      "id": "garden",
-      "name": "Garden",
-      "short": "Rear Exterior",
+      "id": "exterior",
+      "name": "Exterior & Garden",
+      "short": "Outdoor area",
       "plan": "images/albury/floor-plans/garden-masterplan.svg",
       "rooms": [
+        {
+          "path": "images/albury/exterior/06-no34-acquisition-projection.webp",
+          "title": "The Cedars — Future Landscape Proposal",
+          "description": "Future post-renovation concept, not the August 2025 opening condition. The Cedars remains a separate detached staff house with its own street entrance and enclosed private garden; proposed landscaping adds a kitchen garden, event lawn and controlled connection to Albury. Its garden is approximately 0.7 acre. At story opening it is empty and unconnected; an integrated capacity near 500 remains a future possibility, not an outdoor-only capacity.",
+          "roomName": "The Cedars — Future Landscape Proposal",
+          "roomId": "the-cedars-future-landscape-proposal"
+        },
+        {
+          "path": "images/albury/exterior/03-drone-property-boundaries-terrace-v2.webp",
+          "title": "Existing Site — Before Landscape Works",
+          "description": "The illustrative pre-works aerial shows Albury and detached No. 34 as separate plots before the new staff-house enclosure, kitchen garden, hedge arch and unified rear landscape are formed.",
+          "roomName": "Existing Site — Before Landscape Works",
+          "roomId": "existing-site-before-landscape-works"
+        },
+        {
+          "path": "images/albury/exterior/04-street-arrival.webp",
+          "title": "Street Arrival",
+          "description": "From just inside the open gates, the broad approach, balanced frontage and single formal entrance establish Albury as one residence rather than two adjoining houses.",
+          "roomName": "Street Arrival",
+          "roomId": "street-arrival"
+        },
+        {
+          "path": "images/albury/exterior/02-front-elevation-current.webp",
+          "title": "Front Elevation",
+          "description": "The unified Upper Phillimore frontage reads as one exceptionally broad Victorian residence while retaining the measured rhythm of the original Nos. 30 and 32 pair.",
+          "roomName": "Front Elevation",
+          "roomId": "front-elevation"
+        },
+        {
+          "path": "images/albury/exterior/05-front-elevation-blue-hour.webp",
+          "title": "Front Elevation at Blue Hour",
+          "description": "Restrained window light and the entrance lanterns give the restored public frontage an inhabited evening presence without turning it into an event façade.",
+          "roomName": "Front Elevation",
+          "roomId": "front-elevation"
+        },
+        {
+          "path": "images/albury/exterior/01-rear-mews-current.webp",
+          "title": "Duchess of Bedford Walk Mews",
+          "description": "The screened rear service frontage contains the secure vehicle ramp, controlled personnel entrance and secondary service access without exposing the garden or principal rooms.",
+          "roomName": "Duchess of Bedford Walk Mews",
+          "roomId": "duchess-of-bedford-walk-mews"
+        },
         {
           "path": "images/albury/garden/01-overview-from-house-current.webp",
           "title": "Garden Overview",
@@ -1967,6 +2001,22 @@
           "path": "images/albury/guide-expansion/rear-terrace-closer-perspective.webp",
           "roomName": "Rear Terrace",
           "roomId": "rear-terrace"
+        }
+      ],
+      "kind": "outdoor",
+      "level": null,
+      "legacyIds": [
+        "garden"
+      ],
+      "aliases": [
+        "Estate & Exterior",
+        "Garden",
+        "Exterior & Garden"
+      ],
+      "additionalPlans": [
+        {
+          "name": "Site and arrival reference",
+          "path": "images/albury/exterior/06-no34-acquisition-projection.webp"
         }
       ]
     }

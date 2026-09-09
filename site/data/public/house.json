@@ -50,67 +50,122 @@
   ],
   "levels": [
     {
-      "id": "exterior",
-      "name": "Estate & Exterior",
-      "short": "Site & Arrival",
-      "plan": "images/albury/exterior/06-no34-acquisition-projection.webp",
-      "roomCount": 5
-    },
-    {
       "id": "lower-basement",
-      "name": "Lower Basement",
-      "short": "LB −2",
+      "name": "Albury Spa",
+      "short": "Lower Basement",
       "plan": "images/albury/floor-plans/lower-basement.svg",
+      "level": "Lower Basement",
+      "kind": "floor",
+      "aliases": [
+        "Lower Basement",
+        "LB -2"
+      ],
       "roomCount": 13
     },
     {
       "id": "upper-basement",
-      "name": "Upper Basement",
-      "short": "Lower Ground",
+      "name": "Club Alex",
+      "short": "Upper Basement",
       "plan": "images/albury/floor-plans/upper-basement.svg",
+      "level": "Upper Basement",
+      "kind": "floor",
+      "aliases": [
+        "Upper Basement",
+        "Lower Ground"
+      ],
       "roomCount": 17
     },
     {
       "id": "raised-ground",
       "name": "Raised Ground",
-      "short": "Daily House",
+      "short": "Raised Ground",
       "plan": "images/albury/floor-plans/raised-ground.svg",
+      "level": "Raised Ground",
+      "kind": "floor",
+      "aliases": [
+        "Raised Ground"
+      ],
       "roomCount": 15
     },
     {
       "id": "music-nobile",
-      "name": "Music Nobile",
+      "name": "Studio Albury",
       "short": "First Floor",
       "plan": "images/albury/floor-plans/music-nobile.svg",
+      "level": "First Floor",
+      "kind": "floor",
+      "aliases": [
+        "Music Nobile",
+        "First Floor",
+        "First Floor / Music Nobile"
+      ],
       "roomCount": 12
     },
     {
       "id": "second-floor",
-      "name": "Second Floor",
-      "short": "Senior Guests",
+      "name": "Principal guest suites",
+      "short": "Second Floor",
       "plan": "images/albury/floor-plans/second-floor.svg",
+      "level": "Second Floor",
+      "kind": "floor",
+      "aliases": [
+        "Second Floor",
+        "Principal Guest Suites"
+      ],
       "roomCount": 11
     },
     {
       "id": "third-floor",
-      "name": "Third Floor",
-      "short": "Friends & Musicians",
+      "name": "The Dorm",
+      "short": "Third Floor",
       "plan": "images/albury/floor-plans/third-floor.svg",
+      "level": "Third Floor",
+      "kind": "floor",
+      "aliases": [
+        "Third Floor",
+        "Friends' Floor"
+      ],
       "roomCount": 11
     },
     {
       "id": "top-floor",
-      "name": "Top Floor",
-      "short": "Alex’s Private Suite",
+      "name": "Alex's Apartment",
+      "short": "Top Floor",
       "plan": "images/albury/floor-plans/top-floor.svg",
+      "level": "Top Floor",
+      "kind": "floor",
+      "aliases": [
+        "Top Floor",
+        "Alex’s Private Suite"
+      ],
       "roomCount": 10
-    },
-    {
-      "id": "garden",
-      "name": "Garden",
-      "short": "Rear Exterior",
-      "plan": "images/albury/floor-plans/garden-masterplan.svg",
-      "roomCount": 4
     }
-  ]
+  ],
+  "outdoorAreas": [
+    {
+      "id": "exterior",
+      "name": "Exterior & Garden",
+      "short": "Outdoor area",
+      "plan": "images/albury/floor-plans/garden-masterplan.svg",
+      "kind": "outdoor",
+      "level": null,
+      "legacyIds": [
+        "garden"
+      ],
+      "aliases": [
+        "Estate & Exterior",
+        "Garden",
+        "Exterior & Garden"
+      ],
+      "additionalPlans": [
+        {
+          "name": "Site and arrival reference",
+          "path": "images/albury/exterior/06-no34-acquisition-projection.webp"
+        }
+      ],
+      "roomCount": 9
+    }
+  ],
+  "floorCount": 7,
+  "outdoorAreaCount": 1
 }

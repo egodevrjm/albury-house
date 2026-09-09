@@ -4,11 +4,15 @@ import test from "node:test";
 import {
   eventsForDate,
   getDateContext,
+  getFloor,
+  getOutdoorArea,
   getMenuForDate,
   getPantryItem,
   getRoom,
   getSummary,
   listEvents,
+  listFloors,
+  listOutdoorAreas,
   listPantry,
   listPartners,
   listRooms,
@@ -19,12 +23,41 @@ import {
 test("summary exposes the complete Albury reference", () => {
   const summary = getSummary();
   assert.equal(summary.asOf, "2025-08-11");
+  assert.equal(summary.totals.floors, 7);
+  assert.equal(summary.totals.outdoorAreas, 1);
+  assert.equal(summary.totals.tourSections, 8);
   assert.equal(summary.totals.permanentStaff, 36);
   assert.equal(summary.totals.scheduledSpecialists, 5);
   assert.equal(summary.totals.externalPartners, 6);
   assert.equal(summary.totals.pantryOpeningItems, 33);
   assert.ok(Number(summary.totals.rooms) > 80);
   assert.ok(summary.totals.images > 400);
+});
+
+test("named internal floors are distinct from the combined outdoor area", () => {
+  assert.deepEqual(listFloors().map((floor) => [floor.name, floor.level]), [
+    ["Albury Spa", "Lower Basement"],
+    ["Club Alex", "Upper Basement"],
+    ["Raised Ground", "Raised Ground"],
+    ["Studio Albury", "First Floor"],
+    ["Principal guest suites", "Second Floor"],
+    ["The Dorm", "Third Floor"],
+    ["Alex's Apartment", "Top Floor"],
+  ]);
+  assert.equal(getFloor("Music Nobile")?.name, "Studio Albury");
+  assert.equal(getFloor("Albury Spa")?.level, "Lower Basement");
+  assert.equal(getFloor("Alex’s Apartment")?.level, "Top Floor");
+  assert.equal(getFloor("garden"), undefined);
+  assert.equal(getFloor("exterior"), undefined);
+  assert.equal(listOutdoorAreas().length, 1);
+  const outside = getOutdoorArea("garden");
+  assert.equal(outside?.name, "Exterior & Garden");
+  assert.equal(outside?.kind, "outdoor");
+  assert.equal(outside?.level, null);
+  assert.ok(outside?.rooms.some((room) => room.id === "front-elevation"));
+  assert.ok(outside?.rooms.some((room) => room.id === "far-garden-salon"));
+  assert.ok(outside?.rooms.every((room) => room.floorId === null));
+  assert.deepEqual(listRooms({ floorId: "garden" }), listRooms({ outdoorAreaId: "exterior" }));
 });
 
 test("menu rotation remains anchored to Monday 11 August 2025", () => {

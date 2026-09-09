@@ -20,7 +20,9 @@ export const STORY_DATE = "2025-08-11";
 type Dict = Record<string, unknown>;
 
 const house = houseSource as unknown as Dict;
-const floors = (roomsSource as unknown as { tour: Dict[] }).tour;
+const sections = (roomsSource as unknown as { tour: Dict[] }).tour;
+const floors = sections.filter((section) => section.kind === "floor");
+const outdoorAreas = sections.filter((section) => section.kind === "outdoor");
 const staff = staffSource as unknown as { summary: Dict; people: Dict[]; servicePartners: Dict[]; asOf: string };
 const collections = (collectionsSource as unknown as { collections: Dict[] }).collections;
 const pantryGroups = (pantryGroupsSource as unknown as { preparations: Dict[] }).preparations;
@@ -48,7 +50,7 @@ function text(value: unknown): string {
 }
 
 function normalize(value: unknown): string {
-  return text(value).toLocaleLowerCase("en-GB").normalize("NFKD").replace(/[\u0300-\u036f]/g, "");
+  return text(value).toLocaleLowerCase("en-GB").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[‘’]/g, "'");
 }
 
 function matches(item: unknown, query?: string): boolean {
@@ -99,7 +101,7 @@ function menuPosition(dateText: string) {
 }
 
 function roomGroups() {
-  return floors.flatMap((floor) => {
+  return sections.flatMap((floor) => {
     const views = (floor.rooms as Dict[]) ?? [];
     const grouped = new Map<string, Dict[]>();
     for (const view of views) {
@@ -109,8 +111,13 @@ function roomGroups() {
     return [...grouped].map(([id, roomViews]) => ({
       id,
       name: String(roomViews[0]?.roomName ?? roomViews[0]?.title ?? id),
-      floorId: String(floor.id),
-      floorName: String(floor.name),
+      sectionId: String(floor.id),
+      sectionName: String(floor.name),
+      kind: String(floor.kind),
+      level: typeof floor.level === "string" ? floor.level : null,
+      floorId: floor.kind === "floor" ? String(floor.id) : null,
+      floorName: floor.kind === "floor" ? String(floor.name) : null,
+      outdoorAreaId: floor.kind === "outdoor" ? String(floor.id) : null,
       description: String(roomViews[0]?.description ?? ""),
       viewCount: roomViews.length,
       views: roomViews,
@@ -170,8 +177,10 @@ export function getSummary() {
     asOf: STORY_DATE,
     totals: {
       floors: floors.length,
+      outdoorAreas: outdoorAreas.length,
+      tourSections: sections.length,
       rooms: allRooms.length,
-      roomViews: floors.reduce((sum, floor) => sum + (((floor.rooms as Dict[]) ?? []).length), 0),
+      roomViews: sections.reduce((sum, section) => sum + (((section.rooms as Dict[]) ?? []).length), 0),
       permanentStaff: staff.summary.permanentEmployees,
       scheduledSpecialists: staff.summary.scheduledSpecialists,
       externalPartners: staff.servicePartners.length,
@@ -184,18 +193,51 @@ export function getSummary() {
   };
 }
 
+function matchesSection(section: Dict, id: string) {
+  return [section.id, section.name, section.level, ...((section.aliases as string[]) ?? []), ...((section.legacyIds as string[]) ?? [])]
+    .filter((value) => typeof value === "string").some((value) => normalize(value) === normalize(id));
+}
+
+function sectionSummary(section: Dict) {
+  const { rooms: _views, ...metadata } = section;
+  return {
+    ...metadata,
+    id: String(section.id),
+    name: String(section.name),
+    kind: String(section.kind),
+    level: typeof section.level === "string" ? section.level : null,
+    planUrl: imageUrl(section.plan),
+    additionalPlans: ((section.additionalPlans as Dict[]) ?? []).map((plan) => ({ ...plan, planUrl: imageUrl(plan.path) })),
+    uniqueRooms: allRooms.filter((room) => room.sectionId === section.id).length,
+    views: ((section.rooms as Dict[]) ?? []).length,
+  };
+}
+
 export function listFloors() {
-  return floors.map((floor) => ({ ...floor, planUrl: imageUrl(floor.plan), uniqueRooms: allRooms.filter((room) => room.floorId === floor.id).length, views: ((floor.rooms as Dict[]) ?? []).length }));
+  return floors.map(sectionSummary);
+}
+
+export function listOutdoorAreas() {
+  return outdoorAreas.map(sectionSummary);
 }
 
 export function getFloor(id: string) {
-  const floor = floors.find((item) => item.id === id || normalize(item.name) === normalize(id));
+  const floor = floors.find((item) => matchesSection(item, id));
   if (!floor) return undefined;
-  return { ...floor, planUrl: imageUrl(floor.plan), rooms: allRooms.filter((room) => room.floorId === floor.id) };
+  return { ...sectionSummary(floor), rooms: allRooms.filter((room) => room.sectionId === floor.id) };
 }
 
-export function listRooms(input: { floorId?: string; query?: string; offset?: number; limit?: number }) {
-  const filtered = allRooms.filter((room) => (!input.floorId || room.floorId === input.floorId) && matches(room, input.query));
+export function getOutdoorArea(id: string) {
+  const area = outdoorAreas.find((item) => matchesSection(item, id));
+  if (!area) return undefined;
+  return { ...sectionSummary(area), rooms: allRooms.filter((room) => room.sectionId === area.id) };
+}
+
+export function listRooms(input: { floorId?: string; outdoorAreaId?: string; query?: string; offset?: number; limit?: number }) {
+  const requestedSection = input.outdoorAreaId ?? input.floorId;
+  // Legacy floor_id="garden" and floor_id="exterior" links still resolve to the combined outdoor area.
+  const section = requestedSection ? sections.find((item) => matchesSection(item, requestedSection)) : undefined;
+  const filtered = allRooms.filter((room) => (!requestedSection || room.sectionId === section?.id) && matches(room, input.query));
   return paginate(filtered.map(({ views, ...room }) => ({ ...room, primaryImage: views[0] })), input.offset, input.limit);
 }
 
@@ -309,7 +351,7 @@ export function getDateContext(date: string) {
 export function searchAlbury(input: { query: string; domains?: string[]; limit?: number }) {
   const domains = new Set(input.domains?.length ? input.domains : ["rooms", "staff", "partners", "pantry", "collections", "food", "events"]);
   const records: Dict[] = [];
-  if (domains.has("rooms")) records.push(...allRooms.map((item) => ({ domain: "rooms", id: item.id, title: item.name, floor: item.floorName, text: item.description })));
+  if (domains.has("rooms")) records.push(...allRooms.map((item) => ({ domain: "rooms", id: item.id, title: item.name, floor: item.floorName, section: item.sectionName, kind: item.kind, level: item.level, text: item.description })));
   if (domains.has("staff")) records.push(...staff.people.map((item) => ({ domain: "staff", id: item.id, title: item.name, text: `${item.role ?? ""}. ${item.remit ?? ""} ${item.description ?? ""}` })));
   if (domains.has("partners")) records.push(...staff.servicePartners.map((item) => ({ domain: "partners", id: item.id, title: item.name, text: `${item.type ?? ""}. ${item.remit ?? ""}` })));
   if (domains.has("pantry")) records.push(...[...pantryItems.openingItems, ...pantryItems.seasonalRecipes].map((item) => ({ domain: "pantry", id: item.id, title: item.name, text: `${item.category ?? ""}. ${item.uses ?? ""} ${item.openingAvailability ?? ""}` })));
