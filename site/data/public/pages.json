@@ -65,6 +65,11 @@
       "id": "kitchen-library",
       "label": "Kitchen library",
       "href": "ALBURY_KITCHEN_LIBRARY.html"
+    },
+    {
+      "id": "walk-albury",
+      "label": "Walk Albury",
+      "href": "ALBURY_WALK.html"
     }
   ]
 }

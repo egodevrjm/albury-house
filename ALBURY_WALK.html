@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Walk Albury — Albury House</title><link rel="icon" href="data:,">
+<link rel="stylesheet" href="site/shared.css"><link rel="stylesheet" href="site/walk.css">
+<script defer src="site/content-data.js"></script><script defer src="site/shared.js"></script><script defer src="site/walk.js"></script>
+</head><body>
+<a class="albury-skip" href="#walk-map">Skip to house map</a>
+<main class="walk-main">
+<header class="walk-intro"><div><h1>Walk Albury</h1><p>Explore the house, one room at a time.</p></div><a href="ALBURY_HOUSE_TOUR.html">Browse the room photographs ↗</a></header>
+<div class="walk-search"><label for="walk-search">Find a room</label><input id="walk-search" type="search" placeholder="Kitchen, studio, garden…" autocomplete="off"><span id="walk-progress" role="status"></span><div id="walk-results" hidden></div></div>
+<div class="walk-layout">
+<aside class="walk-rail"><label class="mobile-floor" for="walk-floor-select">Choose a floor or outdoor area<select id="walk-floor-select"></select></label><label class="mobile-floor mobile-room" for="walk-room-select">Choose a room<select id="walk-room-select"></select></label><nav id="walk-floors" aria-label="House floors and outdoor area"></nav><div class="rail-note">Albury House<br><span>Seven floors. One garden.</span></div></aside>
+<section class="map-panel" aria-labelledby="map-title">
+<header class="map-heading"><div><h2 id="map-title">Albury House</h2><p id="map-level"></p></div><div class="map-zoom" role="group" aria-label="Map zoom"><button id="zoom-out" aria-label="Zoom out">−</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="map-fit">Fit</button></div></header>
+<div class="map-modes" role="group" aria-label="Map view"><button id="floor-view" aria-pressed="true">Floor map</button><button id="room-view" aria-pressed="false">Room plan</button><span>Click a room · drag to explore</span></div>
+<div class="map-canvas"><svg id="walk-map" xmlns="http://www.w3.org/2000/svg" viewBox="50 70 1500 850" role="group" aria-label="Interactive floor map" tabindex="-1"></svg></div>
+<div class="map-caption"><span><i class="legend-selected"></i> Your room <i class="legend-visited"></i> Visited</span><span>↑ North · Schematic, not to scale</span></div>
+<nav class="walk-movement" aria-label="Explore the house"><button id="walk-back">← Backtrack</button><button id="floor-down">↓ Floor below</button><button id="floor-up">↑ Floor above</button></nav>
+<details class="walk-directory"><summary>Rooms on this floor</summary><div id="walk-room-list"></div></details>
+</section>
+<aside class="room-panel" aria-labelledby="walk-room-name"><div class="walk-photo"><img id="walk-photo" alt=""><p id="photo-error" hidden>Image unavailable. Try another view.</p><div class="photo-navigation"><button id="photo-prev" aria-label="Previous photograph">←</button><span id="photo-count" aria-live="polite"></span><button id="photo-next" aria-label="Next photograph">→</button></div></div>
+<div class="room-copy"><p id="room-location"></p><h2 id="walk-room-name" aria-live="polite" aria-atomic="true"></h2><p id="room-note"></p><details id="photo-notes"><summary>About this photograph</summary><p id="photo-description"></p></details><div id="room-connections"></div><div class="room-actions"><button id="focus-room">View room plan ↗</button><a id="room-gallery-link">Open room photographs ↗</a><a id="full-plan-link" target="_blank" rel="noopener">Original floor plan ↗</a></div><div class="next-room"><button id="room-prev">← Previous room</button><button id="room-next">Next room →</button></div></div></aside>
+</div>
+<noscript><p>This interactive map needs JavaScript. You can still visit the <a href="ALBURY_HOUSE_GUIDE.html">house guide</a> and <a href="ALBURY_HOUSE_TOUR.html">room tour</a>.</p></noscript>
+</main><footer class="albury-footer">Albury House · <a href="ALBURY_HOUSE_GUIDE.html">House guide</a> · <a href="ALBURY_HOUSE_TOUR.html">Room photographs</a></footer>
+</body></html>

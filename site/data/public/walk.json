@@ -1,0 +1,1621 @@
+{
+  "schemaVersion": 1,
+  "description": "Interactive schematic; room extents are illustrative, not measured architectural plans or verified door routes.",
+  "sections": [
+    {
+      "id": "lower-basement",
+      "footprint": {
+        "x": 80,
+        "y": 150,
+        "width": 1440,
+        "height": 730,
+        "note": "UNDER HOUSE, TERRACE & MOST OF GARDEN"
+      },
+      "rooms": [
+        {
+          "number": "02",
+          "label": [
+            "25-METRE",
+            "LAP POOL"
+          ],
+          "x": 105,
+          "y": 185,
+          "width": 415,
+          "height": 485,
+          "kind": "wet",
+          "feature": "pool",
+          "id": "25-metre-lap-pool",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "10",
+          "label": [
+            "POOL CHANGING",
+            "& SHOWERS"
+          ],
+          "x": 105,
+          "y": 685,
+          "width": 415,
+          "height": 170,
+          "kind": "wet",
+          "id": "pool-changing-suite",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "03",
+          "label": [
+            "WELLNESS &",
+            "HYDRATION LOUNGE"
+          ],
+          "x": 540,
+          "y": 185,
+          "width": 285,
+          "height": 225,
+          "kind": "wellness",
+          "id": "wellness-hydration-lounge",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "01",
+          "label": [
+            "SPA ARRIVAL",
+            "GALLERY"
+          ],
+          "x": 540,
+          "y": 430,
+          "width": 285,
+          "height": 205,
+          "kind": "circulation",
+          "id": "spa-arrival-gallery",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "09",
+          "label": [
+            "TREATMENT",
+            "ROOM"
+          ],
+          "x": 540,
+          "y": 655,
+          "width": 285,
+          "height": 200,
+          "kind": "wellness",
+          "id": "treatment-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "04",
+          "label": [
+            "PROFESSIONAL",
+            "GYM"
+          ],
+          "x": 845,
+          "y": 185,
+          "width": 430,
+          "height": 290,
+          "kind": "wellness",
+          "id": "professional-gym",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "08",
+          "label": [
+            "RECOVERY &",
+            "MOBILITY LOUNGE"
+          ],
+          "x": 845,
+          "y": 495,
+          "width": 430,
+          "height": 205,
+          "kind": "wellness",
+          "id": "recovery-mobility-lounge",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "05",
+          "label": [
+            "SAUNA"
+          ],
+          "x": 845,
+          "y": 720,
+          "width": 135,
+          "height": 135,
+          "kind": "wet",
+          "id": "sauna",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "06",
+          "label": [
+            "STEAM"
+          ],
+          "x": 995,
+          "y": 720,
+          "width": 135,
+          "height": 135,
+          "kind": "wet",
+          "id": "steam-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "07",
+          "label": [
+            "COLD",
+            "PLUNGE"
+          ],
+          "x": 1145,
+          "y": 720,
+          "width": 130,
+          "height": 135,
+          "kind": "wet",
+          "id": "cold-plunge",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "11",
+          "label": [
+            "RESERVE",
+            "CELLAR"
+          ],
+          "x": 1295,
+          "y": 185,
+          "width": 200,
+          "height": 205,
+          "kind": "service",
+          "id": "reserve-wine-spirits-cellar",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "12",
+          "label": [
+            "PLANT & WATER",
+            "SYSTEMS"
+          ],
+          "x": 1295,
+          "y": 410,
+          "width": 200,
+          "height": 255,
+          "kind": "service",
+          "id": "plant-water-systems",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "13",
+          "label": [
+            "PROTECTED SERVICE",
+            "PASSAGE / ESCAPE"
+          ],
+          "x": 1295,
+          "y": 685,
+          "width": 200,
+          "height": 170,
+          "kind": "circulation",
+          "small": true,
+          "id": "protected-service-passage",
+          "parentId": null,
+          "children": []
+        }
+      ],
+      "viewBox": [
+        55,
+        125,
+        1490,
+        780
+      ],
+      "arrival": "spa-arrival-gallery"
+    },
+    {
+      "id": "upper-basement",
+      "footprint": {
+        "x": 70,
+        "y": 145,
+        "width": 1460,
+        "height": 745,
+        "note": "UNDER HOUSE, TERRACE & MOST OF GARDEN"
+      },
+      "rooms": [
+        {
+          "number": "10",
+          "label": [
+            "MEWS GARAGE",
+            "& LOADING COURT"
+          ],
+          "x": 875,
+          "y": 175,
+          "width": 630,
+          "height": 190,
+          "kind": "service",
+          "feature": "garage",
+          "id": "mews-garage-loading-court",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "11",
+          "label": [
+            "SECURITY &",
+            "MEWS VESTIBULE"
+          ],
+          "x": 720,
+          "y": 175,
+          "width": 135,
+          "height": 190,
+          "kind": "circulation",
+          "small": true,
+          "id": "security-mews-vestibule",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "01",
+          "label": [
+            "BAR & GAMES ROOM",
+            "BILLIARDS · CARDS · SHUFFLEBOARD · LOUNGE"
+          ],
+          "x": 95,
+          "y": 175,
+          "width": 605,
+          "height": 390,
+          "kind": "principal",
+          "feature": "games",
+          "id": "bar-games-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "04",
+          "label": [
+            "CINEMA"
+          ],
+          "x": 95,
+          "y": 585,
+          "width": 315,
+          "height": 275,
+          "kind": "principal",
+          "feature": "cinema",
+          "id": "cinema",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "03",
+          "label": [
+            "CINEMA",
+            "APPROACH"
+          ],
+          "x": 430,
+          "y": 585,
+          "width": 155,
+          "height": 125,
+          "kind": "circulation",
+          "id": "cinema-approach",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "05",
+          "label": [
+            "WINE & SPIRITS",
+            "TASTING ROOM"
+          ],
+          "x": 605,
+          "y": 585,
+          "width": 285,
+          "height": 175,
+          "kind": "principal",
+          "id": "wine-spirits-tasting-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "06",
+          "label": [
+            "WINE & SPIRITS",
+            "LOUNGE"
+          ],
+          "x": 605,
+          "y": 780,
+          "width": 175,
+          "height": 80,
+          "kind": "principal",
+          "small": true,
+          "id": "wine-spirits-listening-lounge",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "07",
+          "label": [
+            "POWDER"
+          ],
+          "x": 800,
+          "y": 780,
+          "width": 90,
+          "height": 80,
+          "kind": "wet",
+          "small": true,
+          "id": "powder-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "08",
+          "label": [
+            "EVENT KITCHEN",
+            "& PANTRY"
+          ],
+          "x": 910,
+          "y": 385,
+          "width": 265,
+          "height": 205,
+          "kind": "service",
+          "id": "event-kitchen-pantry",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "09",
+          "label": [
+            "STAFF",
+            "OFFICE"
+          ],
+          "x": 1195,
+          "y": 385,
+          "width": 150,
+          "height": 120,
+          "kind": "service",
+          "id": "staff-office",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "12",
+          "label": [
+            "DELIVERY &",
+            "STAGING"
+          ],
+          "x": 1365,
+          "y": 385,
+          "width": 140,
+          "height": 205,
+          "kind": "service",
+          "small": true,
+          "id": "delivery-staging",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "13",
+          "label": [
+            "LAUNDRY &",
+            "GARMENT CARE"
+          ],
+          "x": 910,
+          "y": 610,
+          "width": 265,
+          "height": 160,
+          "kind": "service",
+          "id": "laundry-garment-care",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "14",
+          "label": [
+            "STAFF ROOM",
+            "& CHANGING"
+          ],
+          "x": 910,
+          "y": 790,
+          "width": 265,
+          "height": 70,
+          "kind": "service",
+          "small": true,
+          "id": "staff-room-changing",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "15",
+          "label": [
+            "SERVICE",
+            "CORE"
+          ],
+          "x": 1195,
+          "y": 525,
+          "width": 150,
+          "height": 175,
+          "kind": "circulation",
+          "id": "service-core",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "16",
+          "label": [
+            "HOUSEKEEPING",
+            "STORE"
+          ],
+          "x": 1195,
+          "y": 720,
+          "width": 150,
+          "height": 140,
+          "kind": "service",
+          "small": true,
+          "id": "housekeeping-store",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "17",
+          "label": [
+            "REFUSE &",
+            "RECYCLING"
+          ],
+          "x": 1365,
+          "y": 610,
+          "width": 140,
+          "height": 250,
+          "kind": "service",
+          "small": true,
+          "id": "refuse-recycling-holding",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "18",
+          "label": [
+            "STAFF OVERNIGHT"
+          ],
+          "x": 720,
+          "y": 385,
+          "width": 170,
+          "height": 180,
+          "kind": "service",
+          "id": "staff-overnight-room",
+          "parentId": null,
+          "children": []
+        }
+      ],
+      "viewBox": [
+        45,
+        120,
+        1510,
+        795
+      ],
+      "arrival": "cinema-approach"
+    },
+    {
+      "id": "raised-ground",
+      "footprint": {
+        "x": 145,
+        "y": 285,
+        "width": 1310,
+        "height": 595,
+        "note": "NOS. 30 + 32 · FULL COMBINED DOUBLE-VILLA PLAN"
+      },
+      "rooms": [
+        {
+          "number": "08",
+          "label": [
+            "GARDEN ROOM"
+          ],
+          "x": 170,
+          "y": 310,
+          "width": 320,
+          "height": 235,
+          "kind": "principal",
+          "id": "garden-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "07",
+          "label": [
+            "KITCHEN &",
+            "BREAKFAST ROOM"
+          ],
+          "x": 510,
+          "y": 310,
+          "width": 360,
+          "height": 235,
+          "kind": "principal",
+          "id": "principal-kitchen-breakfast-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "04",
+          "label": [
+            "GUEST SALON",
+            "CONCEALED TELEVISION"
+          ],
+          "x": 890,
+          "y": 310,
+          "width": 270,
+          "height": 235,
+          "kind": "principal",
+          "id": "guest-salon-media-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "12",
+          "label": [
+            "BOOT"
+          ],
+          "x": 1180,
+          "y": 310,
+          "width": 115,
+          "height": 105,
+          "kind": "service",
+          "small": true,
+          "id": "boot-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "13",
+          "label": [
+            "FLOWER"
+          ],
+          "x": 1315,
+          "y": 310,
+          "width": 115,
+          "height": 105,
+          "kind": "service",
+          "small": true,
+          "id": "flower-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "03",
+          "label": [
+            "FORMAL",
+            "DRAWING ROOM"
+          ],
+          "x": 170,
+          "y": 565,
+          "width": 320,
+          "height": 290,
+          "kind": "principal",
+          "id": "formal-drawing-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "05",
+          "label": [
+            "MUSIC ROOM",
+            "HOUSE GRAND"
+          ],
+          "x": 510,
+          "y": 565,
+          "width": 300,
+          "height": 290,
+          "kind": "principal",
+          "id": "music-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "02",
+          "label": [
+            "NEW MAIN STAIR",
+            "ARCHITECTURAL HALL"
+          ],
+          "x": 830,
+          "y": 565,
+          "width": 240,
+          "height": 180,
+          "kind": "circulation",
+          "textCenterY": 615,
+          "children": [
+            {
+              "number": "16",
+              "label": [
+                "LIFT"
+              ],
+              "x": 990,
+              "y": 660,
+              "width": 60,
+              "height": 65,
+              "kind": "circulation",
+              "id": "passenger-lift-threshold",
+              "parentId": "new-main-stair-hall",
+              "children": []
+            }
+          ],
+          "id": "new-main-stair-hall",
+          "parentId": null
+        },
+        {
+          "number": "01",
+          "label": [
+            "ENTRANCE &",
+            "RECEPTION HALL"
+          ],
+          "x": 830,
+          "y": 765,
+          "width": 240,
+          "height": 90,
+          "kind": "circulation",
+          "id": "entrance-reception-hall",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "06",
+          "label": [
+            "DINING ROOM"
+          ],
+          "x": 1090,
+          "y": 565,
+          "width": 340,
+          "height": 200,
+          "kind": "principal",
+          "children": [
+            {
+              "number": "11",
+              "label": [
+                "BUTLER'S PANTRY",
+                "& SERVICE LOBBY"
+              ],
+              "x": 1090,
+              "y": 565,
+              "width": 135,
+              "height": 105,
+              "kind": "service",
+              "inset": false,
+              "small": true,
+              "id": "butlers-pantry-dining-service-lobby",
+              "parentId": "dining-room",
+              "children": []
+            }
+          ],
+          "labelX": 1320,
+          "id": "dining-room",
+          "parentId": null
+        },
+        {
+          "number": "09",
+          "label": [
+            "CLOAKROOM & POWDER"
+          ],
+          "x": 1180,
+          "y": 435,
+          "width": 250,
+          "height": 110,
+          "kind": "service",
+          "small": true,
+          "id": "guest-cloakroom-powder-rooms",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "14",
+          "label": [
+            "HOUSEKEEPING",
+            "WORKROOM"
+          ],
+          "x": 1090,
+          "y": 785,
+          "width": 160,
+          "height": 70,
+          "kind": "service",
+          "small": true,
+          "id": "housekeeping-workroom",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "15",
+          "label": [
+            "SERVICE",
+            "LANDING"
+          ],
+          "x": 1270,
+          "y": 785,
+          "width": 160,
+          "height": 70,
+          "kind": "circulation",
+          "small": true,
+          "id": "rear-service-landing",
+          "parentId": null,
+          "children": []
+        }
+      ],
+      "viewBox": [
+        120,
+        260,
+        1360,
+        645
+      ],
+      "arrival": "entrance-reception-hall"
+    },
+    {
+      "id": "music-nobile",
+      "footprint": {
+        "x": 145,
+        "y": 150,
+        "width": 1310,
+        "height": 730,
+        "note": "NOS. 30 + 32 · ENTIRE COMBINED FIRST FLOOR ACOUSTICALLY ISOLATED"
+      },
+      "rooms": [
+        {
+          "number": "01",
+          "label": [
+            "STUDIO ALBURY · LIVE ROOM",
+            "NO. 32 DOUBLE-HEIGHT VOLUME",
+            "GRAND · DRUMS · BAND / STRINGS"
+          ],
+          "x": 710,
+          "y": 175,
+          "width": 720,
+          "height": 330,
+          "kind": "principal",
+          "textCenterY": 265,
+          "children": [
+            {
+              "number": "03",
+              "label": [
+                "VOICE WORK",
+                "3–4 PEOPLE COMFORTABLY",
+                "NORMAL-HEIGHT CEILING"
+              ],
+              "x": 730,
+              "y": 350,
+              "width": 240,
+              "height": 135,
+              "kind": "principal",
+              "id": "vocal-booth",
+              "parentId": "live-tracking-room",
+              "children": []
+            },
+            {
+              "number": "04",
+              "label": [
+                "STRING QUARTET",
+                "COMFORTABLY IN THE ROUND",
+                "NORMAL-HEIGHT CEILING"
+              ],
+              "x": 990,
+              "y": 350,
+              "width": 420,
+              "height": 135,
+              "kind": "principal",
+              "id": "instrument-isolation-booth",
+              "parentId": "live-tracking-room",
+              "children": []
+            }
+          ],
+          "id": "live-tracking-room",
+          "parentId": null
+        },
+        {
+          "number": "02",
+          "label": [
+            "STUDIO ALBURY · CONTROL ROOM",
+            "WIDE ACOUSTIC WINDOW TO LIVE ROOM"
+          ],
+          "x": 895,
+          "y": 525,
+          "width": 535,
+          "height": 180,
+          "kind": "principal",
+          "feature": "console",
+          "id": "control-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "05",
+          "label": [
+            "MACHINE",
+            "ROOM"
+          ],
+          "x": 170,
+          "y": 350,
+          "width": 180,
+          "height": 155,
+          "kind": "service",
+          "id": "machine-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "06",
+          "label": [
+            "TECHNICAL &",
+            "INSTRUMENT STORE"
+          ],
+          "x": 370,
+          "y": 350,
+          "width": 300,
+          "height": 155,
+          "kind": "service",
+          "id": "technical-instrument-storage",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "09",
+          "label": [
+            "REC ROOM",
+            "BAR · DINING · PLAYBACK · TELEVISION"
+          ],
+          "x": 170,
+          "y": 525,
+          "width": 500,
+          "height": 330,
+          "kind": "principal",
+          "id": "rec-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "07",
+          "label": [
+            "MAIN ACOUSTIC",
+            "LOBBY"
+          ],
+          "x": 690,
+          "y": 725,
+          "width": 185,
+          "height": 130,
+          "kind": "circulation",
+          "id": "main-acoustic-lobby",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "10",
+          "label": [
+            "STUDIO WC"
+          ],
+          "x": 895,
+          "y": 725,
+          "width": 135,
+          "height": 60,
+          "kind": "wet",
+          "small": true,
+          "id": "studio-wc",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "11",
+          "label": [
+            "COAT",
+            "CUPBOARD"
+          ],
+          "x": 895,
+          "y": 795,
+          "width": 135,
+          "height": 60,
+          "kind": "service",
+          "small": true,
+          "id": "studio-cloak-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "12",
+          "label": [
+            "CLEANING",
+            "STORE"
+          ],
+          "x": 1050,
+          "y": 795,
+          "width": 120,
+          "height": 60,
+          "kind": "service",
+          "small": true,
+          "id": "studio-cleaning-store",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "08",
+          "label": [
+            "REAR ACOUSTIC",
+            "SERVICE LOBBY"
+          ],
+          "x": 1050,
+          "y": 725,
+          "width": 380,
+          "height": 60,
+          "kind": "circulation",
+          "small": true,
+          "id": "rear-acoustic-service-lobby",
+          "parentId": null,
+          "children": []
+        }
+      ],
+      "viewBox": [
+        120,
+        125,
+        1360,
+        780
+      ],
+      "arrival": "main-acoustic-lobby"
+    },
+    {
+      "id": "second-floor",
+      "footprint": {
+        "x": 145,
+        "y": 150,
+        "width": 1310,
+        "height": 730,
+        "note": "NOS. 30 + 32 · NO FLOOR SLAB ABOVE NO. 32 BALLROOM VOLUME"
+      },
+      "rooms": [
+        {
+          "number": "V",
+          "label": [
+            "Live room below",
+            "Double-height void"
+          ],
+          "x": 690,
+          "y": 175,
+          "width": 740,
+          "height": 330,
+          "kind": "void",
+          "id": null,
+          "children": []
+        },
+        {
+          "number": "02",
+          "label": [
+            "PRINCIPAL GUEST",
+            "BEDROOM & SITTING"
+          ],
+          "x": 170,
+          "y": 175,
+          "width": 500,
+          "height": 260,
+          "kind": "guest",
+          "id": "principal-guest-bedroom",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "03",
+          "label": [
+            "PRINCIPAL GUEST",
+            "DRESSING"
+          ],
+          "x": 170,
+          "y": 455,
+          "width": 240,
+          "height": 160,
+          "kind": "guest",
+          "id": "principal-guest-dressing",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "04",
+          "label": [
+            "PRINCIPAL GUEST",
+            "BATHROOM"
+          ],
+          "x": 430,
+          "y": 455,
+          "width": 240,
+          "height": 160,
+          "kind": "wet",
+          "id": "principal-guest-bathroom",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "05",
+          "label": [
+            "GUEST BEDROOM",
+            "TWO"
+          ],
+          "x": 170,
+          "y": 635,
+          "width": 360,
+          "height": 220,
+          "kind": "guest",
+          "id": "guest-bedroom-two",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "06",
+          "label": [
+            "BATHROOM",
+            "TWO"
+          ],
+          "x": 550,
+          "y": 635,
+          "width": 120,
+          "height": 220,
+          "kind": "wet",
+          "small": true,
+          "id": "guest-bathroom-two",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "01",
+          "label": [
+            "SECOND-FLOOR",
+            "LANDING"
+          ],
+          "x": 690,
+          "y": 525,
+          "width": 220,
+          "height": 330,
+          "kind": "circulation",
+          "id": "second-floor-landing",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "07",
+          "label": [
+            "GUEST BEDROOM",
+            "THREE"
+          ],
+          "x": 930,
+          "y": 525,
+          "width": 300,
+          "height": 330,
+          "kind": "guest",
+          "id": "guest-bedroom-three",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "08",
+          "label": [
+            "BATHROOM",
+            "THREE"
+          ],
+          "x": 1250,
+          "y": 525,
+          "width": 180,
+          "height": 180,
+          "kind": "wet",
+          "id": "guest-bathroom-three",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "09",
+          "label": [
+            "LANDING",
+            "POWDER"
+          ],
+          "x": 1250,
+          "y": 725,
+          "width": 80,
+          "height": 60,
+          "kind": "wet",
+          "small": true,
+          "id": "landing-powder-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "10",
+          "label": [
+            "SATELLITE",
+            "PANTRY"
+          ],
+          "x": 1250,
+          "y": 795,
+          "width": 80,
+          "height": 60,
+          "kind": "service",
+          "small": true,
+          "id": "satellite-pantry-linen",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "11",
+          "label": [
+            "SERVICE",
+            "LANDING"
+          ],
+          "x": 1350,
+          "y": 725,
+          "width": 80,
+          "height": 130,
+          "kind": "circulation",
+          "small": true,
+          "id": "rear-service-landing",
+          "parentId": null,
+          "children": []
+        }
+      ],
+      "viewBox": [
+        120,
+        125,
+        1360,
+        780
+      ],
+      "arrival": "second-floor-landing"
+    },
+    {
+      "id": "third-floor",
+      "footprint": {
+        "x": 145,
+        "y": 150,
+        "width": 1310,
+        "height": 730,
+        "note": "NOS. 30 + 32 · MATCHED SEMI-DETACHED PAIR REBUILT AS ONE"
+      },
+      "rooms": [
+        {
+          "number": "02",
+          "label": [
+            "GUEST ROOM 4",
+            "ENSUITE"
+          ],
+          "x": 170,
+          "y": 175,
+          "width": 260,
+          "height": 245,
+          "kind": "guest",
+          "id": "guest-room-four",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "03",
+          "label": [
+            "GUEST ROOM 5",
+            "ENSUITE"
+          ],
+          "x": 450,
+          "y": 175,
+          "width": 260,
+          "height": 245,
+          "kind": "guest",
+          "id": "guest-room-five",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "04",
+          "label": [
+            "GUEST ROOM 6",
+            "ENSUITE"
+          ],
+          "x": 730,
+          "y": 175,
+          "width": 260,
+          "height": 245,
+          "kind": "guest",
+          "id": "guest-room-six",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "05",
+          "label": [
+            "GUEST ROOM 7",
+            "ENSUITE"
+          ],
+          "x": 1010,
+          "y": 175,
+          "width": 200,
+          "height": 245,
+          "kind": "guest",
+          "id": "guest-room-seven",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "06",
+          "label": [
+            "GUEST ROOM 8",
+            "ENSUITE"
+          ],
+          "x": 1230,
+          "y": 175,
+          "width": 200,
+          "height": 245,
+          "kind": "guest",
+          "id": "guest-room-eight",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "07",
+          "label": [
+            "FRIENDS' SALON",
+            "LARGE TV · GAMES · BREAKFAST / CARDS"
+          ],
+          "x": 170,
+          "y": 440,
+          "width": 530,
+          "height": 415,
+          "kind": "principal",
+          "id": "friends-salon",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "01",
+          "label": [
+            "THIRD-FLOOR",
+            "LANDING"
+          ],
+          "x": 720,
+          "y": 440,
+          "width": 270,
+          "height": 180,
+          "kind": "circulation",
+          "id": "friends-floor-landing",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "08",
+          "label": [
+            "GUEST PANTRY",
+            "COFFEE · WATER · BREAKFAST"
+          ],
+          "x": 720,
+          "y": 640,
+          "width": 270,
+          "height": 215,
+          "kind": "service",
+          "id": "guest-pantry",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "09",
+          "label": [
+            "LINEN & HOUSEKEEPING",
+            "WORKROOM"
+          ],
+          "x": 1010,
+          "y": 440,
+          "width": 200,
+          "height": 200,
+          "kind": "service",
+          "id": "linen-housekeeping-workroom",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "10",
+          "label": [
+            "LUGGAGE &",
+            "GARMENT STORE"
+          ],
+          "x": 1230,
+          "y": 440,
+          "width": 200,
+          "height": 200,
+          "kind": "service",
+          "id": "luggage-garment-store",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "11",
+          "label": [
+            "SERVICE WC",
+            "& REAR LANDING"
+          ],
+          "x": 1010,
+          "y": 660,
+          "width": 420,
+          "height": 195,
+          "kind": "circulation",
+          "id": "service-wc-rear-landing",
+          "parentId": null,
+          "children": []
+        }
+      ],
+      "viewBox": [
+        120,
+        125,
+        1360,
+        780
+      ],
+      "arrival": "friends-floor-landing"
+    },
+    {
+      "id": "top-floor",
+      "footprint": {
+        "x": 145,
+        "y": 210,
+        "width": 1310,
+        "height": 670,
+        "note": "RECONSTRUCTED ROOF LEVEL ACROSS BOTH VILLAS"
+      },
+      "rooms": [
+        {
+          "number": "10",
+          "label": [
+            "ROOF TERRACE",
+            "SEATING · DINING · COMPACT BAR"
+          ],
+          "x": 170,
+          "y": 95,
+          "width": 650,
+          "height": 95,
+          "kind": "outdoor",
+          "small": true,
+          "id": "roof-terrace",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "02",
+          "label": [
+            "ALEX'S BEDROOM",
+            "SLEEP · READING · MUSIC"
+          ],
+          "x": 170,
+          "y": 235,
+          "width": 380,
+          "height": 300,
+          "kind": "guest",
+          "id": "alexs-bedroom",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "03",
+          "label": [
+            "PRINCIPAL BATHROOM",
+            "BATH · SHOWER / STEAM"
+          ],
+          "x": 570,
+          "y": 235,
+          "width": 240,
+          "height": 300,
+          "kind": "wet",
+          "id": "principal-bathroom",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "04",
+          "label": [
+            "CURRENT-SEASON DRESSING",
+            "WATCH & JEWELLERY ISLAND"
+          ],
+          "x": 830,
+          "y": 235,
+          "width": 310,
+          "height": 300,
+          "kind": "guest",
+          "id": "current-season-dressing",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "05",
+          "label": [
+            "FASHION ARCHIVE",
+            "CONSERVATION COLLECTION"
+          ],
+          "x": 1160,
+          "y": 235,
+          "width": 270,
+          "height": 300,
+          "kind": "service",
+          "id": "fashion-archive",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "06",
+          "label": [
+            "PRIVATE LOUNGE",
+            "UPRIGHT · LARGE TV · CONSOLE · VINYL"
+          ],
+          "x": 170,
+          "y": 555,
+          "width": 430,
+          "height": 300,
+          "kind": "principal",
+          "id": "private-lounge",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "07",
+          "label": [
+            "STUDY / WRITING ROOM",
+            "LAPTOP · INTERFACE · MIC · KEYBOARD"
+          ],
+          "x": 620,
+          "y": 555,
+          "width": 280,
+          "height": 180,
+          "kind": "principal",
+          "id": "study-writing-room",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "01",
+          "label": [
+            "PRIVATE",
+            "VESTIBULE"
+          ],
+          "x": 620,
+          "y": 755,
+          "width": 280,
+          "height": 100,
+          "kind": "circulation",
+          "id": "private-vestibule",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "08",
+          "label": [
+            "LIBRARY · AWARDS",
+            "SECURE COLLECTION"
+          ],
+          "x": 920,
+          "y": 555,
+          "width": 315,
+          "height": 300,
+          "kind": "principal",
+          "id": "library-awards-secure-collection",
+          "parentId": null,
+          "children": []
+        },
+        {
+          "number": "09",
+          "label": [
+            "PRIVATE SERVICE",
+            "LANDING"
+          ],
+          "x": 1255,
+          "y": 555,
+          "width": 175,
+          "height": 300,
+          "kind": "circulation",
+          "small": true,
+          "id": "private-service-landing",
+          "parentId": null,
+          "children": []
+        }
+      ],
+      "viewBox": [
+        120,
+        70,
+        1360,
+        835
+      ],
+      "arrival": "private-vestibule"
+    },
+    {
+      "id": "exterior",
+      "viewBox": [
+        80,
+        60,
+        1440,
+        930
+      ],
+      "footprint": {
+        "x": 350,
+        "y": 170,
+        "width": 900,
+        "height": 690
+      },
+      "arrival": "street-arrival",
+      "rooms": [
+        {
+          "id": "duchess-of-bedford-walk-mews",
+          "label": [
+            "Duchess of Bedford Walk · Mews"
+          ],
+          "x": 350,
+          "y": 80,
+          "width": 900,
+          "height": 70,
+          "kind": "circulation",
+          "children": []
+        },
+        {
+          "id": "far-garden-salon",
+          "label": [
+            "Far-garden salon"
+          ],
+          "x": 370,
+          "y": 190,
+          "width": 700,
+          "height": 160,
+          "kind": "outdoor",
+          "children": []
+        },
+        {
+          "id": "garden-lawn",
+          "label": [
+            "Garden lawn"
+          ],
+          "x": 370,
+          "y": 370,
+          "width": 700,
+          "height": 250,
+          "kind": "outdoor",
+          "children": []
+        },
+        {
+          "id": "rear-terrace",
+          "label": [
+            "Rear terrace"
+          ],
+          "x": 370,
+          "y": 640,
+          "width": 700,
+          "height": 120,
+          "kind": "terrace",
+          "children": []
+        },
+        {
+          "id": "former-no-34-boundary-existing-condition",
+          "label": [
+            "No. 34 boundary"
+          ],
+          "x": 1090,
+          "y": 190,
+          "width": 140,
+          "height": 570,
+          "kind": "service",
+          "children": []
+        },
+        {
+          "id": "front-elevation",
+          "label": [
+            "Albury House · Front elevation"
+          ],
+          "x": 370,
+          "y": 780,
+          "width": 860,
+          "height": 60,
+          "kind": "principal",
+          "children": []
+        },
+        {
+          "id": "street-arrival",
+          "label": [
+            "Upper Phillimore Gardens · Street arrival"
+          ],
+          "x": 350,
+          "y": 890,
+          "width": 900,
+          "height": 70,
+          "kind": "circulation",
+          "children": []
+        }
+      ],
+      "references": [
+        "existing-site-before-landscape-works",
+        "the-cedars-future-landscape-proposal"
+      ]
+    }
+  ]
+}
