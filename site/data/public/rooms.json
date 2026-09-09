@@ -975,79 +975,125 @@
     },
     {
       "id": "music-nobile",
-      "name": "Studio Albury",
+      "name": "Music Nobile",
       "short": "First Floor",
       "plan": "images/albury/floor-plans/music-nobile.svg",
       "rooms": [
         {
           "path": "images/albury/music-nobile/01-live-tracking-room.webp",
-          "title": "Live & Tracking Room",
-          "description": "The inherited double-height ballroom volume of No. 32, rebuilt as a floating live room with enough air and clear space for a full band or small string group.",
-          "roomName": "Live & Tracking Room",
-          "roomId": "live-tracking-room"
+          "title": "Studio Albury — Live Room",
+          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "roomName": "Studio Albury — Live Room",
+          "roomId": "live-tracking-room",
+          "studioName": "Studio Albury",
+          "ceilingHeight": "double height",
+          "containedRoomIds": [
+            "vocal-booth",
+            "instrument-isolation-booth"
+          ]
         },
         {
           "path": "images/albury/music-nobile/new-views/01-live-tracking-room.webp",
           "title": "Live & Tracking Room — Additional View",
-          "description": "An additional viewpoint of the same live & tracking room, checked against its room reference for consistent fixed furnishings and openings.",
-          "roomName": "Live & Tracking Room",
-          "roomId": "live-tracking-room"
+          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "roomName": "Studio Albury — Live Room",
+          "roomId": "live-tracking-room",
+          "studioName": "Studio Albury",
+          "ceilingHeight": "double height",
+          "containedRoomIds": [
+            "vocal-booth",
+            "instrument-isolation-booth"
+          ]
         },
         {
           "path": "images/albury/music-nobile/14-session-in-progress.webp",
           "title": "Session in Progress",
-          "description": "Singer, pianist, rhythm section and engineer occupy the live room and control room as one working private session rather than a staged performance.",
-          "roomName": "Live & Tracking Room",
-          "roomId": "live-tracking-room"
+          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "roomName": "Studio Albury — Live Room",
+          "roomId": "live-tracking-room",
+          "studioName": "Studio Albury",
+          "ceilingHeight": "double height",
+          "containedRoomIds": [
+            "vocal-booth",
+            "instrument-isolation-booth"
+          ]
         },
         {
           "path": "images/albury/music-nobile/15-full-band-take.webp",
           "title": "Full Band Take",
-          "description": "Alex at the grand piano, singer, rhythm section and two engineers use the live and control rooms as one technically credible recording environment.",
-          "roomName": "Live & Tracking Room",
-          "roomId": "live-tracking-room"
+          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "roomName": "Studio Albury — Live Room",
+          "roomId": "live-tracking-room",
+          "studioName": "Studio Albury",
+          "ceilingHeight": "double height",
+          "containedRoomIds": [
+            "vocal-booth",
+            "instrument-isolation-booth"
+          ]
         },
         {
           "path": "images/albury/music-nobile/02-control-room.webp",
-          "title": "Control Room",
-          "description": "A world-class console, serious monitoring and analogue outboard face the live room through a wide acoustic window.",
-          "roomName": "Control Room",
-          "roomId": "control-room"
+          "title": "Studio Albury — Control Room",
+          "description": "Studio Albury’s control room faces its live room through a wide acoustic window, with a professional console, monitoring and analogue outboard. Together these two rooms form Studio Albury on the Music Nobile floor of Albury House; the separate rec room is outside the recording facility.",
+          "roomName": "Studio Albury — Control Room",
+          "roomId": "control-room",
+          "studioName": "Studio Albury"
         },
         {
           "path": "images/albury/music-nobile/new-views/02-control-room.webp",
           "title": "Control Room — Additional View",
-          "description": "An additional viewpoint of the same control room, checked against its room reference for consistent fixed furnishings and openings.",
-          "roomName": "Control Room",
-          "roomId": "control-room"
+          "description": "Studio Albury’s control room faces its live room through a wide acoustic window, with a professional console, monitoring and analogue outboard. Together these two rooms form Studio Albury on the Music Nobile floor of Albury House; the separate rec room is outside the recording facility.",
+          "roomName": "Studio Albury — Control Room",
+          "roomId": "control-room",
+          "studioName": "Studio Albury"
         },
         {
           "path": "images/albury/music-nobile/03-vocal-booth.webp",
-          "title": "Vocal Booth",
-          "description": "A generously sized floating isolation room for focused vocal recording.",
-          "roomName": "Vocal Booth",
-          "roomId": "vocal-booth"
+          "title": "Voice Isolation Booth",
+          "description": "An enclosed, acoustically isolated booth within Studio Albury’s double-height live room. Its own ceiling is normal room height, and it comfortably accommodates three to four people for voice work.",
+          "roomName": "Voice Isolation Booth",
+          "roomId": "vocal-booth",
+          "studioName": "Studio Albury",
+          "parentRoomId": "live-tracking-room",
+          "ceilingHeight": "normal room height",
+          "comfortableCapacity": "3–4 people",
+          "seatingArrangement": "flexible voice-work arrangement"
         },
         {
           "path": "images/albury/music-nobile/new-views/03-vocal-booth.webp",
           "title": "Vocal Booth — Additional View",
-          "description": "An additional viewpoint of the same vocal booth, checked against its room reference for consistent fixed furnishings and openings.",
-          "roomName": "Vocal Booth",
-          "roomId": "vocal-booth"
+          "description": "An enclosed, acoustically isolated booth within Studio Albury’s double-height live room. Its own ceiling is normal room height, and it comfortably accommodates three to four people for voice work.",
+          "roomName": "Voice Isolation Booth",
+          "roomId": "vocal-booth",
+          "studioName": "Studio Albury",
+          "parentRoomId": "live-tracking-room",
+          "ceilingHeight": "normal room height",
+          "comfortableCapacity": "3–4 people",
+          "seatingArrangement": "flexible voice-work arrangement"
         },
         {
           "path": "images/albury/music-nobile/04-instrument-isolation-booth.webp",
-          "title": "Instrument Isolation Booth",
-          "description": "A flexible larger booth for amplifiers, brass, strings or upright bass.",
-          "roomName": "Instrument Isolation Booth",
-          "roomId": "instrument-isolation-booth"
+          "title": "String Isolation Booth",
+          "description": "The larger of the two enclosed isolation booths within Studio Albury’s double-height live room. It has its own normal-height ceiling and comfortably accommodates a string quartet seated in the round.",
+          "roomName": "String Isolation Booth",
+          "roomId": "instrument-isolation-booth",
+          "studioName": "Studio Albury",
+          "parentRoomId": "live-tracking-room",
+          "ceilingHeight": "normal room height",
+          "comfortableCapacity": "string quartet (4 musicians)",
+          "seatingArrangement": "in the round"
         },
         {
           "path": "images/albury/music-nobile/new-views/04-instrument-isolation-booth.webp",
           "title": "Instrument Isolation Booth — Additional View",
-          "description": "An additional viewpoint of the same instrument isolation booth, checked against its room reference for consistent fixed furnishings and openings.",
-          "roomName": "Instrument Isolation Booth",
-          "roomId": "instrument-isolation-booth"
+          "description": "The larger of the two enclosed isolation booths within Studio Albury’s double-height live room. It has its own normal-height ceiling and comfortably accommodates a string quartet seated in the round.",
+          "roomName": "String Isolation Booth",
+          "roomId": "instrument-isolation-booth",
+          "studioName": "Studio Albury",
+          "parentRoomId": "live-tracking-room",
+          "ceilingHeight": "normal room height",
+          "comfortableCapacity": "string quartet (4 musicians)",
+          "seatingArrangement": "in the round"
         },
         {
           "path": "images/albury/music-nobile/05-machine-room.webp",
@@ -1163,17 +1209,24 @@
         },
         {
           "title": "Live & Tracking Room — Closer Perspective",
-          "description": "The inherited double-height ballroom volume of No. 32, rebuilt as a floating live room with enough air and clear space for a full band or small string group. A closer perspective of the established arrangement.",
+          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
           "path": "images/albury/guide-expansion/live-tracking-room-closer-perspective.webp",
-          "roomName": "Live & Tracking Room",
-          "roomId": "live-tracking-room"
+          "roomName": "Studio Albury — Live Room",
+          "roomId": "live-tracking-room",
+          "studioName": "Studio Albury",
+          "ceilingHeight": "double height",
+          "containedRoomIds": [
+            "vocal-booth",
+            "instrument-isolation-booth"
+          ]
         },
         {
           "title": "Control Room — Closer Perspective",
-          "description": "A world-class console, serious monitoring and analogue outboard face the live room through a wide acoustic window. A closer perspective of the established arrangement.",
+          "description": "Studio Albury’s control room faces its live room through a wide acoustic window, with a professional console, monitoring and analogue outboard. Together these two rooms form Studio Albury on the Music Nobile floor of Albury House; the separate rec room is outside the recording facility.",
           "path": "images/albury/guide-expansion/control-room-closer-perspective.webp",
-          "roomName": "Control Room",
-          "roomId": "control-room"
+          "roomName": "Studio Albury — Control Room",
+          "roomId": "control-room",
+          "studioName": "Studio Albury"
         },
         {
           "title": "Rec Room — Closer Perspective",
@@ -1788,14 +1841,14 @@
         {
           "path": "images/albury/top-floor/14-rough-demo-0213.webp",
           "title": "Rough Demo, 2:13 A.M.",
-          "description": "Alex works alone at the original stage piano with one microphone, laptop and compact interface, preserving the modest private-demo scale that distinguishes this room from Studio Albury.",
+          "description": "Alex works alone at the original stage piano with one microphone, laptop and compact interface, preserving the modest private-demo scale that distinguishes this room from Music Nobile.",
           "roomName": "Study & Writing Room",
           "roomId": "study-writing-room"
         },
         {
           "path": "images/albury/top-floor/11-writing-desk-detail.webp",
           "title": "Writing Desk — Rough Demo Setup",
-          "description": "The close working view makes the modest two-input interface, desktop microphone, laptop waveform, headphones, lyric sheets and score pages explicit while remaining far smaller than Studio Albury.",
+          "description": "The close working view makes the modest two-input interface, desktop microphone, laptop waveform, headphones, lyric sheets and score pages explicit while remaining far smaller than Music Nobile.",
           "roomName": "Study & Writing Room",
           "roomId": "study-writing-room"
         },

@@ -39,12 +39,13 @@ test("named internal floors are distinct from the combined outdoor area", () => 
     ["Albury Spa", "Lower Basement"],
     ["Club Alex", "Upper Basement"],
     ["Raised Ground", "Raised Ground"],
-    ["Studio Albury", "First Floor"],
+    ["Music Nobile", "First Floor"],
     ["Principal guest suites", "Second Floor"],
     ["The Dorm", "Third Floor"],
     ["Alex's Apartment", "Top Floor"],
   ]);
-  assert.equal(getFloor("Music Nobile")?.name, "Studio Albury");
+  assert.equal(getFloor("Music Nobile")?.name, "Music Nobile");
+  assert.equal(getFloor("Studio Albury"), undefined);
   assert.equal(getFloor("Albury Spa")?.level, "Lower Basement");
   assert.equal(getFloor("Alex’s Apartment")?.level, "Top Floor");
   assert.equal(getFloor("garden"), undefined);
@@ -58,6 +59,28 @@ test("named internal floors are distinct from the combined outdoor area", () => 
   assert.ok(outside?.rooms.some((room) => room.id === "far-garden-salon"));
   assert.ok(outside?.rooms.every((room) => room.floorId === null));
   assert.deepEqual(listRooms({ floorId: "garden" }), listRooms({ outdoorAreaId: "exterior" }));
+});
+
+test("Studio Albury is within Music Nobile and both normal-height booths are inside its live room", () => {
+  assert.equal(getSummary().house.name, "Albury House");
+  const live = getRoom("live-tracking-room");
+  const control = getRoom("control-room");
+  assert.equal(live?.floorName, "Music Nobile");
+  assert.equal(control?.floorName, "Music Nobile");
+  assert.equal(live?.studioName, "Studio Albury");
+  assert.equal(control?.studioName, "Studio Albury");
+  assert.equal(getRoom("rec-room")?.studioName, null);
+  assert.equal(live?.ceilingHeight, "double height");
+  assert.deepEqual(live?.containedRoomIds, ["vocal-booth", "instrument-isolation-booth"]);
+  const voice = getRoom("vocal-booth");
+  const strings = getRoom("instrument-isolation-booth");
+  for (const booth of [voice, strings]) {
+    assert.equal(booth?.parentRoomId, "live-tracking-room");
+    assert.equal(booth?.ceilingHeight, "normal room height");
+  }
+  assert.equal(voice?.comfortableCapacity, "3–4 people");
+  assert.equal(strings?.comfortableCapacity, "string quartet (4 musicians)");
+  assert.equal(strings?.seatingArrangement, "in the round");
 });
 
 test("menu rotation remains anchored to Monday 11 August 2025", () => {

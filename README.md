@@ -22,9 +22,11 @@ Albury has seven internal floors, including its two basements:
 | Albury Spa | Lower Basement |
 | Club Alex | Upper Basement |
 | Raised Ground | Raised Ground |
-| Studio Albury | First Floor |
+| Music Nobile | First Floor |
 | Principal guest suites | Second Floor |
 | The Dorm | Third Floor |
 | Alex's Apartment | Top Floor |
 
 Exterior & Garden is one combined outdoor area. The website tour therefore has eight sections; it does not have eight or nine floors. `list_floors` returns only the seven internal floors. Use `list_outdoor_areas` and `get_outdoor_area` for the frontage, mews, terraces and garden. Stable internal floor IDs and legacy names remain supported; old garden tour links and room filters resolve to the combined outdoor area. Outdoor room records have `floorId: null` and an `outdoorAreaId`.
+
+The house is Albury House. Studio Albury is the live room and control room on Music Nobile; the floor’s rec room is separate. The double-height live room contains two normal-height isolation booths: one comfortably holds three to four people for voice work, and the other comfortably fits a string quartet seated in the round. Room records expose their studio name, parent room, ceiling type and comfortable capacity.

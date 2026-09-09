@@ -89,7 +89,7 @@
     },
     {
       "id": "music-nobile",
-      "name": "Studio Albury",
+      "name": "Music Nobile",
       "short": "First Floor",
       "plan": "images/albury/floor-plans/music-nobile.svg",
       "level": "First Floor",
@@ -167,5 +167,20 @@
     }
   ],
   "floorCount": 7,
-  "outdoorAreaCount": 1
+  "outdoorAreaCount": 1,
+  "recordingStudio": {
+    "name": "Studio Albury",
+    "floorId": "music-nobile",
+    "floorName": "Music Nobile",
+    "roomIds": [
+      "live-tracking-room",
+      "control-room"
+    ],
+    "isolationBoothIds": [
+      "vocal-booth",
+      "instrument-isolation-booth"
+    ],
+    "boothParentRoomId": "live-tracking-room",
+    "description": "Live room and control room on Music Nobile; two normal-height isolation booths are contained within the double-height live room. The rec room is separate."
+  }
 }
