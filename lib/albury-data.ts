@@ -13,6 +13,7 @@ const brandsSource = requireJson("../site/data/public/brands.json");
 const pantryItemsSource = requireJson("../mcp-data/pantry-items.json");
 const menusSource = requireJson("../mcp-data/menus.json");
 const eventsSource = requireJson("../mcp-data/london-events.json");
+const weatherSource = requireJson("../site/data/public/weather.json");
 
 export const PUBLIC_BASE_URL = "https://albury-house.vercel.app";
 export const STORY_DATE = "2025-08-11";
@@ -41,6 +42,18 @@ const brands = (brandsSource as unknown as { brands: Dict[] }).brands;
 const pantryItems = pantryItemsSource as unknown as { summary: Dict; openingItems: Dict[]; seasonalRecipes: Dict[]; asOf: string };
 const menus = menusSource as unknown as Dict[];
 const events = eventsSource as unknown as Dict[];
+
+type WeatherDay = {
+  date: string; day: string; condition: string;
+  highC: number; lowC: number; highF: number; lowF: number;
+  precipitationMm: number; precipitationChancePct: number; windMph: number;
+};
+const weather = weatherSource as {
+  location: string; timeZone: string; fictional: boolean; source: string;
+  coverage: { start: string; end: string }; days: WeatherDay[];
+};
+const weatherByDate = new Map(weather.days.map(day => [day.date, day]));
+
 
 function text(value: unknown): string {
   if (value === null || value === undefined) return "";
@@ -350,8 +363,23 @@ export function listEvents(input: { startDate: string; endDate?: string; categor
   return { startDate: input.startDate, endDate, ...paginate(filtered, input.offset, input.limit) };
 }
 
+export function getForecast(date: string) {
+  isoDate(date);
+  const day = weatherByDate.get(date);
+  if (!day) throw new Error(`No authored weather available for ${date}. Available dates: ${weather.coverage.start} through ${weather.coverage.end}.`);
+  return {
+    ...day,
+    location: weather.location,
+    timeZone: weather.timeZone,
+    fictional: weather.fictional,
+    source: weather.source,
+    coverage: { ...weather.coverage },
+    forecastUrl: `${PUBLIC_BASE_URL}/ALBURY_WEATHER.html?date=${date}`,
+  };
+}
+
 export function getDateContext(date: string) {
-  return { date, menu: getMenuForDate(date), events: eventsForDate(date), isStoryOpeningDate: date === STORY_DATE };
+  return { date, menu: getMenuForDate(date), events: eventsForDate(date), weather: weatherByDate.has(date) ? getForecast(date) : null, weatherCoverage: { ...weather.coverage }, isStoryOpeningDate: date === STORY_DATE };
 }
 
 export function searchAlbury(input: { query: string; domains?: string[]; limit?: number }) {

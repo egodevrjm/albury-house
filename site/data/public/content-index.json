@@ -15,6 +15,12 @@
       "visibility": "public"
     },
     {
+      "id": "walk",
+      "path": "site/data/public/walk.json",
+      "mimeType": "application/json",
+      "visibility": "public"
+    },
+    {
       "id": "collections",
       "path": "site/data/public/collections.json",
       "mimeType": "application/json",
@@ -79,6 +85,13 @@
       "path": "site/data/public/assets.json",
       "mimeType": "application/json",
       "visibility": "public"
+    },
+    {
+      "id": "weather",
+      "path": "site/data/public/weather.json",
+      "mimeType": "application/json",
+      "visibility": "public",
+      "generatedFrom": "content/schedules/weather.csv"
     }
   ],
   "privateResources": [

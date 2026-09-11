@@ -32,3 +32,10 @@ Exterior & Garden is one combined outdoor area. The website tour therefore has e
 The house is Albury House. Studio Albury is the live room and control room on Music Nobile; the floor’s rec room is separate. The double-height live room contains two normal-height isolation booths: one comfortably holds three to four people for voice work, and the other comfortably fits a string quartet seated in the round. Room records expose their studio name, parent room, ceiling type and comfortable capacity.
 
 Walk Albury is available at `/ALBURY_WALK.html`. It links 96 current spaces across seven floors and one outdoor area to their photographs, with room focus, zoom, floor changes, search, deep links and backtracking. Historical/proposal material stays in the gallery. Layouts are schematic, not measured plans. Source and build instructions live in `aw_v45/site/README.md`.
+
+
+## Weather by story date
+
+`get_forecast({"date":"2025-08-11"})` returns the supplied daily London weather, including condition, high/low °C and °F, precipitation mm/chance %, wind mph, provenance and date coverage. It covers 396 days, 1 August 2025–31 August 2026 inclusive. Invalid calendar dates and uncovered dates return errors; there is no extrapolation. This is authored story weather.
+
+`get_date_context` also includes `weather` (or null outside coverage) alongside menus and events. The MCP reads generated `site/data/public/weather.json`; its source is `aw_v45/content/schedules/weather.csv`. Rebuild via `python3 aw_v45/site/build_content.py`, then copy the generated weather JSON, CSV and browser fallback together with the weather UI files into this deployment. The public weather page and Welcome panel share that CSV.

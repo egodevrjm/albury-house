@@ -7,6 +7,7 @@ import {
   getCollectionItem,
   getDateContext,
   getFloor,
+  getForecast,
   getOutdoorArea,
   getGuestProvision,
   getImage,
@@ -229,14 +230,20 @@ export const mcpWebHandler = createMcpHandler((server) => {
     inputSchema: z.object({ start_date: isoDate, end_date: isoDate.optional(), category: z.string().optional(), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
   }, async ({ start_date, end_date, ...input }) => guarded(() => listEvents({ startDate: start_date, endDate: end_date, ...input })));
 
+  server.registerTool("get_forecast", {
+    title: "Get Albury weather for a date",
+    description: "Return the authored London story weather for one date: condition, high/low temperatures in Celsius and Fahrenheit, daily precipitation in mm, precipitation chance as a percentage and wind speed in mph. Coverage: 2025-08-01 through 2026-08-31 inclusive. Dates outside the dataset return an error. This is fictional story weather, not live or historical observations.",
+    inputSchema: z.object({ date: isoDate.describe("Story date in YYYY-MM-DD format, e.g. 2025-08-11.") }), annotations: readOnly,
+  }, async ({ date }) => guarded(() => getForecast(date)));
+
   server.registerTool("get_date_context", {
     title: "Get Albury date context",
-    description: "Return the rotated full-day menu and every active calendar event for one date in a single story-preparation call.",
+    description: "Return the rotated full-day menu, every active calendar event and authored weather for one date. Weather is null outside its supplied date range; menu and event lookup remain available.",
     inputSchema: z.object({ date: isoDate }), annotations: readOnly,
   }, async ({ date }) => guarded(() => getDateContext(date)));
 }, {
   serverInfo: { name: "Albury House MCP", version: "1.0.0" },
-  instructions: "Use this read-only server for Albury House rooms, household staff, contracted partners, dated menus, pantry preparations, house collections, imagery and dated London events. Treat returned records as the closed-world Albury reference and do not invent absent room, staff, menu, pantry or partner details.",
+  instructions: "Use this read-only server for Albury House rooms, household staff, contracted partners, dated menus, pantry preparations, house collections, imagery, dated London events and authored daily London weather. Use get_forecast with the story date for weather; never substitute the computer date or invent values outside its coverage. Treat returned records as the closed-world Albury reference and do not invent absent room, staff, menu, pantry or partner details.",
   maxSubscriptions: 0,
 });
 

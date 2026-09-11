@@ -23,8 +23,8 @@ async function post(body: unknown) {
 test("MCP advertises the complete read-only Albury toolset", async () => {
   const response = await post({ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} });
   const names = response.result.tools.map((tool: { name: string }) => tool.name);
-  assert.equal(names.length, 27);
-  for (const name of ["get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area"]) assert.ok(names.includes(name), name);
+  assert.equal(names.length, 28);
+  for (const name of ["get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area", "get_forecast"]) assert.ok(names.includes(name), name);
 });
 
 test("MCP counts seven floors and exposes the garden separately", async () => {
@@ -47,4 +47,25 @@ test("MCP menu and pantry calls return structured canonical records", async () =
 
   const pantry = await post({ jsonrpc: "2.0", id: 3, method: "tools/call", params: { name: "list_pantry_items", arguments: {} } });
   assert.equal(pantry.result.structuredContent.total, 33);
+});
+
+test("MCP returns exact authored weather and handles invalid or uncovered dates", async () => {
+  const call = async (date: string) => (await post({ jsonrpc: "2.0", id: date, method: "tools/call", params: { name: "get_forecast", arguments: { date } } })).result;
+  const opening = await call("2025-08-11");
+  assert.equal(opening.isError, undefined);
+  assert.equal(opening.structuredContent.condition, "Partly Cloudy");
+  assert.equal(opening.structuredContent.highC, 24.1);
+  assert.equal(opening.structuredContent.precipitationChancePct, 20);
+  assert.equal(opening.structuredContent.fictional, true);
+  const last = await call("2026-08-31");
+  assert.equal(last.structuredContent.highC, 23.5);
+  for (const date of ["2025-02-29", "2026-09-01", "2025-07-31"]) {
+    const result = await call(date);
+    assert.equal(result.isError, true, date);
+    assert.equal(result.structuredContent, undefined);
+  }
+  const listing = await post({ jsonrpc: "2.0", id: "schema", method: "tools/list", params: {} });
+  const tool = listing.result.tools.find((t: {name: string}) => t.name === "get_forecast");
+  assert.deepEqual(tool.inputSchema.required, ["date"]);
+  assert.equal(tool.annotations.readOnlyHint, true);
 });
