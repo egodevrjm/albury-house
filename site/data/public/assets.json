@@ -2055,6 +2055,16 @@
       "id": "site.identity.house.mark.clear.space",
       "path": "site/identity/house-mark-clear-space.svg",
       "format": "svg"
+    },
+    {
+      "id": "images.albury.upper.basement.cinema.projection.booth",
+      "path": "images/albury/upper-basement/cinema-projection-booth.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.upper.basement.cinema.projection.booth.doorway",
+      "path": "images/albury/upper-basement/cinema-projection-booth-doorway.webp",
+      "format": "png"
     }
   ]
 }

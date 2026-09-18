@@ -580,6 +580,20 @@
           "path": "images/albury/guide-expansion/goods-lift-in-use.webp",
           "roomName": "Service Core",
           "roomId": "service-core"
+        },
+        {
+          "path": "images/albury/upper-basement/cinema-projection-booth.webp",
+          "title": "Cinema — Projection Booth",
+          "description": "The rear projection booth looking through the acoustic window into the twenty-seat cinema, with the digital projector, operator desk and control screens. Projection systems and booth by Bell Theatre Services; acoustics and audio by Albury Acoustics, coordinated by Studio Ashby.",
+          "roomName": "Cinema",
+          "roomId": "cinema"
+        },
+        {
+          "path": "images/albury/upper-basement/cinema-projection-booth-doorway.webp",
+          "title": "Cinema — Projection Booth from the Doorway",
+          "description": "A doorway perspective of the same rear projection booth, showing its film and digital projection equipment, extraction ducts, control desk and view into the cinema. The cinema supports 70mm, 35mm and full digital projection; installation by Bell Theatre Services under Studio Ashby’s coordination.",
+          "roomName": "Cinema",
+          "roomId": "cinema"
         }
       ],
       "level": "Upper Basement",
