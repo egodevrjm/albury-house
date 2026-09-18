@@ -26,7 +26,7 @@ test("summary exposes the complete Albury reference", () => {
   assert.equal(summary.totals.floors, 7);
   assert.equal(summary.totals.outdoorAreas, 1);
   assert.equal(summary.totals.tourSections, 8);
-  assert.equal(summary.totals.permanentStaff, 36);
+  assert.equal(summary.totals.permanentStaff, 48);
   assert.equal(summary.totals.scheduledSpecialists, 5);
   assert.equal(summary.totals.externalPartners, 6);
   assert.equal(summary.totals.pantryOpeningItems, 33);
@@ -114,7 +114,7 @@ test("rooms group coherent views and expose public images", () => {
 });
 
 test("staff and partners preserve the opening establishment", () => {
-  assert.equal(listStaff({ employmentType: "permanent" }).total, 36);
+  assert.equal(listStaff({ employmentType: "permanent" }).total, 48);
   assert.equal(listStaff({ employmentType: "scheduled" }).total, 5);
   assert.equal(listPartners().length, 6);
   assert.equal(listPartners("studio")[0]?.name, "Miloco");
