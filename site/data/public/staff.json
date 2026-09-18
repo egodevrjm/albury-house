@@ -4,7 +4,7 @@
   "summary": {
     "permanentEmployees": 48,
     "scheduledSpecialists": 5,
-    "servicePartners": 6,
+    "servicePartners": 13,
     "departments": 9
   },
   "people": [
@@ -840,6 +840,48 @@
       "name": "Miloco",
       "type": "Studio-support partner",
       "remit": "Technical servicing, fault escalation, additional session assistance, booked engineering cover and access to suitable external studios when a project needs them."
+    },
+    {
+      "id": "studio-ashby",
+      "name": "Studio Ashby (Sophie Ashby)",
+      "type": "Design & commissioning",
+      "remit": "Lead Interior Architect & Spatial Curation. Led and coordinated the entire house project and its specialist commissions."
+    },
+    {
+      "id": "studio-frith",
+      "name": "Studio Frith (Frith Kerr)",
+      "type": "Design & commissioning",
+      "remit": "Visual Identity & Editorial Brand Guidelines. Created the visual identity and editorial brand guidelines in collaboration with Studio Ashby."
+    },
+    {
+      "id": "azzi-glasser",
+      "name": "Azzi Glasser (The Perfumer’s Story)",
+      "type": "Design & commissioning",
+      "remit": "Olfactory Architecture & Archive Scent Preservation. Responsible for olfactory architecture and archive scent preservation."
+    },
+    {
+      "id": "albury-acoustics",
+      "name": "Albury Acoustics",
+      "type": "Design & commissioning",
+      "remit": "Acoustic Architecture & Integrated Audio Systems. Shaped acoustics throughout the house; delivered the full sound build-out for the Music Room, Studio Albury, cinema, listening room and bar, plus smart-speaker systems throughout. Its Albury Studio Design division delivered the specialist music-floor work."
+    },
+    {
+      "id": "bell-theatre-services",
+      "name": "Bell Theatre Services",
+      "type": "Design & commissioning",
+      "remit": "Cinematographic Engineering & Projection Systems. Built out and installed the cinema projection systems and the projection booth behind the screening room, with 70mm, 35mm and full digital capability."
+    },
+    {
+      "id": "imprimerie-du-marais",
+      "name": "Imprimerie du Marais",
+      "type": "Design & commissioning",
+      "remit": "Asset Execution — Stationery & Print. Executed house stationery and print under the Studio Ashby-led project."
+    },
+    {
+      "id": "chelsea-textiles",
+      "name": "Chelsea Textiles",
+      "type": "Design & commissioning",
+      "remit": "Asset Execution — Bespoke House Linens. Executed bespoke house linens under the Studio Ashby-led project."
     }
   ]
 }

@@ -297,21 +297,21 @@
         {
           "path": "images/albury/upper-basement/cinema.webp",
           "title": "Cinema",
-          "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts.",
+          "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "roomName": "Cinema",
           "roomId": "cinema"
         },
         {
           "path": "images/albury/upper-basement/new-views/cinema.webp",
           "title": "Cinema — Additional View",
-          "description": "An additional viewpoint of the same cinema, checked against its room reference for consistent fixed furnishings and openings.",
+          "description": "An additional viewpoint of the same cinema, checked against its room reference for consistent fixed furnishings and openings. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "roomName": "Cinema",
           "roomId": "cinema"
         },
         {
           "path": "images/albury/upper-basement/17-screening-in-progress.webp",
           "title": "Screening in Progress",
-          "description": "Eleven friends settle across the stepped navy seating as a staff member works quietly at the rear minibar; the image retains enough ambient light for the room itself to remain legible.",
+          "description": "Eleven friends settle across the stepped navy seating as a staff member works quietly at the rear minibar; the image retains enough ambient light for the room itself to remain legible. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "roomName": "Cinema",
           "roomId": "cinema"
         },
@@ -548,7 +548,7 @@
         },
         {
           "title": "Cinema — Closer Perspective",
-          "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts. A closer perspective of the established arrangement.",
+          "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts. A closer perspective of the established arrangement. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "path": "images/albury/guide-expansion/cinema-closer-perspective.webp",
           "roomName": "Cinema",
           "roomId": "cinema"

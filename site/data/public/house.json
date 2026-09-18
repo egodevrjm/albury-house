@@ -182,5 +182,62 @@
     ],
     "boothParentRoomId": "live-tracking-room",
     "description": "Live room and control room on Music Nobile; two normal-height isolation booths are contained within the double-height live room. The rec room is separate."
+  },
+  "designTeam": [
+    {
+      "id": "studio-ashby",
+      "name": "Studio Ashby (Sophie Ashby)",
+      "role": "Lead Interior Architect & Spatial Curation",
+      "remit": "Led and coordinated the entire house project and its specialist commissions."
+    },
+    {
+      "id": "studio-frith",
+      "name": "Studio Frith (Frith Kerr)",
+      "role": "Visual Identity & Editorial Brand Guidelines",
+      "remit": "Created the visual identity and editorial brand guidelines in collaboration with Studio Ashby."
+    },
+    {
+      "id": "azzi-glasser",
+      "name": "Azzi Glasser (The Perfumer’s Story)",
+      "role": "Olfactory Architecture & Archive Scent Preservation",
+      "remit": "Responsible for olfactory architecture and archive scent preservation."
+    },
+    {
+      "id": "albury-acoustics",
+      "name": "Albury Acoustics",
+      "role": "Acoustic Architecture & Integrated Audio Systems",
+      "remit": "Shaped acoustics throughout the house; delivered the full sound build-out for the Music Room, Studio Albury, cinema, listening room and bar, plus smart-speaker systems throughout. Its Albury Studio Design division delivered the specialist music-floor work."
+    },
+    {
+      "id": "bell-theatre-services",
+      "name": "Bell Theatre Services",
+      "role": "Cinematographic Engineering & Projection Systems",
+      "remit": "Built out and installed the cinema projection systems and the projection booth behind the screening room, with 70mm, 35mm and full digital capability."
+    },
+    {
+      "id": "imprimerie-du-marais",
+      "name": "Imprimerie du Marais",
+      "role": "Asset Execution — Stationery & Print",
+      "remit": "Executed house stationery and print under the Studio Ashby-led project."
+    },
+    {
+      "id": "chelsea-textiles",
+      "name": "Chelsea Textiles",
+      "role": "Asset Execution — Bespoke House Linens",
+      "remit": "Executed bespoke house linens under the Studio Ashby-led project."
+    }
+  ],
+  "audioSystems": "Shaped acoustics throughout the house; delivered the full sound build-out for the Music Room, Studio Albury, cinema, listening room and bar, plus smart-speaker systems throughout. Its Albury Studio Design division delivered the specialist music-floor work.",
+  "cinema": {
+    "seats": 20,
+    "projectionBooth": "Behind the screening room",
+    "projectionFormats": [
+      "70mm",
+      "35mm",
+      "Full digital"
+    ],
+    "projectionContractor": "Bell Theatre Services",
+    "acousticsAndAudio": "Albury Acoustics",
+    "projectCoordination": "Studio Ashby (Sophie Ashby)"
   }
 }

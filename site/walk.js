@@ -39,7 +39,7 @@
     const {x,y,width:w,height:h}=r;
     if(r.feature==='pool') return `<g class="map-feature"><rect x="${x+25}" y="${y+38}" width="${w-50}" height="${h-76}" rx="6"/>${[1,2,3,4].map(i=>`<path d="M${x+25+(w-50)*i/5} ${y+48}v${h-96}"/>`).join('')}</g>`;
     if(r.id==='instrument-isolation-booth')return `<g class="map-feature"><circle cx="${x+70}" cy="${y+h/2}" r="45" stroke-dasharray="4 5"/>${[0,1,2,3].map(i=>{const a=i*Math.PI/2;return `<rect x="${x+70+Math.cos(a)*48-9}" y="${y+h/2+Math.sin(a)*48-9}" width="18" height="18" rx="3"/>`;}).join('')}</g>`;
-    if(r.feature==='cinema') return `<g class="map-feature"><path d="M${x+30} ${y+22}h${w-60}" stroke-width="5"/>${[0,1,2].map(i=>`<path d="M${x+40} ${y+65+i*55}h${w-80}" stroke-width="10"/>`).join('')}</g>`;
+    if(r.feature==='cinema') return `<g class="map-feature"><path d="M${x+30} ${y+22}h${w-60}" stroke-width="5"/>${[0,1,2].map(i=>`<path d="M${x+40} ${y+65+i*55}h${w-80}" stroke-width="10"/>`).join('')}<rect x="${x+30}" y="${y+h-55}" width="${w-60}" height="42" fill="none"/><text x="${x+w/2}" y="${y+h-37}" text-anchor="middle" font-size="10" stroke="none">PROJECTION BOOTH</text><text x="${x+w/2}" y="${y+h-22}" text-anchor="middle" font-size="9" stroke="none">70mm · 35mm · DIGITAL</text></g>`;
     if(r.feature==='console')return `<g class="map-feature"><path d="M${x+30} ${y+22}h${w-60}" stroke-width="5"/><rect x="${x+w*.2}" y="${y+h-40}" width="${w*.6}" height="22" rx="3"/></g>`;
     if(r.feature==='games')return `<g class="map-feature"><rect x="${x+30}" y="${y+35}" width="150" height="75" rx="6"/><circle cx="${x+w-90}" cy="${y+72}" r="35"/></g>`;
     return '';
@@ -128,6 +128,7 @@
     $('walk-room-name').textContent=room.name;
     $('room-location').textContent=section.name;
     const notes={
+      'upper-basement/cinema':'Twenty seats, with a rear projection booth offering 70mm, 35mm and full digital capability. Projection build-out and installation: Bell Theatre Services. Acoustics and sound: Albury Acoustics. Coordinated by Studio Ashby.',
       'music-nobile/live-tracking-room':'Studio Albury’s double-height live room contains two enclosed, normal-height isolation booths. The control room completes the studio; the rec room is a separate space on Music Nobile.',
       'music-nobile/control-room':'Studio Albury’s control room looks into the live room through the wide acoustic window.',
       'music-nobile/vocal-booth':'An enclosed, normal-height booth inside the double-height live room, comfortably accommodating 3–4 people for voice work.',

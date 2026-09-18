@@ -48,7 +48,8 @@
     "name": "Albury architectural house mark",
     "masterImage": "images/albury/identity/house-mark-current.webp",
     "clearSpaceGraphic": "site/identity/house-mark-clear-space.svg",
-    "rule": "Use the full architectural drawing at small, deliberate scale. Do not redraw, stretch, crop or substitute a monogram."
+    "rule": "Use the full architectural drawing at small, deliberate scale. Do not redraw, stretch, crop or substitute a monogram.",
+    "designCredit": "Studio Frith (Frith Kerr), in collaboration with Studio Ashby"
   },
   "expressions": {
     "full": {
@@ -72,7 +73,12 @@
       "Cedar",
       "Vetiver"
     ],
-    "description": "Bright citrus opening into dry tea and warm wood, with a quiet earthy finish. The intended impression is clean and lived-in, with little sweetness.",
-    "image": "images/albury-house-items/travel/41-selected-house-gifts-full-colour.webp"
+    "description": "Bright citrus opening into dry tea and warm wood, with a quiet earthy finish. The intended impression is clean and lived-in, with little sweetness. Olfactory architecture and archive scent preservation are by Azzi Glasser (The Perfumer’s Story).",
+    "image": "images/albury-house-items/travel/41-selected-house-gifts-full-colour.webp",
+    "designCredit": "Azzi Glasser (The Perfumer’s Story) — olfactory architecture and archive scent preservation"
+  },
+  "assetExecution": {
+    "stationeryAndPrint": "Imprimerie du Marais",
+    "bespokeHouseLinens": "Chelsea Textiles"
   }
 }
