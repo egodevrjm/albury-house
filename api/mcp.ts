@@ -12,6 +12,8 @@ import {
   getGuestProvision,
   getImage,
   getMenuForDate,
+  listSpecialMenus,
+  getSpecialMenu,
   getMenuRange,
   getPantryItem,
   getPartner,
@@ -125,11 +127,23 @@ export const mcpWebHandler = createMcpHandler((server) => {
     inputSchema: z.object({ partner: z.string().min(1) }), annotations: readOnly,
   }, async ({ partner }) => guarded(() => getPartner(partner) ?? (() => { throw new Error(`No Albury external partner found for ${partner}.`); })()));
 
+  server.registerTool("list_special_menus", {
+    title: "List special Albury menus",
+    description: "List complete optional occasion menus including Christmas, Boxing Day, New Year's Eve, Easter, a summer garden party and a celebration dinner. These are menu options, not booked events.",
+    inputSchema: z.object({}), annotations: readOnly,
+  }, async () => guarded(() => ({ menus: listSpecialMenus() })));
+
+  server.registerTool("get_special_menu", {
+    title: "Get a special Albury menu",
+    description: "Return one complete special menu by ID, with courses, vegetarian alternative and service notes. Use list_special_menus to discover IDs.",
+    inputSchema: z.object({ menu_id: z.string().min(1) }), annotations: readOnly,
+  }, async ({ menu_id }) => guarded(() => getSpecialMenu(menu_id)));
+
   server.registerTool("get_menu_for_date", {
     title: "Get the menu for a date",
-    description: "Return Albury's breakfast, lunch and dinner for an exact date using the anchored two-week house rotation. Monday 11 August 2025 is Cycle 1 Monday.",
-    inputSchema: z.object({ date: isoDate }), annotations: readOnly,
-  }, async ({ date }) => guarded(() => getMenuForDate(date)));
+    description: "Return breakfast, lunch and dinner for any calendar date from the spring, summer, autumn or winter two-week rotation. Optional special_menu_id replaces only its designated lunch or dinner. Selecting a special menu does not establish a booking. Cycle 1 is anchored to Monday 11 August 2025.",
+    inputSchema: z.object({ date: isoDate, special_menu_id: z.string().min(1).optional() }), annotations: readOnly,
+  }, async ({ date, special_menu_id }) => guarded(() => getMenuForDate(date, special_menu_id)));
 
   server.registerTool("get_menu_range", {
     title: "Get menus for a date range",

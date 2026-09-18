@@ -12,6 +12,7 @@
       return `<section class="day" id="${name.toLowerCase()}" aria-labelledby="title-${i+1}"><div class="day-title"><span class="number">${String(i+1).padStart(2,'0')}</span><div><h2 id="title-${i+1}">${name} · ${AlburyMenus.label(date)}</h2><p>${esc(theme)}</p></div></div><div class="meals">${meals.map(([meal,courses])=>`<article class="meal"><h3>${meal}</h3><dl>${courses.map(([label,dish])=>`<div class="${label==='Vegetarian plate'?'alternative':''}"><dt>${esc(label)}</dt><dd>${esc(dish)}</dd></div>`).join('')}</dl></article>`).join('')}</div></section>`;
     }).join('');
     document.querySelector('aside.service').insertAdjacentHTML('afterend',html);
+    document.querySelector('#special-menus').innerHTML=AlburyMenus.specialCatalogue();
     AlburyMenus.bind(render);
   }
   AlburyMenus.ready.then(()=>{

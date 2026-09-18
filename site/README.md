@@ -8,7 +8,7 @@ This is a static, local-file-compatible site. No package installation, network c
 - `../ALBURY_WEEKLY_MENUS.html` renders the selected 21-meal week from the same CSV as the kitchen page. A static copy of the original week remains as a no-JavaScript fallback.
 - `../ALBURY_KITCHEN_LIBRARY.html` preserves the food repertoire, pantry photographs and hospitality catalogue.
 - `shared.css` / `shared.js` supply cross-site navigation; `kitchen.css` / `kitchen.js` supply the intranet and welcome page.
-- `../content/schedules/menus.csv` holds 42 complete summer menus in two weekly cycles. The compiler publishes it to `site/data/menus.csv`. Cycle 1 preserves the existing menu repertoire in `upload/ALBURY_MENUS_AND_COMMON_FOODS.md`; cycle 2 extends the site’s summer repertoire. Neither creates attendance or bookings. The rotation starts on Monday 11 August 2025, not the computer’s current date.
+- `../content/schedules/menus.csv` holds 168 complete menus across four seasonal two-week rotations. The compiler publishes it to `site/data/menus.csv`. Summer cycle 1 preserves the existing menu repertoire in `upload/ALBURY_MENUS_AND_COMMON_FOODS.md`; summer cycle 2 extends the site’s summer repertoire. Neither creates attendance or bookings. The rotation starts on Monday 11 August 2025, not the computer’s current date.
 - `../ALBURY_LONDON_CALENDAR.html` is a filterable August 2025–July 2026 event guide using `data/london-events.csv`, with source links and calendar export.
 
 Service brief: produces copyable text only, never sends, books or saves information. There is no authentication, live inventory, rota feed, remote submission or Wi-Fi captive-portal configuration. Do not treat a hidden tab as access control. Configure the actual Wi-Fi landing URL separately when hosting the site.
@@ -68,11 +68,11 @@ The pre-separation pages are backed up in `admin/site-separation-2026-09-07/befo
 
 ## Story weather
 
-`../ALBURY_WEATHER.html` and the Welcome weather panel share the published copy of `../content/schedules/weather.csv`: 92 authored fictional daily records, 1 August–31 October 2025. These are seasonal story conditions, not observations, a live forecast or evidence of what happened in London. They do not overwrite played continuity or the opening snapshot. Both views default to 11 August 2025 and accept `?date=2025-09-15`. No computer-clock date or random daily weather is used.
+`../ALBURY_WEATHER.html`, the Welcome weather panel and MCP `get_forecast` share `../content/schedules/weather.csv`: 396 authored daily records from 1 August 2025 through 31 August 2026, supplied on 11 September 2026. Both website views default to the story opening, 11 August 2025, and accept `?date=2025-09-15`.
 
-Each row supplies `date`, `condition` (`sunny`, `partly-cloudy`, `cloudy`, `showers`, `rain`), `summary`, `high_c`, `low_c`, `rain_mm` (daily total), `wind_mph` (prevailing speed, not gusts), `wind_direction`, three period notes and `house_note`. `low_c` is that evening's overnight low. Edit the canonical UTF-8 CSV and run `python3 site/build_content.py` to refresh the published CSV and `weather-data.js` for file:// use. Hosted pages fetch the CSV; network failure uses the labelled bundle, invalid content is reported. Keep dates unique and consecutive, and retain the opening date. The selector follows the CSV's actual bounds; it does not extrapolate or repeat at the end.
+The CSV preserves the supplied columns: `Date,Day,Condition,High_C,Low_C,High_F,Low_F,Precip_mm,Precip_Chance_pct,Wind_mph`. Temperatures in both units, daily precipitation amount/chance, wind speed and descriptive conditions are preserved. Wind direction and time-of-day/house notes are not supplied. The UI no longer reuses those old generated details.
 
-`weather.js` validates and renders both surfaces; `weather.css` supplies the shared forecast styling. The weather page shows the selected day and up to six following days. Welcome shows the selected day and up to three following days. Date selection stays in the URL; it does not change the menu date, save a session or advance the story. Supply the same date parameter on Welcome to show another story day's weather. Downloading a CSV does not write back changes.
+Run `python3 site/build_content.py` to validate consecutive dates, weekdays, finite values, ranges and temperature consistency, then publish the CSV, `weather-data.js` fallback and `site/data/public/weather.json` for the MCP. The CSV is the single source; never edit the generated JSON. The website retains its seven-day outlook, clipped to available dates. The MCP accepts `get_forecast({"date":"2025-08-11"})` and returns the requested daily record with explicit units, provenance and coverage. Invalid or uncovered dates return an error without extrapolation. `get_date_context` includes weather when covered and `weather: null` otherwise, preserving menu/event lookup outside the weather range.
 
 ## Culinary photography, producers and house at work
 
@@ -103,3 +103,19 @@ Pre-change files and the expansion build/verification scripts are retained under
 The P26–P28 drinks family uses short clear round-shouldered bottles with gold screw caps and ivory/bottle-green ALBURY labels. There is no chef name or architectural mark on the front. P25 cocktail cherries remains a charcoal/gold pantry jar. The current group photograph replaces `../images/albury-produce/opening-range/09-bar-preparations.webp`; the passion-fruit serve uses the matching label, and `../images/albury-culinary/vanilla-syrup.webp` joins the drinks page. `ALBURY_CULINARY_PROGRAMME.md` owns this distinction, mirrored in guest hospitality, house style and the kitchen library. Built-in image-generation prompts and pre-change backups are under `../admin/labels-slack-2026-09-07/`.
 
 The internal Slack plan is `../upload/AW_HOLDINGS_SLACK.md`, routed from the business/chat canon and RAG manifest. It is not linked into this guest-facing site and does not provision a live workspace.
+
+## Walk Albury
+
+`ALBURY_WALK.html` is the interactive map explorer, linked from the house menu and room tour. It covers seven internal floors and one exterior area, with 96 current spaces. The two historical/proposal image groups remain clearly labelled gallery references. Deep links use `#/section-id/room-id`, preserving repeated room IDs across floors.
+
+Edit the existing geometry in `images/albury/floor-plans/build-floor-plans.js`; the adapter `site/build_walk_maps.cjs` links it to canonical room IDs and includes the outdoor overview. Run `node site/build_walk_maps.cjs` then `python3 site/build_content.py`. The generated `content/public/walk.json` is compiled into browser content and published for reference. Do not edit that generated map JSON directly. `site/walk.js` and `site/walk.css` own interaction and presentation.
+
+Plans are illustrative, not measured construction drawings or verified doorway routes. The overnight room and passenger lift inset complete omissions in the old drawings; their schematic placement does not establish new dimensions. Room focus enlarges the mapped footprint, with photographic views supplying interior detail. Normal-height booths remain within Studio Albury’s double-height live room. No. 34 proposals are not current walkable spaces.
+
+## Year-round menus and special occasions
+
+The house has four seasonal two-week rotations: spring (March–May), summer (June–August), autumn (September–November) and winter (December–February). Together these provide 168 breakfast, lunch and dinner menus. The two-week cycle remains anchored to Monday 11 August 2025; each date uses its own season, even within a week that crosses a seasonal boundary.
+
+The complete regular menus are maintained in `content/schedules/menus.csv`. Six optional occasion menus are maintained in `content/public/special-menus.json`: Christmas lunch, Boxing Day lunch, New Year's Eve dinner, Easter lunch, a summer garden party and a celebration dinner. Each includes vegetarian provision and service notes.
+
+Use the Albury House MCP `get_menu_for_date` for regular provision, `list_special_menus` to browse occasions and `get_special_menu` for full details. Supplying `special_menu_id` to `get_menu_for_date` substitutes only the designated lunch or dinner on that date. A special menu is an available kitchen plan; it does not establish guests, a booking or a meal already eaten. Christmas and other occasions do not override ordinary menus automatically.

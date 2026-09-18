@@ -11,7 +11,7 @@ const hospitalitySource = requireJson("../site/data/public/hospitality.json");
 const assetsSource = requireJson("../site/data/public/assets.json");
 const brandsSource = requireJson("../site/data/public/brands.json");
 const pantryItemsSource = requireJson("../mcp-data/pantry-items.json");
-const menusSource = requireJson("../mcp-data/menus.json");
+const menusSource = requireJson("../site/data/public/menus.json");
 const eventsSource = requireJson("../mcp-data/london-events.json");
 const weatherSource = requireJson("../site/data/public/weather.json");
 
@@ -40,7 +40,17 @@ const hospitality = hospitalitySource as unknown as { principles: Dict; collecti
 const assets = (assetsSource as unknown as { assets: Dict[] }).assets;
 const brands = (brandsSource as unknown as { brands: Dict[] }).brands;
 const pantryItems = pantryItemsSource as unknown as { summary: Dict; openingItems: Dict[]; seasonalRecipes: Dict[]; asOf: string };
-const menus = menusSource as unknown as Dict[];
+const menus = menusSource.menus as Dict[];
+const specialMenusSource = requireJson("../site/data/public/special-menus.json");
+const specialMenus = specialMenusSource.menus as Array<{ id: string; name: string; occasion: string; season: string; meal: string; notes: string; menu: Dict }>;
+function menuSeason(date: string): string {
+  const month = isoDate(date).getUTCMonth() + 1;
+  const seasons = menusSource.seasonMonths as Record<string, number[]>;
+  const match = Object.entries(seasons).find(([, months]) => months.includes(month));
+  if (!match) throw new Error(`No menu season for ${date}.`);
+  return match[0];
+}
+
 const events = eventsSource as unknown as Dict[];
 
 type WeatherDay = {
@@ -283,10 +293,21 @@ export function getPartner(id: string) {
   return staff.servicePartners.find((item) => item.id === id || normalize(item.name) === normalize(id));
 }
 
-export function getMenuForDate(date: string) {
+export function listSpecialMenus() { return specialMenus; }
+
+export function getSpecialMenu(id: string) {
+  const menu = specialMenus.find(item => item.id === id);
+  if (!menu) throw new Error(`Unknown special menu: ${id}. Use list_special_menus to choose one.`);
+  return menu;
+}
+
+export function getMenuForDate(date: string, specialMenuId?: string) {
   const position = menuPosition(date);
-  const meals = menus.filter((row) => Number(row.cycle) === position.cycle && row.day === position.day);
-  return { ...position, sourceAnchor: STORY_DATE, rotation: "Two-week cycle; Cycle 1 begins Monday 11 August 2025.", theme: meals[0]?.theme ?? "", meals };
+  const season = menuSeason(date);
+  const special = specialMenuId ? getSpecialMenu(specialMenuId) : undefined;
+  const meals: Dict[] = menus.filter(row => row.season === season && Number(row.cycle) === position.cycle && row.day === position.day)
+    .map(row => special && row.meal === special.meal ? { ...row, ...special.menu, specialMenuId: special.id } : { ...row });
+  return { ...position, season, sourceAnchor: STORY_DATE, rotation: "Four seasonal two-week rotations, anchored to Monday 11 August 2025. Special menus are optional and do not establish a booking.", theme: special?.name ?? meals[0]?.theme ?? "", specialMenu: special ? {id: special.id, name: special.name, meal: special.meal, notes: special.notes} : null, meals };
 }
 
 export function getMenuRange(startDate: string, days: number) {

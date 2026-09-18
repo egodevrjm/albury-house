@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Optional occasion menus; choosing one proposes a meal, not a booking or played event.",
+  "menus": [
+    {
+      "id": "christmas-lunch",
+      "name": "Christmas lunch",
+      "occasion": "Christmas",
+      "season": "winter",
+      "meal": "Lunch",
+      "notes": "A full festive lunch, scaled to the household and guests actually present. Baking, puddings and staffing are planned in advance.",
+      "menu": {
+        "meal": "Lunch",
+        "theme": "Christmas lunch",
+        "starter": "Smoked salmon, rye blinis, dill and crème fraîche; beetroot and horseradish on blinis as the vegetarian starter.",
+        "main": "Roast turkey with chestnut and sage stuffing, pigs in blankets, bread sauce, cranberry sauce and turkey gravy.",
+        "alongside": "Roast potatoes, parsnips, carrots, Brussels sprouts and braised red cabbage; vegetarian portions cooked separately.",
+        "dessert": "Christmas pudding with brandy butter or vanilla custard; clementines and mince pies with coffee.",
+        "vegetarian": "Mushroom, chestnut and lentil Wellington with vegetable gravy, vegetarian stuffing and the same separately cooked vegetables. Vegetarian-suet Christmas pudding.",
+        "with_drinks": "Gougères, olives and spiced nuts; still/sparkling water and blackcurrant cordial, with wine when wanted.",
+        "bowl": "",
+        "bread_preserves": ""
+      }
+    },
+    {
+      "id": "boxing-day-lunch",
+      "name": "Boxing Day table",
+      "occasion": "Boxing Day",
+      "season": "winter",
+      "meal": "Lunch",
+      "notes": "A flexible shared table. Use a freshly prepared pie filling when suitable leftovers are unavailable.",
+      "menu": {
+        "meal": "Lunch",
+        "theme": "Boxing Day table",
+        "starter": "Celeriac and apple soup.",
+        "main": "Freshly baked ham with mustard and pickles; a turkey and leek pie where properly stored Christmas turkey is available.",
+        "alongside": "Winter slaw, warm potatoes with chives, sourdough and a beetroot-and-lentil salad.",
+        "dessert": "Pear and almond tart; clementines and Christmas cake.",
+        "vegetarian": "Mushroom, leek and white-bean pie; the same soup made with vegetable stock, salads and potatoes.",
+        "with_drinks": "Cheese straws, olives, water and chilled house cordial.",
+        "bowl": "",
+        "bread_preserves": ""
+      }
+    },
+    {
+      "id": "new-years-eve",
+      "name": "New Year’s Eve dinner",
+      "occasion": "New Year’s Eve",
+      "season": "winter",
+      "meal": "Dinner",
+      "notes": "A seated dinner with a separately planned late-night snack of cheese toasties. Midnight service is arranged with rota cover.",
+      "menu": {
+        "meal": "Dinner",
+        "theme": "New Year’s Eve dinner",
+        "starter": "Crab with apple, cucumber and dill; beetroot, apple and lentils as the vegetarian starter.",
+        "main": "Beef fillet with red-wine shallot sauce.",
+        "alongside": "Potato gratin, glazed carrots and winter greens.",
+        "dessert": "Dark-chocolate délice, poached pear and vanilla cream; petits fours with coffee.",
+        "vegetarian": "Mushroom and chestnut pithivier with vegetable-stock shallot sauce; vegetarian-set chocolate dessert.",
+        "with_drinks": "Warm gougères and smoked-salmon tartlets; mushroom tartlets for vegetarians. Water and house cordial throughout; Champagne or wine if wanted.",
+        "bowl": "",
+        "bread_preserves": ""
+      }
+    },
+    {
+      "id": "easter-lunch",
+      "name": "Easter Sunday lunch",
+      "occasion": "Easter",
+      "season": "spring",
+      "meal": "Lunch",
+      "notes": "A spring celebration menu available whenever selected; it does not establish where Alex spends Easter.",
+      "menu": {
+        "meal": "Lunch",
+        "theme": "Easter Sunday lunch",
+        "starter": "Pea and mint soup with crème fraîche.",
+        "main": "Slow-roast lamb shoulder with rosemary jus.",
+        "alongside": "Roast potatoes, buttered carrots, peas and spring cabbage.",
+        "dessert": "Rhubarb and almond tart with vanilla ice cream; small chocolate truffles with coffee.",
+        "vegetarian": "Mushroom, leek and lentil pie with rosemary vegetable gravy and separately cooked vegetables.",
+        "with_drinks": "Radishes, olives and cheese sablés; water, elderflower-and-lemon cordial and wine if wanted.",
+        "bowl": "",
+        "bread_preserves": ""
+      }
+    },
+    {
+      "id": "summer-garden-party",
+      "name": "Summer garden party",
+      "occasion": "Garden entertaining",
+      "season": "summer",
+      "meal": "Dinner",
+      "notes": "A scalable party menu. Larger gatherings require an agreed event team and service plan; choosing this menu does not book the garden or fix a guest count.",
+      "menu": {
+        "meal": "Dinner",
+        "theme": "Summer garden party",
+        "starter": "Tomatoes, basil and burrata; tomato, white-bean and herb salad as the dairy-free alternative.",
+        "main": "Lemon-and-thyme roast chicken with tarragon sauce, served on sharing platters.",
+        "alongside": "New potatoes, grilled courgettes, green beans and rosemary focaccia.",
+        "dessert": "Lemon tart, raspberries and vanilla ice cream.",
+        "vegetarian": "Roast aubergine with white beans, tomatoes and herbs; the same potatoes, vegetables and bread.",
+        "with_drinks": "Tomato tartlets, crab toast and mushroom arancini; water, Cream Soda and chilled house cordials.",
+        "bowl": "",
+        "bread_preserves": ""
+      }
+    },
+    {
+      "id": "celebration-dinner",
+      "name": "Celebration dinner",
+      "occasion": "Birthdays and special evenings",
+      "season": "all-year",
+      "meal": "Dinner",
+      "notes": "An adaptable private-house celebration menu, with the cake and dietary needs agreed for the actual guests.",
+      "menu": {
+        "meal": "Dinner",
+        "theme": "Celebration dinner",
+        "starter": "Roast beetroot with goat’s cheese, walnuts and herb dressing.",
+        "main": "Roast chicken with a rich tarragon sauce.",
+        "alongside": "Potato gratin and seasonal vegetables: spring greens, summer beans, autumn carrots or winter cabbage.",
+        "dessert": "A chocolate celebration cake with vanilla ice cream; the inscription is chosen for the occasion.",
+        "vegetarian": "Mushroom and lentil pithivier with tarragon vegetable sauce; vegetarian goat’s cheese in the starter.",
+        "with_drinks": "Gougères and olives; still/sparkling water, house cordial and wine when wanted.",
+        "bowl": "",
+        "bread_preserves": ""
+      }
+    }
+  ]
+}

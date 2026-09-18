@@ -39,3 +39,11 @@ Walk Albury is available at `/ALBURY_WALK.html`. It links 96 current spaces acro
 `get_forecast({"date":"2025-08-11"})` returns the supplied daily London weather, including condition, high/low °C and °F, precipitation mm/chance %, wind mph, provenance and date coverage. It covers 396 days, 1 August 2025–31 August 2026 inclusive. Invalid calendar dates and uncovered dates return errors; there is no extrapolation. This is authored story weather.
 
 `get_date_context` also includes `weather` (or null outside coverage) alongside menus and events. The MCP reads generated `site/data/public/weather.json`; its source is `aw_v45/content/schedules/weather.csv`. Rebuild via `python3 aw_v45/site/build_content.py`, then copy the generated weather JSON, CSV and browser fallback together with the weather UI files into this deployment. The public weather page and Welcome panel share that CSV.
+
+## Year-round menus and special occasions
+
+The house has four seasonal two-week rotations: spring (March–May), summer (June–August), autumn (September–November) and winter (December–February). Together these provide 168 breakfast, lunch and dinner menus. The two-week cycle remains anchored to Monday 11 August 2025; each date uses its own season, even within a week that crosses a seasonal boundary.
+
+The complete regular menus are maintained in `content/schedules/menus.csv`. Six optional occasion menus are maintained in `content/public/special-menus.json`: Christmas lunch, Boxing Day lunch, New Year's Eve dinner, Easter lunch, a summer garden party and a celebration dinner. Each includes vegetarian provision and service notes.
+
+Use the Albury House MCP `get_menu_for_date` for regular provision, `list_special_menus` to browse occasions and `get_special_menu` for full details. Supplying `special_menu_id` to `get_menu_for_date` substitutes only the designated lunch or dinner on that date. A special menu is an available kitchen plan; it does not establish guests, a booking or a meal already eaten. Christmas and other occasions do not override ordinary menus automatically.

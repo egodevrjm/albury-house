@@ -23,8 +23,8 @@ async function post(body: unknown) {
 test("MCP advertises the complete read-only Albury toolset", async () => {
   const response = await post({ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} });
   const names = response.result.tools.map((tool: { name: string }) => tool.name);
-  assert.equal(names.length, 28);
-  for (const name of ["get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area", "get_forecast"]) assert.ok(names.includes(name), name);
+  assert.equal(names.length, 30);
+  for (const name of ["list_special_menus", "get_special_menu", "get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area", "get_forecast"]) assert.ok(names.includes(name), name);
 });
 
 test("MCP counts seven floors and exposes the garden separately", async () => {
@@ -69,3 +69,14 @@ test("MCP returns exact authored weather and handles invalid or uncovered dates"
   assert.deepEqual(tool.inputSchema.required, ["date"]);
   assert.equal(tool.annotations.readOnlyHint, true);
 });
+
+ test("MCP can select a special menu without replacing breakfast", async () => {
+  const call = async (name: string, args = {}) => (await post({jsonrpc:"2.0",id:name,method:"tools/call",params:{name,arguments:args}})).result;
+  const special = await call("get_special_menu", {menu_id:"christmas-lunch"});
+  assert.equal(special.structuredContent.meal, "Lunch");
+  const regular = await call("get_menu_for_date", {date:"2025-12-25"});
+  const selected = await call("get_menu_for_date", {date:"2025-12-25",special_menu_id:"christmas-lunch"});
+  assert.equal(selected.structuredContent.specialMenu.id, "christmas-lunch");
+  assert.deepEqual(selected.structuredContent.meals[0], regular.structuredContent.meals[0]);
+  assert.equal(regular.structuredContent.specialMenu, null);
+ });
