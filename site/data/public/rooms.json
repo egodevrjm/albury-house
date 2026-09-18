@@ -472,7 +472,7 @@
         {
           "path": "images/albury/upper-basement/14-staff-overnight-room.webp",
           "title": "Staff Overnight Room",
-          "description": "A single bed and chair provide a private on-call rest point beside the staff room; it uses the floor’s existing shower and remains separate from longer-term staff accommodation at No. 34.",
+          "description": "A single bed and chair provide a private on-call rest point beside the staff room; it uses the floor’s existing shower and remains separate from longer-term staff accommodation at No. 34. No. 34 is planned as a future staff house; it remains empty, separate and unused at opening, with planning expected to take about two years before works. Garden links and expanded event capacity are possible post-consent schemes, not current facilities.",
           "roomName": "Staff Overnight Room",
           "roomId": "staff-overnight-room"
         },
@@ -1959,9 +1959,9 @@
       "rooms": [
         {
           "path": "images/albury/exterior/06-no34-acquisition-projection.webp",
-          "title": "The Cedars — Future Landscape Proposal",
-          "description": "Future post-renovation concept, not the August 2025 opening condition. The Cedars remains a separate detached staff house with its own street entrance and enclosed private garden; proposed landscaping adds a kitchen garden, event lawn and controlled connection to Albury. Its garden is approximately 0.7 acre. At story opening it is empty and unconnected; an integrated capacity near 500 remains a future possibility, not an outdoor-only capacity.",
-          "roomName": "The Cedars — Future Landscape Proposal",
+          "title": "The Cedars — Future Landscape Proposal No. 34 is planned as a future staff house; it remains empty, separate and unused at opening, with planning expected to take about two years before works. Garden links and expanded event capacity are possible post-consent schemes, not current facilities.",
+          "description": "Future post-renovation concept, not the August 2025 opening condition. The Cedars remains a separate detached staff house with its own street entrance and enclosed private garden; proposed landscaping adds a kitchen garden, event lawn and controlled connection to Albury. Its garden is approximately 0.7 acre. At story opening it is empty and unconnected; an integrated capacity near 500 remains a future possibility, not an outdoor-only capacity. No. 34 is planned as a future staff house; it remains empty, separate and unused at opening, with planning expected to take about two years before works. Garden links and expanded event capacity are possible post-consent schemes, not current facilities.",
+          "roomName": "The Cedars — Future Landscape Proposal No. 34 is planned as a future staff house; it remains empty, separate and unused at opening, with planning expected to take about two years before works. Garden links and expanded event capacity are possible post-consent schemes, not current facilities.",
           "roomId": "the-cedars-future-landscape-proposal"
         },
         {
