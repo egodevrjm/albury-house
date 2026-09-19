@@ -133,3 +133,33 @@ test("image search returns directly viewable URLs", () => {
   assert.ok(result.total >= 1);
   assert.ok(result.items.every((item) => String(item.url).startsWith("https://albury-house.vercel.app/")));
 });
+
+test("repeated room names cannot silently resolve to another floor", () => {
+  const all = listRooms({limit:100}).items;
+  assert.equal(new Set(all.map(room => room.id)).size, all.length);
+  const upper = getRoom("second-floor/rear-service-landing");
+  const ground = getRoom("raised-ground/rear-service-landing");
+  assert.equal(upper?.floorId, "second-floor");
+  assert.equal(ground?.floorId, "raised-ground");
+  assert.ok(upper?.views.every(view => String(view.path).includes("second-floor")));
+  assert.equal(getRoom("rear-service-landing", "second-floor")?.id, upper?.id);
+  assert.throws(() => getRoom("rear-service-landing"), /Ambiguous room/);
+});
+
+test("staff biographies, descriptions and portraits are complete in the intended fields", async () => {
+  const { existsSync } = await import("node:fs");
+  const people = listStaff({limit:100}).items;
+  for (const person of people) {
+    assert.ok(person.image && person.imageAlt, String(person.id));
+    assert.ok(existsSync(String(person.image)), String(person.image));
+    assert.doesNotMatch(String(person.description), /original.*establishment|placeholder|TBD/i);
+  }
+  for (const id of ["denise-barrett", "gareth-palmer", "lewis-donnelly"]) {
+    const person = people.find(person => person.id === id)!;
+    assert.ok(String(person.career).length > 80);
+    assert.doesNotMatch(String(person.remit), /-born|-raised|began in|worked restaurant/);
+  }
+  assert.doesNotMatch(String(people.find(person => person.id === "clem-frobisher")?.remit), /No\. 34|planning|Cedars/);
+  assert.doesNotMatch(getRoom("staff-overnight-room")!.description, /No\. 34|Cedars|planning/);
+  assert.ok(listRooms({limit:100}).items.every(room => room.name.length < 100));
+});

@@ -99,9 +99,9 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("get_room", {
     title: "Get an Albury room",
-    description: "Return one room with its floor, description, primary image and every coherent view available on the house site.",
-    inputSchema: z.object({ room_id: z.string().min(1) }), annotations: readOnly,
-  }, async ({ room_id }) => guarded(() => getRoom(room_id) ?? (() => { throw new Error(`No Albury room found for ${room_id}.`); })()));
+    description: "Return one room with its floor, description, primary image and every coherent view. Use the exact id returned by list_rooms; floor-qualified IDs distinguish repeated spaces such as rear service landings. Legacy local IDs require floor_id when ambiguous.",
+    inputSchema: z.object({ room_id: z.string().min(1), floor_id: z.string().optional() }), annotations: readOnly,
+  }, async ({ room_id, floor_id }) => guarded(() => getRoom(room_id, floor_id) ?? (() => { throw new Error(`No Albury room found for ${room_id}.`); })()));
 
   server.registerTool("list_household_staff", {
     title: "List Albury household staff",

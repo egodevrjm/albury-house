@@ -132,7 +132,8 @@ function roomGroups() {
       grouped.set(id, [...(grouped.get(id) ?? []), withImage(view)]);
     }
     return [...grouped].map(([id, roomViews]) => ({
-      id,
+      id: sections.filter(section => ((section.rooms as Dict[]) ?? []).some(view => view.roomId === id)).length > 1 ? `${floor.id}/${id}` : id,
+      localId: id,
       name: String(roomViews[0]?.roomName ?? roomViews[0]?.title ?? id),
       sectionId: String(floor.id),
       sectionName: String(floor.name),
@@ -270,8 +271,11 @@ export function listRooms(input: { floorId?: string; outdoorAreaId?: string; que
   return paginate(filtered.map(({ views, ...room }) => ({ ...room, primaryImage: views[0] })), input.offset, input.limit);
 }
 
-export function getRoom(id: string) {
-  return allRooms.find((room) => room.id === id || normalize(room.name) === normalize(id));
+export function getRoom(id: string, floorId?: string) {
+  const candidates = allRooms.filter(room => (!floorId || room.sectionId === floorId) &&
+    (room.id === id || `${room.sectionId}/${room.localId}` === id || room.localId === id || normalize(room.name) === normalize(id)));
+  if (candidates.length > 1) throw new Error(`Ambiguous room ${id}; use a floor-qualified room_id (${candidates.map(room => room.id).join(", ")}) or provide floor_id.`);
+  return candidates[0];
 }
 
 export function listStaff(input: { department?: string; employmentType?: string; query?: string; offset?: number; limit?: number }) {

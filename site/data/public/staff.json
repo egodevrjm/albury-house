@@ -148,15 +148,15 @@
       "name": "Denise Barrett",
       "department": "Housekeeping",
       "role": "Household Linen & Laundry Attendant",
-      "remit": "West London-born; hotel linen-room and laundry supervision followed by private-house work. Manages household linen under Mairi, while Blythe retains Alex’s specialist garment care. Susan shares household-linen shifts and absence cover.",
+      "remit": "Household linen sorting, stock, inspection, distribution, laundering and contractor returns under Mairi. Shares shifts and absence cover with Susan; Blythe retains Alex’s specialist garment care.",
       "employmentType": "permanent",
       "ageAtStoryOpen": 49,
       "gender": "woman",
       "pronouns": "she/her",
-      "description": "Part of the original 1 July 2025 household establishment.",
-      "career": "",
-      "image": null,
-      "imageAlt": null
+      "description": "Short and sturdy, with brown eyes and a dark bob threaded with grey.",
+      "career": "West London-born; progressed from hotel linen rooms into laundry supervision, then private-house work. Experienced in stock control, stain treatment, pressing and supplier collections. Direct, friendly and generous with practical advice.",
+      "image": "images/albury/staff/denise-barrett.webp",
+      "imageAlt": "Portrait of Denise Barrett"
     },
     {
       "id": "frances-frankie-doran",
@@ -303,7 +303,7 @@
       "ageAtStoryOpen": 33,
       "gender": "woman",
       "pronouns": "she/her",
-      "description": "Part of the original 1 July 2025 household establishment.",
+      "description": "Medium height, with fair skin, hazel eyes and dark-blonde hair usually pinned up.",
       "career": "Swansea and Cardiff bakeries, then Bread Ahead in Borough Market, 2013–2016. Claridge’s pastry brigade, 2016–2020, progressing to Chef de Partie, Pastry; London private-house work before Albury.",
       "image": "images/albury/staff/38-bethan-pritchard.webp",
       "imageAlt": "Portrait of Bethan Pritchard"
@@ -313,13 +313,13 @@
       "name": "Gareth Palmer",
       "department": "Kitchen",
       "role": "Kitchen & Service Steward",
-      "remit": "Reading-born; hotel stewarding, banqueting and London household work. Strong on stores, equipment and formal service, with duties allocated between kitchen and house service.",
+      "remit": "Stores, equipment, kitchen-support relief and formal service. Kit allocates shifts between Rafael’s kitchen and Crispin’s house-service team.",
       "employmentType": "permanent",
       "ageAtStoryOpen": 31,
       "gender": "man",
       "pronouns": "he/him",
-      "description": "Part of the original 1 July 2025 household establishment.",
-      "career": "",
+      "description": "Broad-built, with light-brown hair, blue eyes and a close beard.",
+      "career": "From Reading; began in hotel kitchen stewarding, then moved into banqueting and a London household. Learned pantry organisation, wine service, formal table work and small-dinner support. Quietly sociable and an enthusiastic football follower.",
       "image": "images/albury/staff/39-gareth-palmer.webp",
       "imageAlt": "Portrait of Gareth Palmer"
     },
@@ -328,15 +328,15 @@
       "name": "Lewis Donnelly",
       "department": "Kitchen",
       "role": "Kitchen & Service Steward",
-      "remit": "Croydon-raised; restaurant floors, hotel bars and private catering. Supports drinks, tray service, informal suppers and late studio hospitality.",
+      "remit": "Drinks, tray service, informal suppers, late studio hospitality and assigned kitchen-support relief. Kit coordinates deployment between kitchen and house service.",
       "employmentType": "permanent",
       "ageAtStoryOpen": 26,
       "gender": "man",
       "pronouns": "he/him",
-      "description": "Part of the original 1 July 2025 household establishment.",
-      "career": "",
-      "image": null,
-      "imageAlt": null
+      "description": "Slim, with dark curly hair, brown eyes and freckles across his nose.",
+      "career": "Raised in Croydon; worked restaurant floors and hotel bars before private catering in London homes. Learned kitchen support and clearing within small service crews. Quick with names, good-humoured and observant without hovering.",
+      "image": "images/albury/staff/lewis-donnelly.webp",
+      "imageAlt": "Portrait of Lewis Donnelly"
     },
     {
       "id": "crispin-vale",
@@ -508,7 +508,7 @@
       "name": "Clem Frobisher",
       "department": "Garden",
       "role": "Head Gardener",
-      "remit": "Albury garden; future No. 34 event ground and kitchen garden remain subject to the later works. No. 34 is planned as a future staff house; it remains empty, separate and unused at opening, with planning expected to take about two years before works. Garden links and expanded event capacity are possible post-consent schemes, not current facilities.",
+      "remit": "Leads care of Albury’s existing garden, planting, trained fruit, cutting flowers and seasonal maintenance, supported by Alice.",
       "employmentType": "permanent",
       "ageAtStoryOpen": 59,
       "gender": "Man",
@@ -635,8 +635,8 @@
       "description": "5’10”, solidly built, with brown eyes and short dark-blond hair.",
       "career": "Birmingham-raised. Started a paid hotel-kitchen apprenticeship at sixteen, then worked through commis and demi-chef de partie posts in busy Midlands hotels before three years as a chef de partie in a London neighbourhood restaurant. His route is nearly ten years of practical kitchen work, rather than Tolly’s recent diploma and single post-graduation restaurant year. Strong on roasting, braising, stocks, ordering and getting a section through a busy service. Plain-spoken, sociable and methodical; writes useful handover notes and dislikes leaving the next shift a mess.",
       "remit": "Runs a savoury section, staff food and planned everyday cooking cover; experienced peer to Tolly, reporting to Rafael and Élodie.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/jamie-fletcher.webp",
+      "imageAlt": "Portrait of Jamie Fletcher"
     },
     {
       "id": "peter-collins",
@@ -650,8 +650,8 @@
       "description": "5’9”, broad-backed, with grey-blue eyes and close-cropped greying hair.",
       "career": "From Hounslow. Worked in hotel stewarding and conference kitchens before a long post in a private members’ club. Knows receiving, cleaning schedules, equipment care and how to keep wash-up moving during a full service. Calm, practical and quick to spot damaged kit before someone cuts a hand on it.",
       "remit": "Second dedicated porter alongside Dean; receiving, wash-up, kitchen reset and late-service support.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/peter-collins.webp",
+      "imageAlt": "Portrait of Peter Collins"
     },
     {
       "id": "kerry-saunders",
@@ -665,8 +665,8 @@
       "description": "5’5”, compact build, with blue eyes and straight light-brown hair tied back.",
       "career": "Reading-raised. Moved from city-hotel housekeeping into serviced apartments and then a London private home. Good at guest-room turns, bathrooms and preparing a room around an arrival time without disturbing occupied neighbouring rooms. Chatty in the staff room and brisk when there is a floor to finish.",
       "remit": "Guest rooms, occupied bathrooms, arrivals and evening turndown on the housekeeping rota.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/kerry-saunders.webp",
+      "imageAlt": "Portrait of Kerry Saunders"
     },
     {
       "id": "ana-ribeiro",
@@ -680,8 +680,8 @@
       "description": "5’6”, with an olive complexion, brown eyes and dark curls usually pinned up.",
       "career": "Grew up near Porto and moved to London in her twenties. Worked in hotel housekeeping before several years in a large family home, learning careful treatment of stone, timber and upholstery. Likes a written handover and is good at noticing a small change in a room without making a drama of it.",
       "remit": "Public rooms, delicate finishes, spa-area cleaning and scheduled evening resets.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/ana-ribeiro.webp",
+      "imageAlt": "Portrait of Ana Ribeiro"
     },
     {
       "id": "susan-parker",
@@ -695,8 +695,8 @@
       "description": "5’4”, sturdy, with hazel eyes, glasses and a short silver-brown crop.",
       "career": "From Ealing. Came through commercial laundry finishing and hotel linen rooms before private-house work. Reliable on batch control, pressing, stain assessment and checking contractor returns. Dry humour, patient with trainees and particular about returning things to the shelf they came from.",
       "remit": "Works alongside Denise on bedding, table linen, spa towels, stock and contractor collections; provides staggered and absence cover.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/susan-parker.webp",
+      "imageAlt": "Portrait of Susan Parker"
     },
     {
       "id": "daniel-moss",
@@ -710,8 +710,8 @@
       "description": "6’0”, lean, with brown eyes and short dark hair.",
       "career": "Brighton-raised. Started in restaurant service, moved into hotel banqueting and then a private members’ club. Comfortable setting a dinner table, carrying drinks and quietly turning a meeting room around. Warm and observant, with a good memory for how guests take their coffee.",
       "remit": "Day and late house service, dining, meeting-room setup and studio hospitality under Crispin and Harjit.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/daniel-moss.webp",
+      "imageAlt": "Portrait of Daniel Moss"
     },
     {
       "id": "rebecca-ellis",
@@ -725,8 +725,8 @@
       "description": "5’8”, with fair skin, grey eyes and dark-brown hair in a low bun.",
       "career": "Leeds-raised. Progressed from hotel reception into night duty supervision at a London boutique hotel, then worked late hospitality shifts in a private residence. Used to arrivals, transport changes, discreet guest requests and deciding what can wait until morning. Clear, friendly and difficult to fluster.",
       "remit": "Leads hospitality on assigned overnight shifts, handles guest needs and handovers, and escalates to the duty manager; no security command.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/rebecca-ellis.webp",
+      "imageAlt": "Portrait of Rebecca Ellis"
     },
     {
       "id": "michael-osei",
@@ -740,8 +740,8 @@
       "description": "5’11”, broad-shouldered, with dark-brown skin, brown eyes and close-cut black hair.",
       "career": "Raised in Croydon in a Ghanaian-British family. Worked hotel room service and evening restaurant shifts before moving into overnight guest services. Good with late arrivals and simple food service, and keeps a neat shift log. Easy company with an understated sense of humour; enjoys the quieter pace of nights.",
       "remit": "Overnight hospitality, agreed late food and drinks, guest assistance and morning handover; works a rota with Rebecca and trained service relief.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/michael-osei.webp",
+      "imageAlt": "Portrait of Michael Osei"
     },
     {
       "id": "paul-abbott",
@@ -755,8 +755,8 @@
       "description": "6’1”, with a stocky build, grey eyes and short salt-and-pepper hair.",
       "career": "From Essex. Built his career in commercial-site security, then supervisory work at high-end residential buildings and a private estate. Experienced in shift leadership, contractor access and incident reporting. Direct and even-tempered; takes a handover seriously and avoids turning routine work into theatre.",
       "remit": "Saskia’s operational deputy; shift supervision, relief planning and liaison with the house duty team.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/paul-abbott.webp",
+      "imageAlt": "Portrait of Paul Abbott"
     },
     {
       "id": "farah-hussain",
@@ -770,8 +770,8 @@
       "description": "5’7”, with medium-brown skin, dark eyes and black hair secured back on duty.",
       "career": "Slough-raised. Worked in hotel security and then a large residential development with frequent contractors and visitors. Strong on clear communication and treating unfamiliar guests courteously while checking arrangements. Friendly off duty and precise about recording what actually happened.",
       "remit": "House access and concierge shifts, visitor and contractor coordination, and fixed-post relief.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/farah-hussain.webp",
+      "imageAlt": "Portrait of Farah Hussain"
     },
     {
       "id": "stephen-doyle",
@@ -785,8 +785,8 @@
       "description": "5’10”, with fair skin, green eyes and short brown hair greying at the temples.",
       "career": "From Luton. Came through venue security and residential night work before a private-house contract. Accustomed to late finishes, guest transport and calm handovers between teams. Practical and good-humoured, with none of the habit of treating a familiar face as an automatic exception.",
       "remit": "Rotating day/night house-security coverage, access checks and coordination of late arrivals.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/stephen-doyle.webp",
+      "imageAlt": "Portrait of Stephen Doyle"
     },
     {
       "id": "hannah-webb",
@@ -800,8 +800,8 @@
       "description": "5’6”, slim, with hazel eyes, freckles and short brown hair.",
       "career": "Bristol-raised. Studied audio production, then worked as a studio runner and assistant engineer in London, with additional live-sound shifts. Comfortable with session preparation, microphone setup, patching, editing and orderly file handovers. Quietly enthusiastic about recording and willing to say when a fault needs a more senior pair of hands.",
       "remit": "Session setup and assistance, routine studio and house-AV checks, and scheduled technical cover under Owen; visiting engineers retain project-specific roles.",
-      "image": "",
-      "imageAlt": ""
+      "image": "images/albury/staff/hannah-webb.webp",
+      "imageAlt": "Portrait of Hannah Webb"
     }
   ],
   "servicePartners": [

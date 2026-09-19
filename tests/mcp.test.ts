@@ -80,3 +80,15 @@ test("MCP returns exact authored weather and handles invalid or uncovered dates"
   assert.deepEqual(selected.structuredContent.meals[0], regular.structuredContent.meals[0]);
   assert.equal(regular.structuredContent.specialMenu, null);
  });
+
+test("MCP resolves each service landing to its requested floor", async () => {
+  const call = async (args: Record<string,string>) => (await post({jsonrpc:"2.0",id:1,method:"tools/call",params:{name:"get_room",arguments:args}})).result;
+  const second = await call({room_id:"rear-service-landing",floor_id:"second-floor"});
+  assert.equal(second.structuredContent.floorId,"second-floor");
+  assert.equal(second.structuredContent.id,"second-floor/rear-service-landing");
+  const ground = await call({room_id:"raised-ground/rear-service-landing"});
+  assert.equal(ground.structuredContent.floorId,"raised-ground");
+  const ambiguous = await call({room_id:"rear-service-landing"});
+  assert.equal(ambiguous.isError,true);
+  assert.match(JSON.stringify(ambiguous),/Ambiguous room/);
+});

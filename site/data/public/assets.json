@@ -2065,6 +2065,76 @@
       "id": "images.albury.upper.basement.cinema.projection.booth.doorway",
       "path": "images/albury/upper-basement/cinema-projection-booth-doorway.webp",
       "format": "png"
+    },
+    {
+      "id": "images.albury.staff.denise.barrett",
+      "path": "images/albury/staff/denise-barrett.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.lewis.donnelly",
+      "path": "images/albury/staff/lewis-donnelly.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.jamie.fletcher",
+      "path": "images/albury/staff/jamie-fletcher.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.peter.collins",
+      "path": "images/albury/staff/peter-collins.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.kerry.saunders",
+      "path": "images/albury/staff/kerry-saunders.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.ana.ribeiro",
+      "path": "images/albury/staff/ana-ribeiro.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.susan.parker",
+      "path": "images/albury/staff/susan-parker.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.daniel.moss",
+      "path": "images/albury/staff/daniel-moss.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.rebecca.ellis",
+      "path": "images/albury/staff/rebecca-ellis.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.michael.osei",
+      "path": "images/albury/staff/michael-osei.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.paul.abbott",
+      "path": "images/albury/staff/paul-abbott.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.farah.hussain",
+      "path": "images/albury/staff/farah-hussain.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.stephen.doyle",
+      "path": "images/albury/staff/stephen-doyle.webp",
+      "format": "png"
+    },
+    {
+      "id": "images.albury.staff.hannah.webb",
+      "path": "images/albury/staff/hannah-webb.webp",
+      "format": "png"
     }
   ]
 }
