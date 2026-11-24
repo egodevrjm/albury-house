@@ -70,7 +70,9 @@ test("Studio Albury is within Music Nobile and both normal-height booths are ins
   assert.equal(live?.studioName, "Studio Albury");
   assert.equal(control?.studioName, "Studio Albury");
   assert.equal(getRoom("rec-room")?.studioName, null);
-  assert.equal(live?.ceilingHeight, "double height");
+  assert.equal(live?.ceilingHeight, "east half double height; west half normal room height");
+  assert.equal((live?.dimensions as { widthFt?: number })?.widthFt, 100);
+  assert.equal((live?.eventCapacity as { standing?: number })?.standing, 200);
   assert.deepEqual(live?.containedRoomIds, ["vocal-booth", "instrument-isolation-booth"]);
   const voice = getRoom("vocal-booth");
   const strings = getRoom("instrument-isolation-booth");
@@ -162,4 +164,14 @@ test("staff biographies, descriptions and portraits are complete in the intended
   assert.doesNotMatch(String(people.find(person => person.id === "clem-frobisher")?.remit), /No\. 34|planning|Cedars/);
   assert.doesNotMatch(getRoom("staff-overnight-room")!.description, /No\. 34|Cedars|planning/);
   assert.ok(listRooms({limit:100}).items.every(room => room.name.length < 100));
+});
+
+test("the published figures distinguish the room, the club footprint and the whole house", () => {
+  const bar = getRoom("bar-games-room");
+  assert.match(bar?.description ?? "", /full 100-foot width/);
+  assert.equal((bar?.dimensions as { depthFt?: number })?.depthFt, 45);
+  assert.equal((bar?.eventCapacity as { standing?: number })?.standing, 250);
+  const eventCapacity = getSummary().house.eventCapacity as { inStoryClubFloorSafetyLimit: number; plannedWholeHouseGuestLimit: number };
+  assert.equal(eventCapacity.inStoryClubFloorSafetyLimit, 400);
+  assert.equal(eventCapacity.plannedWholeHouseGuestLimit, 800);
 });

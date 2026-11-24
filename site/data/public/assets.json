@@ -2135,6 +2135,26 @@
       "id": "images.albury.staff.hannah.webb",
       "path": "images/albury/staff/hannah-webb.webp",
       "format": "png"
+    },
+    {
+      "id": "images.albury.floor.plans.upper.basement.2026.11.24",
+      "path": "images/albury/floor-plans/upper-basement-2026-11-24.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.music.nobile.2026.11.24",
+      "path": "images/albury/floor-plans/music-nobile-2026-11-24.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.second.floor.2026.11.24",
+      "path": "images/albury/floor-plans/second-floor-2026-11-24.svg",
+      "format": "svg"
+    },
+    {
+      "id": "images.albury.floor.plans.lower.basement.2026.11.24",
+      "path": "images/albury/floor-plans/lower-basement-2026-11-24.svg",
+      "format": "svg"
     }
   ]
 }

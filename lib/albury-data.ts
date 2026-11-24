@@ -147,6 +147,8 @@ function roomGroups() {
       containedRoomIds: roomViews[0]?.containedRoomIds ?? [],
       ceilingHeight: roomViews[0]?.ceilingHeight ?? null,
       comfortableCapacity: roomViews[0]?.comfortableCapacity ?? null,
+      dimensions: roomViews[0]?.dimensions ?? null,
+      eventCapacity: roomViews[0]?.eventCapacity ?? null,
       seatingArrangement: roomViews[0]?.seatingArrangement ?? null,
       description: String(roomViews[0]?.description ?? ""),
       viewCount: roomViews.length,

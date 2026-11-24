@@ -26,8 +26,8 @@
       "label": "acquired detached villa · future staff house"
     },
     {
-      "value": "c. 300",
-      "label": "current whole-house standing event capacity"
+      "value": "800",
+      "label": "planned whole-house party guest limit"
     }
   ],
   "timeline": [
@@ -53,7 +53,7 @@
       "id": "lower-basement",
       "name": "Albury Spa",
       "short": "Lower Basement",
-      "plan": "images/albury/floor-plans/lower-basement.svg",
+      "plan": "images/albury/floor-plans/lower-basement-2026-11-24.svg",
       "level": "Lower Basement",
       "kind": "floor",
       "aliases": [
@@ -66,7 +66,7 @@
       "id": "upper-basement",
       "name": "Club Alex",
       "short": "Upper Basement",
-      "plan": "images/albury/floor-plans/upper-basement.svg",
+      "plan": "images/albury/floor-plans/upper-basement-2026-11-24.svg",
       "level": "Upper Basement",
       "kind": "floor",
       "aliases": [
@@ -91,7 +91,7 @@
       "id": "music-nobile",
       "name": "Music Nobile",
       "short": "First Floor",
-      "plan": "images/albury/floor-plans/music-nobile.svg",
+      "plan": "images/albury/floor-plans/music-nobile-2026-11-24.svg",
       "level": "First Floor",
       "kind": "floor",
       "aliases": [
@@ -105,7 +105,7 @@
       "id": "second-floor",
       "name": "Principal guest suites",
       "short": "Second Floor",
-      "plan": "images/albury/floor-plans/second-floor.svg",
+      "plan": "images/albury/floor-plans/second-floor-2026-11-24.svg",
       "level": "Second Floor",
       "kind": "floor",
       "aliases": [
@@ -181,7 +181,17 @@
       "instrument-isolation-booth"
     ],
     "boothParentRoomId": "live-tracking-room",
-    "description": "Live room and control room on Music Nobile; two normal-height isolation booths are contained within the double-height live room. The rec room is separate."
+    "description": "The full-width, approximately 100-by-30-foot live room occupies the garden side of Music Nobile. Its east half occupies No. 32’s double-height former ballroom and its west half has a normal-height ceiling. Two enclosed normal-height isolation booths sit within the room, one for three to four voices and one for a seated string quartet. For events, recording equipment goes to the technical store and the garden-side wall becomes the stage. The control room and the separate rec room are on the street side of the first floor.",
+    "liveRoomDimensions": {
+      "widthFt": 100,
+      "depthFt": 30,
+      "areaSqFt": 3000,
+      "basis": "Approximate working dimensions"
+    },
+    "liveRoomCeiling": {
+      "east": "double height",
+      "west": "normal room height"
+    }
   },
   "designTeam": [
     {
@@ -239,5 +249,81 @@
     "projectionContractor": "Bell Theatre Services",
     "acousticsAndAudio": "Albury Acoustics",
     "projectCoordination": "Studio Ashby (Sophie Ashby)"
+  },
+  "dimensions": {
+    "houseFootprint": {
+      "widthFt": 100,
+      "depthFt": 65,
+      "areaSqFt": 6500,
+      "basis": "Approximate working dimensions"
+    },
+    "totalInternalAreaSqFt": 50000,
+    "aboveGroundAreaSqFt": {
+      "min": 29000,
+      "max": 30000
+    },
+    "basementsAreaSqFt": {
+      "min": 20000,
+      "max": 21000
+    },
+    "walledRearGarden": {
+      "widthFt": 100,
+      "depthFt": 131,
+      "areaSqFt": 13100,
+      "basis": "Approximate working dimensions"
+    },
+    "rearTerrace": {
+      "widthFt": 100,
+      "depthFt": 30,
+      "areaSqFt": 3000,
+      "basis": "Approximate working dimensions"
+    },
+    "openLawn": {
+      "widthFt": 68,
+      "depthFt": 65,
+      "areaSqFt": 4420,
+      "basis": "Approximate working dimensions"
+    },
+    "farGardenDepthFt": 36,
+    "upperBasement": {
+      "areaSqFt": {
+        "min": 11000,
+        "max": 12000
+      },
+      "reachUnderGardenFt": 85
+    },
+    "lowerBasement": {
+      "areaSqFt": {
+        "min": 9000,
+        "max": 10000
+      },
+      "reachUnderGardenFt": 60
+    }
+  },
+  "eventCapacity": {
+    "houseTeamNoNotice": 50,
+    "shortNoticeContractLimit": 120,
+    "comfortableClubFloorPartyWithRaisedGroundHallSpillover": 250,
+    "inStoryClubFloorSafetyLimit": 400,
+    "plannedWholeHouseGuestLimit": 800,
+    "wholeHouseSafetyLimit": null,
+    "wetWeatherWholeHouseLimit": null,
+    "decisionOwner": "Saskia Rooke",
+    "capacityBasis": "Story planning figures",
+    "wholeHouseSpaces": [
+      "Club Alex bar in standing mode",
+      "Cinema",
+      "Tasting room",
+      "Listening lounge",
+      "Club Alex circulation",
+      "Raised-ground reception halls",
+      "Drawing room",
+      "Music Room",
+      "Guest salon",
+      "Garden room",
+      "Covered terrace",
+      "Lawn in good weather",
+      "Cleared Studio Albury live room"
+    ]
   }
 }

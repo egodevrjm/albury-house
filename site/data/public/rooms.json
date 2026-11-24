@@ -5,7 +5,7 @@
       "id": "lower-basement",
       "name": "Albury Spa",
       "short": "Lower Basement",
-      "plan": "images/albury/floor-plans/lower-basement.svg",
+      "plan": "images/albury/floor-plans/lower-basement-2026-11-24.svg",
       "rooms": [
         {
           "path": "images/albury/lower-basement/00-spa-arrival-gallery.webp",
@@ -24,21 +24,21 @@
         {
           "path": "images/albury/lower-basement/01-lap-pool.webp",
           "title": "25-Metre Lap Pool",
-          "description": "A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight.",
+          "description": "A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight. The 25-metre water length runs across the width of the house.",
           "roomName": "25-Metre Lap Pool",
           "roomId": "25-metre-lap-pool"
         },
         {
           "path": "images/albury/lower-basement/new-views/01-lap-pool.webp",
           "title": "25-Metre Lap Pool — Additional View",
-          "description": "Alternative view. A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight.",
+          "description": "Alternative view. A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight. The 25-metre water length runs across the width of the house.",
           "roomName": "25-Metre Lap Pool",
           "roomId": "25-metre-lap-pool"
         },
         {
           "path": "images/albury/lower-basement/13-morning-laps.webp",
           "title": "Morning Laps",
-          "description": "A swimmer halfway through the house's twenty-five-metre pool, with wake, wet footprints and a waiting robe turning the wellness floor into a credible daily training environment.",
+          "description": "A swimmer halfway through the house's twenty-five-metre pool, with wake, wet footprints and a waiting robe turning the wellness floor into a credible daily training environment. The 25-metre water length runs across the width of the house.",
           "roomName": "25-Metre Lap Pool",
           "roomId": "25-metre-lap-pool"
         },
@@ -212,7 +212,7 @@
         },
         {
           "title": "25-Metre Lap Pool — Closer Perspective",
-          "description": "A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight. A closer perspective of the established arrangement.",
+          "description": "A serious training pool beneath opaque luminous coffers—no skylights, windows or direct daylight. A closer perspective of the established arrangement. The 25-metre water length runs across the width of the house.",
           "path": "images/albury/guide-expansion/25-metre-lap-pool-closer-perspective.webp",
           "roomName": "25-Metre Lap Pool",
           "roomId": "25-metre-lap-pool"
@@ -236,112 +236,217 @@
       "id": "upper-basement",
       "name": "Club Alex",
       "short": "Upper Basement",
-      "plan": "images/albury/floor-plans/upper-basement.svg",
+      "plan": "images/albury/floor-plans/upper-basement-2026-11-24.svg",
       "rooms": [
         {
           "path": "images/albury/upper-basement/bar-games-room-coherent/01-southwest-overview.webp",
           "title": "Bar & Games Room — Spatial Master",
-          "description": "The controlling view of the 60-by-38-foot room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance.",
+          "description": "The Bar & Games Room spans the full 100-foot width of the house and 45 feet of its depth under the house. It is approximately 4,500 sq ft, with roughly 3,500 sq ft of open floor in standing mode. It comfortably holds about 250 standing guests in the room itself, with about 350 in a packed layout. The controlling view of the full-width Bar & Games Room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance.",
           "roomName": "Bar & Games Room",
-          "roomId": "bar-games-room"
+          "roomId": "bar-games-room",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500
+          }
         },
         {
           "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/01-southwest-overview.webp",
           "title": "Bar & Games Room — Spatial Master — Additional View",
-          "description": "Alternative view. The controlling view of the 60-by-38-foot room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance.",
+          "description": "The Bar & Games Room spans the full 100-foot width of the house and 45 feet of its depth under the house. It is approximately 4,500 sq ft, with roughly 3,500 sq ft of open floor in standing mode. It comfortably holds about 250 standing guests in the room itself, with about 350 in a packed layout. Alternative view. The controlling view of the full-width Bar & Games Room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance.",
           "roomName": "Bar & Games Room",
-          "roomId": "bar-games-room"
+          "roomId": "bar-games-room",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500
+          }
         },
         {
           "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/02-public-bar-run-2026-09-06.webp",
           "title": "Bar & Games Room — Along the Bar",
-          "description": "Looking north along the public side of the straight east-wall bar, with the navy lounge and poker area to the left and the Welmar on the rear wall.",
+          "description": "The Bar & Games Room spans the full 100-foot width of the house and 45 feet of its depth under the house. It is approximately 4,500 sq ft, with roughly 3,500 sq ft of open floor in standing mode. It comfortably holds about 250 standing guests in the room itself, with about 350 in a packed layout. Looking north along the public side of the straight east-wall bar, with the navy lounge and poker area to the left and the Welmar on the rear wall.",
           "roomName": "Bar & Games Room",
-          "roomId": "bar-games-room"
+          "roomId": "bar-games-room",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500
+          }
         },
         {
           "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/03-behind-bar-2026-09-06.webp",
           "title": "Bar & Games Room — Behind the Bar",
-          "description": "From the service aisle across the limestone counter into the games room: public stools on the far side, billiards southwest, the central lounge, poker and the northwest pinball recess.",
+          "description": "The Bar & Games Room spans the full 100-foot width of the house and 45 feet of its depth under the house. It is approximately 4,500 sq ft, with roughly 3,500 sq ft of open floor in standing mode. It comfortably holds about 250 standing guests in the room itself, with about 350 in a packed layout. From the service aisle across the limestone counter into the games room: public stools on the far side, billiards southwest, the central lounge, poker and the northwest pinball recess.",
           "roomName": "Bar & Games Room",
-          "roomId": "bar-games-room"
+          "roomId": "bar-games-room",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500
+          }
         },
         {
           "path": "images/albury/upper-basement/bar-games-room-coherent/new-views/07-shuffleboard-piano-2026-09-06.webp",
           "title": "Bar & Games Room — Shuffleboard & Welmar",
-          "description": "A closer view of the north games wall, with the shuffleboard to the left and the old Welmar pub upright to its right.",
+          "description": "The Bar & Games Room spans the full 100-foot width of the house and 45 feet of its depth under the house. It is approximately 4,500 sq ft, with roughly 3,500 sq ft of open floor in standing mode. It comfortably holds about 250 standing guests in the room itself, with about 350 in a packed layout. A closer view of the north games wall, with the shuffleboard to the left and the old Welmar pub upright to its right.",
           "roomName": "Bar & Games Room",
-          "roomId": "bar-games-room"
+          "roomId": "bar-games-room",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500
+          }
         },
         {
           "path": "images/albury/upper-basement/bar-games-room-coherent/08-nightclub-mode.webp",
           "title": "Bar & Games Room — Nightclub Mode",
-          "description": "The same fixed eight-stool bar and northwest DJ recess, with games, piano, lounge furniture and rug removed for the clear dance floor. KAWS remains in place; standing tables stay at the perimeter.",
+          "description": "The Bar & Games Room spans the full 100-foot width of the house and 45 feet of its depth under the house. It is approximately 4,500 sq ft, with roughly 3,500 sq ft of open floor in standing mode. It comfortably holds about 250 standing guests in the room itself, with about 350 in a packed layout. The same fixed eight-stool bar and northwest DJ recess, with games, piano, lounge furniture and rug removed for the clear dance floor. KAWS remains in place; standing tables stay at the perimeter.",
           "roomName": "Bar & Games Room",
-          "roomId": "bar-games-room"
+          "roomId": "bar-games-room",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500
+          }
         },
         {
           "path": "images/albury/upper-basement/01b-cinema-approach-lobby.webp",
           "title": "Cinema Approach",
-          "description": "A blackened-oak and navy transition carrying the club floor's art and metalwork into the cinema; the first glimpse is of the same navy-to-black seating used inside.",
+          "description": "The approximately 100-by-20-foot strip south of the bar holds the cinema and projection booth at the south-west corner, the cinema approach, tasting room, listening lounge, guest powder room, principal stair and lift, and the service core at the east end. A blackened-oak and navy transition carrying the club floor's art and metalwork into the cinema; the first glimpse is of the same navy-to-black seating used inside.",
           "roomName": "Cinema Approach",
-          "roomId": "cinema-approach"
+          "roomId": "cinema-approach",
+          "eventCapacity": {
+            "standing": 40,
+            "scope": "Combined Club Alex corridors, cinema approach and stair lobby"
+          }
         },
         {
           "path": "images/albury/upper-basement/new-views/01b-cinema-approach-lobby.webp",
           "title": "Cinema Approach — Additional View",
-          "description": "Alternative view. A blackened-oak and navy transition carrying the club floor's art and metalwork into the cinema; the first glimpse is of the same navy-to-black seating used inside.",
+          "description": "The approximately 100-by-20-foot strip south of the bar holds the cinema and projection booth at the south-west corner, the cinema approach, tasting room, listening lounge, guest powder room, principal stair and lift, and the service core at the east end. Alternative view. A blackened-oak and navy transition carrying the club floor's art and metalwork into the cinema; the first glimpse is of the same navy-to-black seating used inside.",
           "roomName": "Cinema Approach",
-          "roomId": "cinema-approach"
+          "roomId": "cinema-approach",
+          "eventCapacity": {
+            "standing": 40,
+            "scope": "Combined Club Alex corridors, cinema approach and stair lobby"
+          }
         },
         {
           "path": "images/albury/upper-basement/cinema.webp",
           "title": "Cinema",
           "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "roomName": "Cinema",
-          "roomId": "cinema"
+          "roomId": "cinema",
+          "eventCapacity": {
+            "seated": 20
+          }
         },
         {
           "path": "images/albury/upper-basement/new-views/cinema.webp",
           "title": "Cinema — Additional View",
           "description": "Alternative view. A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "roomName": "Cinema",
-          "roomId": "cinema"
+          "roomId": "cinema",
+          "eventCapacity": {
+            "seated": 20
+          }
         },
         {
           "path": "images/albury/upper-basement/17-screening-in-progress.webp",
           "title": "Screening in Progress",
           "description": "Eleven friends settle across the stepped navy seating as a staff member works quietly at the rear minibar; the image retains enough ambient light for the room itself to remain legible. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "roomName": "Cinema",
-          "roomId": "cinema"
+          "roomId": "cinema",
+          "eventCapacity": {
+            "seated": 20
+          }
         },
         {
           "path": "images/albury/upper-basement/02-wine-bourbon-tasting-room.webp",
           "title": "Wine & Spirits Tasting Room",
           "description": "A formal ten-seat room with a monumental Kentucky-limestone table, green-and-tobacco leather chairs, walnut and bronze-mesh storage, an abstract copper still-coil light and geological spring artwork. Hatfield bourbon sits within a serious mixed wine and spirits programme; Limestone Springs appears only in the chilled mixer niche.",
           "roomName": "Wine & Spirits Tasting Room",
-          "roomId": "wine-spirits-tasting-room"
+          "roomId": "wine-spirits-tasting-room",
+          "eventCapacity": {
+            "seated": 10,
+            "standing": 15
+          }
         },
         {
           "path": "images/albury/upper-basement/new-views/02-wine-bourbon-tasting-room.webp",
           "title": "Wine & Spirits Tasting Room — Additional View",
           "description": "Alternative view. A formal ten-seat room with a monumental Kentucky-limestone table, green-and-tobacco leather chairs, walnut and bronze-mesh storage, an abstract copper still-coil light and geological spring artwork. Hatfield bourbon sits within a serious mixed wine and spirits programme; Limestone Springs appears only in the chilled mixer niche.",
           "roomName": "Wine & Spirits Tasting Room",
-          "roomId": "wine-spirits-tasting-room"
+          "roomId": "wine-spirits-tasting-room",
+          "eventCapacity": {
+            "seated": 10,
+            "standing": 15
+          }
         },
         {
           "path": "images/albury/upper-basement/03-wine-bourbon-lounge.webp",
           "title": "Wine & Spirits Listening Lounge",
           "description": "A two-chair bottle-green and walnut retreat inspired by the private intimacy of Hatfield's Stave: worn leather, Persian rug, records, proper hi-fi, shaded lamps and a discreet Limestone Springs mixer drawer. The secured trophy reserve remains one floor below.",
           "roomName": "Wine & Spirits Listening Lounge",
-          "roomId": "wine-spirits-listening-lounge"
+          "roomId": "wine-spirits-listening-lounge",
+          "eventCapacity": {
+            "seated": 2,
+            "standing": 5
+          }
         },
         {
           "path": "images/albury/upper-basement/new-views/03-wine-bourbon-lounge.webp",
           "title": "Wine & Spirits Listening Lounge — Additional View",
           "description": "Alternative view. A two-chair bottle-green and walnut retreat inspired by the private intimacy of Hatfield's Stave: worn leather, Persian rug, records, proper hi-fi, shaded lamps and a discreet Limestone Springs mixer drawer. The secured trophy reserve remains one floor below.",
           "roomName": "Wine & Spirits Listening Lounge",
-          "roomId": "wine-spirits-listening-lounge"
+          "roomId": "wine-spirits-listening-lounge",
+          "eventCapacity": {
+            "seated": 2,
+            "standing": 5
+          }
         },
         {
           "path": "images/albury/upper-basement/04-powder-room.webp",
@@ -395,14 +500,14 @@
         {
           "path": "images/albury/upper-basement/07-mews-garage-loading-court.webp",
           "title": "Mews Garage & Loading Court",
-          "description": "Alex's midnight-green 2025 Aston Martin Vanquish sits beside the modern Range Rover household fleet, with secure charging and a dry service apron reached from the screened rear mews entrance.",
+          "description": "The upper-basement garage and loading court sit under the terrace and lawn. Vehicles enter down the screened Duchess of Bedford Walk mews ramp beyond the garden’s north wall. The service route joins the garage and loading, event kitchen and backstage. Alex's midnight-green 2025 Aston Martin Vanquish sits beside the modern Range Rover household fleet, with secure charging and a dry service apron reached from the screened rear mews entrance.",
           "roomName": "Mews Garage & Loading Court",
           "roomId": "mews-garage-loading-court"
         },
         {
           "path": "images/albury/upper-basement/new-views/07-mews-garage-loading-court.webp",
           "title": "Mews Garage & Loading Court — Additional View",
-          "description": "Alternative view. Alex's midnight-green 2025 Aston Martin Vanquish sits beside the modern Range Rover household fleet, with secure charging and a dry service apron reached from the screened rear mews entrance.",
+          "description": "The upper-basement garage and loading court sit under the terrace and lawn. Vehicles enter down the screened Duchess of Bedford Walk mews ramp beyond the garden’s north wall. The service route joins the garage and loading, event kitchen and backstage. Alternative view. Alex's midnight-green 2025 Aston Martin Vanquish sits beside the modern Range Rover household fleet, with secure charging and a dry service apron reached from the screened rear mews entrance.",
           "roomName": "Mews Garage & Loading Court",
           "roomId": "mews-garage-loading-court"
         },
@@ -437,7 +542,7 @@
         {
           "path": "images/albury/upper-basement/15-mews-service-movement.webp",
           "title": "Mews Service Movement",
-          "description": "Garments, flowers and instrument cases move in one controlled line from the secure mews side toward delivery staging and the goods lift.",
+          "description": "The upper-basement garage and loading court sit under the terrace and lawn. Vehicles enter down the screened Duchess of Bedford Walk mews ramp beyond the garden’s north wall. The service route joins the garage and loading, event kitchen and backstage. Garments, flowers and instrument cases move in one controlled line from the secure mews side toward delivery staging and the goods lift.",
           "roomName": "Mews Garage & Loading Court",
           "roomId": "mews-garage-loading-court"
         },
@@ -541,31 +646,54 @@
         },
         {
           "title": "Bar & Games Room — Closer Perspective",
-          "description": "The controlling view of the 60-by-38-foot room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance. A closer perspective of the established arrangement.",
+          "description": "The Bar & Games Room spans the full 100-foot width of the house and 45 feet of its depth under the house. It is approximately 4,500 sq ft, with roughly 3,500 sq ft of open floor in standing mode. It comfortably holds about 250 standing guests in the room itself, with about 350 in a packed layout. The controlling view of the full-width Bar & Games Room: the single straight bar remains on the east wall; billiards stays southwest; the navy lounge holds the centre; poker sits between lounge and bar; pinball and KAWS occupy the northwest; and the north-wall shuffleboard has the Welmar pub upright immediately to its right. The piano came from The Freemasons Arms, Long Acre, Covent Garden, where it had stood since the early 1960s, before the pub’s corporate refurbishment; this is fictional v45 provenance. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/bar-games-room-closer-perspective.webp",
           "roomName": "Bar & Games Room",
-          "roomId": "bar-games-room"
+          "roomId": "bar-games-room",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500
+          }
         },
         {
           "title": "Cinema — Closer Perspective",
           "description": "A dark acoustic screening room with consistent navy-to-black velvet seating, rust-gold cushions and warm bronze detailing, used for films, concert footage and private rough cuts. A closer perspective of the established arrangement. The twenty-seat cinema has a rear projection booth with 70mm, 35mm and full digital capability, built out and installed by Bell Theatre Services. Cinema acoustics and sound are by Albury Acoustics; Studio Ashby coordinated the commissions.",
           "path": "images/albury/guide-expansion/cinema-closer-perspective.webp",
           "roomName": "Cinema",
-          "roomId": "cinema"
+          "roomId": "cinema",
+          "eventCapacity": {
+            "seated": 20
+          }
         },
         {
           "title": "Wine & Spirits Tasting Room — Closer Perspective",
           "description": "A formal ten-seat room with a monumental Kentucky-limestone table, green-and-tobacco leather chairs, walnut and bronze-mesh storage, an abstract copper still-coil light and geological spring artwork. Hatfield bourbon sits within a serious mixed wine and spirits programme; Limestone Springs appears only in the chilled mixer niche. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/wine-spirits-tasting-room-closer-perspective.webp",
           "roomName": "Wine & Spirits Tasting Room",
-          "roomId": "wine-spirits-tasting-room"
+          "roomId": "wine-spirits-tasting-room",
+          "eventCapacity": {
+            "seated": 10,
+            "standing": 15
+          }
         },
         {
           "title": "Wine & Spirits Listening Lounge — Closer Perspective",
           "description": "A two-chair bottle-green and walnut retreat inspired by the private intimacy of Hatfield's Stave: worn leather, Persian rug, records, proper hi-fi, shaded lamps and a discreet Limestone Springs mixer drawer. The secured trophy reserve remains one floor below. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/wine-spirits-listening-lounge-closer-perspective.webp",
           "roomName": "Wine & Spirits Listening Lounge",
-          "roomId": "wine-spirits-listening-lounge"
+          "roomId": "wine-spirits-listening-lounge",
+          "eventCapacity": {
+            "seated": 2,
+            "standing": 5
+          }
         },
         {
           "title": "Event Kitchen & Pantry — Closer Perspective",
@@ -586,14 +714,20 @@
           "title": "Cinema — Projection Booth",
           "description": "The rear projection booth looking through the acoustic window into the twenty-seat cinema, with the digital projector, operator desk and control screens. Projection systems and booth by Bell Theatre Services; acoustics and audio by Albury Acoustics, coordinated by Studio Ashby.",
           "roomName": "Cinema",
-          "roomId": "cinema"
+          "roomId": "cinema",
+          "eventCapacity": {
+            "seated": 20
+          }
         },
         {
           "path": "images/albury/upper-basement/cinema-projection-booth-doorway.webp",
           "title": "Cinema — Projection Booth from the Doorway",
           "description": "A doorway perspective of the same rear projection booth, showing its film and digital projection equipment, extraction ducts, control desk and view into the cinema. The cinema supports 70mm, 35mm and full digital projection; installation by Bell Theatre Services under Studio Ashby’s coordination.",
           "roomName": "Cinema",
-          "roomId": "cinema"
+          "roomId": "cinema",
+          "eventCapacity": {
+            "seated": 20
+          }
         }
       ],
       "level": "Upper Basement",
@@ -614,21 +748,45 @@
           "title": "Entrance / Reception Hall",
           "description": "A broad, style-forward double-villa arrival with sculptural contemporary light, art and seating, plus enough clear space for flowers, greetings and major party circulation.",
           "roomName": "Entrance / Reception Hall",
-          "roomId": "entrance-reception-hall"
+          "roomId": "entrance-reception-hall",
+          "dimensions": {
+            "areaSqFt": 650,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 45,
+            "scope": "Combined entrance hall and main stair hall"
+          }
         },
         {
           "path": "images/albury/ground-floor/new-views/01-entrance-hall.webp",
           "title": "Entrance / Reception Hall — Additional View",
           "description": "Alternative view. A broad, style-forward double-villa arrival with sculptural contemporary light, art and seating, plus enough clear space for flowers, greetings and major party circulation.",
           "roomName": "Entrance / Reception Hall",
-          "roomId": "entrance-reception-hall"
+          "roomId": "entrance-reception-hall",
+          "dimensions": {
+            "areaSqFt": 650,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 45,
+            "scope": "Combined entrance hall and main stair hall"
+          }
         },
         {
           "path": "images/albury/ground-floor/16-raised-ground-circulation-view.webp",
           "title": "Raised-Ground Circulation",
           "description": "The reception, new stair and garden light read together from the central junction without collapsing the double-villa plan into a false straight corridor.",
           "roomName": "Entrance / Reception Hall",
-          "roomId": "entrance-reception-hall"
+          "roomId": "entrance-reception-hall",
+          "dimensions": {
+            "areaSqFt": 650,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 45,
+            "scope": "Combined entrance hall and main stair hall"
+          }
         },
         {
           "path": "images/albury/ground-floor/02-main-stair-hall.webp",
@@ -670,49 +828,104 @@
           "title": "Formal Drawing Room",
           "description": "The principal composed reception room, built from low sculptural sofas, collectible contemporary chairs and movable drinks tables rather than an inherited-looking traditional suite.",
           "roomName": "Formal Drawing Room",
-          "roomId": "formal-drawing-room"
+          "roomId": "formal-drawing-room",
+          "dimensions": {
+            "areaSqFt": 775,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 45
+          }
         },
         {
           "path": "images/albury/ground-floor/new-views/09-formal-drawing-room.webp",
           "title": "Formal Drawing Room — Additional View",
           "description": "Alternative view. The principal composed reception room, built from low sculptural sofas, collectible contemporary chairs and movable drinks tables rather than an inherited-looking traditional suite.",
           "roomName": "Formal Drawing Room",
-          "roomId": "formal-drawing-room"
+          "roomId": "formal-drawing-room",
+          "dimensions": {
+            "areaSqFt": 775,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 45
+          }
         },
         {
           "path": "images/albury/ground-floor/09a-guest-salon-media-room.webp",
           "title": "Guest Salon / Media Room",
           "description": "An independent, enclosed room for friends, films and sport, with the large television concealed behind dark-oak panels.",
           "roomName": "Guest Salon / Media Room",
-          "roomId": "guest-salon-media-room"
+          "roomId": "guest-salon-media-room",
+          "dimensions": {
+            "areaSqFt": 525,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 30
+          }
         },
         {
           "path": "images/albury/ground-floor/new-views/09a-guest-salon-media-room.webp",
           "title": "Guest Salon / Media Room — Additional View",
           "description": "Alternative view. An independent, enclosed room for friends, films and sport, with the large television concealed behind dark-oak panels.",
           "roomName": "Guest Salon / Media Room",
-          "roomId": "guest-salon-media-room"
+          "roomId": "guest-salon-media-room",
+          "dimensions": {
+            "areaSqFt": 525,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 30
+          }
         },
         {
           "path": "images/albury/ground-floor/05-music-room-house-grand.webp",
           "title": "Music Room",
           "description": "The informal social musical heart of the raised ground: the restored house grand is the inherited anchor, with a cello-and-guitar grouping, contemporary modular seating, vinyl and room for friends to gather.",
           "roomName": "Music Room",
-          "roomId": "music-room"
+          "roomId": "music-room",
+          "dimensions": {
+            "areaSqFt": 725,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 30,
+            "seatedLayout": "recital",
+            "standing": 40
+          }
         },
         {
           "path": "images/albury/ground-floor/new-views/05-music-room-house-grand.webp",
           "title": "Music Room — Additional View",
           "description": "Alternative view. The informal social musical heart of the raised ground: the restored house grand is the inherited anchor, with a cello-and-guitar grouping, contemporary modular seating, vinyl and room for friends to gather.",
           "roomName": "Music Room",
-          "roomId": "music-room"
+          "roomId": "music-room",
+          "dimensions": {
+            "areaSqFt": 725,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 30,
+            "seatedLayout": "recital",
+            "standing": 40
+          }
         },
         {
           "path": "images/albury/ground-floor/20-music-room-after-dinner.webp",
           "title": "Music Room After Dinner",
           "description": "Open scores, stools drawn to the house grand, used glasses and a discarded jacket show how an evening naturally gathers around the piano.",
           "roomName": "Music Room",
-          "roomId": "music-room"
+          "roomId": "music-room",
+          "dimensions": {
+            "areaSqFt": 725,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 30,
+            "seatedLayout": "recital",
+            "standing": 40
+          }
         },
         {
           "path": "images/albury/ground-floor/06-kitchen-breakfast-room.webp",
@@ -782,35 +995,76 @@
           "title": "Dining Room",
           "description": "A lived-in ten-seat room with tobacco leather chairs, contrasting host chairs and broad dark-bronze pendants, supported invisibly by the butler’s pantry and event kitchen.",
           "roomName": "Dining Room",
-          "roomId": "dining-room"
+          "roomId": "dining-room",
+          "dimensions": {
+            "areaSqFt": 570,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 10,
+            "standing": 25,
+            "includedInWholeHouseGuestLimit": false
+          }
         },
         {
           "path": "images/albury/ground-floor/new-views/07-dining-room.webp",
           "title": "Dining Room — Additional View",
           "description": "Alternative view. A lived-in ten-seat room with tobacco leather chairs, contrasting host chairs and broad dark-bronze pendants, supported invisibly by the butler’s pantry and event kitchen.",
           "roomName": "Dining Room",
-          "roomId": "dining-room"
+          "roomId": "dining-room",
+          "dimensions": {
+            "areaSqFt": 570,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 10,
+            "standing": 25,
+            "includedInWholeHouseGuestLimit": false
+          }
         },
         {
           "path": "images/albury/ground-floor/19-dining-service-in-progress.webp",
           "title": "Dinner Service in Progress",
           "description": "First courses, poured wine and quiet footman service bring the ten-seat dining room into its intended evening use.",
           "roomName": "Dining Room",
-          "roomId": "dining-room"
+          "roomId": "dining-room",
+          "dimensions": {
+            "areaSqFt": 570,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 10,
+            "standing": 25,
+            "includedInWholeHouseGuestLimit": false
+          }
         },
         {
           "path": "images/albury/ground-floor/08-garden-room.webp",
           "title": "Garden Room",
           "description": "The television-free, garden-facing sitting room: daylight, major painting and broad doors onto the terrace.",
           "roomName": "Garden Room",
-          "roomId": "garden-room"
+          "roomId": "garden-room",
+          "dimensions": {
+            "areaSqFt": 625,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 40
+          }
         },
         {
           "path": "images/albury/ground-floor/new-views/08-garden-room.webp",
           "title": "Garden Room — Additional View",
           "description": "Alternative view. The television-free, garden-facing sitting room: daylight, major painting and broad doors onto the terrace.",
           "roomName": "Garden Room",
-          "roomId": "garden-room"
+          "roomId": "garden-room",
+          "dimensions": {
+            "areaSqFt": 625,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 40
+          }
         },
         {
           "path": "images/albury/ground-floor/09-guest-cloakroom-powder.webp",
@@ -915,28 +1169,59 @@
           "description": "A broad, style-forward double-villa arrival with sculptural contemporary light, art and seating, plus enough clear space for flowers, greetings and major party circulation. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/entrance-reception-hall-closer-perspective.webp",
           "roomName": "Entrance / Reception Hall",
-          "roomId": "entrance-reception-hall"
+          "roomId": "entrance-reception-hall",
+          "dimensions": {
+            "areaSqFt": 650,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 45,
+            "scope": "Combined entrance hall and main stair hall"
+          }
         },
         {
           "title": "Formal Drawing Room — Closer Perspective",
           "description": "The principal composed reception room, built from low sculptural sofas, collectible contemporary chairs and movable drinks tables rather than an inherited-looking traditional suite. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/formal-drawing-room-closer-perspective.webp",
           "roomName": "Formal Drawing Room",
-          "roomId": "formal-drawing-room"
+          "roomId": "formal-drawing-room",
+          "dimensions": {
+            "areaSqFt": 775,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 45
+          }
         },
         {
           "title": "Guest Salon / Media Room — Closer Perspective",
           "description": "An independent, enclosed room for friends, films and sport, with the large television concealed behind dark-oak panels. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/guest-salon-media-room-closer-perspective.webp",
           "roomName": "Guest Salon / Media Room",
-          "roomId": "guest-salon-media-room"
+          "roomId": "guest-salon-media-room",
+          "dimensions": {
+            "areaSqFt": 525,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 30
+          }
         },
         {
           "title": "Music Room — Closer Perspective",
           "description": "The informal social musical heart of the raised ground: the restored house grand is the inherited anchor, with a cello-and-guitar grouping, contemporary modular seating, vinyl and room for friends to gather. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/music-room-closer-perspective.webp",
           "roomName": "Music Room",
-          "roomId": "music-room"
+          "roomId": "music-room",
+          "dimensions": {
+            "areaSqFt": 725,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 30,
+            "seatedLayout": "recital",
+            "standing": 40
+          }
         },
         {
           "title": "Principal Kitchen & Breakfast Room — Closer Perspective",
@@ -950,14 +1235,30 @@
           "description": "A lived-in ten-seat room with tobacco leather chairs, contrasting host chairs and broad dark-bronze pendants, supported invisibly by the butler’s pantry and event kitchen. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/dining-room-closer-perspective.webp",
           "roomName": "Dining Room",
-          "roomId": "dining-room"
+          "roomId": "dining-room",
+          "dimensions": {
+            "areaSqFt": 570,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "seated": 10,
+            "standing": 25,
+            "includedInWholeHouseGuestLimit": false
+          }
         },
         {
           "title": "Garden Room — Closer Perspective",
           "description": "The television-free, garden-facing sitting room: daylight, major painting and broad doors onto the terrace. A closer perspective of the established arrangement.",
           "path": "images/albury/guide-expansion/garden-room-closer-perspective.webp",
           "roomName": "Garden Room",
-          "roomId": "garden-room"
+          "roomId": "garden-room",
+          "dimensions": {
+            "areaSqFt": 625,
+            "basis": "Approximate working area"
+          },
+          "eventCapacity": {
+            "standing": 40
+          }
         },
         {
           "title": "Guests on the Main Stair",
@@ -991,59 +1292,107 @@
       "id": "music-nobile",
       "name": "Music Nobile",
       "short": "First Floor",
-      "plan": "images/albury/floor-plans/music-nobile.svg",
+      "plan": "images/albury/floor-plans/music-nobile-2026-11-24.svg",
       "rooms": [
         {
           "path": "images/albury/music-nobile/01-live-tracking-room.webp",
           "title": "Studio Albury — Live Room",
-          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "description": "The full-width, approximately 100-by-30-foot live room occupies the garden side of Music Nobile. Its east half occupies No. 32’s double-height former ballroom and its west half has a normal-height ceiling. Two enclosed normal-height isolation booths sit within the room, one for three to four voices and one for a seated string quartet. For events, recording equipment goes to the technical store and the garden-side wall becomes the stage. The control room and the separate rec room are on the street side of the first floor.",
           "roomName": "Studio Albury — Live Room",
           "roomId": "live-tracking-room",
           "studioName": "Studio Albury",
-          "ceilingHeight": "double height",
+          "ceilingHeight": "east half double height; west half normal room height",
           "containedRoomIds": [
             "vocal-booth",
             "instrument-isolation-booth"
-          ]
+          ],
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 30,
+            "areaSqFt": 3000,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 150,
+            "seatedLayout": "concert, approximate",
+            "standing": 200,
+            "standingLayout": "cleared live room"
+          }
         },
         {
           "path": "images/albury/music-nobile/new-views/01-live-tracking-room.webp",
           "title": "Live & Tracking Room — Additional View",
-          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "description": "The full-width, approximately 100-by-30-foot live room occupies the garden side of Music Nobile. Its east half occupies No. 32’s double-height former ballroom and its west half has a normal-height ceiling. Two enclosed normal-height isolation booths sit within the room, one for three to four voices and one for a seated string quartet. For events, recording equipment goes to the technical store and the garden-side wall becomes the stage. The control room and the separate rec room are on the street side of the first floor.",
           "roomName": "Studio Albury — Live Room",
           "roomId": "live-tracking-room",
           "studioName": "Studio Albury",
-          "ceilingHeight": "double height",
+          "ceilingHeight": "east half double height; west half normal room height",
           "containedRoomIds": [
             "vocal-booth",
             "instrument-isolation-booth"
-          ]
+          ],
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 30,
+            "areaSqFt": 3000,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 150,
+            "seatedLayout": "concert, approximate",
+            "standing": 200,
+            "standingLayout": "cleared live room"
+          }
         },
         {
           "path": "images/albury/music-nobile/14-session-in-progress.webp",
           "title": "Session in Progress",
-          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "description": "The full-width, approximately 100-by-30-foot live room occupies the garden side of Music Nobile. Its east half occupies No. 32’s double-height former ballroom and its west half has a normal-height ceiling. Two enclosed normal-height isolation booths sit within the room, one for three to four voices and one for a seated string quartet. For events, recording equipment goes to the technical store and the garden-side wall becomes the stage. The control room and the separate rec room are on the street side of the first floor.",
           "roomName": "Studio Albury — Live Room",
           "roomId": "live-tracking-room",
           "studioName": "Studio Albury",
-          "ceilingHeight": "double height",
+          "ceilingHeight": "east half double height; west half normal room height",
           "containedRoomIds": [
             "vocal-booth",
             "instrument-isolation-booth"
-          ]
+          ],
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 30,
+            "areaSqFt": 3000,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 150,
+            "seatedLayout": "concert, approximate",
+            "standing": 200,
+            "standingLayout": "cleared live room"
+          }
         },
         {
           "path": "images/albury/music-nobile/15-full-band-take.webp",
           "title": "Full Band Take",
-          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "description": "The full-width, approximately 100-by-30-foot live room occupies the garden side of Music Nobile. Its east half occupies No. 32’s double-height former ballroom and its west half has a normal-height ceiling. Two enclosed normal-height isolation booths sit within the room, one for three to four voices and one for a seated string quartet. For events, recording equipment goes to the technical store and the garden-side wall becomes the stage. The control room and the separate rec room are on the street side of the first floor.",
           "roomName": "Studio Albury — Live Room",
           "roomId": "live-tracking-room",
           "studioName": "Studio Albury",
-          "ceilingHeight": "double height",
+          "ceilingHeight": "east half double height; west half normal room height",
           "containedRoomIds": [
             "vocal-booth",
             "instrument-isolation-booth"
-          ]
+          ],
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 30,
+            "areaSqFt": 3000,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 150,
+            "seatedLayout": "concert, approximate",
+            "standing": 200,
+            "standingLayout": "cleared live room"
+          }
         },
         {
           "path": "images/albury/music-nobile/02-control-room.webp",
@@ -1223,16 +1572,28 @@
         },
         {
           "title": "Live & Tracking Room — Closer Perspective",
-          "description": "Studio Albury’s live room occupies No. 32’s inherited double-height ballroom volume. It contains two enclosed normal-height isolation booths: a voice-work booth comfortably accommodating three to four people, and a larger booth comfortably accommodating a string quartet seated in the round. The open live room retains space for the grand piano, drums, band and strings.",
+          "description": "The full-width, approximately 100-by-30-foot live room occupies the garden side of Music Nobile. Its east half occupies No. 32’s double-height former ballroom and its west half has a normal-height ceiling. Two enclosed normal-height isolation booths sit within the room, one for three to four voices and one for a seated string quartet. For events, recording equipment goes to the technical store and the garden-side wall becomes the stage. The control room and the separate rec room are on the street side of the first floor.",
           "path": "images/albury/guide-expansion/live-tracking-room-closer-perspective.webp",
           "roomName": "Studio Albury — Live Room",
           "roomId": "live-tracking-room",
           "studioName": "Studio Albury",
-          "ceilingHeight": "double height",
+          "ceilingHeight": "east half double height; west half normal room height",
           "containedRoomIds": [
             "vocal-booth",
             "instrument-isolation-booth"
-          ]
+          ],
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 30,
+            "areaSqFt": 3000,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 150,
+            "seatedLayout": "concert, approximate",
+            "standing": 200,
+            "standingLayout": "cleared live room"
+          }
         },
         {
           "title": "Control Room — Closer Perspective",
@@ -1262,7 +1623,7 @@
       "id": "second-floor",
       "name": "Principal guest suites",
       "short": "Second Floor",
-      "plan": "images/albury/floor-plans/second-floor.svg",
+      "plan": "images/albury/floor-plans/second-floor-2026-11-24.svg",
       "rooms": [
         {
           "path": "images/albury/second-floor/01-landing-current.webp",
@@ -2009,37 +2370,77 @@
         {
           "path": "images/albury/exterior/01-rear-mews-current.webp",
           "title": "Duchess of Bedford Walk Mews",
-          "description": "The screened rear service frontage contains the secure vehicle ramp, controlled personnel entrance and secondary service access without exposing the garden or principal rooms.",
+          "description": "The screened rear service frontage contains the secure vehicle ramp, controlled personnel entrance and secondary service access without exposing the garden or principal rooms. The upper-basement garage and loading court sit under the terrace and lawn. Vehicles enter down the screened Duchess of Bedford Walk mews ramp beyond the garden’s north wall. The service route joins the garage and loading, event kitchen and backstage.",
           "roomName": "Duchess of Bedford Walk Mews",
           "roomId": "duchess-of-bedford-walk-mews"
         },
         {
           "path": "images/albury/garden/01-overview-from-house-current.webp",
           "title": "Garden Overview",
-          "description": "From the unified elevation, the 100-by-131-foot rear garden resolves into a 30-foot terrace, 68-by-65-foot open lawn, sixteen-foot side gardens and a deep planted far room.",
+          "description": "From the unified elevation, the 100-by-131-foot rear garden resolves into a 30-foot terrace, 68-by-65-foot open lawn, sixteen-foot side gardens and a deep planted far room. The 68-by-65-foot lawn holds about 300 standing in good weather or 100 in the seated marquee layout.",
           "roomName": "Garden & Lawn",
-          "roomId": "garden-lawn"
+          "roomId": "garden-lawn",
+          "dimensions": {
+            "widthFt": 68,
+            "depthFt": 65,
+            "areaSqFt": 4420,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 100,
+            "seatedLayout": "marquee dinner",
+            "standing": 300,
+            "standingLayout": "good weather"
+          }
         },
         {
           "path": "images/albury/garden/02-rear-terrace-current.webp",
           "title": "Rear Terrace",
-          "description": "The 100-by-30-foot limestone terrace holds the fourteen-seat dining setting to the east and twelve-seat lounge to the west, divided by a fourteen-foot clear axis and exactly two taupe parasols.",
+          "description": "The 100-by-30-foot full-width pale limestone terrace has a permanent bronze-framed canopy, side screens and heaters. The east end has a bar. The everyday layout seats fourteen for dining and twelve in the lounge, with a clear central route. It holds about 200 standing with the canopy closed.",
           "roomName": "Rear Terrace",
-          "roomId": "rear-terrace"
+          "roomId": "rear-terrace",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 30,
+            "areaSqFt": 3000,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "seatedDining": 14,
+            "seatedLounge": 12,
+            "standing": 200,
+            "standingLayout": "canopy closed"
+          }
         },
         {
           "path": "images/albury/garden/03-looking-back-to-house-current.webp",
           "title": "Looking Back to the House",
-          "description": "From the far-lawn threshold, the 65-foot lawn and broad unified elevation read at their full scale; the fixed Hepworth remains halfway down the west border.",
+          "description": "From the far-lawn threshold, the 65-foot lawn and broad unified elevation read at their full scale; the fixed Hepworth remains halfway down the west border. The 68-by-65-foot lawn holds about 300 standing in good weather or 100 in the seated marquee layout.",
           "roomName": "Garden & Lawn",
-          "roomId": "garden-lawn"
+          "roomId": "garden-lawn",
+          "dimensions": {
+            "widthFt": 68,
+            "depthFt": 65,
+            "areaSqFt": 4420,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 100,
+            "seatedLayout": "marquee dinner",
+            "standing": 300,
+            "standingLayout": "good weather"
+          }
         },
         {
           "path": "images/albury/garden/05-far-garden-salon-current.webp",
           "title": "Far-Garden Salon",
           "description": "The fixed ten-seat north-west salon sits beneath retained canopy and looks south across the full lawn; no sculpture occupies this room.",
           "roomName": "Far-Garden Salon",
-          "roomId": "far-garden-salon"
+          "roomId": "far-garden-salon",
+          "eventCapacity": {
+            "seated": 10
+          }
         },
         {
           "path": "images/albury/garden/10-no-34-boundary.webp",
@@ -2051,23 +2452,60 @@
         {
           "path": "images/albury/garden/07-blue-hour-current.webp",
           "title": "Garden at Blue Hour",
-          "description": "Residential step wash, shielded border lights, restrained tree uplight and one sculpture light preserve the same fixed geometry after sunset.",
+          "description": "Residential step wash, shielded border lights, restrained tree uplight and one sculpture light preserve the same fixed geometry after sunset. The 68-by-65-foot lawn holds about 300 standing in good weather or 100 in the seated marquee layout.",
           "roomName": "Garden & Lawn",
-          "roomId": "garden-lawn"
+          "roomId": "garden-lawn",
+          "dimensions": {
+            "widthFt": 68,
+            "depthFt": 65,
+            "areaSqFt": 4420,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 100,
+            "seatedLayout": "marquee dinner",
+            "standing": 300,
+            "standingLayout": "good weather"
+          }
         },
         {
           "path": "images/albury/garden/12-marquee-event-configuration.webp",
           "title": "Marquee Dinner Configuration",
-          "description": "A single ballasted 48-by-52-foot clear-span marquee centres one hundred dinner places on the lawn, retaining ten-foot side clearances, seven feet from the terrace and six feet before the far garden.",
+          "description": "A single ballasted 48-by-52-foot clear-span marquee centres one hundred dinner places on the lawn, retaining ten-foot side clearances, seven feet from the terrace and six feet before the far garden. The 68-by-65-foot lawn holds about 300 standing in good weather or 100 in the seated marquee layout.",
           "roomName": "Garden & Lawn",
-          "roomId": "garden-lawn"
+          "roomId": "garden-lawn",
+          "dimensions": {
+            "widthFt": 68,
+            "depthFt": 65,
+            "areaSqFt": 4420,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 100,
+            "seatedLayout": "marquee dinner",
+            "standing": 300,
+            "standingLayout": "good weather"
+          }
         },
         {
           "title": "Rear Terrace — Closer Perspective",
-          "description": "The 100-by-30-foot limestone terrace holds the fourteen-seat dining setting to the east and twelve-seat lounge to the west, divided by a fourteen-foot clear axis and exactly two taupe parasols. A closer perspective of the established arrangement.",
+          "description": "The 100-by-30-foot full-width pale limestone terrace has a permanent bronze-framed canopy, side screens and heaters. The east end has a bar. The everyday layout seats fourteen for dining and twelve in the lounge, with a clear central route. It holds about 200 standing with the canopy closed.",
           "path": "images/albury/guide-expansion/rear-terrace-closer-perspective.webp",
           "roomName": "Rear Terrace",
-          "roomId": "rear-terrace"
+          "roomId": "rear-terrace",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 30,
+            "areaSqFt": 3000,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 26,
+            "seatedDining": 14,
+            "seatedLounge": 12,
+            "standing": 200,
+            "standingLayout": "canopy closed"
+          }
         }
       ],
       "kind": "outdoor",
