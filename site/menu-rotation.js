@@ -4,6 +4,9 @@ window.AlburyMenus = (() => {
   const courses=[['with_drinks','With drinks'],['starter','To start'],['bowl','The bowl'],['main','The plate'],['alongside','Alongside'],['dessert','To finish'],['bread_preserves','Bread & preserves'],['vegetarian','Vegetarian plate']];
   const epoch=Date.UTC(2025,7,11),dayMS=86400000,esc=AlburyCSV.esc;
   const specials=window.ALBURY_CONTENT['special-menus'].menus;
+  const photoKey=row=>[row.season,row.cycle,row.day,row.meal,row.main].join('|');
+  const photos=new Map((window.ALBURY_CONTENT.culinary?.menuPhotos||[]).map(photo=>[photoKey(photo),photo]));
+  const illustrate=row=>{const photo=photos.get(photoKey(row));return photo?{...row,image:photo.image,imageAlt:photo.imageAlt,imageUrl:'https://albury-house.vercel.app/'+photo.image}:{...row};};
   const api={rows:[],csv:'',source:'',days,courses,date:'2025-08-11',specialId:'',specials,cycles:2};
   const validDate=value=>/^\d{4}-\d{2}-\d{2}$/.test(value)&&Number.isFinite(Date.parse(value))&&new Date(value+'T00:00:00Z').toISOString().slice(0,10)===value;
   function validate(text){
@@ -31,14 +34,14 @@ window.AlburyMenus = (() => {
   api.forDate=(date=api.date,specialId='')=>{
     const position=api.position(date),special=specialId?specials.find(s=>s.id===specialId):null;
     if(specialId&&!special)throw Error('Unknown special menu.');
-    const rows=api.rows.filter(r=>r.season===position.season&&+r.cycle===position.cycle&&r.day===days[position.day]).map(r=>special&&r.meal===special.meal?{...r,...special.menu}:{...r});
-    return {...position,theme:special?.name||rows[0].theme,rows};
+    const rows=api.rows.filter(r=>r.season===position.season&&+r.cycle===position.cycle&&r.day===days[position.day]).map(r=>special&&r.meal===special.meal?{...r,...special.menu}:illustrate(r));
+    return {...position,theme:special?.name||rows[0]?.theme,rows};
   };
   api.week=(date=api.date)=>{
     const start=Date.parse(date+'T00:00:00Z')-api.position(date).day*dayMS;
     return days.map((day,i)=>{
       const dayDate=new Date(start+i*dayMS).toISOString().slice(0,10),daily=api.forDate(dayDate,dayDate===date?api.specialId:'');
-      return [day,daily.theme,meals.map(meal=>{const row=daily.rows.find(r=>r.meal===meal);return [meal,courses.filter(([key])=>row[key]).map(([key,label])=>[label,row[key]])];})];
+      return [day,daily.theme,meals.map(meal=>{const row=daily.rows.find(r=>r.meal===meal)??{};return [meal,courses.filter(([key])=>row[key]).map(([key,label])=>[label,row[key]]),row];})];
     });
   };
   api.label=date=>new Date((date||api.date)+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
@@ -56,6 +59,15 @@ window.AlburyMenus = (() => {
   };
   const params=new URLSearchParams(location.search);if(params.get('date'))api.setDate(params.get('date'));
   if(specials.some(s=>s.id===params.get('special_menu_id')))api.specialId=params.get('special_menu_id');
+  const published=window.ALBURY_MANAGED_CONTENT?.menus;
+  if(published){
+    api.rows=published.menus;
+    const keys=Object.keys(api.rows[0]||{});
+    api.csv=AlburyCSV.encode(keys,api.rows);
+    api.source='published';
+    api.ready=Promise.resolve();
+    return api;
+  }
   api.ready=AlburyCSV.load('site/data/menus.csv?schema=2',window.ALBURY_MENU_CSV).then(({text,source})=>{api.use(text);api.source=source;});
   return api;
 })();

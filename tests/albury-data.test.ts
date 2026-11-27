@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import {
@@ -29,7 +30,9 @@ test("summary exposes the complete Albury reference", () => {
   assert.equal(summary.totals.permanentStaff, 48);
   assert.equal(summary.totals.scheduledSpecialists, 5);
   assert.equal(summary.totals.externalPartners, 13);
-  assert.equal(summary.totals.pantryOpeningItems, 33);
+  assert.equal(summary.totals.pantryOpeningItems, 46);
+  assert.equal(summary.totals.pantrySeasonalRecipes, 2);
+  assert.equal(summary.totals.pantryImageGroups, 21);
   assert.ok(Number(summary.totals.rooms) > 80);
   assert.ok(summary.totals.images > 400);
 });
@@ -61,6 +64,27 @@ test("named internal floors are distinct from the combined outdoor area", () => 
   assert.deepEqual(listRooms({ floorId: "garden" }), listRooms({ outdoorAreaId: "exterior" }));
 });
 
+test("floor-plan PDFs appear alongside the current floor diagram", () => {
+  const [housePlan] = getSummary().house.floorPlanDocuments;
+  const floor = getFloor("upper-basement");
+  const room = getRoom("bar-games-room");
+  const backstage = getRoom("backstage-store-preparation-room");
+  const clubPlan = floor?.floorPlanDocuments?.[0];
+  assert.ok(floor?.planUrl?.endsWith(".svg"));
+  assert.equal(housePlan?.status, "concept-study");
+  assert.equal(clubPlan?.status, "layout-study");
+  assert.deepEqual(room?.floorPlanDocuments, [clubPlan]);
+  assert.deepEqual(backstage?.floorPlanDocuments, [clubPlan]);
+  assert.equal(getFloor("raised-ground")?.floorPlanDocuments, undefined);
+
+  for (const document of [housePlan, clubPlan]) {
+    assert.ok(document);
+    assert.equal(document.mimeType, "application/pdf");
+    const path = new URL(document.url).pathname;
+    assert.equal(readFileSync(new URL(`..${path}`, import.meta.url)).subarray(0, 5).toString(), "%PDF-");
+  }
+});
+
 test("Studio Albury is within Music Nobile and both normal-height booths are inside its live room", () => {
   assert.equal(getSummary().house.name, "Albury House");
   const live = getRoom("live-tracking-room");
@@ -70,7 +94,9 @@ test("Studio Albury is within Music Nobile and both normal-height booths are ins
   assert.equal(live?.studioName, "Studio Albury");
   assert.equal(control?.studioName, "Studio Albury");
   assert.equal(getRoom("rec-room")?.studioName, null);
-  assert.equal(live?.ceilingHeight, "double height");
+  assert.equal(live?.ceilingHeight, "east half double height; west half normal room height");
+  assert.equal((live?.dimensions as { widthFt?: number })?.widthFt, 100);
+  assert.equal((live?.eventCapacity as { standing?: number })?.standing, 200);
   assert.deepEqual(live?.containedRoomIds, ["vocal-booth", "instrument-isolation-booth"]);
   const voice = getRoom("vocal-booth");
   const strings = getRoom("instrument-isolation-booth");
@@ -99,10 +125,40 @@ test("menu rotation remains anchored to Monday 11 August 2025", () => {
 
 test("pantry exposes every P-number and seasonal recipes only on request", () => {
   const opening = listPantry({ includeSeasonal: false });
-  assert.equal(opening.total, 33);
+  assert.equal(opening.total, 46);
+  assert.deepEqual(opening.items.map((item) => item.id), Array.from({ length: 46 }, (_, index) => `P${String(index + 1).padStart(2, "0")}`));
+  assert.equal(opening.summary.imageGroups, 21);
+  assert.equal(opening.summary.seasonalRecipes, 2);
+  assert.ok(opening.categories.includes("house sauces"));
   assert.equal(getPantryItem("P26")?.labelFamily, "albury-drinks");
+  assert.equal(getPantryItem("P26")?.specificationLead, "crispin-vale");
+  assert.equal(getPantryItem("P26")?.productionLead, "rafael-bellocq");
+  assert.match(String(getPantryItem("P26")?.productionNotes), /vanilla syrup/);
   assert.match(String(getPantryItem("P05")?.uses), /Hatfield bourbon/);
-  assert.equal(listPantry({ includeSeasonal: true }).total, 35);
+  assert.equal(listPantry({ includeSeasonal: true }).total, 48);
+  for (const [id, name, group] of [
+    ["P34", "Albury brown sauce", "11-house-sauces"],
+    ["P35", "Espelette chilli sauce", "11-house-sauces"],
+    ["P36", "Salted caramel sauce", "11-house-sauces"],
+    ["P37", "Chocolate fudge sauce", "11-house-sauces"],
+    ["P38", "Cherry and bourbon swirl ice cream", "10-house-ice-creams"],
+  ]) {
+    const item = getPantryItem(id);
+    assert.equal(item?.name, name);
+    assert.equal(item?.imageGroupId, group);
+    assert.equal(item?.labelFamily, "pantry");
+    assert.match(String(item?.imageUrl), /^https:\/\/albury-house\.vercel\.app\/images\//);
+  }
+  assert.deepEqual((getPantryItem("P34")?.imageGroup as { ids: string[] }).ids, ["P34", "P35", "P36", "P37"]);
+  assert.deepEqual((getPantryItem("P38")?.imageGroup as { ids: string[] }).ids, ["P29", "P30", "P38"]);
+  for (const [id, name] of [["P39", "White peach and thyme cordial"], ["P40", "Pink grapefruit and rosemary cordial"], ["P41", "Pear and green cardamom cordial"], ["P42", "Demerara syrup"]]) {
+    const item = getPantryItem(id);
+    assert.equal(item?.name, name);
+    assert.equal(item?.labelFamily, "albury-drinks");
+    assert.equal(item?.imageGroupId, "12-house-drinks");
+    assert.equal(item?.specificationLead, "crispin-vale");
+    assert.equal(item?.productionLead, "rafael-bellocq");
+  }
 });
 
 test("rooms group coherent views and expose public images", () => {
@@ -162,4 +218,14 @@ test("staff biographies, descriptions and portraits are complete in the intended
   assert.doesNotMatch(String(people.find(person => person.id === "clem-frobisher")?.remit), /No\. 34|planning|Cedars/);
   assert.doesNotMatch(getRoom("staff-overnight-room")!.description, /No\. 34|Cedars|planning/);
   assert.ok(listRooms({limit:100}).items.every(room => room.name.length < 100));
+});
+
+test("the published figures distinguish the room, the club footprint and the whole house", () => {
+  const bar = getRoom("bar-games-room");
+  assert.match(bar?.description ?? "", /full 100-foot width/);
+  assert.equal((bar?.dimensions as { depthFt?: number })?.depthFt, 45);
+  assert.equal((bar?.eventCapacity as { standing?: number })?.standing, 250);
+  const eventCapacity = getSummary().house.eventCapacity as { inStoryClubFloorSafetyLimit: number; plannedWholeHouseGuestLimit: number };
+  assert.equal(eventCapacity.inStoryClubFloorSafetyLimit, 400);
+  assert.equal(eventCapacity.plannedWholeHouseGuestLimit, 800);
 });

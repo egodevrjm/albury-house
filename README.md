@@ -1,17 +1,27 @@
 # Albury House
 
-The deployed project contains the Albury House visitor site and a read-only Model Context Protocol reference for story sessions.
+The deployed project contains the Albury House visitor site, a public MCP reference and a private editor for story content.
 
 - Website: <https://albury-house.vercel.app/ALBURY_WELCOME.html>
 - MCP endpoint: <https://albury-house.vercel.app/mcp>
 
-The MCP covers the house and its rooms, household staff, external partners, menus resolved against a date, the complete P01–P33 pantry, house collections, guest provision, image retrieval, and dated London events. Monday 11 August 2025 anchors Cycle 1 of the two-week menu rotation.
+The MCP covers the house and its rooms, household staff, external partners, menus resolved against a date, the complete P01–P46 pantry, house collections, guest provision, image retrieval, and dated London events. Monday 11 August 2025 anchors Cycle 1 of the two-week menu rotation.
 
 The public Albury House website: guest welcome, house guide, interactive Walk Albury maps, room tour, collections, house identity, kitchen and front of house, weekly menus, London calendar and authored story weather.
 
 This repository is the optimized deployment artifact generated from `aw_v45`. Public structured content is available under `site/data/public/`; schedule data is under `site/data/`. Images are deployed as WebP or SVG.
 
 The private Albury operations collection is deliberately excluded from this public repository.
+
+## Edit and publish story content
+
+Open /room-editor and sign in with the existing owner key. Create a draft, choose a content area, then open a record or field. Ordinary fields use text controls. Images can be uploaded or selected from the private image collection. Add or remove records from their list. The stage-view form remains available for room galleries. Review staged changes and select Publish draft. The website and the public MCP read the same published revision. Publication history can restore previous revisions.
+
+The authenticated /mcp-write endpoint retains the existing draft-only bearer credential. Use list_content, read_content and stage_content_edits to prepare a draft. In paths, use @id where a unique stable identifier is available and a zero-based index otherwise. Upload an image with upload_image and use its returned asset ID in an image edit. The owner publishes through the browser editor. Send a generated JPEG, PNG or WebP as file bytes up to 3 MiB.
+
+Add house-label products to Pantry products, openingItems or seasonalRecipes, using a unique product ID. An image-backed product appears in Produce as well as in its own pantry register and the pantry MCP tools. Existing collection entries can also be edited independently for artwork and other displays.
+
+The updated editor reuses the existing ALBURY_EDITOR_DATABASE_URL, ALBURY_EDITOR_OWNER_KEY and ALBURY_EDITOR_DRAFT_KEY settings. Older saved drafts and revisions still load. The browser and write MCP share validation and revision checks. The public website receives only the fields from pantry records needed to display the product.
 
 ## Floors and outdoor area
 
@@ -47,3 +57,13 @@ The house has four seasonal two-week rotations: spring (March–May), summer (Ju
 The complete regular menus are maintained in `content/schedules/menus.csv`. Six optional occasion menus are maintained in `content/public/special-menus.json`: Christmas lunch, Boxing Day lunch, New Year's Eve dinner, Easter lunch, a summer garden party and a celebration dinner. Each includes vegetarian provision and service notes.
 
 Use the Albury House MCP `get_menu_for_date` for regular provision, `list_special_menus` to browse occasions and `get_special_menu` for full details. Supplying `special_menu_id` to `get_menu_for_date` substitutes only the designated lunch or dinner on that date. A special menu is an available kitchen plan; it does not establish guests, a booking or a meal already eaten. Christmas and other occasions do not override ordinary menus automatically.
+
+Pantry images: `11-house-sauces.webp` shows P34–P37, and the updated `10-house-ice-creams.webp` shows P29, P30 and P38. The former two-tub photograph is archived with the REFRESH maintenance files.
+
+The individual pantry gallery is at `ALBURY_PANTRY_ITEMS.html`. All 46 numbered products and both unnumbered seasonal cordial recipes have one-product images. `get_pantry_item.imageUrl` is the single-product photograph; `imageGroup.imageUrl` is the existing group photograph. Rebuild the canonical page with `python3 aw_v45/site/build_content.py` and the optimized copy with `python3 aw_v45/site/build_pantry_portraits.py --optimized` after changing pantry records.
+
+Bethan’s seven signature bakes and all eight cordial cocktail/alcohol-free pairs now have individual photographs. They are shown in the Available food and Drinks sections; `list_signature_bakes` returns a single `imageUrl` for each bake and `list_cordial_serves` returns separate `cocktailImageUrl` and `alcoholFreeImageUrl` values. The site assets are under `images/albury-culinary/signature-bakes/` and `images/albury-culinary/cordial-serves/`.
+
+## Personal gifts sent from Albury
+
+`ALBURY_GIFTS.html` shows six personal courier/post formats. `get_guest_provision({"kind":"sent gifts"})` returns their contents, ownership, packing, storage and photographs. `search_albury` includes the `hospitality` domain; `search_images` exposes their stable image IDs as hospitality images. Dedicated sealed cordial gift batches are validated for ambient storage unopened and refrigerated after opening; fresh service stock retains its refrigeration rules. No dispatch or public retail offer is established.

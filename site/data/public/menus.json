@@ -35,9 +35,9 @@
       "starter": "",
       "bowl": "",
       "main": "Soft scrambled eggs with chives on toasted sourdough; slow-roasted tomatoes.",
-      "alongside": "Greek yoghurt, house granola and white-peach compote.",
+      "alongside": "Greek yoghurt with toasted oat, almond and seed granola; peach and vanilla compote made with white peaches.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough, salted butter and Seville marmalade.",
+      "bread_preserves": "Warm sourdough, salted butter and Seville bitter-orange marmalade.",
       "vegetarian": ""
     },
     {
@@ -49,7 +49,7 @@
       "with_drinks": "",
       "starter": "",
       "bowl": "",
-      "main": "Roast-chicken and tarragon salad with Little Gem, warm new potatoes and house-mustard dressing.",
+      "main": "Roast-chicken and tarragon salad with Little Gem, warm new potatoes and dressing made with Moutarde de la maison.",
       "alongside": "Radishes, cucumber and fresh focaccia.",
       "dessert": "Ripe peaches and raspberries.",
       "bread_preserves": "",
@@ -82,7 +82,7 @@
       "main": "Poached eggs on sourdough with wilted spinach and sautéed chestnut mushrooms.",
       "alongside": "Greek yoghurt with raspberries and toasted seeds.",
       "dessert": "",
-      "bread_preserves": "Brioche, salted butter and strawberry preserve.",
+      "bread_preserves": "Brioche with salted butter; strawberry and vanilla confiture.",
       "vegetarian": ""
     },
     {
@@ -170,9 +170,9 @@
       "starter": "",
       "bowl": "",
       "main": "Fine-herb and mushroom omelette with roasted tomatoes.",
-      "alongside": "Greek yoghurt, house granola and fresh blackberries.",
+      "alongside": "Greek yoghurt with toasted oat, almond and seed granola and fresh blackberries.",
       "dessert": "",
-      "bread_preserves": "Seeded toast, salted butter and apricot preserve.",
+      "bread_preserves": "Seeded toast with salted butter; apricot and vanilla preserve.",
       "vegetarian": ""
     },
     {
@@ -214,10 +214,10 @@
       "with_drinks": "",
       "starter": "",
       "bowl": "",
-      "main": "Ricotta pancakes with peach compote, raspberries and Greek yoghurt.",
+      "main": "Ricotta pancakes with peach and vanilla compote, raspberries and Greek yoghurt.",
       "alongside": "Soft scrambled eggs with chives.",
       "dessert": "",
-      "bread_preserves": "Toasted sourdough, butter and raspberry preserve.",
+      "bread_preserves": "Toasted sourdough, butter and raspberry confiture.",
       "vegetarian": ""
     },
     {
@@ -246,7 +246,7 @@
       "bowl": "",
       "main": "Steak frites with Béarnaise, watercress and a shallot-dressed green salad.",
       "alongside": "",
-      "dessert": "Chocolate mousse with raspberries and dark-chocolate sea-salt sablés.",
+      "dessert": "Chocolate mousse and raspberries, with dark chocolate and sea-salt sablés.",
       "bread_preserves": "",
       "vegetarian": "Grilled field mushrooms, warm white beans, frites and the same salad; Béarnaise served separately."
     },
@@ -259,10 +259,10 @@
       "with_drinks": "",
       "starter": "",
       "bowl": "",
-      "main": "Fried eggs, bacon, sausage, mushrooms and roast tomatoes; house ketchup on the side.",
+      "main": "Fried eggs, bacon, sausage, mushrooms and roast tomatoes; Albury tomato ketchup, Albury brown sauce, Espelette chilli sauce or Moutarde de la maison on the side, as wanted.",
       "alongside": "Greek yoghurt with strawberries.",
       "dessert": "",
-      "bread_preserves": "Sourdough toast, butter and Seville marmalade. A vegetarian cooked plate has extra eggs, mushrooms and tomatoes.",
+      "bread_preserves": "Sourdough toast, butter and Seville bitter-orange marmalade. A vegetarian cooked plate has extra eggs, mushrooms and tomatoes.",
       "vegetarian": ""
     },
     {
@@ -275,7 +275,7 @@
       "starter": "",
       "bowl": "",
       "main": "Tuna Niçoise with soft-boiled egg, fine beans, tomatoes, black olives and new potatoes.",
-      "alongside": "Seeded bread and house-mustard vinaigrette.",
+      "alongside": "Seeded bread and vinaigrette made with Moutarde de la maison.",
       "dessert": "Vanilla-bean ice cream with warm apricots.",
       "bread_preserves": "",
       "vegetarian": "White-bean Niçoise with egg, potatoes, tomatoes, olives and green beans; no tuna or anchovies."
@@ -289,11 +289,11 @@
       "with_drinks": "",
       "starter": "Tomatoes and cucumber with parsley, mint and lemon.",
       "bowl": "",
-      "main": "Chicken shawarma, warm flatbreads, garlic yoghurt, chopped lettuce and pickled red onions; roast aubergine and chickpeas alongside.",
+      "main": "Chicken shawarma, warm flatbreads, garlic yoghurt, chopped lettuce and quick-pickled red onions; roast aubergine and chickpeas alongside.",
       "alongside": "",
       "dessert": "Chocolate brownies, raspberries and vanilla-bean ice cream.",
       "bread_preserves": "",
-      "vegetarian": "Roast aubergine and chickpea flatbreads with garlic yoghurt, chopped salad and pickled onions."
+      "vegetarian": "Roast aubergine and chickpea flatbreads with garlic yoghurt, chopped salad and quick-pickled red onions."
     },
     {
       "season": "summer",
@@ -305,9 +305,9 @@
       "starter": "",
       "bowl": "",
       "main": "Poached eggs on toasted brioche with wilted spinach.",
-      "alongside": "Greek yoghurt, house granola and peach compote.",
+      "alongside": "Greek yoghurt with toasted oat, almond and seed granola; peach and vanilla compote.",
       "dessert": "",
-      "bread_preserves": "Croissants, butter and strawberry preserve.",
+      "bread_preserves": "Croissants with butter; strawberry and vanilla confiture.",
       "vegetarian": ""
     },
     {
@@ -352,7 +352,7 @@
       "main": "Spinach and chive omelette with grilled tomatoes.",
       "alongside": "Greek yoghurt, apricot compote and toasted almonds.",
       "dessert": "",
-      "bread_preserves": "Sourdough toast, salted butter and raspberry preserve.",
+      "bread_preserves": "Sourdough toast, salted butter and raspberry confiture.",
       "vegetarian": ""
     },
     {
@@ -365,7 +365,7 @@
       "starter": "",
       "bowl": "",
       "main": "Lemon roast-chicken wraps with lettuce, cucumber and herb yoghurt.",
-      "alongside": "Tomato salad and house-pickled red onions.",
+      "alongside": "Tomato salad and quick-pickled red onions.",
       "dessert": "Fresh raspberries and butter shortbread.",
       "bread_preserves": "",
       "vegetarian": "Roast chickpea and aubergine wraps with the same salad and yoghurt."
@@ -395,9 +395,9 @@
       "starter": "",
       "bowl": "",
       "main": "Poached eggs on toasted sourdough with avocado and lemon.",
-      "alongside": "Greek yoghurt with sliced peaches and house granola.",
+      "alongside": "Greek yoghurt with sliced peaches and toasted oat, almond and seed granola.",
       "dessert": "",
-      "bread_preserves": "Brioche, salted butter and strawberry preserve.",
+      "bread_preserves": "Brioche with salted butter; strawberry and vanilla confiture.",
       "vegetarian": ""
     },
     {
@@ -442,7 +442,7 @@
       "main": "Buttermilk pancakes with raspberry compote.",
       "alongside": "Soft scrambled eggs and Greek yoghurt.",
       "dessert": "",
-      "bread_preserves": "Seeded toast, salted butter and Seville marmalade.",
+      "bread_preserves": "Seeded toast, salted butter and Seville bitter-orange marmalade.",
       "vegetarian": ""
     },
     {
@@ -471,7 +471,7 @@
       "bowl": "",
       "main": "Grilled steak with chimichurri; crisp new potatoes.",
       "alongside": "Grilled peppers, courgettes and dressed watercress.",
-      "dessert": "Chocolate mousse with dark-chocolate sea-salt sablés.",
+      "dessert": "Chocolate mousse with dark chocolate and sea-salt sablés.",
       "bread_preserves": "",
       "vegetarian": "Grilled halloumi and white beans with chimichurri, potatoes and vegetables."
     },
@@ -487,7 +487,7 @@
       "main": "Soft-boiled eggs with sourdough soldiers.",
       "alongside": "Overnight oats with blackcurrant compote and yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough, salted butter and apricot preserve.",
+      "bread_preserves": "Warm sourdough with salted butter; apricot and vanilla preserve.",
       "vegetarian": ""
     },
     {
@@ -577,7 +577,7 @@
       "main": "Fried eggs, bacon, sausage and grilled tomatoes.",
       "alongside": "Mushrooms and sautéed potatoes; yoghurt with berries.",
       "dessert": "",
-      "bread_preserves": "Sourdough toast, salted butter and Seville marmalade.",
+      "bread_preserves": "Sourdough toast, salted butter and Seville bitter-orange marmalade.",
       "vegetarian": "Vegetarian cooked plate with extra eggs, mushrooms and tomatoes."
     },
     {
@@ -620,9 +620,9 @@
       "starter": "",
       "bowl": "",
       "main": "Scrambled eggs with chives on toasted brioche.",
-      "alongside": "Greek yoghurt, house granola and apricot compote.",
+      "alongside": "Greek yoghurt with toasted oat, almond and seed granola and apricot compote.",
       "dessert": "",
-      "bread_preserves": "Croissants, salted butter and strawberry preserve.",
+      "bread_preserves": "Croissants with salted butter; strawberry and vanilla confiture.",
       "vegetarian": ""
     },
     {
@@ -667,7 +667,7 @@
       "main": "Scrambled eggs with chives on sourdough; buttered spinach.",
       "alongside": "Rhubarb compote and Greek yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -710,9 +710,9 @@
       "starter": "",
       "bowl": "",
       "main": "Poached eggs, sautéed mushrooms and seeded toast.",
-      "alongside": "Poached pears and house granola.",
+      "alongside": "Poached pears and toasted oat, almond and seed granola.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -741,7 +741,7 @@
       "bowl": "",
       "main": "Chicken fricassée with leeks and tarragon.",
       "alongside": "Rice pilaf and buttered peas.",
-      "dessert": "Poached rhubarb and vanilla ice cream.",
+      "dessert": "Poached rhubarb and vanilla-bean ice cream.",
       "bread_preserves": "",
       "vegetarian": "Mushroom and white-bean fricassée with the same rice and peas."
     },
@@ -757,7 +757,7 @@
       "main": "Oat porridge with poached rhubarb; soft-boiled eggs alongside.",
       "alongside": "Orange segments and toasted pumpkin seeds.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -802,7 +802,7 @@
       "main": "Spinach and fresh-herb omelette; sourdough toast.",
       "alongside": "Rhubarb and apple compote.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -847,7 +847,7 @@
       "main": "Ricotta pancakes with rhubarb compote; yoghurt at the table.",
       "alongside": "Greek yoghurt with stewed apples.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -892,7 +892,7 @@
       "main": "Fried eggs, bacon, mushrooms and sourdough; extra mushrooms and white beans for the vegetarian plate.",
       "alongside": "Pink grapefruit and honey.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -937,7 +937,7 @@
       "main": "Baked eggs with leeks and spinach; warm brioche.",
       "alongside": "Poached rhubarb with vanilla yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -980,7 +980,7 @@
       "starter": "",
       "bowl": "",
       "main": "Scrambled eggs with chives on sourdough; buttered spinach.",
-      "alongside": "Poached pears and house granola.",
+      "alongside": "Poached pears and toasted oat, almond and seed granola.",
       "dessert": "",
       "bread_preserves": "Brioche or seeded toast, salted butter and blackcurrant preserve; tea and coffee.",
       "vegetarian": ""
@@ -1297,7 +1297,7 @@
       "main": "Scrambled eggs with chives and sautéed mushrooms on sourdough.",
       "alongside": "Apple and blackberry compote with yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1340,9 +1340,9 @@
       "starter": "",
       "bowl": "",
       "main": "Poached eggs and buttered spinach on seeded toast.",
-      "alongside": "Poached pears and house granola.",
+      "alongside": "Poached pears and toasted oat, almond and seed granola.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1387,7 +1387,7 @@
       "main": "Porridge with poached pears; soft-boiled eggs alongside.",
       "alongside": "Roast plums and Greek yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1432,7 +1432,7 @@
       "main": "Mushroom and herb omelette with sourdough.",
       "alongside": "Apple compote with toasted seeds.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1461,7 +1461,7 @@
       "bowl": "",
       "main": "Squash and sage risotto.",
       "alongside": "Chicory and walnut salad.",
-      "dessert": "Baked apples and vanilla ice cream.",
+      "dessert": "Baked apples and vanilla-bean ice cream.",
       "bread_preserves": "",
       "vegetarian": "Vegetarian as served; vegetable stock and vegetarian hard cheese."
     },
@@ -1477,7 +1477,7 @@
       "main": "Brioche French toast with apple compote and yoghurt.",
       "alongside": "Poached pears and cinnamon yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1491,7 +1491,7 @@
       "bowl": "",
       "main": "Ham and mustard sandwich on sourdough.",
       "alongside": "Celeriac soup and house pickles.",
-      "dessert": "A pear and shortbread.",
+      "dessert": "A pear and butter shortbread.",
       "bread_preserves": "",
       "vegetarian": "Vegetarian Cheddar and apple sandwich; vegetable-stock celeriac soup."
     },
@@ -1522,7 +1522,7 @@
       "main": "Fried eggs, bacon, sausage and mushrooms; white beans and extra mushrooms for the vegetarian plate.",
       "alongside": "Blackberry and apple compote.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1567,7 +1567,7 @@
       "main": "Baked eggs with leeks and mature Cheddar; toasted sourdough.",
       "alongside": "Baked apples with yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1610,7 +1610,7 @@
       "starter": "",
       "bowl": "",
       "main": "Scrambled eggs with chives and sautéed mushrooms on sourdough.",
-      "alongside": "Poached pears and house granola.",
+      "alongside": "Poached pears and toasted oat, almond and seed granola.",
       "dessert": "",
       "bread_preserves": "Brioche or seeded toast, salted butter and blackcurrant preserve; tea and coffee.",
       "vegetarian": ""
@@ -1927,7 +1927,7 @@
       "main": "Scrambled eggs on sourdough with buttered spinach.",
       "alongside": "Poached pears with yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -1970,9 +1970,9 @@
       "starter": "",
       "bowl": "",
       "main": "Poached eggs, mushrooms and seeded toast.",
-      "alongside": "Apple compote and house granola.",
+      "alongside": "Apple compote and toasted oat, almond and seed granola.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -2017,7 +2017,7 @@
       "main": "Porridge with apple compote; soft-boiled eggs alongside.",
       "alongside": "Orange segments and toasted seeds.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -2046,7 +2046,7 @@
       "bowl": "",
       "main": "Chicken with leeks, mustard and cream.",
       "alongside": "Rice pilaf and braised cabbage.",
-      "dessert": "Baked apples with vanilla ice cream.",
+      "dessert": "Baked apples with vanilla-bean ice cream.",
       "bread_preserves": "",
       "vegetarian": "Butter beans and mushrooms with leeks and mustard cream; rice and cabbage."
     },
@@ -2062,7 +2062,7 @@
       "main": "Leek and vegetarian Cheddar omelette with sourdough.",
       "alongside": "Prune and apple compote.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -2107,7 +2107,7 @@
       "main": "Brioche French toast with poached pears and yoghurt.",
       "alongside": "Pink grapefruit and yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -2152,7 +2152,7 @@
       "main": "Fried eggs, bacon, sausage, mushrooms and baked beans; a separate vegetarian plate with extra mushrooms and beans.",
       "alongside": "Baked apples and cinnamon yoghurt.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -2197,7 +2197,7 @@
       "main": "Soft-boiled eggs and sourdough soldiers; warm croissants.",
       "alongside": "Citrus fruit salad.",
       "dessert": "",
-      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville marmalade; tea and coffee.",
+      "bread_preserves": "Warm sourdough or seeded toast, salted butter and Seville bitter-orange marmalade; tea and coffee.",
       "vegetarian": ""
     },
     {
@@ -2240,7 +2240,7 @@
       "starter": "",
       "bowl": "",
       "main": "Scrambled eggs on sourdough with buttered spinach.",
-      "alongside": "Apple compote and house granola.",
+      "alongside": "Apple compote and toasted oat, almond and seed granola.",
       "dessert": "",
       "bread_preserves": "Brioche or seeded toast, salted butter and blackcurrant preserve; tea and coffee.",
       "vegetarian": ""
@@ -2271,7 +2271,7 @@
       "bowl": "",
       "main": "Cassoulet with duck, sausage and white beans.",
       "alongside": "Mustard-dressed winter leaves.",
-      "dessert": "Citrus salad and shortbread.",
+      "dessert": "Citrus salad and butter shortbread.",
       "bread_preserves": "",
       "vegetarian": "White-bean, mushroom and root-vegetable cassoulet with a herb crumb."
     },

@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@modelcontextprotocol/server": "^2.0.0",
+    "@neondatabase/serverless": "^1.2.1",
     "mcp-handler": "^2.1.0",
+    "sharp": "^0.35.5",
     "zod": "^4.2.0"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
-(() => {
+(async () => {
+ await window.ALBURY_ROOMS_READY;
   'use strict';
   const content = window.ALBURY_CONTENT;
   const sections = content.rooms.tour;
@@ -37,11 +38,11 @@
   }
   function features(r) {
     const {x,y,width:w,height:h}=r;
-    if(r.feature==='pool') return `<g class="map-feature"><rect x="${x+25}" y="${y+38}" width="${w-50}" height="${h-76}" rx="6"/>${[1,2,3,4].map(i=>`<path d="M${x+25+(w-50)*i/5} ${y+48}v${h-96}"/>`).join('')}</g>`;
+    if(r.feature==='pool') return `<g class="map-feature"><rect x="${x+25}" y="${y+38}" width="${w-50}" height="${h-76}" rx="6"/>${[1,2,3,4].map(i=>`<path d="M${x+35} ${y+38+(h-76)*i/5}h${w-70}"/>`).join('')}</g>`;
     if(r.id==='instrument-isolation-booth')return `<g class="map-feature"><circle cx="${x+70}" cy="${y+h/2}" r="45" stroke-dasharray="4 5"/>${[0,1,2,3].map(i=>{const a=i*Math.PI/2;return `<rect x="${x+70+Math.cos(a)*48-9}" y="${y+h/2+Math.sin(a)*48-9}" width="18" height="18" rx="3"/>`;}).join('')}</g>`;
     if(r.feature==='cinema') return `<g class="map-feature"><path d="M${x+30} ${y+22}h${w-60}" stroke-width="5"/>${[0,1,2].map(i=>`<path d="M${x+40} ${y+65+i*55}h${w-80}" stroke-width="10"/>`).join('')}<rect x="${x+30}" y="${y+h-55}" width="${w-60}" height="42" fill="none"/><text x="${x+w/2}" y="${y+h-37}" text-anchor="middle" font-size="10" stroke="none">PROJECTION BOOTH</text><text x="${x+w/2}" y="${y+h-22}" text-anchor="middle" font-size="9" stroke="none">70mm · 35mm · DIGITAL</text></g>`;
     if(r.feature==='console')return `<g class="map-feature"><path d="M${x+30} ${y+22}h${w-60}" stroke-width="5"/><rect x="${x+w*.2}" y="${y+h-40}" width="${w*.6}" height="22" rx="3"/></g>`;
-    if(r.feature==='games')return `<g class="map-feature"><rect x="${x+30}" y="${y+35}" width="150" height="75" rx="6"/><circle cx="${x+w-90}" cy="${y+72}" r="35"/></g>`;
+    if(r.feature==='games')return `<g class="map-feature"><rect x="${x+w*.3}" y="${y+h*.06}" width="${w*.44}" height="${h*.13}"/><rect x="${x+w*.64}" y="${y+h*.08}" width="${w*.08}" height="${h*.04}"/><rect x="${x+w*.05}" y="${y+h*.58}" width="${w*.23}" height="${h*.17}" rx="4"/><rect x="${x+w*.05}" y="${y+h*.88}" width="${w*.27}" height="${h*.05}"/><rect x="${x+w*.89}" y="${y+h*.2}" width="${w*.05}" height="${h*.67}"/>${[[.4,.31],[.55,.31],[.7,.31],[.44,.58],[.66,.58],[.44,.84],[.66,.84]].map(([tx,ty])=>`<circle cx="${x+w*tx}" cy="${y+h*ty}" r="${w*.022}"/>`).join('')}</g>`;
     return '';
   }
   function renderShape(r) {
@@ -49,7 +50,7 @@
     const canonical=roomFor(section.id,r.id);
     let label=canonical.name;
     if(r.width<180 || r.height<90) label=r.label.join(' ').toLowerCase().replace(/^./,c=>c.toUpperCase());
-    if(r.id==='live-tracking-room')label='Live room · Double height';
+    if(r.id==='live-tracking-room')label='Live room · East half double height';
     if(r.id==='vocal-booth')label='Voice booth · 3–4 people';
     if(r.id==='instrument-isolation-booth')label='String booth · Quartet in the round';
     const textWidth=r.id==='instrument-isolation-booth'?r.width-160:r.labelX ? 180 : r.width-24;

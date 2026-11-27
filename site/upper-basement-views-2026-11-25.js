@@ -1,0 +1,120 @@
+(() => {
+  const update = {
+    "sectionId": "upper-basement",
+    "views": [
+      {
+        "legacyPath": "images/albury/upper-basement/club-alex-2026-11-24/games-end.jpg",
+        "view": {
+          "path": "images/albury/upper-basement/club-alex-2026-11-25/games-end.jpg",
+          "title": "Bar & Games Room — Games End",
+          "description": "The west games end brings together a full-size 9 ft billiards table, a 16 ft shuffleboard table, Bally’s Creature from the Black Lagoon and Theatre of Magic pinball machines, and the restored 1956 Wurlitzer 2000 Centennial. The KAWS sculpture stands on its plinth beside the machines. Albury Acoustics adapted the jukebox to play through the room sound system.",
+          "legacySlugs": [
+            "games-end"
+          ]
+        },
+        "asset": {
+          "id": "images.albury.upper.basement.club.alex.games.end",
+          "path": "images/albury/upper-basement/club-alex-2026-11-25/games-end.jpg",
+          "format": "jpg"
+        }
+      },
+      {
+        "legacyPath": "images/albury/upper-basement/05-service-kitchen-pantry.webp",
+        "view": {
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/event-kitchen-from-service-corridor.jpg",
+          "title": "Event Kitchen & Pantry — From the Service Corridor",
+          "description": "The upper-basement event kitchen is a full working kitchen for large house events. Commercial combi ovens and the hot line run along one side of the stainless prep island, with a heated service pass opposite for staff collecting finished plates. The pantry opens off the working kitchen. Club Alex also has its own separate bar service kitchen.",
+          "legacySlugs": [
+            "05-service-kitchen-pantry"
+          ]
+        },
+        "asset": {
+          "id": "images.albury.upper.basement.05.service.kitchen.pantry",
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/event-kitchen-from-service-corridor.jpg",
+          "format": "jpg"
+        }
+      },
+      {
+        "legacyPath": "images/albury/upper-basement/new-views/05-service-kitchen-pantry.webp",
+        "view": {
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/event-kitchen-at-the-pass.jpg",
+          "title": "Event Kitchen & Pantry — At the Pass",
+          "description": "From the staff service corridor, the heated pass looks back into the event kitchen. Copper heat lamps hang above the stainless receiving ledge, where front-of-house staff collect finished plates. The prep island and hot line sit beyond.",
+          "legacySlugs": [
+            "05-service-kitchen-pantry-additional-view"
+          ]
+        },
+        "asset": {
+          "id": "images.albury.upper.basement.new.views.05.service.kitchen.pantry",
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/event-kitchen-at-the-pass.jpg",
+          "format": "jpg"
+        }
+      },
+      {
+        "legacyPath": "images/albury/upper-basement/18-dinner-service-below-stairs.webp",
+        "view": {
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/dinner-service-below-stairs.jpg",
+          "title": "Dinner Service Below Stairs",
+          "description": "A chef and kitchen assistant finish plates for dinner while a footman collects a course at the heated pass. The open working aisles connect the ovens, prep island and service corridor.",
+          "legacySlugs": [
+            "18-dinner-service-below-stairs"
+          ]
+        },
+        "asset": {
+          "id": "images.albury.upper.basement.18.dinner.service.below.stairs",
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/dinner-service-below-stairs.jpg",
+          "format": "jpg"
+        }
+      },
+      {
+        "legacyPath": "images/albury-culinary/dessert-service.webp",
+        "view": {
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/before-dessert.jpg",
+          "title": "Before dessert — House at Work",
+          "description": "Lemon tart and raspberries are plated at the event kitchen’s stainless prep island, ready for service.",
+          "legacySlugs": [
+            "dessert-service"
+          ]
+        },
+        "asset": {
+          "id": "images.albury.culinary.dessert.service",
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/before-dessert.jpg",
+          "format": "jpg"
+        }
+      },
+      {
+        "legacyPath": "images/albury/guide-expansion/event-kitchen-pantry-closer-perspective.webp",
+        "view": {
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/event-kitchen-oven-line.jpg",
+          "title": "Event Kitchen & Pantry — Oven Line",
+          "description": "The commercial combi ovens and the range sit under the continuous extraction canopy. The stainless prep island leaves a working aisle along the length of the hot line.",
+          "legacySlugs": [
+            "event-kitchen-pantry-closer-perspective"
+          ]
+        },
+        "asset": {
+          "id": "images.albury.guide.expansion.event.kitchen.pantry.closer.perspective",
+          "path": "images/albury/upper-basement/event-kitchen-2026-11-25/event-kitchen-oven-line.jpg",
+          "format": "jpg"
+        }
+      }
+    ],
+    "scene": {
+      "id": "before-dessert",
+      "image": "images/albury/upper-basement/event-kitchen-2026-11-25/before-dessert.jpg",
+      "description": "Lemon tart and raspberries are plated at the event kitchen’s stainless prep island, ready for service."
+    }
+  };
+  const content = window.ALBURY_CONTENT;
+  const section = content.rooms.tour.find(section => section.id === update.sectionId);
+  const roomViews = new Map(update.views.map(entry => [entry.legacyPath, entry.view]));
+  if (section) {
+    section.rooms = section.rooms.map(view => ({...view, ...roomViews.get(view.path)}));
+  }
+
+  const assets = new Map(update.views.map(entry => [entry.legacyPath, entry.asset]));
+  if (content.assets) content.assets.assets = content.assets.assets.map(asset => assets.get(asset.path) ?? asset);
+
+  const scene = content['house-at-work']?.scenes.find(scene => scene.id === update.scene.id);
+  if (scene) Object.assign(scene, update.scene);
+})();

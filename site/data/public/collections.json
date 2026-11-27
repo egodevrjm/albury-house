@@ -4,7 +4,7 @@
     {
       "id": "produce",
       "name": "Pantry — Opening Collection",
-      "short": "Rafael Bellocq · 33 opening preparations + seasonal repertoire",
+      "short": "Rafael Bellocq · 46 opening preparations + seasonal repertoire",
       "plan": "images/albury-produce/opening-range/01-breakfast-preserves.webp",
       "rooms": [
         {
@@ -95,14 +95,44 @@
         {
           "path": "images/albury-produce/opening-range/10-house-ice-creams.webp",
           "title": "House Ice Creams",
-          "description": "P29–P30 · Vanilla-bean and dark-chocolate ice creams in labelled freezer tubs. Shown open for the photograph; stored covered and frozen."
+          "description": "P29, P30, P38 · Vanilla-bean, dark-chocolate, and cherry and bourbon swirl ice creams in labelled freezer tubs. Hatfield Original is credited on the cherry and bourbon label. Shown open for the photograph; stored covered and frozen."
+        },
+        {
+          "path": "images/albury-produce/opening-range/11-house-sauces.webp",
+          "title": "House Sauces",
+          "description": "P34–P37 · Albury brown sauce, Espelette chilli sauce, salted caramel sauce and chocolate fudge sauce. The two savoury sauces are in practical sauce bottles like the ketchup; the two sweet sauces are in jars. All carry the charcoal and muted-gold pantry label with the architectural house mark and Rafael Bellocq's name."
+        },
+        {
+          "path": "images/albury-produce/opening-range/12-house-drinks.webp",
+          "title": "New House Cordials & Syrup",
+          "description": "P39–P42 · White peach and thyme, pink grapefruit and rosemary, and pear and green cardamom cordials, plus demerara syrup. Short clear Albury drinks bottles with gold caps and ivory/bottle-green front labels; Crispin specifies the drinks and Rafael’s kitchen makes them."
+        },
+        {
+          "path": "images/albury-produce/individual/p43.webp",
+          "title": "Sorrento lemon cordial",
+          "description": "P43 · Sorrento lemon juice and peel, with a clean, bright finish. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
+        },
+        {
+          "path": "images/albury-produce/individual/p44.webp",
+          "title": "Blood orange cordial",
+          "description": "P44 · Distinctive blood-orange fruit with a restrained bitter-peel finish. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
+        },
+        {
+          "path": "images/albury-produce/individual/p45.webp",
+          "title": "Lime cordial",
+          "description": "P45 · A straightforward lime cordial with fresh zest and a crisp finish. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
+        },
+        {
+          "path": "images/albury-produce/individual/p46.webp",
+          "title": "Sweet orange cordial",
+          "description": "P46 · Familiar sweet-orange fruit, balanced with gentle peel bitterness. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
         }
       ]
     },
     {
       "id": "baking",
       "name": "Bethan’s Baking",
-      "short": "Bread · Breakfast pastries · Afternoon baking",
+      "short": "Bread · Breakfast pastries · Biscuits & sweet treats",
       "plan": "images/albury-culinary/bethan-bread.webp",
       "rooms": [
         {
@@ -119,6 +149,41 @@
           "path": "images/albury-culinary/bethan-afternoon-baking.webp",
           "title": "Something for the afternoon",
           "description": "Bethan Pritchard · Lemon cake, madeleines and financiers for tea, coffee and something sweet between meals. Established baking repertoire under Rafael; selection and batches follow service demand."
+        },
+        {
+          "path": "images/albury-culinary/signature-bakes/butter-shortbread.webp",
+          "title": "Bethan’s butter shortbread",
+          "description": "The familiar buttery house shortbread; a dependable guest-lounge tin staple."
+        },
+        {
+          "path": "images/albury-culinary/signature-bakes/chocolate-sables.webp",
+          "title": "Dark-chocolate and sea-salt sablés",
+          "description": "Chocolate-rich, lightly salted biscuits for coffee and late evenings."
+        },
+        {
+          "path": "images/albury-culinary/signature-bakes/brown-butter-oat.webp",
+          "title": "Brown-butter oat biscuits",
+          "description": "Bethan’s crisp-edged oat biscuit with warm brown-butter depth; a rotating fresh bake."
+        },
+        {
+          "path": "images/albury-culinary/signature-bakes/black-cherry-thumbprints.webp",
+          "title": "Black-cherry thumbprint biscuits",
+          "description": "Small butter biscuits with P05 bourbon and black cherry confiture; Hatfield bourbon remains credited in the filling."
+        },
+        {
+          "path": "images/albury-culinary/signature-bakes/lemon-madeleines.webp",
+          "title": "Lemon madeleines",
+          "description": "Baked for tea and served fresh rather than left in the biscuit tin."
+        },
+        {
+          "path": "images/albury-culinary/signature-bakes/pistachio-orange-financiers.webp",
+          "title": "Pistachio and orange financiers",
+          "description": "Small almond-and-pistachio cakes for a fresh afternoon plate."
+        },
+        {
+          "path": "images/albury-culinary/signature-bakes/chocolate-brownies.webp",
+          "title": "Chocolate brownies",
+          "description": "A generous square for coffee, studio breaks or a late return."
         }
       ]
     },
@@ -427,6 +492,846 @@
         }
       ],
       "pathPart": "/housemark/"
+    },
+    {
+      "id": "art",
+      "name": "Art Collection",
+      "short": "Story-opening works and room placements",
+      "description": "Alex’s Albury works at the story opening. Studio Ashby hung the collection before the July 2025 handover and chose framed prints for staff and service areas. The novel’s registered collections have an approximate £35 million book value, mostly attributable to art. Ownership, provenance and valuations are fictional. The room renders illustrate the interiors and may show earlier artwork arrangements.",
+      "rooms": [
+        {
+          "id": "nara-sleepless-nights",
+          "title": "Sleepless Nights",
+          "artist": "Yoshitomo Nara",
+          "tier": "major",
+          "description": "Sleepless Nights — Yoshitomo Nara: a child's head, auburn hair, flat green eyes",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "entrance-reception-hall",
+            "roomName": "Entrance / Reception Hall",
+            "placement": "Above the olive velvet bench, to the left as the front door opens."
+          },
+          "provenance": "Private sale, 2017. He found it himself at fourteen and asked Catherine and Eleanor, who bought it for him through AW: one of the first pieces he owned",
+          "value": "£3,000,000–£6,000,000",
+          "fictional": true
+        },
+        {
+          "id": "verdier-brush-gesture",
+          "title": "Black Brush Gesture on Raw Canvas",
+          "artist": "Fabienne Verdier",
+          "tier": "major",
+          "description": "Single black brush gesture on raw cream canvas — Fabienne Verdier (2019)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "entrance-reception-hall",
+            "roomName": "Entrance / Reception Hall",
+            "placement": "Opposite the Nara, above the concrete console with the black scholar’s rock."
+          },
+          "provenance": "Private sale through her Paris gallery, 2023",
+          "value": "£120,000–£250,000",
+          "fictional": true
+        },
+        {
+          "id": "kiefer-monumental-painting",
+          "title": "Monumental Ochre and Grey Painting",
+          "artist": "Anselm Kiefer",
+          "tier": "major",
+          "description": "Monumental painting, about fourteen feet across: scraped ochre and grey ground, two black vertical forms, red scratched into the right-hand one — Anselm Kiefer (2000s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "new-main-stair-hall",
+            "roomName": "New Main Stair Hall",
+            "placement": "Fills the wall beside the first flight."
+          },
+          "provenance": "Private sale through gallery, Paris, 2022; in store until the stair could take it",
+          "value": "£1,500,000–£3,500,000",
+          "fictional": true
+        },
+        {
+          "id": "emin-you-were-always-coming-home",
+          "title": "You Were Always Coming Home",
+          "artist": "Tracey Emin",
+          "tier": "major",
+          "description": "Unique neon text work, You Were Always Coming Home — Tracey Emin (2024)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "new-main-stair-hall",
+            "roomName": "New Main Stair Hall",
+            "placement": "On the stair down to the basement, with its red glow visible from the main stair hall."
+          },
+          "provenance": "Direct commission through Sarah and Tracey's long friendship",
+          "value": "£150,000–£400,000",
+          "fictional": true
+        },
+        {
+          "id": "motherwell-blue-black-forms",
+          "title": "Blue-Black Ovoid Forms on Cream",
+          "artist": "Robert Motherwell",
+          "tier": "major",
+          "description": "Two great blue-black ovoid forms on cream, acrylic and charcoal on canvas — Robert Motherwell (1970s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "formal-drawing-room",
+            "roomName": "Formal Drawing Room",
+            "placement": "Over the marble fireplace."
+          },
+          "provenance": "Christie's New York, 2021",
+          "value": "£1,500,000–£3,000,000",
+          "fictional": true
+        },
+        {
+          "id": "lam-mask-faced-figures",
+          "title": "Interlocked Mask-Faced Figures",
+          "artist": "Wifredo Lam",
+          "tier": "major",
+          "description": "Tall sepia and umber canvas of interlocked mask-faced figures — Wifredo Lam (1960s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "formal-drawing-room",
+            "roomName": "Formal Drawing Room",
+            "placement": "On the Motherwell wall, between the fireplace and the windows."
+          },
+          "provenance": "Sotheby's Paris, 2023",
+          "value": "£700,000–£1,500,000",
+          "fictional": true
+        },
+        {
+          "id": "brown-oil-on-linen",
+          "title": "Green and Blue Oil on Linen",
+          "artist": "Cecily Brown",
+          "tier": "major",
+          "description": "Large oil on linen, a churn of deep green and blue with white line looping through it — Cecily Brown (2010s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "formal-drawing-room",
+            "roomName": "Formal Drawing Room",
+            "placement": "On the wall facing the fireplace."
+          },
+          "provenance": "Private sale through gallery",
+          "value": "£1,500,000–£3,500,000",
+          "fictional": true
+        },
+        {
+          "id": "soulages-black-and-white-painting",
+          "title": "Black and Off-White Painting",
+          "artist": "Pierre Soulages",
+          "tier": "major",
+          "description": "Black ground broken by broad off-white blocks, about six feet wide, in a black frame — Pierre Soulages (1970s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "dining-room",
+            "roomName": "Dining Room",
+            "placement": "Over the black marble fireplace."
+          },
+          "provenance": "Private dealer, Paris, 2022",
+          "value": "£1,500,000–£3,000,000",
+          "fictional": true
+        },
+        {
+          "id": "scully-red-and-black-abstract",
+          "title": "Red and Black Abstract",
+          "artist": "Sean Scully",
+          "tier": "major",
+          "description": "Red-and-black abstract — Sean Scully (2010s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "music-room",
+            "roomName": "Music Room",
+            "placement": "Beside the record shelves, facing the piano."
+          },
+          "provenance": "Private sale through gallery",
+          "value": "£250,000–£700,000",
+          "fictional": true
+        },
+        {
+          "id": "miro-strokes-on-cream",
+          "title": "Black, Orange and Red Strokes on Cream",
+          "artist": "Joan Miró",
+          "tier": "major",
+          "description": "Black strokes and flicks of orange and red on bare cream canvas — Joan Miró (1970s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "music-room",
+            "roomName": "Music Room",
+            "placement": "Over the fireplace."
+          },
+          "provenance": "Christie's London, 2024",
+          "value": "£1,500,000–£3,000,000",
+          "fictional": true
+        },
+        {
+          "id": "bowling-poured-painting",
+          "title": "Poured Painting in Pink, Orange and Green",
+          "artist": "Frank Bowling",
+          "tier": "major",
+          "description": "Very large poured painting, hot pink, orange, acid green and yellow running into each other — Frank Bowling (2010s)",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "garden-room",
+            "roomName": "Garden Room",
+            "placement": "On the long wall behind the olive sofa."
+          },
+          "provenance": "Bought through his London gallery, 2022",
+          "value": "£900,000–£2,000,000",
+          "fictional": true
+        },
+        {
+          "id": "hepworth-bronze",
+          "title": "Bronze Sculpture",
+          "artist": "Barbara Hepworth",
+          "tier": "major",
+          "description": "Medium-scale bronze — Barbara Hepworth (1960s)",
+          "location": {
+            "sectionId": "exterior",
+            "roomId": "garden-lawn",
+            "roomName": "Garden & Lawn",
+            "placement": "Fixed on a low York-stone plinth in the west garden border, 74 ft north of the garden elevation and about 6 ft in from the west wall."
+          },
+          "provenance": "Christie's London",
+          "value": "£500,000–£1,500,000",
+          "fictional": true
+        },
+        {
+          "id": "kaws-figure",
+          "title": "Full-Size Figure Sculpture",
+          "artist": "KAWS",
+          "tier": "major",
+          "description": "Full-size figure sculpture — KAWS (2010s)",
+          "location": {
+            "sectionId": "upper-basement",
+            "roomId": "bar-games-room",
+            "roomName": "Bar & Games Room",
+            "placement": "On its plinth at the games end, near the pinball machines."
+          },
+          "provenance": "Phillips London, 2020; bought at seventeen",
+          "value": "£400,000–£900,000",
+          "fictional": true
+        },
+        {
+          "id": "kaws-cinema-print",
+          "title": "Cream Forms on Navy",
+          "artist": "KAWS",
+          "tier": "major",
+          "description": "Large framed print, cream cartoon forms on navy — KAWS (2010s)",
+          "location": {
+            "sectionId": "upper-basement",
+            "roomId": "cinema-approach",
+            "roomName": "Cinema Approach",
+            "placement": "Above the navy bench by the cinema doors."
+          },
+          "provenance": "Bought with the sculpture",
+          "value": "£20,000–£60,000",
+          "fictional": true
+        },
+        {
+          "id": "adams-snowbound-mountains",
+          "title": "Snowbound Mountain Range",
+          "artist": "Ansel Adams",
+          "tier": "major",
+          "description": "Gelatin silver print of a snowbound mountain range — Ansel Adams (printed 1960s)",
+          "location": {
+            "sectionId": "music-nobile",
+            "roomId": "control-room",
+            "roomName": "Studio Albury — Control Room",
+            "placement": "Above the lamp at the end of the desk."
+          },
+          "provenance": "Phillips New York, photographs sale, 2023",
+          "value": "£30,000–£70,000",
+          "fictional": true
+        },
+        {
+          "id": "tapies-black-forms",
+          "title": "Black Forms on Cream",
+          "artist": "Antoni Tàpies",
+          "tier": "major",
+          "description": "Black ragged forms on a cream ground, paint and varnish on canvas, in a dark frame — Antoni Tàpies (1990s)",
+          "location": {
+            "sectionId": "second-floor",
+            "roomId": "principal-guest-bedroom",
+            "roomName": "Principal Guest Bedroom",
+            "placement": "Over the bed."
+          },
+          "provenance": "Christie's London, 2021",
+          "value": "£250,000–£500,000",
+          "fictional": true
+        },
+        {
+          "id": "kowalczyk-degree-show-oil",
+          "title": "Crowded Figures in Saturated Colour",
+          "artist": "Maja Kowalczyk",
+          "tier": "major",
+          "description": "Large-format oil on canvas, a crowded group of figures in saturated colour — Maja Kowalczyk, CSM graduate (2024)",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "friends-floor-landing",
+            "roomName": "Friends’ Floor Landing",
+            "placement": "Above the rust velvet bench."
+          },
+          "provenance": "Discovered at degree show",
+          "value": "£1,000–£4,000",
+          "fictional": true
+        },
+        {
+          "id": "dumas-portrait-head",
+          "title": "Pale Portrait Head",
+          "artist": "Marlene Dumas",
+          "tier": "major",
+          "description": "Large head of a woman, washed pale, the eyes dark and the mouth red — Marlene Dumas (2000s)",
+          "location": {
+            "sectionId": "top-floor",
+            "roomId": "alexs-bedroom",
+            "roomName": "Alex’s Bedroom",
+            "placement": "On the dark wall beside the bed."
+          },
+          "provenance": "Private sale through gallery, 2024",
+          "value": "£1,200,000–£2,500,000",
+          "fictional": true
+        },
+        {
+          "id": "doig-small-study",
+          "title": "Small Study",
+          "artist": "Peter Doig",
+          "tier": "major",
+          "description": "Small study/sketch — Peter Doig (early 2000s)",
+          "location": {
+            "sectionId": "top-floor",
+            "roomId": "alexs-bedroom",
+            "roomName": "Alex’s Bedroom",
+            "placement": "By the fireplace shelves."
+          },
+          "provenance": "Phillips London",
+          "value": "£100,000–£250,000",
+          "fictional": true
+        },
+        {
+          "id": "taaffe-ornamental-forms",
+          "title": "Mirrored Black Forms on Orange and Gold",
+          "artist": "Philip Taaffe",
+          "tier": "major",
+          "description": "Black ornamental forms mirrored across an orange and gold ground — Philip Taaffe (2000s)",
+          "location": {
+            "sectionId": "top-floor",
+            "roomId": "private-lounge",
+            "roomName": "Private Lounge",
+            "placement": "Above the Steinway upright."
+          },
+          "provenance": "Private sale through gallery, 2022",
+          "value": "£150,000–£400,000",
+          "fictional": true
+        },
+        {
+          "id": "martin-untitled-paintings-drawings",
+          "title": "Untitled (from Paintings Drawings)",
+          "artist": "Agnes Martin",
+          "tier": "major",
+          "description": "Untitled (from Paintings Drawings) — Agnes Martin (1991)",
+          "location": {
+            "sectionId": "top-floor",
+            "roomId": "study-writing-room",
+            "roomName": "Study & Writing Room",
+            "placement": "In the Study & Writing Room."
+          },
+          "provenance": "Private dealer",
+          "value": "£30,000–£60,000",
+          "fictional": true
+        },
+        {
+          "id": "twombly-untitled-rome-series",
+          "title": "Untitled (Rome series)",
+          "artist": "Cy Twombly",
+          "tier": "major",
+          "description": "Untitled (Rome series) — Cy Twombly (1970): faint line on a pale ground, in a white frame",
+          "location": {
+            "sectionId": "top-floor",
+            "roomId": "library-awards-secure-collection",
+            "roomName": "Library, Awards & Secure Collection",
+            "placement": "On the end wall behind the reading table."
+          },
+          "provenance": "Sotheby's London",
+          "value": "£200,000–£500,000",
+          "fictional": true
+        },
+        {
+          "id": "qing-scholars-rock",
+          "title": "Black Scholar’s Rock",
+          "artist": "Chinese, Qing dynasty",
+          "tier": "other",
+          "description": "Black scholar's rock on the concrete console",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "entrance-reception-hall",
+            "roomName": "Entrance / Reception Hall",
+            "placement": "On the concrete console."
+          },
+          "attribution": "Chinese, Qing dynasty; bought with the Verdier",
+          "fictional": true
+        },
+        {
+          "id": "ashby-bronze-bench",
+          "title": "Poured-Bronze Bench",
+          "artist": "Commissioned by Sophie Ashby with the build",
+          "tier": "other",
+          "description": "Poured-bronze bench, a low rounded form at the foot of the stair",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "new-main-stair-hall",
+            "roomName": "New Main Stair Hall",
+            "placement": "At the foot of the stair."
+          },
+          "attribution": "Commissioned by Sophie Ashby with the build",
+          "fictional": true
+        },
+        {
+          "id": "pugh-dark-oil",
+          "title": "Small Dark Oil on Panel",
+          "artist": "Rhiannon Pugh",
+          "tier": "other",
+          "description": "Small dark oil on panel between the windows",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "formal-drawing-room",
+            "roomName": "Formal Drawing Room",
+            "placement": "Between the windows."
+          },
+          "attribution": "Rhiannon Pugh (b. 1987, Carmarthen), 2021",
+          "fictional": true
+        },
+        {
+          "id": "wolak-stoneware-jar",
+          "title": "Wood-Fired Stoneware Jar",
+          "artist": "Tomasz Wolak",
+          "tier": "other",
+          "description": "Large wood-fired stoneware jar on a black plinth by the fireplace",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "formal-drawing-room",
+            "roomName": "Formal Drawing Room",
+            "placement": "On a black plinth by the fireplace."
+          },
+          "attribution": "Tomasz Wolak (b. 1968, Kraków), 2019",
+          "fictional": true
+        },
+        {
+          "id": "lewes-oil-two-figures",
+          "title": "Oil of Two Figures",
+          "artist": "Unattributed, British",
+          "tier": "other",
+          "description": "Small dark oil of two figures, between the garden doors",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "dining-room",
+            "roomName": "Dining Room",
+            "placement": "Between the garden doors."
+          },
+          "attribution": "Unattributed, British, 1950s; he bought it for £400 in a Lewes junk shop at sixteen",
+          "fictional": true
+        },
+        {
+          "id": "carvalho-hard-edge-abstract",
+          "title": "Hard-Edge Abstract",
+          "artist": "Ines Carvalho",
+          "tier": "other",
+          "description": "Hard-edge abstract in navy, black, rust and cream, above the lamp table",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "guest-salon-media-room",
+            "roomName": "Guest Salon / Media Room",
+            "placement": "Above the lamp table."
+          },
+          "attribution": "Ines Carvalho (b. 1979, Porto; works in London), 2022",
+          "fictional": true
+        },
+        {
+          "id": "french-figure-drawings",
+          "title": "Pair of Figure Drawings",
+          "artist": "Unattributed, French",
+          "tier": "other",
+          "description": "Pair of small framed figure drawings",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "guest-cloakroom-powder-rooms",
+            "roomName": "Guest Cloakroom & Powder Rooms",
+            "placement": ""
+          },
+          "attribution": "Unattributed, French, 1930s",
+          "fictional": true
+        },
+        {
+          "id": "english-landscape-oil",
+          "title": "Gilt-Framed Landscape",
+          "artist": "Unattributed, English, nineteenth century",
+          "tier": "other",
+          "description": "Small gilt-framed landscape oil",
+          "location": {
+            "sectionId": "raised-ground",
+            "roomId": "boot-room",
+            "roomName": "Boot Room",
+            "placement": ""
+          },
+          "attribution": "Unattributed, English, nineteenth century",
+          "fictional": true
+        },
+        {
+          "id": "club-vintage-concert-posters",
+          "title": "Vintage Concert Posters",
+          "artist": "Originals",
+          "tier": "other",
+          "description": "Two framed vintage concert posters to the left of the stage, one of them Bowie",
+          "location": {
+            "sectionId": "upper-basement",
+            "roomId": "bar-games-room",
+            "roomName": "Bar & Games Room",
+            "placement": "To the left of the stage."
+          },
+          "attribution": "Originals, 1970s",
+          "fictional": true
+        },
+        {
+          "id": "club-pianist-press-print",
+          "title": "Pianist at the Keys",
+          "artist": "Vintage press print",
+          "tier": "other",
+          "description": "Framed photograph of a pianist at the keys, above the Welmar",
+          "location": {
+            "sectionId": "upper-basement",
+            "roomId": "bar-games-room",
+            "roomName": "Bar & Games Room",
+            "placement": "Above the Welmar."
+          },
+          "attribution": "Vintage press print, 1950s",
+          "fictional": true
+        },
+        {
+          "id": "tollison-springhead",
+          "title": "Springhead",
+          "artist": "Wade Tollison",
+          "tier": "other",
+          "description": "Springhead, a large relief of sand-coloured strata cut by a blue channel, in limestone dust and pigment",
+          "location": {
+            "sectionId": "upper-basement",
+            "roomId": "wine-spirits-tasting-room",
+            "roomName": "Wine & Spirits Tasting Room",
+            "placement": ""
+          },
+          "attribution": "Wade Tollison (b. 1971, Berea, Kentucky). Commissioned by Sophie Ashby for the room, 2024",
+          "fictional": true
+        },
+        {
+          "id": "dragan-portrait-head",
+          "title": "Portrait Head with Red Across the Eyes",
+          "artist": "Mirela Dragan",
+          "tier": "other",
+          "description": "Portrait head of a young woman with a wash of red across the eyes, on a dark ground",
+          "location": {
+            "sectionId": "upper-basement",
+            "roomId": "wine-spirits-listening-lounge",
+            "roomName": "Wine & Spirits Listening Lounge",
+            "placement": ""
+          },
+          "attribution": "Mirela Dragan (b. 1994, Timișoara; Lysippos studio), 2024",
+          "fictional": true
+        },
+        {
+          "id": "brekke-red-abstract",
+          "title": "Faceted Red Abstract",
+          "artist": "Halvard Brekke",
+          "tier": "other",
+          "description": "Small faceted abstract in reds, black frame",
+          "location": {
+            "sectionId": "upper-basement",
+            "roomId": "powder-room",
+            "roomName": "Powder Room",
+            "placement": ""
+          },
+          "attribution": "Halvard Brekke (b. 1981, Bergen), 2020",
+          "fictional": true
+        },
+        {
+          "id": "gym-boxer-press-prints",
+          "title": "Boxers",
+          "artist": "Vintage press prints",
+          "tier": "other",
+          "description": "Three framed black-and-white photographs of boxers",
+          "location": {
+            "sectionId": "lower-basement",
+            "roomId": "professional-gym",
+            "roomName": "Professional Gym",
+            "placement": ""
+          },
+          "attribution": "Vintage press prints, 1940s–60s",
+          "fictional": true
+        },
+        {
+          "id": "treatment-room-landscape",
+          "title": "Wooded Landscape",
+          "artist": "Unattributed, English, nineteenth century",
+          "tier": "other",
+          "description": "Wooded landscape in oil, soft greens and browns",
+          "location": {
+            "sectionId": "lower-basement",
+            "roomId": "treatment-room",
+            "roomName": "Treatment Room",
+            "placement": ""
+          },
+          "attribution": "Unattributed, English, nineteenth century",
+          "fictional": true
+        },
+        {
+          "id": "battistel-gold-leaf-abstract",
+          "title": "Black Squares and a Pale Disc",
+          "artist": "Lorenzo Battistel",
+          "tier": "other",
+          "description": "Abstract of black squares and a pale disc on ochre and gold, oil and gold leaf on panel",
+          "location": {
+            "sectionId": "music-nobile",
+            "roomId": "main-acoustic-lobby",
+            "roomName": "Main Acoustic Lobby",
+            "placement": ""
+          },
+          "attribution": "Lorenzo Battistel (b. 1958, Treviso), 2016",
+          "fictional": true
+        },
+        {
+          "id": "rountree-desert-photographs",
+          "title": "American Desert at Dusk",
+          "artist": "Dale Rountree",
+          "tier": "other",
+          "description": "Four colour photographs of the American desert at dusk, two each side of the television",
+          "location": {
+            "sectionId": "music-nobile",
+            "roomId": "rec-room",
+            "roomName": "Rec Room",
+            "placement": "Two on either side of the television."
+          },
+          "attribution": "Dale Rountree (b. 1962, Lubbock, Texas), 2010s",
+          "fictional": true
+        },
+        {
+          "id": "saelens-pale-canvas",
+          "title": "Pale Canvas with a Standing Figure",
+          "artist": "Henrik Saelens",
+          "tier": "other",
+          "description": "Tall pale canvas with one small standing figure",
+          "location": {
+            "sectionId": "second-floor",
+            "roomId": "second-floor-landing",
+            "roomName": "Second-Floor Landing",
+            "placement": ""
+          },
+          "attribution": "Henrik Saelens (b. 1976, Ghent), 2018",
+          "fictional": true
+        },
+        {
+          "id": "qureshi-ochre-abstract",
+          "title": "Ochre and Umber Abstract",
+          "artist": "Mariam Qureshi",
+          "tier": "other",
+          "description": "Dense ochre and umber abstract in a dark frame, above the bench",
+          "location": {
+            "sectionId": "second-floor",
+            "roomId": "second-floor-landing",
+            "roomName": "Second-Floor Landing",
+            "placement": "Above the bench."
+          },
+          "attribution": "Mariam Qureshi (b. 1985, Lahore; works in London), 2021",
+          "fictional": true
+        },
+        {
+          "id": "montfort-pencil-wash",
+          "title": "Pencil and Wash Drawing",
+          "artist": "Clara Montfort",
+          "tier": "other",
+          "description": "Pale pencil and wash drawing between the windows",
+          "location": {
+            "sectionId": "second-floor",
+            "roomId": "guest-bedroom-two",
+            "roomName": "Guest Bedroom Two",
+            "placement": "Between the windows."
+          },
+          "attribution": "Clara Montfort (b. 1990, Lyon), 2022",
+          "fictional": true
+        },
+        {
+          "id": "bukhara-suzani",
+          "title": "Embroidered Bukhara Suzani",
+          "artist": "Bukhara, nineteenth century",
+          "tier": "other",
+          "description": "Embroidered suzani hung over the bed",
+          "location": {
+            "sectionId": "second-floor",
+            "roomId": "guest-bedroom-three",
+            "roomName": "Guest Bedroom Three",
+            "placement": "Over the bed."
+          },
+          "attribution": "Bukhara, nineteenth century",
+          "fictional": true
+        },
+        {
+          "id": "farquharson-teal-landscape",
+          "title": "Teal Landscape with a Rust Horizon",
+          "artist": "Iain Farquharson",
+          "tier": "other",
+          "description": "Abstract landscape in dark teal with a rust horizon, over the fireplace",
+          "location": {
+            "sectionId": "second-floor",
+            "roomId": "guest-bedroom-three",
+            "roomName": "Guest Bedroom Three",
+            "placement": "Over the fireplace."
+          },
+          "attribution": "Iain Farquharson (b. 1949, Aberdeen), 1990s",
+          "fictional": true
+        },
+        {
+          "id": "haddad-brown-oval",
+          "title": "Brown Oval on White",
+          "artist": "Noor Haddad",
+          "tier": "other",
+          "description": "Brown oval on white, work on paper",
+          "location": {
+            "sectionId": "second-floor",
+            "roomId": "landing-powder-room",
+            "roomName": "Landing Powder Room",
+            "placement": ""
+          },
+          "attribution": "Noor Haddad (b. 1992, Beirut; works in London), 2023",
+          "fictional": true
+        },
+        {
+          "id": "santangelo-naples-photograph",
+          "title": "Children Running in Naples",
+          "artist": "Luca Santangelo",
+          "tier": "other",
+          "description": "Large colour photograph of children in blue running up a Naples street",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "friends-floor-landing",
+            "roomName": "Friends’ Floor Landing",
+            "placement": ""
+          },
+          "attribution": "Luca Santangelo (b. 1988, Naples), 2019",
+          "fictional": true
+        },
+        {
+          "id": "rennie-two-field-abstract",
+          "title": "Two-Field Abstract and Red Panel",
+          "artist": "Callum Rennie",
+          "tier": "other",
+          "description": "Black and oxblood two-field abstract over the bed; a small red panel by the wardrobe",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "guest-room-four",
+            "roomName": "Guest Room Four",
+            "placement": "The abstract hangs over the bed and the small panel is by the wardrobe."
+          },
+          "attribution": "Callum Rennie (b. 1996, Dundee; Lysippos studio), 2024",
+          "fictional": true
+        },
+        {
+          "id": "arslan-crossed-bands",
+          "title": "Crossed Bands of Blue, White and Black",
+          "artist": "Zeynep Arslan",
+          "tier": "other",
+          "description": "Crossed bands of blue, white and black over the bed",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "guest-room-five",
+            "roomName": "Guest Room Five",
+            "placement": "Over the bed."
+          },
+          "attribution": "Zeynep Arslan (b. 1993, Izmir; RCA 2020), 2023",
+          "fictional": true
+        },
+        {
+          "id": "meaney-tufted-wool",
+          "title": "Olive Disc on Cream",
+          "artist": "Orla Meaney",
+          "tier": "other",
+          "description": "Tufted wool hanging, an olive disc on cream, filling the wall behind the bed",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "guest-room-six",
+            "roomName": "Guest Room Six",
+            "placement": "On the wall behind the bed."
+          },
+          "attribution": "Orla Meaney (b. 1990, Cork), 2022",
+          "fictional": true
+        },
+        {
+          "id": "prys-landscape-photographs",
+          "title": "Mist, Trees and Sea",
+          "artist": "Gwilym Prys",
+          "tier": "other",
+          "description": "Four black-and-white landscape photographs: mist, trees, sea",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "guest-room-seven",
+            "roomName": "Guest Room Seven",
+            "placement": ""
+          },
+          "attribution": "Gwilym Prys (b. 1984, Machynlleth), 2015–2020",
+          "fictional": true
+        },
+        {
+          "id": "nkosi-curved-abstracts",
+          "title": "Pair of Curved Abstracts",
+          "artist": "Thabo Nkosi",
+          "tier": "other",
+          "description": "Pair of yellow, black and cream curved abstracts",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "guest-room-eight",
+            "roomName": "Guest Room Eight",
+            "placement": ""
+          },
+          "attribution": "Thabo Nkosi (b. 1995, Johannesburg; Lysippos studio), 2024",
+          "fictional": true
+        },
+        {
+          "id": "montoya-primary-colour-painting",
+          "title": "Primary-Colour Painting",
+          "artist": "Rafaela Montoya",
+          "tier": "other",
+          "description": "Large painting in loud primaries, by the dining table",
+          "location": {
+            "sectionId": "third-floor",
+            "roomId": "friends-salon",
+            "roomName": "Friends’ Salon",
+            "placement": "By the dining table."
+          },
+          "attribution": "Rafaela Montoya (b. 1991, Medellín; Lysippos studio), 2023",
+          "fictional": true
+        },
+        {
+          "id": "ibarra-arcade-photographs",
+          "title": "Empty Arcades and Stairs",
+          "artist": "Tomás Ibarra",
+          "tier": "other",
+          "description": "Two black-and-white photographs of empty arcades and stairs",
+          "location": {
+            "sectionId": "top-floor",
+            "roomId": "private-vestibule",
+            "roomName": "Private Vestibule",
+            "placement": ""
+          },
+          "attribution": "Tomás Ibarra (b. 1970, Bilbao), 2000s",
+          "fictional": true
+        },
+        {
+          "id": "belhadj-charcoal-arcs",
+          "title": "Sweeping Charcoal Arcs",
+          "artist": "Nadia Belhadj",
+          "tier": "other",
+          "description": "Large charcoal drawing of sweeping black arcs, by the coat hooks",
+          "location": {
+            "sectionId": "top-floor",
+            "roomId": "private-vestibule",
+            "roomName": "Private Vestibule",
+            "placement": "By the coat hooks."
+          },
+          "attribution": "Nadia Belhadj (b. 1982, Marseille), 2021",
+          "fictional": true
+        }
+      ]
     }
   ]
 }

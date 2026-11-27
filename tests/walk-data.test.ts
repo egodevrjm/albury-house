@@ -23,7 +23,7 @@ test('walk maps cover every current room once and keep historical/proposal views
     assert.equal(new Set(all).size,all.length);
     current+=mapped.length;
   }
-  assert.equal(current,96);
+  assert.equal(current,97);
   assert.deepEqual(maps.find(m=>m.id==='exterior')!.references,[
     'existing-site-before-landscape-works','the-cedars-future-landscape-proposal'
   ]);

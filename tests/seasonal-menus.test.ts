@@ -8,7 +8,7 @@ test('All seasons and both cycles have three meals, with exact browser/MCP parit
  const context:any={URLSearchParams,location:{search:''}}; context.window=context;
  vm.createContext(context);
  vm.runInContext(fs.readFileSync('site/csv.js','utf8'),context);
- context.ALBURY_CONTENT={'special-menus':JSON.parse(fs.readFileSync('site/data/public/special-menus.json','utf8'))};
+ context.ALBURY_CONTENT={'special-menus':JSON.parse(fs.readFileSync('site/data/public/special-menus.json','utf8')),culinary:JSON.parse(fs.readFileSync('site/data/public/culinary.json','utf8'))};
  context.AlburyCSV.load=async()=>({text:fs.readFileSync('site/data/menus.csv','utf8'),source:'test'});
  vm.runInContext(fs.readFileSync('site/menu-rotation.js','utf8'),context);
  await context.AlburyMenus.ready;
@@ -39,4 +39,8 @@ test('All seasons and both cycles have three meals, with exact browser/MCP parit
  }
  assert.throws(()=>getMenuForDate('2025-12-25','unknown'));
  assert.equal(getMenuForDate('2025-12-25').specialMenu,null);
+ const opening=getMenuForDate('2025-08-11');
+ assert.equal(opening.meals.filter(meal=>meal.imageUrl).length,3);
+ assert.match(String(opening.meals[0].imageUrl),/breakfast-eggs\.webp$/);
+ assert.equal(getMenuForDate('2025-08-12').meals.filter(meal=>meal.imageUrl).length,3);
 });

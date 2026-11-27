@@ -1,11 +1,21 @@
-(() => {
- const floors=ALBURY_HOUSE_CATALOGUE.tour,groups=[];
+(async () => {
+ await window.ALBURY_ROOMS_READY;
+ const floors=window.ALBURY_CONTENT.rooms.tour,groups=[];
+ const roomArt=new Map();
+ for(const item of ALBURY_HOUSE_CATALOGUE.collections.find(collection=>collection.id==='art')?.rooms||[]){
+   if(!item.location)continue;
+   const key=item.location.sectionId+'/'+item.location.roomId;
+   const items=roomArt.get(key)||[];
+   items.push(item);
+   roomArt.set(key,items);
+ }
  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const slug=v=>v.path.split('/').pop().replace(/\.[^.]+$/,'')+(v.path.includes('/new-views/')?'-additional-view':'');
+ const slug=v=>v.viewSlug??v.path.split('/').pop().replace(/\.[^.]+$/,'')+(v.path.includes('/new-views/')?'-additional-view':'');
  floors.forEach(floor=>{const map=new Map();floor.rooms.forEach(view=>{if(!map.has(view.roomId))map.set(view.roomId,{id:view.roomId,name:view.roomName,floor,views:[]});map.get(view.roomId).views.push(view)});const rooms=[...map.values()];if(floor.id==='exterior'){const order=['street-arrival','front-elevation','duchess-of-bedford-walk-mews','existing-site-before-landscape-works','the-cedars-future-landscape-proposal'];rooms.sort((a,b)=>(order.includes(a.id)?order.indexOf(a.id):order.length)-(order.includes(b.id)?order.indexOf(b.id):order.length))}groups.push(...rooms)});
  const grid=document.querySelector('#room-grid'),search=document.querySelector('#room-search'),dialog=document.querySelector('#room-dialog'),planDialog=document.querySelector('#plan-dialog');
  let browseFloor='all',selected=null,viewIndex=0,visible=groups,gridKey='',lastGroup=null;
- const url=(g,v=g.views[0])=>'#/'+g.floor.id+'/'+g.id+'/'+slug(v);
+ const matchesSlug=(view,value)=>slug(view)===value||(view.legacySlugs||[]).includes(value);
+ const url=(g,v=g.views[0])=>'#/'+[g.floor.id,g.id,slug(v)].map(encodeURIComponent).join('/');
  function parts(){try{return decodeURIComponent(location.hash.replace(/^#\/?/,'')).split('/')}catch{return []}}
  function legacyRedirect(p){if(p[0]==='guide'){location.replace('ALBURY_HOUSE_GUIDE.html#'+(p[1]||'overview'));return true}if(p[0]==='collections'){location.replace('ALBURY_HOUSE_COLLECTIONS.html#'+p.slice(1).join('/'));return true}return false}
  const canonicalId=id=>floors.find(f=>f.id===id||(f.legacyIds||[]).includes(id))?.id||id;
@@ -21,13 +31,22 @@
  }
  function navigate(hash,replace=false){history[replace?'replaceState':'pushState'](null,'',hash);render()}
  function render(){const p=parts();if(legacyRedirect(p))return;p[0]=canonicalId(p[0]);selected=null;const f=floors.find(f=>f.id===p[0]);
- if(f&&p[1]){selected=groups.find(g=>g.floor===f&&g.id===p[1]);if(selected)viewIndex=Math.max(0,selected.views.findIndex(v=>slug(v)===p[2]));else{selected=groups.find(g=>g.floor===f&&g.views.some(v=>slug(v)===p[1]));if(selected)viewIndex=selected.views.findIndex(v=>slug(v)===p[1]);}}
+ if(f&&p[1]){selected=groups.find(g=>g.floor===f&&g.id===p[1]);if(selected)viewIndex=Math.max(0,selected.views.findIndex(v=>matchesSlug(v,p[2])));else{selected=groups.find(g=>g.floor===f&&g.views.some(v=>matchesSlug(v,p[1])));if(selected)viewIndex=selected.views.findIndex(v=>matchesSlug(v,p[1]));}}
  if(!selected){browseFloor=f?f.id:'all';if(dialog.open)dialog.close();document.title='Room tour — Albury';renderGrid();return}
  renderGrid();const g=selected,v=g.views[viewIndex];lastGroup=g;
  document.querySelector('#room-position').textContent=g.floor.name+(g.floor.level&&g.floor.name!==g.floor.level?' · '+g.floor.level:'')+' · '+g.views.length+(g.views.length===1?' view':' views');document.querySelector('#room-title').textContent=g.name;
- document.querySelector('#view-title').textContent=v.title;document.querySelector('#room-description').textContent=v.description;document.querySelector('#view-position').textContent=(viewIndex+1)+' / '+g.views.length;
+ document.querySelector('#view-title').textContent=v.title;document.querySelector('#room-description').textContent=v===g.views[0]?(v.roomDescription||v.description):v.description;document.querySelector('#view-position').textContent=(viewIndex+1)+' / '+g.views.length;
  const img=document.querySelector('#room-image');document.querySelector('#image-error').hidden=true;img.onload=()=>{document.querySelector('#image-error').hidden=true};img.onerror=()=>{document.querySelector('#image-error').hidden=false};img.src=v.path;img.alt=v.title+', '+g.floor.name+', Albury';document.querySelector('#room-image-link').href=v.path;document.querySelector('#room-download').href=v.path;
  document.querySelector('#view-previous').disabled=viewIndex===0;document.querySelector('#view-next').disabled=viewIndex===g.views.length-1;
+ const configurations=(g.views[0].configurations||[]).filter(c=>g.views.some(view=>view.path===c.path)),configurationPanel=document.querySelector('#room-configurations');
+ configurationPanel.hidden=!configurations.length;
+ const activeConfiguration=configurations.find(c=>c.id===v.configurationId);
+ document.querySelector('#configuration-options').innerHTML=configurations.map(c=>`<button type="button" data-configuration="${esc(c.id)}" aria-pressed="${c.id===v.configurationId}">${esc(c.name)}</button>`).join('');
+ document.querySelector('#configuration-description').textContent=activeConfiguration?.description||'';
+ document.querySelectorAll('[data-configuration]').forEach(button=>button.onclick=()=>{const config=configurations.find(c=>c.id===button.dataset.configuration),target=g.views.find(view=>view.path===config.path);if(target){navigate(url(g,target),true);document.querySelector(`[data-configuration="${config.id}"]`)?.focus({preventScroll:true})}});
+ const art=roomArt.get(g.floor.id+'/'+g.id)||[];
+ document.querySelector('#room-art').hidden=!art.length;
+ document.querySelector('#room-art-list').innerHTML=art.map(item=>`<li><a href="ALBURY_HOUSE_COLLECTIONS.html#art/${encodeURIComponent(item.id)}">${esc(item.title)}</a>${item.artist ? ' · '+esc(item.artist) : ''}${item.location.placement ? ' · '+esc(item.location.placement) : ''}</li>`).join('');
  const existing=document.querySelector('#room-views').dataset.room;
  if(existing!==g.floor.id+'/'+g.id){document.querySelector('.room-notes').open=false;document.querySelector('#room-views').innerHTML=g.views.map((v,i)=>`<button class="room-thumb" type="button" data-view="${i}" aria-label="View ${i+1}: ${esc(v.title)}"><img src="${esc(v.path)}" alt="" width="1536" height="1024" loading="lazy"><span>${esc(v.title.includes(' — ')?v.title.split(' — ').slice(1).join(' — '):v.title)}</span></button>`).join('');document.querySelector('#room-views').dataset.room=g.floor.id+'/'+g.id;document.querySelector('#room-views').scrollTop=0;document.querySelector('#room-views').scrollLeft=0;}
  document.querySelectorAll('[data-view]').forEach(b=>{b.setAttribute('aria-pressed',String(+b.dataset.view===viewIndex));b.onclick=()=>navigate(url(g,g.views[+b.dataset.view]),true)});

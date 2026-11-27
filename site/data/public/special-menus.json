@@ -17,7 +17,7 @@
         "alongside": "Roast potatoes, parsnips, carrots, Brussels sprouts and braised red cabbage; vegetarian portions cooked separately.",
         "dessert": "Christmas pudding with brandy butter or vanilla custard; clementines and mince pies with coffee.",
         "vegetarian": "Mushroom, chestnut and lentil Wellington with vegetable gravy, vegetarian stuffing and the same separately cooked vegetables. Vegetarian-suet Christmas pudding.",
-        "with_drinks": "Gougères, olives and spiced nuts; still/sparkling water and blackcurrant cordial, with wine when wanted.",
+        "with_drinks": "Gougères, olives and spiced nuts; still/sparkling water and blackcurrant and bay cordial, with wine when wanted.",
         "bowl": "",
         "bread_preserves": ""
       }
@@ -75,9 +75,9 @@
         "starter": "Pea and mint soup with crème fraîche.",
         "main": "Slow-roast lamb shoulder with rosemary jus.",
         "alongside": "Roast potatoes, buttered carrots, peas and spring cabbage.",
-        "dessert": "Rhubarb and almond tart with vanilla ice cream; small chocolate truffles with coffee.",
+        "dessert": "Rhubarb and almond tart with vanilla-bean ice cream; small chocolate truffles with coffee.",
         "vegetarian": "Mushroom, leek and lentil pie with rosemary vegetable gravy and separately cooked vegetables.",
-        "with_drinks": "Radishes, olives and cheese sablés; water, elderflower-and-lemon cordial and wine if wanted.",
+        "with_drinks": "Radishes, olives and Parmesan and black-pepper sablés; water, elderflower and lemon cordial and wine if wanted.",
         "bowl": "",
         "bread_preserves": ""
       }
@@ -95,9 +95,9 @@
         "starter": "Tomatoes, basil and burrata; tomato, white-bean and herb salad as the dairy-free alternative.",
         "main": "Lemon-and-thyme roast chicken with tarragon sauce, served on sharing platters.",
         "alongside": "New potatoes, grilled courgettes, green beans and rosemary focaccia.",
-        "dessert": "Lemon tart, raspberries and vanilla ice cream.",
+        "dessert": "Lemon tart, raspberries and vanilla-bean ice cream.",
         "vegetarian": "Roast aubergine with white beans, tomatoes and herbs; the same potatoes, vegetables and bread.",
-        "with_drinks": "Tomato tartlets, crab toast and mushroom arancini; water, Cream Soda and chilled house cordials.",
+        "with_drinks": "Tomato tartlets, crab toast and mushroom arancini; water, a choice of stocked soft drinks and chilled house cordials.",
         "bowl": "",
         "bread_preserves": ""
       }
@@ -115,7 +115,7 @@
         "starter": "Roast beetroot with goat’s cheese, walnuts and herb dressing.",
         "main": "Roast chicken with a rich tarragon sauce.",
         "alongside": "Potato gratin and seasonal vegetables: spring greens, summer beans, autumn carrots or winter cabbage.",
-        "dessert": "A chocolate celebration cake with vanilla ice cream; the inscription is chosen for the occasion.",
+        "dessert": "A chocolate celebration cake with vanilla-bean ice cream; the inscription is chosen for the occasion.",
         "vegetarian": "Mushroom and lentil pithivier with tarragon vegetable sauce; vegetarian goat’s cheese in the starter.",
         "with_drinks": "Gougères and olives; still/sparkling water, house cordial and wine when wanted.",
         "bowl": "",

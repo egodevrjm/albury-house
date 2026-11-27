@@ -3,9 +3,9 @@
   "visibility": "mcp-only",
   "asOf": "2025-08-11",
   "summary": {
-    "openingItems": 33,
+    "openingItems": 46,
     "seasonalRecipes": 2,
-    "imageGroups": 15
+    "imageGroups": 21
   },
   "openingItems": [
     {
@@ -16,7 +16,7 @@
       "uses": "Breakfast, toast and selected gifts",
       "labelFamily": "pantry",
       "imageGroupId": "01-breakfast-preserves",
-      "image": "images/albury-produce/opening-range/01-breakfast-preserves.webp"
+      "image": "images/albury-produce/individual/p01.webp"
     },
     {
       "id": "P02",
@@ -26,7 +26,7 @@
       "uses": "Breakfast, yoghurt and pastry",
       "labelFamily": "pantry",
       "imageGroupId": "01-breakfast-preserves",
-      "image": "images/albury-produce/opening-range/01-breakfast-preserves.webp"
+      "image": "images/albury-produce/individual/p02.webp"
     },
     {
       "id": "P03",
@@ -36,7 +36,7 @@
       "uses": "Breakfast, cakes and afternoon tea",
       "labelFamily": "pantry",
       "imageGroupId": "01-breakfast-preserves",
-      "image": "images/albury-produce/opening-range/01-breakfast-preserves.webp"
+      "image": "images/albury-produce/individual/p03.webp"
     },
     {
       "id": "P04",
@@ -46,7 +46,7 @@
       "uses": "Breakfast and pastry glazing",
       "labelFamily": "pantry",
       "imageGroupId": "02-summer-fruit",
-      "image": "images/albury-produce/opening-range/02-summer-fruit.webp"
+      "image": "images/albury-produce/individual/p04.webp"
     },
     {
       "id": "P05",
@@ -56,7 +56,7 @@
       "uses": "Cheese, breakfast and gifts; Hatfield bourbon remains credited as an ingredient",
       "labelFamily": "pantry",
       "imageGroupId": "02-summer-fruit",
-      "image": "images/albury-produce/opening-range/02-summer-fruit.webp"
+      "image": "images/albury-produce/individual/p05.webp"
     },
     {
       "id": "P06",
@@ -66,7 +66,7 @@
       "uses": "Toast, yoghurt and cake filling",
       "labelFamily": "pantry",
       "imageGroupId": "02-summer-fruit",
-      "image": "images/albury-produce/opening-range/02-summer-fruit.webp"
+      "image": "images/albury-produce/individual/p06.webp"
     },
     {
       "id": "P07",
@@ -76,7 +76,7 @@
       "uses": "Breakfast, tartlets and sponge cakes",
       "labelFamily": "pantry",
       "imageGroupId": "03-curd-and-compote",
-      "image": "images/albury-produce/opening-range/03-curd-and-compote.webp"
+      "image": "images/albury-produce/individual/p07.webp"
     },
     {
       "id": "P08",
@@ -86,7 +86,7 @@
       "uses": "Yoghurt, pancakes and desserts",
       "labelFamily": "pantry",
       "imageGroupId": "03-curd-and-compote",
-      "image": "images/albury-produce/opening-range/03-curd-and-compote.webp"
+      "image": "images/albury-produce/individual/p08.webp"
     },
     {
       "id": "P09",
@@ -96,7 +96,7 @@
       "uses": "Table condiment, sandwiches and dressings",
       "labelFamily": "pantry",
       "imageGroupId": "04-table-condiments",
-      "image": "images/albury-produce/opening-range/04-table-condiments.webp"
+      "image": "images/albury-produce/individual/p09.webp"
     },
     {
       "id": "P10",
@@ -106,7 +106,7 @@
       "uses": "Breakfast, burgers, croquettes and late suppers",
       "labelFamily": "pantry",
       "imageGroupId": "04-table-condiments",
-      "image": "images/albury-produce/opening-range/04-table-condiments.webp"
+      "image": "images/albury-produce/individual/p10.webp"
     },
     {
       "id": "P11",
@@ -116,7 +116,7 @@
       "uses": "Sandwiches, charcuterie and drinks snacks",
       "labelFamily": "pantry",
       "imageGroupId": "05-pickles",
-      "image": "images/albury-produce/opening-range/05-pickles.webp"
+      "image": "images/albury-produce/individual/p11.webp"
     },
     {
       "id": "P12",
@@ -126,7 +126,7 @@
       "uses": "Cheese, cold meats and salads",
       "labelFamily": "pantry",
       "imageGroupId": "05-pickles",
-      "image": "images/albury-produce/opening-range/05-pickles.webp"
+      "image": "images/albury-produce/individual/p12.webp"
     },
     {
       "id": "P13",
@@ -136,7 +136,7 @@
       "uses": "Cheese, pâté, sandwiches and savoury pastry",
       "labelFamily": "pantry",
       "imageGroupId": "06-savoury-pantry",
-      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+      "image": "images/albury-produce/individual/p13.webp"
     },
     {
       "id": "P14",
@@ -146,7 +146,7 @@
       "uses": "Eggs, grilled fish, vegetables and tartines",
       "labelFamily": "pantry",
       "imageGroupId": "06-savoury-pantry",
-      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+      "image": "images/albury-produce/individual/p14.webp"
     },
     {
       "id": "P15",
@@ -156,7 +156,7 @@
       "uses": "Tacos, grilled meats, salads and sandwiches",
       "labelFamily": "pantry",
       "imageGroupId": "05-pickles",
-      "image": "images/albury-produce/opening-range/05-pickles.webp"
+      "image": "images/albury-produce/individual/p15.webp"
     },
     {
       "id": "P16",
@@ -166,7 +166,7 @@
       "uses": "Lunch salads, smoked fish and cold tables",
       "labelFamily": "pantry",
       "imageGroupId": "06-savoury-pantry",
-      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+      "image": "images/albury-produce/individual/p16.webp"
     },
     {
       "id": "P17",
@@ -176,7 +176,7 @@
       "uses": "Sandwiches, cheese and picnic food",
       "labelFamily": "pantry",
       "imageGroupId": "06-savoury-pantry",
-      "image": "images/albury-produce/opening-range/06-savoury-pantry.webp"
+      "image": "images/albury-produce/individual/p17.webp"
     },
     {
       "id": "P18",
@@ -186,7 +186,7 @@
       "uses": "Breakfast and guest-pantry breakfast provision",
       "labelFamily": "pantry",
       "imageGroupId": "07-breakfast-and-savoury-baking",
-      "image": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp"
+      "image": "images/albury-produce/individual/p18.webp"
     },
     {
       "id": "P19",
@@ -196,7 +196,7 @@
       "uses": "Cheese, pâté and savoury snacks",
       "labelFamily": "pantry",
       "imageGroupId": "07-breakfast-and-savoury-baking",
-      "image": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp"
+      "image": "images/albury-produce/individual/p19.webp"
     },
     {
       "id": "P20",
@@ -206,7 +206,7 @@
       "uses": "Drinks, studio breaks and small gifts",
       "labelFamily": "pantry",
       "imageGroupId": "07-breakfast-and-savoury-baking",
-      "image": "images/albury-produce/opening-range/07-breakfast-and-savoury-baking.webp"
+      "image": "images/albury-produce/individual/p20.webp"
     },
     {
       "id": "P21",
@@ -216,7 +216,7 @@
       "uses": "Coffee, bedrooms on arrival and take-home food",
       "labelFamily": "pantry",
       "imageGroupId": "08-biscuits-and-bar-snacks",
-      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+      "image": "images/albury-produce/individual/p21.webp"
     },
     {
       "id": "P22",
@@ -226,7 +226,7 @@
       "uses": "Coffee, late evenings and take-home food",
       "labelFamily": "pantry",
       "imageGroupId": "08-biscuits-and-bar-snacks",
-      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+      "image": "images/albury-produce/individual/p22.webp"
     },
     {
       "id": "P23",
@@ -236,7 +236,7 @@
       "uses": "Bar and rec-room service",
       "labelFamily": "pantry",
       "imageGroupId": "08-biscuits-and-bar-snacks",
-      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+      "image": "images/albury-produce/individual/p23.webp"
     },
     {
       "id": "P24",
@@ -246,7 +246,7 @@
       "uses": "Bar and informal gatherings",
       "labelFamily": "pantry",
       "imageGroupId": "08-biscuits-and-bar-snacks",
-      "image": "images/albury-produce/opening-range/08-biscuits-and-bar-snacks.webp"
+      "image": "images/albury-produce/individual/p24.webp"
     },
     {
       "id": "P25",
@@ -256,7 +256,7 @@
       "uses": "Bar garnish; separate from black-cherry confiture",
       "labelFamily": "pantry",
       "imageGroupId": "09-bar-preparations",
-      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+      "image": "images/albury-produce/individual/p25.webp"
     },
     {
       "id": "P26",
@@ -266,7 +266,10 @@
       "uses": "Mixed drinks, milkshakes and desserts",
       "labelFamily": "albury-drinks",
       "imageGroupId": "09-bar-preparations",
-      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+      "image": "images/albury-produce/individual/p26.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the vanilla syrup. The kitchen makes it to his specifications. Rafael Bellocq retains production methods, food safety and batch release."
     },
     {
       "id": "P27",
@@ -276,7 +279,10 @@
       "uses": "Alcohol-free drinks and cocktail components",
       "labelFamily": "albury-drinks",
       "imageGroupId": "09-bar-preparations",
-      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+      "image": "images/albury-produce/individual/p27.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     {
       "id": "P28",
@@ -286,7 +292,10 @@
       "uses": "Alcohol-free drinks and cocktail components",
       "labelFamily": "albury-drinks",
       "imageGroupId": "09-bar-preparations",
-      "image": "images/albury-produce/opening-range/09-bar-preparations.webp"
+      "image": "images/albury-produce/individual/p28.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     {
       "id": "P29",
@@ -296,7 +305,7 @@
       "uses": "Affogato, fruit, tarts and late-night bowls",
       "labelFamily": "pantry",
       "imageGroupId": "10-house-ice-creams",
-      "image": "images/albury-produce/opening-range/10-house-ice-creams.webp"
+      "image": "images/albury-produce/individual/p29.webp"
     },
     {
       "id": "P30",
@@ -306,7 +315,7 @@
       "uses": "Desserts and informal late-night service",
       "labelFamily": "pantry",
       "imageGroupId": "10-house-ice-creams",
-      "image": "images/albury-produce/opening-range/10-house-ice-creams.webp"
+      "image": "images/albury-produce/individual/p30.webp"
     },
     {
       "id": "P31",
@@ -316,7 +325,10 @@
       "uses": "Floral, light afternoon drinks and sparkling-water service",
       "labelFamily": "albury-drinks",
       "imageGroupId": "cordial-elderflower",
-      "image": "images/albury-culinary/cordial-elderflower.webp"
+      "image": "images/albury-produce/individual/p31.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     {
       "id": "P32",
@@ -326,7 +338,23 @@
       "uses": "Fragrant berry drinks, terrace lunches and alcohol-free aperitifs",
       "labelFamily": "albury-drinks",
       "imageGroupId": "cordial-raspberry",
-      "image": "images/albury-culinary/cordial-raspberry.webp"
+      "image": "images/albury-produce/individual/p32.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit.",
+      "giftBatch": {
+        "provisionId": "gift-cordial-pair",
+        "scope": "Dedicated sealed gift batches only",
+        "unopened": "Store in a cool, dry place; production and packaging process validated for ambient storage while unopened.",
+        "afterOpening": "Refrigerate after opening.",
+        "workingStock": "Working service bottles and fresh chilled batches retain their existing refrigeration requirements.",
+        "details": "Batch/date, use-by and storage instructions accompany bottles; no exact preservation method, capacity or shelf life is newly assigned.",
+        "deliveryMethods": [
+          "courier",
+          "post"
+        ],
+        "recipeIdentity": "Existing recipe and P number retained; no new flavour or pantry item."
+      }
     },
     {
       "id": "P33",
@@ -336,7 +364,177 @@
       "uses": "Deeper fruit drinks alongside food and bar service",
       "labelFamily": "albury-drinks",
       "imageGroupId": "cordial-blackcurrant",
-      "image": "images/albury-culinary/cordial-blackcurrant.webp"
+      "image": "images/albury-produce/individual/p33.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P34",
+      "name": "Albury brown sauce",
+      "category": "house sauces",
+      "openingAvailability": "Standing recipe",
+      "uses": "Bacon and sausage sandwiches, cooked breakfasts, pies and late suppers; the partner to the ketchup",
+      "labelFamily": "pantry",
+      "imageGroupId": "11-house-sauces",
+      "image": "images/albury-produce/individual/p34.webp"
+    },
+    {
+      "id": "P35",
+      "name": "Espelette chilli sauce",
+      "category": "house sauces",
+      "openingAvailability": "Standing recipe",
+      "uses": "Eggs, sandwiches, grilled meat and anything that wants heat",
+      "labelFamily": "pantry",
+      "imageGroupId": "11-house-sauces",
+      "image": "images/albury-produce/individual/p35.webp"
+    },
+    {
+      "id": "P36",
+      "name": "Salted caramel sauce",
+      "category": "house sauces",
+      "openingAvailability": "Regular batches to demand",
+      "uses": "Pancakes, yoghurt, ice cream and late-night spoons",
+      "labelFamily": "pantry",
+      "imageGroupId": "11-house-sauces",
+      "image": "images/albury-produce/individual/p36.webp"
+    },
+    {
+      "id": "P37",
+      "name": "Chocolate fudge sauce",
+      "category": "house sauces",
+      "openingAvailability": "Regular batches to demand",
+      "uses": "Ice cream, pancakes, fruit and late evenings",
+      "labelFamily": "pantry",
+      "imageGroupId": "11-house-sauces",
+      "image": "images/albury-produce/individual/p37.webp"
+    },
+    {
+      "id": "P38",
+      "name": "Cherry and bourbon swirl ice cream",
+      "category": "ice cream",
+      "openingAvailability": "Regular frozen production",
+      "uses": "Vanilla-bean base swirled with P05 bourbon and black cherry confiture, Hatfield bourbon credited; late-night bowls and desserts",
+      "labelFamily": "pantry",
+      "imageGroupId": "10-house-ice-creams",
+      "image": "images/albury-produce/individual/p38.webp"
+    },
+    {
+      "id": "P39",
+      "name": "White peach and thyme cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation",
+      "uses": "Chilled still or sparkling water, summer aperitifs and cocktails",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "12-house-drinks",
+      "image": "images/albury-produce/individual/p39.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P40",
+      "name": "Pink grapefruit and rosemary cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation",
+      "uses": "Chilled sparkling water, aperitifs and cocktails",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "12-house-drinks",
+      "image": "images/albury-produce/individual/p40.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit.",
+      "giftBatch": {
+        "provisionId": "gift-cordial-pair",
+        "scope": "Dedicated sealed gift batches only",
+        "unopened": "Store in a cool, dry place; production and packaging process validated for ambient storage while unopened.",
+        "afterOpening": "Refrigerate after opening.",
+        "workingStock": "Working service bottles and fresh chilled batches retain their existing refrigeration requirements.",
+        "details": "Batch/date, use-by and storage instructions accompany bottles; no exact preservation method, capacity or shelf life is newly assigned.",
+        "deliveryMethods": [
+          "courier",
+          "post"
+        ],
+        "recipeIdentity": "Existing recipe and P number retained; no new flavour or pantry item."
+      }
+    },
+    {
+      "id": "P41",
+      "name": "Pear and green cardamom cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation",
+      "uses": "Still or sparkling water, tea-based zero-proof drinks and cocktails",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "12-house-drinks",
+      "image": "images/albury-produce/individual/p41.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P42",
+      "name": "Demerara syrup",
+      "category": "syrup",
+      "openingAvailability": "Regular bar preparation",
+      "uses": "Old Fashioneds, iced coffee and alcohol-free bar drinks",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "12-house-drinks",
+      "image": "images/albury-produce/individual/p42.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the demerara syrup and its intended sweetness and bar-service character. The kitchen makes it to his specifications. Rafael Bellocq retains production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make batches. Crispin checks the finished syrup against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P43",
+      "name": "Sorrento lemon cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation; approved seasonal fruit supply or retained reserve",
+      "uses": "Lemon soda, long gin or vodka drinks and alcohol-free aperitifs",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-sorrento-lemon",
+      "image": "images/albury-produce/individual/p43.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P44",
+      "name": "Blood orange cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation from approved seasonal blood-orange supply or retained reserve; current batch confirmed by the team",
+      "uses": "Blood-orange soda, spritz-style drinks and citrus aperitifs",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-blood-orange",
+      "image": "images/albury-produce/individual/p44.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P45",
+      "name": "Lime cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation; approved seasonal fruit supply or retained reserve",
+      "uses": "Lime and soda, Gimlet-style cocktails and long drinks",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-lime",
+      "image": "images/albury-produce/individual/p45.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P46",
+      "name": "Sweet orange cordial",
+      "category": "cordial",
+      "openingAvailability": "Regular chilled preparation; approved seasonal fruit supply or retained reserve",
+      "uses": "Orange soda, breakfast or terrace drinks and alcohol-free aperitifs",
+      "labelFamily": "albury-drinks",
+      "imageGroupId": "cordial-sweet-orange",
+      "image": "images/albury-produce/individual/p46.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     }
   ],
   "seasonalRecipes": [
@@ -348,7 +546,10 @@
       "openingAvailability": "Seasonal repertoire; not standing opening stock on 11 August 2025.",
       "labelFamily": "albury-drinks",
       "imageGroupId": "cordial-rhubarb",
-      "image": "images/albury-culinary/cordial-rhubarb.webp"
+      "image": "images/albury-produce/individual/seasonal-rhubarb-orange-cordial.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     {
       "id": "seasonal-blackberry-apple-cordial",
@@ -358,7 +559,10 @@
       "openingAvailability": "Seasonal repertoire; not standing opening stock on 11 August 2025.",
       "labelFamily": "albury-drinks",
       "imageGroupId": "cordial-blackberry",
-      "image": "images/albury-culinary/cordial-blackberry.webp"
+      "image": "images/albury-produce/individual/seasonal-blackberry-apple-cordial.webp",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     }
   ]
 }

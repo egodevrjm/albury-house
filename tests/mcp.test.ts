@@ -23,8 +23,8 @@ async function post(body: unknown) {
 test("MCP advertises the complete read-only Albury toolset", async () => {
   const response = await post({ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} });
   const names = response.result.tools.map((tool: { name: string }) => tool.name);
-  assert.equal(names.length, 30);
-  for (const name of ["list_special_menus", "get_special_menu", "get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area", "get_forecast"]) assert.ok(names.includes(name), name);
+  assert.equal(names.length, 33);
+  for (const name of ["get_reference_content", "list_special_menus", "get_special_menu", "get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "list_signature_bakes", "list_cordial_serves", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area", "get_forecast"]) assert.ok(names.includes(name), name);
 });
 
 test("MCP counts seven floors and exposes the garden separately", async () => {
@@ -40,13 +40,69 @@ test("MCP counts seven floors and exposes the garden separately", async () => {
   assert.equal(outside.structuredContent.level, null);
 });
 
+test("MCP keeps preserving and rota responsibilities with the right staff", async () => {
+  const member = async (person: string) => {
+    const response = await post({ jsonrpc: "2.0", id: person, method: "tools/call", params: { name: "get_household_member", arguments: { person } } });
+    assert.equal(response.result.isError, undefined);
+    return response.result.structuredContent;
+  };
+  const [tolly, bethan, jamie, kit, louise] = await Promise.all([
+    member("Tolly Venn"), member("Bethan Pritchard"), member("Jamie Fletcher"), member("Kit Peverell"), member("Louise Baines"),
+  ]);
+  assert.match(tolly.remit, /works with Bethan on preserve production/);
+  assert.doesNotMatch(tolly.remit, /preserving alongside.*Jamie/);
+  assert.match(bethan.remit, /including preserves/);
+  assert.match(bethan.remit, /works with Tolly/);
+  assert.match(jamie.remit, /planned everyday cooking cover/);
+  assert.match(kit.remit, /daily staff deployment/);
+  assert.match(kit.remit, /Louise maintains the rota/);
+  assert.match(louise.remit, /^Rotas, purchase orders/);
+});
+
 test("MCP menu and pantry calls return structured canonical records", async () => {
   const menu = await post({ jsonrpc: "2.0", id: 2, method: "tools/call", params: { name: "get_menu_for_date", arguments: { date: "2025-08-18" } } });
   assert.equal(menu.result.structuredContent.cycle, 2);
   assert.equal(menu.result.structuredContent.meals.length, 3);
 
   const pantry = await post({ jsonrpc: "2.0", id: 3, method: "tools/call", params: { name: "list_pantry_items", arguments: {} } });
-  assert.equal(pantry.result.structuredContent.total, 33);
+  assert.equal(pantry.result.structuredContent.total, 46);
+});
+
+test("MCP discovers sendable gifts and preserves the distinction between gift batches and chilled service cordials", async () => {
+  const call = async (name: string, args = {}) => {
+    const response = await post({ jsonrpc: "2.0", id: name, method: "tools/call", params: { name, arguments: args } });
+    assert.equal(response.result.isError, undefined);
+    return response.result.structuredContent;
+  };
+  const gifts = await call("get_guest_provision", { kind: "sent gifts" });
+  assert.equal(gifts.provisions.length, 6);
+  const cordial = gifts.provisions.find((item: { id: string }) => item.id === "gift-cordial-pair");
+  assert.equal(cordial.tumblerCount, 2);
+  assert.equal(cordial.coasterCount, 2);
+  assert.equal(cordial.alcoholFree, true);
+  assert.match(cordial.storage.unopened, /validated for ambient storage/);
+  assert.match(cordial.storage.afterOpening, /Refrigerate/);
+  assert.match(cordial.storage.workingStock, /refrigeration requirements/);
+  assert.match(cordial.imageUrl, /albury-cordial-pair-gift.webp\?v=2$/);
+  const breakfast = gifts.provisions.find((item: { id: string }) => item.id === "gift-breakfast-parcel");
+  assert.equal(breakfast.mugCount, 1);
+  assert.equal(breakfast.preserveJarCount, 2);
+  const sweet = gifts.provisions.find((item: { id: string }) => item.id === "gift-sweet-hamper");
+  assert.equal(sweet.jarCount, 4);
+  assert.deepEqual(sweet.picturedPantryIds, ["P01", "P02", "P04", "P05"]);
+  const pantry = await call("get_pantry_item", { item: "P32" });
+  assert.match(pantry.openingAvailability, /chilled/);
+  assert.equal(pantry.giftBatch.provisionId, cordial.id);
+  assert.match(pantry.giftBatch.unopened, /ambient/);
+  const discovery = await call("search_albury", { query: "highball", domains: ["hospitality"] });
+  assert.ok(discovery.results.some((item: { id: string }) => item.id === cordial.id));
+  const broad = await call("search_albury", { query: "Breakfast Parcel" });
+  assert.ok(broad.results.some((item: { id: string }) => item.id === breakfast.id));
+  const photos = await call("search_images", { query: "highball", kind: "hospitality" });
+  assert.ok(photos.items.some((item: { id: string }) => item.id === "images.albury.gifts.cordial-pair"));
+  const photo = await call("get_image", { image: "images.albury.gifts.cordial-pair", include_data: false });
+  assert.equal(photo.kind, "hospitality");
+  assert.equal(photo.url, cordial.imageUrl);
 });
 
 test("MCP returns exact authored weather and handles invalid or uncovered dates", async () => {

@@ -16,8 +16,6 @@
     "house-at-work"
   ],
   "services": [
-    "kitchen",
-    "weekly-menus",
     "london-calendar",
     "weather"
   ],
@@ -25,5 +23,45 @@
     "kitchen-library": "kitchen",
     "limestone-springs": "kitchen",
     "hatfield": "kitchen"
-  }
+  },
+  "food": [
+    {
+      "label": "Today’s menu",
+      "href": "ALBURY_CULINARY_MENU.html#today"
+    },
+    {
+      "label": "Weekly & occasion menus",
+      "href": "ALBURY_WEEKLY_MENUS.html"
+    },
+    {
+      "label": "Between meals & baking",
+      "href": "ALBURY_CULINARY_MENU.html#available"
+    },
+    {
+      "label": "Drinks & the bar",
+      "href": "ALBURY_CULINARY_MENU.html#drinks"
+    },
+    {
+      "label": "The house pantry",
+      "href": "ALBURY_PANTRY_ITEMS.html"
+    }
+  ],
+  "stay": [
+    {
+      "label": "Guest welcome",
+      "href": "ALBURY_CULINARY_MENU.html#hospitality"
+    },
+    {
+      "label": "Gifts from Albury",
+      "href": "ALBURY_GIFTS.html"
+    },
+    {
+      "label": "The household team",
+      "href": "ALBURY_HOUSE_GUIDE.html#staff"
+    },
+    {
+      "label": "Arrange something",
+      "href": "ALBURY_CULINARY_MENU.html#service"
+    }
+  ]
 }

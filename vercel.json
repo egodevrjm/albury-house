@@ -4,6 +4,18 @@
     {
       "source": "/mcp",
       "destination": "/api/mcp"
+    },
+    {
+      "source": "/mcp-write",
+      "destination": "/api/mcp-write"
+    },
+    {
+      "source": "/room-editor",
+      "destination": "/ALBURY_ROOM_EDITOR.html"
+    },
+    {
+      "source": "/images/albury/managed/:id([a-f0-9]{64}).webp",
+      "destination": "/api/room-media?id=:id"
     }
   ],
   "headers": [

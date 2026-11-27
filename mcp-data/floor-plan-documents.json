@@ -1,0 +1,37 @@
+[
+  {
+    "id": "albury-house-floor-plans",
+    "title": "Albury House floor plans",
+    "path": "/documents/albury-house-floor-plans.pdf",
+    "status": "concept-study",
+    "notes": "Whole-house concept study with the Club Alex sheet and bar area figures updated. Use the current floor and room records for other layouts and dimensions where they differ."
+  },
+  {
+    "id": "club-alex-default-floor-plan",
+    "title": "Club Alex layout and stage study",
+    "path": "/documents/club-alex-default-floor-plan.pdf",
+    "status": "layout-study",
+    "floorId": "upper-basement",
+    "roomIds": [
+      "bar-games-room",
+      "backstage-store-preparation-room"
+    ],
+    "notes": "Shows the 100 × 45 ft clubroom with six stools and an oxblood banquette, the 36 × 16 ft stage, the floor-level Welmar and the guest and service routes. Includes band, quartet and DJ setups."
+  },
+  {
+    "id": "studio-albury-floor-plan",
+    "title": "Studio Albury floor plan",
+    "path": "/images/albury/floor-plans/studio-albury-music-nobile-2026-11-24.svg",
+    "mimeType": "image/svg+xml",
+    "status": "layout-study",
+    "floorId": "music-nobile",
+    "roomIds": [
+      "live-tracking-room",
+      "control-room",
+      "vocal-booth",
+      "instrument-isolation-booth",
+      "technical-instrument-storage"
+    ],
+    "notes": "First-floor schematic showing the 100 × 30 ft live room, the voice and quartet booths, the separately isolated control room, independent acoustic glazing, and the garden-side position of the portable concert stage. The rec room is separate from Studio Albury."
+  }
+]

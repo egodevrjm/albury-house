@@ -100,17 +100,30 @@
         "P28"
       ],
       "path": "images/albury-produce/opening-range/09-bar-preparations.webp",
-      "description": "P25–P28 · Cocktail cherries, vanilla syrup, ginger and lemongrass cordial, and passion-fruit and lime cordial. House bar preparations; both cordials are kept refrigerated."
+      "description": "P25–P28 · Cocktail cherries, vanilla syrup, ginger and lemongrass cordial, and passion-fruit and lime cordial. House bar preparations; both cordials are kept refrigerated. The cordials are specified by Crispin Vale and made by Rafael’s kitchen to his specifications."
     },
     {
       "id": "10-house-ice-creams",
       "title": "House Ice Creams",
       "ids": [
         "P29",
-        "P30"
+        "P30",
+        "P38"
       ],
       "path": "images/albury-produce/opening-range/10-house-ice-creams.webp",
-      "description": "P29–P30 · Vanilla-bean and dark-chocolate ice creams in labelled freezer tubs. Shown open for the photograph; stored covered and frozen."
+      "description": "P29, P30, P38 · Vanilla-bean, dark-chocolate, and cherry and bourbon swirl ice creams in labelled freezer tubs. Hatfield Original is credited on the cherry and bourbon label. Shown open for the photograph; stored covered and frozen."
+    },
+    {
+      "id": "11-house-sauces",
+      "title": "House Sauces",
+      "ids": [
+        "P34",
+        "P35",
+        "P36",
+        "P37"
+      ],
+      "path": "images/albury-produce/opening-range/11-house-sauces.webp",
+      "description": "P34–P37 · Albury brown sauce, Espelette chilli sauce, salted caramel sauce and chocolate fudge sauce. The two savoury sauces are in practical sauce bottles like the ketchup; the two sweet sauces are in jars. All carry the charcoal and muted-gold pantry label with the architectural house mark and Rafael Bellocq's name."
     },
     {
       "id": "cordial-elderflower",
@@ -119,7 +132,7 @@
         "P31"
       ],
       "path": "images/albury-culinary/cordial-elderflower.webp",
-      "description": "P31 · Core cordial; kept chilled."
+      "description": "P31 · Core cordial; kept chilled. The cordials are specified by Crispin Vale and made by Rafael’s kitchen to his specifications."
     },
     {
       "id": "cordial-raspberry",
@@ -128,7 +141,7 @@
         "P32"
       ],
       "path": "images/albury-culinary/cordial-raspberry.webp",
-      "description": "P32 · Core cordial; kept chilled."
+      "description": "P32 · Core cordial; kept chilled. The cordials are specified by Crispin Vale and made by Rafael’s kitchen to his specifications."
     },
     {
       "id": "cordial-blackcurrant",
@@ -137,21 +150,69 @@
         "P33"
       ],
       "path": "images/albury-culinary/cordial-blackcurrant.webp",
-      "description": "P33 · Core cordial; kept chilled."
+      "description": "P33 · Core cordial; kept chilled. The cordials are specified by Crispin Vale and made by Rafael’s kitchen to his specifications."
     },
     {
       "id": "cordial-rhubarb",
       "title": "Rhubarb & Orange Cordial",
       "ids": [],
       "path": "images/albury-culinary/cordial-rhubarb.webp",
-      "description": "Spring seasonal cordial; recipe and packaging reference."
+      "description": "Spring seasonal cordial; recipe and packaging reference. The cordials are specified by Crispin Vale and made by Rafael’s kitchen to his specifications."
     },
     {
       "id": "cordial-blackberry",
       "title": "Blackberry & Apple Cordial",
       "ids": [],
       "path": "images/albury-culinary/cordial-blackberry.webp",
-      "description": "Autumn seasonal cordial; recipe and packaging reference."
+      "description": "Autumn seasonal cordial; recipe and packaging reference. The cordials are specified by Crispin Vale and made by Rafael’s kitchen to his specifications."
+    },
+    {
+      "id": "12-house-drinks",
+      "title": "New House Cordials & Syrup",
+      "ids": [
+        "P39",
+        "P40",
+        "P41",
+        "P42"
+      ],
+      "path": "images/albury-produce/opening-range/12-house-drinks.webp",
+      "description": "P39–P42 · White peach and thyme, pink grapefruit and rosemary, and pear and green cardamom cordials, plus demerara syrup. Short clear Albury drinks bottles with gold caps and ivory/bottle-green front labels; Crispin specifies the drinks and Rafael’s kitchen makes them."
+    },
+    {
+      "id": "cordial-sorrento-lemon",
+      "title": "Sorrento lemon cordial",
+      "ids": [
+        "P43"
+      ],
+      "path": "images/albury-produce/individual/p43.webp",
+      "description": "P43 · Sorrento lemon juice and peel, with a clean, bright finish. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
+    },
+    {
+      "id": "cordial-blood-orange",
+      "title": "Blood orange cordial",
+      "ids": [
+        "P44"
+      ],
+      "path": "images/albury-produce/individual/p44.webp",
+      "description": "P44 · Distinctive blood-orange fruit with a restrained bitter-peel finish. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
+    },
+    {
+      "id": "cordial-lime",
+      "title": "Lime cordial",
+      "ids": [
+        "P45"
+      ],
+      "path": "images/albury-produce/individual/p45.webp",
+      "description": "P45 · A straightforward lime cordial with fresh zest and a crisp finish. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
+    },
+    {
+      "id": "cordial-sweet-orange",
+      "title": "Sweet orange cordial",
+      "ids": [
+        "P46"
+      ],
+      "path": "images/albury-produce/individual/p46.webp",
+      "description": "P46 · Familiar sweet-orange fruit, balanced with gentle peel bitterness. Core citrus cordial, specified by Crispin and made by Rafael’s kitchen. Kept chilled; current batch confirmed for service."
     }
   ]
 }

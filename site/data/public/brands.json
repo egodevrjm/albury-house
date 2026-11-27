@@ -5,12 +5,13 @@
       "id": "limestone-springs",
       "name": "Limestone Springs",
       "locationLine": "Frankfort, Kentucky · Water, sodas & mixers",
-      "intro": "The water on the table, the bottles in the welcome basket and a cold Cream Soda from the fridge: a little of Kentucky, wherever the day takes you.",
+      "intro": "Familiar waters, sodas and mixers with Kentucky roots and an everyday place in shops around the world.",
       "storyTitle": "From Frankfort to the table",
       "story": [
         "Limestone Springs was founded in Frankfort, Kentucky, in 2002. Its full beverage range launched in 2015, building a business in waters, sodas and mixers around Kentucky limestone-filtered water.",
-        "Part of Hatfield Group within Walker Holdings, it has a life well beyond the family’s own venues. Its bottles travel through hotels, restaurants, cocktail bars, shops and airports in more than thirty countries.",
-        "At Albury, still and sparkling water sit alongside properly brewed Cream Soda, Alex’s favourite soft drink. The producer’s blue labels remain part of the table."
+        "Part of Hatfield Group within Walker Holdings, Limestone Springs is an established global brand sold in more than ninety countries. Selected waters, mixers and sodas are routinely found in supermarkets, convenience stores, independent neighbourhood shops, hotels, restaurants, cocktail bars and airports.",
+        "At Albury, house still and sparkling water, Soda/Club Soda, mixers and bottled soft drinks are Limestone Springs. The producer’s own labels remain part of table and bar service. The available range supports the occasion and the actual order.",
+        "Kentucky-source still and sparkling water is bottled at source. Mixers and sodas also use audited regional manufacturing to Limestone specifications, with actual production origin stated on pack. Properly brewed Cream Soda retains its brewing process."
       ],
       "externalUrl": "https://limestone-springs.vercel.app/",
       "externalLabel": "Explore Limestone Springs ↗",
@@ -29,11 +30,11 @@
         {
           "name": "Cream Soda",
           "image": "images/albury-culinary/producers/limestone-cream-soda.webp",
-          "description": "Properly brewed and best enjoyed cold. A regular Albury choice in its own right."
+          "description": "Properly brewed and best enjoyed cold, in its own producer packaging."
         }
       ],
       "moreTitle": "Beyond these three",
-      "more": "The wider range includes tonics, ginger beer and ginger ale, root beer, cola, lemon and blood-orange sodas. Browse the producer site for the range, or ask the team what is chilled at Albury.",
+      "more": "The full Limestone Springs house range covers Soda/Club Soda; Premium, Light, Elderflower and Aromatic tonics; Ginger Beer and Ginger Ale; Cola, Lemon, Blood Orange, Root Beer, Cream Soda and Bitter Lemon, plus Tonic Syrup. The current chilled selection is confirmed by the team.",
       "related": {
         "href": "ALBURY_HATFIELD.html",
         "label": "Meet Hatfield →"
@@ -43,12 +44,12 @@
       "id": "hatfield",
       "name": "Hatfield",
       "locationLine": "Bardstown, Kentucky · Since 1952",
-      "intro": "Kentucky bourbon with a long family history, and hospitality that carries it beyond the distillery.",
+      "intro": "Kentucky heritage behind globally familiar spirits and wines, with a growing international network of restaurants, hotels and listening clubs.",
       "storyTitle": "It starts in Bardstown",
       "story": [
         "James Hatfield founded the distillery in Bardstown, Kentucky, in 1952. Today, master distiller Carolyn Hatfield-Moore oversees the whiskey’s production, quality and maturation.",
-        "Hatfield Group belongs to Walker Holdings, with heritage protections preserving the Hatfield name and production standards. The wider group brings together spirits, wine and places to stay, eat and hear music, including Hatfield Inns, Still House and The Stave.",
-        "At Albury, Hatfield Original also finds its way into the kitchen’s bourbon–black cherry confiture. Single Barrel is Alex’s usual Hatfield pour."
+        "Hatfield Group belongs to Walker Holdings, with heritage protections preserving the Hatfield name and production standards. Everyday spirits and regional wines reach ordinary shops alongside premium and allocated releases. The hospitality network has 306 operating venues: 240 Bar & Grills, 52 Inns, 12 Stave clubs and two Still Houses, with further signed projects kept separate from the open count.",
+        "At Albury, Hatfield’s full commercial spirits and wine families are within the house selection alongside bottles from other producers. Original, Small Batch, Rye, Wheated Bourbon, Bottled in Bond, Single Barrel, longer-aged and allocated bourbon expressions, Hatfield gin, and estate, premium and regional wines can be drawn on; Crispin or Harjit confirms actual cellar stock. The private Alex family barrel is not a bar listing. Hatfield Original also goes into the kitchen’s bourbon–black cherry confiture."
       ],
       "externalUrl": "https://hatfield-group.vercel.app/",
       "externalLabel": "Explore Hatfield Group ↗",
@@ -62,11 +63,11 @@
         {
           "name": "Hatfield Single Barrel",
           "image": "images/albury-culinary/producers/hatfield-single-barrel.webp",
-          "description": "Eight-year bourbon · 94 proof (47% ABV). Bottled for individual barrel character; Alex’s usual Hatfield choice."
+          "description": "Eight-year bourbon · 94 proof (47% ABV). Bottled for individual barrel character; a premium step up within the established range."
         }
       ],
       "moreTitle": "A wider family",
-      "more": "Small Batch, Rye, Wheated Bourbon and Bottled in Bond sit alongside longer-aged and allocated expressions. Limestone Springs belongs to the same group, bringing Kentucky water, sodas and mixers to tables around the world.",
+      "more": "These two pictured bourbons are only examples. Albury’s wider Hatfield range includes Small Batch, Rye, Wheated Bourbon, Bottled in Bond, longer-aged and allocated expressions, Scottish gin, Napa and Chianti Classico estates, premium wines and everyday regional labels. Other producers are served alongside them. Limestone Springs supplies the house water, sodas and mixers.",
       "related": {
         "href": "ALBURY_LIMESTONE_SPRINGS.html",
         "label": "Meet Limestone Springs →"

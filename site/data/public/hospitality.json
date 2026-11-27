@@ -13,7 +13,8 @@
       "Working towels and room linen",
       "Room robe unless a fresh example is expressly gifted",
       "Tableware and room equipment"
-    ]
+    ],
+    "sentGifts": "Personal courier/post gifts may be sent independently of a visit; recipient keeps fresh gift objects and packaging. No dispatch or retail launch is implied."
   },
   "collections": [
     {
@@ -50,6 +51,281 @@
       "path": "images/albury-house-items/travel/43-arrival-welcome-hamper-full-colour.webp",
       "whitePath": "images/albury-house-items/travel/43-arrival-welcome-hamper-white-led.webp",
       "description": "Overnight welcome: Limestone Springs still and sparkling water in their original blue packaging; shortbread, chocolate sablés, rosemary almonds and seasonal fruit, with a complete guest stationery pack alongside. Food, drinks and stationery are for the guest; the lined wicker basket stays with the room."
+    },
+    {
+      "category": "sent-gifts",
+      "aliases": [
+        "sent gifts",
+        "courier gifts",
+        "postal gifts",
+        "personal gifts"
+      ],
+      "ownership": "The recipient keeps all presentation containers, objects and contents.",
+      "deliveryMethods": [
+        "courier",
+        "post"
+      ],
+      "status": "Available household gift format at the Wednesday 13 August 2025 opening; no recipient, dispatch or public retail offer established.",
+      "selection": "Alex chooses the recipient, selection and message; actual contents follow preferences, dietary needs and approved stock.",
+      "staff": {
+        "oversight": "Ottilie Marchant",
+        "coordination": "Crispin Vale and the existing service team",
+        "food": "Rafael Bellocq and Bethan Pritchard"
+      },
+      "dispatch": "Protective outer shipping carton, fitted compartments and cushioning as appropriate. Confirm address, route and travel time; provide contents, batch/date, storage and allergen information. No universal shelf life or automatic international postal suitability is assigned.",
+      "referenceFile": "ALBURY_SENT_GIFTS.md",
+      "page": "ALBURY_GIFTS.html",
+      "id": "gift-sweet-hamper",
+      "title": "Four-Jar Sweet Hamper",
+      "path": "images/albury-gifts/albury-four-jar-sweet-hamper.webp",
+      "description": "Exactly four select sweet jars in a compact natural-wicker hamper, with bottle-green linen, oxblood binding, brown leather straps and a gold house mark inside the lid. An ivory FROM ALBURY card carries Alex’s message when established.",
+      "jarCount": 4,
+      "picturedPantryIds": [
+        "P01",
+        "P02",
+        "P04",
+        "P05"
+      ],
+      "picturedContents": [
+        "Seville marmalade",
+        "Strawberry and vanilla confiture",
+        "Apricot and vanilla confiture",
+        "Bourbon and black cherry confiture — Hatfield Original credited"
+      ],
+      "stockNote": "Pictured selection is a default, not a year-round stock guarantee; P01 uses approved retained Seville stock when available.",
+      "labelRules": "Charcoal-and-gold food labels and Rafael Bellocq chef credit retained."
+    },
+    {
+      "category": "sent-gifts",
+      "aliases": [
+        "sent gifts",
+        "courier gifts",
+        "postal gifts",
+        "personal gifts"
+      ],
+      "ownership": "The recipient keeps all presentation containers, objects and contents.",
+      "deliveryMethods": [
+        "courier",
+        "post"
+      ],
+      "status": "Available household gift format at the Wednesday 13 August 2025 opening; no recipient, dispatch or public retail offer established.",
+      "selection": "Alex chooses the recipient, selection and message; actual contents follow preferences, dietary needs and approved stock.",
+      "staff": {
+        "oversight": "Ottilie Marchant",
+        "coordination": "Crispin Vale and the existing service team",
+        "food": "Rafael Bellocq and Bethan Pritchard"
+      },
+      "dispatch": "Protective outer shipping carton, fitted compartments and cushioning as appropriate. Confirm address, route and travel time; provide contents, batch/date, storage and allergen information. No universal shelf life or automatic international postal suitability is assigned.",
+      "referenceFile": "ALBURY_SENT_GIFTS.md",
+      "page": "ALBURY_GIFTS.html",
+      "id": "gift-savoury-hamper",
+      "title": "Four-Jar Savoury Hamper",
+      "path": "images/albury-gifts/albury-four-jar-savoury-hamper.webp",
+      "description": "Exactly four select savoury jars in a compact natural-wicker hamper, with bottle-green linen, oxblood binding, brown leather straps and a gold house mark inside the lid. Fitted protective glass compartments and an ivory FROM ALBURY card.",
+      "jarCount": 4,
+      "picturedPantryIds": [
+        "P09",
+        "P11",
+        "P12",
+        "P13"
+      ],
+      "picturedContents": [
+        "Moutarde de la maison",
+        "Cornichons and tarragon",
+        "Shallots in herb vinegar",
+        "Confit d’oignons"
+      ],
+      "labelRules": "Charcoal-and-gold food labels and Rafael Bellocq chef credit retained."
+    },
+    {
+      "category": "sent-gifts",
+      "aliases": [
+        "sent gifts",
+        "courier gifts",
+        "postal gifts",
+        "personal gifts"
+      ],
+      "ownership": "The recipient keeps all presentation containers, objects and contents.",
+      "deliveryMethods": [
+        "courier",
+        "post"
+      ],
+      "status": "Available household gift format at the Wednesday 13 August 2025 opening; no recipient, dispatch or public retail offer established.",
+      "selection": "Alex chooses the recipient, selection and message; actual contents follow preferences, dietary needs and approved stock.",
+      "staff": {
+        "oversight": "Ottilie Marchant",
+        "coordination": "Crispin Vale and the existing service team",
+        "food": "Rafael Bellocq and Bethan Pritchard"
+      },
+      "dispatch": "Protective outer shipping carton, fitted compartments and cushioning as appropriate. Confirm address, route and travel time; provide contents, batch/date, storage and allergen information. No universal shelf life or automatic international postal suitability is assigned.",
+      "referenceFile": "ALBURY_SENT_GIFTS.md",
+      "page": "ALBURY_GIFTS.html",
+      "id": "gift-biscuit-tin",
+      "title": "Bethan’s Biscuit Tin",
+      "path": "images/albury-gifts/albury-bethan-biscuit-tin.webp",
+      "description": "Fresh shallow rectangular metal tin in satin bottle green, with a fine gold border and architectural house mark on the removable ALBURY / BETHAN’S BISCUITS lid. Parchment-lined single layer of Bethan’s selected biscuits, separate from the shared guest-lounge tin.",
+      "layerCount": 1,
+      "picturedBiscuitCount": 16,
+      "picturedPantryIds": [
+        "P21",
+        "P22",
+        "P05"
+      ],
+      "picturedContents": [
+        "Four butter shortbread biscuits (P21)",
+        "Four dark-chocolate sea-salt sablés (P22)",
+        "Four brown-butter oat biscuits",
+        "Four black-cherry thumbprints using P05, with Hatfield Original credited"
+      ],
+      "assortmentNote": "Sixteen is the illustrated packing example, not a compulsory count. Oat biscuits and thumbprints acquire no new P numbers. Madeleines, financiers and brownies remain fresh plated provision."
+    },
+    {
+      "category": "sent-gifts",
+      "aliases": [
+        "sent gifts",
+        "courier gifts",
+        "postal gifts",
+        "personal gifts"
+      ],
+      "ownership": "The recipient keeps all presentation containers, objects and contents.",
+      "deliveryMethods": [
+        "courier",
+        "post"
+      ],
+      "status": "Available household gift format at the Wednesday 13 August 2025 opening; no recipient, dispatch or public retail offer established.",
+      "selection": "Alex chooses the recipient, selection and message; actual contents follow preferences, dietary needs and approved stock.",
+      "staff": {
+        "oversight": "Ottilie Marchant",
+        "coordination": "Crispin Vale and the existing service team",
+        "food": "Rafael Bellocq and Bethan Pritchard"
+      },
+      "dispatch": "Protective outer shipping carton, fitted compartments and cushioning as appropriate. Confirm address, route and travel time; provide contents, batch/date, storage and allergen information. No universal shelf life or automatic international postal suitability is assigned.",
+      "referenceFile": "ALBURY_SENT_GIFTS.md",
+      "page": "ALBURY_GIFTS.html",
+      "id": "gift-quiet-evening",
+      "title": "The Quiet Evening — House Candle and Biscuit Tin",
+      "path": "images/albury-gifts/albury-house-candle-and-biscuit-tin.webp",
+      "description": "Bottle-green rigid presentation box with one fresh boxed house-scent candle in its established matte charcoal ceramic vessel and one Bethan’s single-layer biscuit tin. No new fragrance is assigned.",
+      "contents": [
+        {
+          "item": "Fresh boxed house-scent candle",
+          "quantity": 1
+        },
+        {
+          "provisionId": "gift-biscuit-tin",
+          "item": "Bethan’s biscuit tin",
+          "quantity": 1
+        }
+      ],
+      "packing": "The candle is enclosed in its own carton and the food tin closed in a separate compartment to protect food from scent. Open boxes in the picture display contents rather than show a parcel ready to post."
+    },
+    {
+      "category": "sent-gifts",
+      "aliases": [
+        "sent gifts",
+        "courier gifts",
+        "postal gifts",
+        "personal gifts"
+      ],
+      "ownership": "The recipient keeps all presentation containers, objects and contents.",
+      "deliveryMethods": [
+        "courier",
+        "post"
+      ],
+      "status": "Available household gift format at the Wednesday 13 August 2025 opening; no recipient, dispatch or public retail offer established.",
+      "selection": "Alex chooses the recipient, selection and message; actual contents follow preferences, dietary needs and approved stock.",
+      "staff": {
+        "oversight": "Ottilie Marchant",
+        "coordination": "Crispin Vale and the existing service team",
+        "food": "Rafael Bellocq and Bethan Pritchard"
+      },
+      "dispatch": "Protective outer shipping carton, fitted compartments and cushioning as appropriate. Confirm address, route and travel time; provide contents, batch/date, storage and allergen information. No universal shelf life or automatic international postal suitability is assigned.",
+      "referenceFile": "ALBURY_SENT_GIFTS.md",
+      "page": "ALBURY_GIFTS.html",
+      "id": "gift-breakfast-parcel",
+      "title": "The Breakfast Parcel",
+      "path": "images/albury-gifts/albury-breakfast-parcel.webp",
+      "description": "Bottle-green rigid presentation box with exactly two preserve jars, one jar of house toasted-oat, almond and seed granola and one fresh Albury ceramic mug. Pictured mug is bottle green with an ivory interior and gold house mark.",
+      "preserveJarCount": 2,
+      "granolaJarCount": 1,
+      "mugCount": 1,
+      "picturedPantryIds": [
+        "P01",
+        "P02",
+        "P18"
+      ],
+      "picturedContents": [
+        "Seville marmalade",
+        "Strawberry and vanilla confiture",
+        "Toasted-oat, almond and seed granola",
+        "Albury ceramic mug"
+      ],
+      "packing": "Fitted protective compartments separate ceramic mug and three jars. Personal note included; no fresh pastry is implied.",
+      "labelRules": "Food jars retain black caps, charcoal-and-gold labels and Rafael Bellocq credit."
+    },
+    {
+      "category": "sent-gifts",
+      "aliases": [
+        "sent gifts",
+        "courier gifts",
+        "postal gifts",
+        "personal gifts"
+      ],
+      "ownership": "The recipient keeps all presentation containers, objects and contents.",
+      "deliveryMethods": [
+        "courier",
+        "post"
+      ],
+      "status": "Available household gift format at the Wednesday 13 August 2025 opening; no recipient, dispatch or public retail offer established.",
+      "selection": "Alex chooses the recipient, selection and message; actual contents follow preferences, dietary needs and approved stock.",
+      "staff": {
+        "oversight": "Ottilie Marchant",
+        "coordination": "Crispin Vale and the existing service team",
+        "food": "Rafael Bellocq and Bethan Pritchard"
+      },
+      "dispatch": "Protective outer shipping carton, fitted compartments and cushioning as appropriate. Confirm address, route and travel time; provide contents, batch/date, storage and allergen information. No universal shelf life or automatic international postal suitability is assigned.",
+      "referenceFile": "ALBURY_SENT_GIFTS.md",
+      "page": "ALBURY_GIFTS.html",
+      "id": "gift-cordial-pair",
+      "title": "The Cordial Pair",
+      "path": "images/albury-gifts/albury-cordial-pair-gift.webp",
+      "description": "Bottle-green fitted presentation box with two alcohol-free cordial bottles, two fresh etched highball tumblers, two house coasters, an ivory serving card and Alex’s note. Dedicated sealed gift batches can travel by ordinary courier or post without cold packing.",
+      "bottleCount": 2,
+      "tumblerCount": 2,
+      "coasterCount": 2,
+      "alcoholFree": true,
+      "picturedPantryIds": [
+        "P32",
+        "P40"
+      ],
+      "picturedContents": [
+        "Raspberry and lemon verbena cordial",
+        "Pink grapefruit and rosemary cordial",
+        "Tall translucent bottle-green and oxblood highball tumblers, with etched architectural marks and rounded bases",
+        "Round stitched-leather oxblood and dusty-blue coasters with gold house marks"
+      ],
+      "labelRules": "Short clear bottles, gold screw caps and ivory/bottle-green ALBURY labels; no chef credit or architectural mark on bottle fronts.",
+      "storage": {
+        "scope": "Dedicated sealed gift batches only",
+        "unopened": "Store in a cool, dry place; production and packaging process validated for ambient storage while unopened.",
+        "afterOpening": "Refrigerate after opening.",
+        "workingStock": "Working service bottles and fresh chilled batches retain their existing refrigeration requirements.",
+        "details": "Batch/date, use-by and storage instructions accompany bottles; no exact preservation method, capacity or shelf life is newly assigned."
+      },
+      "servingCard": {
+        "lead": "Crispin Vale",
+        "recipes": [
+          "Raspberry verbena cooler",
+          "Pink grapefruit & rosemary fizz"
+        ],
+        "options": [
+          "alcohol-free",
+          "cocktail"
+        ],
+        "includedBottles": "Cordials only; no spirit or mixer bottle included."
+      },
+      "packing": "Fitted protective compartments separate bottles, highball glasses and coasters; no cold packing for these validated sealed gift batches.",
+      "imageVersion": 2
     }
   ]
 }

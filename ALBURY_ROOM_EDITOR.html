@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="same-origin">
+  <title>House editor · Albury House</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/site/room-editor.css">
+  <script defer src="/site/room-editor.js?v=content-1"></script>
+</head>
+<body>
+  <header class="top">
+    <div><a href="/ALBURY_HOUSE_TOUR.html">Albury House</a><h1>House editor</h1></div>
+    <button id="sign-out" type="button" class="quiet" hidden>Sign out</button>
+  </header>
+  <main>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <section id="sign-in-panel" class="panel sign-in" hidden aria-labelledby="sign-in-heading">
+      <h2 id="sign-in-heading">Sign in</h2>
+      <form id="sign-in">
+        <label for="owner-key">Owner key</label>
+        <input id="owner-key" name="key" type="password" autocomplete="current-password" required>
+        <button class="primary">Sign in</button>
+      </form>
+    </section>
+    <div id="workspace" class="workspace" hidden>
+      <aside class="panel sidebar">
+        <h2>Drafts</h2>
+        <form id="new-draft">
+          <label for="draft-name">New draft name</label>
+          <input id="draft-name" name="name" maxlength="120" placeholder="e.g. Pantry and garden room" required>
+          <button class="primary">Create draft</button>
+        </form>
+        <div id="drafts" class="drafts"></div>
+        <details>
+          <summary>Publication history</summary>
+          <div id="history"></div>
+        </details>
+      </aside>
+      <section class="desk" aria-label="Draft workspace">
+        <div class="panel" id="empty-draft">
+          <h2>Choose a draft</h2>
+          <p>Create a draft or open one to edit house content, organise images or review changes from ChatGPT.</p>
+        </div>
+        <div id="draft-detail" hidden>
+          <header class="panel draft-header">
+            <div><h2 id="draft-title"></h2><p id="draft-state" class="muted"></p></div>
+            <div class="actions">
+              <a id="preview-link" class="button quiet" target="_blank" rel="noopener" hidden>Preview in tour ↗</a>
+              <a id="collection-preview-link" class="button quiet" target="_blank" rel="noopener" hidden>Preview in collections ↗</a>
+              <button id="publish" class="primary" type="button">Publish draft</button>
+            </div>
+          </header>
+          <section class="panel content-manager" aria-labelledby="content-heading">
+            <h3 id="content-heading">Edit house content</h3>
+            <label>Content area<select id="content-resource"></select></label>
+            <div id="content-breadcrumbs" class="actions" aria-label="Content location"></div>
+            <label id="content-filter-label" hidden>Find a field or record<input id="content-filter" type="search"></label>
+            <div id="content-node"></div>
+          </section>
+          <div class="editor-columns">
+            <section class="panel" aria-labelledby="view-heading">
+              <h3 id="view-heading">Stage a room view</h3>
+              <form id="stage-view">
+                <div class="form-columns">
+                  <label>Floor or area<select id="section" name="sectionId" required></select></label>
+                  <label>Room<select id="room" name="roomId" required></select></label>
+                </div>
+                <label>Change<select id="change" name="action"><option value="add">Add a view</option><option value="replace">Replace a view</option></select></label>
+                <label id="existing-view-label" hidden>Existing view<select id="existing-view" name="existingView"></select></label>
+                <figure id="existing-photo" hidden><img id="existing-image" alt=""></figure>
+                <label id="slug-label">New view link<input name="slug" id="slug" placeholder="e.g. from-the-terrace" pattern="[a-z0-9][a-z0-9\-]{0,99}" maxlength="100"></label>
+                <label>Title<input name="title" id="view-title" maxlength="140" required></label>
+                <label>Caption<textarea name="caption" id="caption" rows="3" maxlength="1200"></textarea></label>
+                <label>Gallery position <span class="muted">(optional)</span><input name="position" type="number" min="1" max="256" placeholder="Leave blank for the default position"></label>
+                <label>Image<select id="asset" name="assetId" required></select></label>
+                <label class="upload">Upload JPEG, PNG or WebP <span class="muted">(up to 3 MiB)</span><input type="file" accept="image/jpeg,image/png,image/webp" id="image-file"></label>
+                <button class="primary">Stage view</button>
+              </form>
+            </section>
+            <section class="panel" aria-labelledby="changes-heading">
+              <h3 id="changes-heading">Staged changes</h3>
+              <div id="edits"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <dialog id="confirm">
+    <form method="dialog">
+      <h2 id="confirm-title"></h2>
+      <p id="confirm-note"></p>
+      <div class="actions">
+        <button value="cancel" class="quiet">Cancel</button>
+        <button id="confirm-submit" value="approve" class="primary">Publish</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

@@ -33,7 +33,7 @@
     },
     {
       "id": "kitchen",
-      "label": "Kitchen & Front of House",
+      "label": "Food & drink",
       "href": "ALBURY_CULINARY_MENU.html"
     },
     {
@@ -70,6 +70,11 @@
       "id": "walk-albury",
       "label": "Walk Albury",
       "href": "ALBURY_WALK.html"
+    },
+    {
+      "id": "gifts",
+      "label": "Gifts from Albury",
+      "href": "ALBURY_GIFTS.html"
     }
   ]
 }

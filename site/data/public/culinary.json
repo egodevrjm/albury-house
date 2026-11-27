@@ -5,7 +5,11 @@
     "culinaryLead": "rafael-bellocq",
     "frontOfHouseLead": "crispin-vale",
     "pastryPantryLead": "bethan-pritchard",
-    "purpose": "Everyday meals, guests, studio sessions, dinners and parties."
+    "purpose": "Everyday meals, guests, studio sessions, dinners and parties.",
+    "cordialSpecificationLead": "crispin-vale",
+    "cordialProductionLead": "rafael-bellocq",
+    "cordialProgramme": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit.",
+    "drinksService": "Albury house water, soda water, mixers and bottled soft drinks are Limestone Springs. The wine and spirits selection spans many producers and includes the full commercial Hatfield spirits and wine lines, subject to confirmed cellar stock. Crispin and Harjit coordinate service; the private Alex family barrel is not a bar listing."
   },
   "media": {
     "breakfast-eggs": {
@@ -67,7 +71,7 @@
     "sweet-baking": {
       "id": "sweet-baking",
       "title": "Something sweet",
-      "description": "Butter shortbread, dark-chocolate sea-salt sablés, fruit, brownies and house ice cream.",
+      "description": "Butter shortbread, dark-chocolate sea-salt sablés, fruit, brownies and house ice cream with salted caramel or chocolate fudge sauce as wanted.",
       "category": "available",
       "image": "images/albury-culinary/sweet-baking.webp",
       "imageAlt": "Something sweet"
@@ -110,7 +114,10 @@
       "description": "Bright and gently warming. Shown with sparkling water and ice; still water is equally welcome.",
       "category": "core cordial",
       "image": "images/albury-culinary/cordial-ginger.webp",
-      "imageAlt": "Ginger & lemongrass"
+      "imageAlt": "Ginger & lemongrass",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     "cordial-passion": {
       "id": "cordial-passion",
@@ -118,7 +125,10 @@
       "description": "Tropical fruit with a sharp citrus finish. Chilled and diluted to taste.",
       "category": "core cordial",
       "image": "images/albury-culinary/cordial-passion.webp",
-      "imageAlt": "Passion fruit & lime"
+      "imageAlt": "Passion fruit & lime",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     "cordial-elderflower": {
       "id": "cordial-elderflower",
@@ -126,7 +136,10 @@
       "description": "Light and floral. Sparkling water, ice and a slim lemon peel.",
       "category": "core cordial",
       "image": "images/albury-culinary/cordial-elderflower.webp",
-      "imageAlt": "Elderflower & lemon"
+      "imageAlt": "Elderflower & lemon",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     "cordial-raspberry": {
       "id": "cordial-raspberry",
@@ -134,7 +147,10 @@
       "description": "Fragrant summer berries. Particularly good with sparkling water and ice.",
       "category": "core cordial",
       "image": "images/albury-culinary/cordial-raspberry.webp",
-      "imageAlt": "Raspberry & lemon verbena"
+      "imageAlt": "Raspberry & lemon verbena",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     "cordial-blackcurrant": {
       "id": "cordial-blackcurrant",
@@ -142,7 +158,10 @@
       "description": "Deep fruit with a restrained herbal finish. Still or sparkling water, alongside food.",
       "category": "core cordial",
       "image": "images/albury-culinary/cordial-blackcurrant.webp",
-      "imageAlt": "Blackcurrant & bay"
+      "imageAlt": "Blackcurrant & bay",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     "cordial-rhubarb": {
       "id": "cordial-rhubarb",
@@ -150,7 +169,10 @@
       "description": "Tart rhubarb and bright orange. Chilled with sparkling water and ice.",
       "category": "seasonal cordial",
       "image": "images/albury-culinary/cordial-rhubarb.webp",
-      "imageAlt": "Rhubarb & orange · Spring"
+      "imageAlt": "Rhubarb & orange · Spring",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     "cordial-blackberry": {
       "id": "cordial-blackberry",
@@ -158,7 +180,10 @@
       "description": "Dark berries and orchard fruit. Served chilled with still or sparkling water.",
       "category": "seasonal cordial",
       "image": "images/albury-culinary/cordial-blackberry.webp",
-      "imageAlt": "Blackberry & apple · Autumn"
+      "imageAlt": "Blackberry & apple · Autumn",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
     },
     "tommys-margarita": {
       "id": "tommys-margarita",
@@ -183,6 +208,288 @@
       "category": "cocktail",
       "image": "images/albury-culinary/dry-martini.webp",
       "imageAlt": "Dry Martini"
+    },
+    "cordial-white-peach": {
+      "id": "cordial-white-peach",
+      "title": "White peach and thyme cordial",
+      "description": "White peach and thyme cordial; delicate orchard fruit with herbal lift.",
+      "category": "core cordial",
+      "image": "images/albury-produce/individual/p39.webp",
+      "imageAlt": "White peach and thyme cordial",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    "cordial-pink-grapefruit": {
+      "id": "cordial-pink-grapefruit",
+      "title": "Pink grapefruit and rosemary cordial",
+      "description": "Pink grapefruit and rosemary cordial; lively citrus with a restrained herbal finish.",
+      "category": "core cordial",
+      "image": "images/albury-produce/individual/p40.webp",
+      "imageAlt": "Pink grapefruit and rosemary cordial",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    "cordial-pear-cardamom": {
+      "id": "cordial-pear-cardamom",
+      "title": "Pear and green cardamom cordial",
+      "description": "Pear and green cardamom cordial; gentle orchard fruit and warm spice.",
+      "category": "core cordial",
+      "image": "images/albury-produce/individual/p41.webp",
+      "imageAlt": "Pear and green cardamom cordial",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    "demerara-syrup": {
+      "id": "demerara-syrup",
+      "title": "Demerara syrup",
+      "description": "Demerara syrup for bar service, iced coffee and mixed drinks.",
+      "category": "house drink",
+      "image": "images/albury-produce/individual/p42.webp",
+      "imageAlt": "Demerara syrup",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin specified the demerara syrup; the kitchen makes it to his specifications. Rafael retains production methods, food safety and batch release."
+    },
+    "signature-bake-butter-shortbread": {
+      "id": "signature-bake-butter-shortbread",
+      "title": "Bethan’s butter shortbread",
+      "description": "The familiar buttery house shortbread; a dependable guest-lounge tin staple.",
+      "category": "signature bake",
+      "image": "images/albury-culinary/signature-bakes/butter-shortbread.webp",
+      "imageAlt": "Bethan’s butter shortbread plated alone"
+    },
+    "signature-bake-chocolate-sables": {
+      "id": "signature-bake-chocolate-sables",
+      "title": "Dark-chocolate and sea-salt sablés",
+      "description": "Chocolate-rich, lightly salted biscuits for coffee and late evenings.",
+      "category": "signature bake",
+      "image": "images/albury-culinary/signature-bakes/chocolate-sables.webp",
+      "imageAlt": "Dark-chocolate and sea-salt sablés plated alone"
+    },
+    "signature-bake-brown-butter-oat": {
+      "id": "signature-bake-brown-butter-oat",
+      "title": "Brown-butter oat biscuits",
+      "description": "Bethan’s crisp-edged oat biscuit with warm brown-butter depth; a rotating fresh bake.",
+      "category": "signature bake",
+      "image": "images/albury-culinary/signature-bakes/brown-butter-oat.webp",
+      "imageAlt": "Brown-butter oat biscuits plated alone"
+    },
+    "signature-bake-black-cherry-thumbprints": {
+      "id": "signature-bake-black-cherry-thumbprints",
+      "title": "Black-cherry thumbprint biscuits",
+      "description": "Small butter biscuits with P05 bourbon and black cherry confiture; Hatfield bourbon remains credited in the filling.",
+      "category": "signature bake",
+      "image": "images/albury-culinary/signature-bakes/black-cherry-thumbprints.webp",
+      "imageAlt": "Black-cherry thumbprint biscuits plated alone"
+    },
+    "signature-bake-lemon-madeleines": {
+      "id": "signature-bake-lemon-madeleines",
+      "title": "Lemon madeleines",
+      "description": "Baked for tea and served fresh rather than left in the biscuit tin.",
+      "category": "signature bake",
+      "image": "images/albury-culinary/signature-bakes/lemon-madeleines.webp",
+      "imageAlt": "Lemon madeleines plated alone"
+    },
+    "signature-bake-pistachio-orange-financiers": {
+      "id": "signature-bake-pistachio-orange-financiers",
+      "title": "Pistachio and orange financiers",
+      "description": "Small almond-and-pistachio cakes for a fresh afternoon plate.",
+      "category": "signature bake",
+      "image": "images/albury-culinary/signature-bakes/pistachio-orange-financiers.webp",
+      "imageAlt": "Pistachio and orange financiers plated alone"
+    },
+    "signature-bake-chocolate-brownies": {
+      "id": "signature-bake-chocolate-brownies",
+      "title": "Chocolate brownies",
+      "description": "A generous square for coffee, studio breaks or a late return.",
+      "category": "signature bake",
+      "image": "images/albury-culinary/signature-bakes/chocolate-brownies.webp",
+      "imageAlt": "Chocolate brownies plated alone"
+    },
+    "cordial-serve-ginger-spark-cocktail": {
+      "id": "cordial-serve-ginger-spark-cocktail",
+      "title": "Ginger & lemongrass spark — Cocktail",
+      "description": "Hatfield bourbon, ginger and lemongrass cordial, lime and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/ginger-spark-cocktail.webp",
+      "imageAlt": "Ginger & lemongrass spark, cocktail, alone in a glass"
+    },
+    "cordial-serve-ginger-spark-alcohol-free": {
+      "id": "cordial-serve-ginger-spark-alcohol-free",
+      "title": "Ginger & lemongrass spark — Alcohol-free",
+      "description": "Ginger and lemongrass cordial, lime and Limestone Springs sparkling water",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/ginger-spark-alcohol-free.webp",
+      "imageAlt": "Ginger & lemongrass spark, alcohol-free serve, alone in a glass"
+    },
+    "cordial-serve-passion-highball-cocktail": {
+      "id": "cordial-serve-passion-highball-cocktail",
+      "title": "Passion fruit & lime highball — Cocktail",
+      "description": "Tequila, passion-fruit and lime cordial, fresh lime and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/passion-highball-cocktail.webp",
+      "imageAlt": "Passion fruit & lime highball, cocktail, alone in a glass"
+    },
+    "cordial-serve-passion-highball-alcohol-free": {
+      "id": "cordial-serve-passion-highball-alcohol-free",
+      "title": "Passion fruit & lime highball — Alcohol-free",
+      "description": "Passion-fruit and lime cordial, fresh lime and Limestone Springs sparkling water",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/passion-highball-alcohol-free.webp",
+      "imageAlt": "Passion fruit & lime highball, alcohol-free serve, alone in a glass"
+    },
+    "cordial-serve-elderflower-fizz-cocktail": {
+      "id": "cordial-serve-elderflower-fizz-cocktail",
+      "title": "Elderflower & lemon fizz — Cocktail",
+      "description": "Gin, elderflower and lemon cordial, lemon and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/elderflower-fizz-cocktail.webp",
+      "imageAlt": "Elderflower & lemon fizz, cocktail, alone in a glass"
+    },
+    "cordial-serve-elderflower-fizz-alcohol-free": {
+      "id": "cordial-serve-elderflower-fizz-alcohol-free",
+      "title": "Elderflower & lemon fizz — Alcohol-free",
+      "description": "Elderflower and lemon cordial, lemon and Limestone Springs sparkling water",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/elderflower-fizz-alcohol-free.webp",
+      "imageAlt": "Elderflower & lemon fizz, alcohol-free serve, alone in a glass"
+    },
+    "cordial-serve-raspberry-cooler-cocktail": {
+      "id": "cordial-serve-raspberry-cooler-cocktail",
+      "title": "Raspberry verbena cooler — Cocktail",
+      "description": "Vodka, raspberry and lemon verbena cordial, lemon and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/raspberry-cooler-cocktail.webp",
+      "imageAlt": "Raspberry verbena cooler, cocktail, alone in a glass"
+    },
+    "cordial-serve-raspberry-cooler-alcohol-free": {
+      "id": "cordial-serve-raspberry-cooler-alcohol-free",
+      "title": "Raspberry verbena cooler — Alcohol-free",
+      "description": "Raspberry and lemon verbena cordial, lemon and Limestone Springs sparkling water",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/raspberry-cooler-alcohol-free.webp",
+      "imageAlt": "Raspberry verbena cooler, alcohol-free serve, alone in a glass"
+    },
+    "cordial-serve-blackcurrant-bay-spritz-cocktail": {
+      "id": "cordial-serve-blackcurrant-bay-spritz-cocktail",
+      "title": "Blackcurrant & bay spritz — Cocktail",
+      "description": "Gin, blackcurrant and bay cordial, lemon and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/blackcurrant-bay-spritz-cocktail.webp",
+      "imageAlt": "Blackcurrant & bay spritz, cocktail, alone in a glass"
+    },
+    "cordial-serve-blackcurrant-bay-spritz-alcohol-free": {
+      "id": "cordial-serve-blackcurrant-bay-spritz-alcohol-free",
+      "title": "Blackcurrant & bay spritz — Alcohol-free",
+      "description": "Blackcurrant and bay cordial, lemon and Limestone Springs sparkling water",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/blackcurrant-bay-spritz-alcohol-free.webp",
+      "imageAlt": "Blackcurrant & bay spritz, alcohol-free serve, alone in a glass"
+    },
+    "cordial-serve-peach-thyme-spritz-cocktail": {
+      "id": "cordial-serve-peach-thyme-spritz-cocktail",
+      "title": "White peach & thyme spritz — Cocktail",
+      "description": "Sparkling wine, white peach and thyme cordial and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/peach-thyme-spritz-cocktail.webp",
+      "imageAlt": "White peach & thyme spritz, cocktail, alone in a glass"
+    },
+    "cordial-serve-peach-thyme-spritz-alcohol-free": {
+      "id": "cordial-serve-peach-thyme-spritz-alcohol-free",
+      "title": "White peach & thyme spritz — Alcohol-free",
+      "description": "White peach and thyme cordial, Limestone Springs sparkling water and fresh lemon",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/peach-thyme-spritz-alcohol-free.webp",
+      "imageAlt": "White peach & thyme spritz, alcohol-free serve, alone in a glass"
+    },
+    "cordial-serve-grapefruit-rosemary-fizz-cocktail": {
+      "id": "cordial-serve-grapefruit-rosemary-fizz-cocktail",
+      "title": "Pink grapefruit & rosemary fizz — Cocktail",
+      "description": "Gin, pink grapefruit and rosemary cordial and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/grapefruit-rosemary-fizz-cocktail.webp",
+      "imageAlt": "Pink grapefruit & rosemary fizz, cocktail, alone in a glass"
+    },
+    "cordial-serve-grapefruit-rosemary-fizz-alcohol-free": {
+      "id": "cordial-serve-grapefruit-rosemary-fizz-alcohol-free",
+      "title": "Pink grapefruit & rosemary fizz — Alcohol-free",
+      "description": "Pink grapefruit and rosemary cordial, Limestone Springs sparkling water and fresh grapefruit",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/grapefruit-rosemary-fizz-alcohol-free.webp",
+      "imageAlt": "Pink grapefruit & rosemary fizz, alcohol-free serve, alone in a glass"
+    },
+    "cordial-serve-pear-cardamom-highball-cocktail": {
+      "id": "cordial-serve-pear-cardamom-highball-cocktail",
+      "title": "Pear & cardamom highball — Cocktail",
+      "description": "Hatfield bourbon, pear and green cardamom cordial and Limestone Springs sparkling water",
+      "category": "cordial cocktail",
+      "image": "images/albury-culinary/cordial-serves/pear-cardamom-highball-cocktail.webp",
+      "imageAlt": "Pear & cardamom highball, cocktail, alone in a glass"
+    },
+    "cordial-serve-pear-cardamom-highball-alcohol-free": {
+      "id": "cordial-serve-pear-cardamom-highball-alcohol-free",
+      "title": "Pear & cardamom highball — Alcohol-free",
+      "description": "Pear and green cardamom cordial, chilled black tea and Limestone Springs sparkling water",
+      "category": "alcohol-free cordial",
+      "image": "images/albury-culinary/cordial-serves/pear-cardamom-highball-alcohol-free.webp",
+      "imageAlt": "Pear & cardamom highball, alcohol-free serve, alone in a glass"
+    },
+    "cordial-sorrento-lemon": {
+      "id": "cordial-sorrento-lemon",
+      "title": "Sorrento lemon cordial",
+      "description": "Sorrento lemon juice and peel, with a clean, bright finish. Kept chilled; dilute to taste.",
+      "category": "core cordial",
+      "image": "images/albury-produce/individual/p43.webp",
+      "imageAlt": "Sorrento lemon cordial in the ivory-labelled Albury bottle",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    "cordial-blood-orange": {
+      "id": "cordial-blood-orange",
+      "title": "Blood orange cordial",
+      "description": "Distinctive blood-orange fruit with a restrained bitter-peel finish. Kept chilled; dilute to taste.",
+      "category": "core cordial",
+      "image": "images/albury-produce/individual/p44.webp",
+      "imageAlt": "Blood orange cordial in the ivory-labelled Albury bottle",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    "cordial-lime": {
+      "id": "cordial-lime",
+      "title": "Lime cordial",
+      "description": "A straightforward lime cordial with fresh zest and a crisp finish. Kept chilled; dilute to taste.",
+      "category": "core cordial",
+      "image": "images/albury-produce/individual/p45.webp",
+      "imageAlt": "Lime cordial in the ivory-labelled Albury bottle",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    "cordial-sweet-orange": {
+      "id": "cordial-sweet-orange",
+      "title": "Sweet orange cordial",
+      "description": "Familiar sweet-orange fruit, balanced with gentle peel bitterness. Kept chilled; dilute to taste.",
+      "category": "core cordial",
+      "image": "images/albury-produce/individual/p46.webp",
+      "imageAlt": "Sweet orange cordial in the ivory-labelled Albury bottle",
+      "specificationLead": "crispin-vale",
+      "productionLead": "rafael-bellocq",
+      "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    "club-sandwich": {
+      "id": "club-sandwich",
+      "title": "Chicken club sandwich",
+      "description": "Hand-carved roast chicken, crisp bacon, ripe tomato and crisp lettuce between evenly golden toasted bread; house-pickled cucumber and lightly salted crisps. Photographed at the terrace dining table.",
+      "category": "dish",
+      "image": "images/albury-culinary/club-sandwich-terrace.webp",
+      "imageAlt": "Golden triple-decker chicken club sandwich with bacon, tomato and crisp lettuce, house-pickled cucumber and lightly salted crisps, on an ivory plate at Albury’s terrace dining table.",
+      "serviceLocation": "Albury terrace dining table; this photograph illustrates service, not a meal already eaten.",
+      "referenceFile": "MENUS_COMMON_FOODS_AND_OCCASIONS.md"
     }
   },
   "mediaGroups": {
@@ -198,7 +505,7 @@
     ],
     "availableFood": [
       "warm-toastie",
-      "chicken-tarragon",
+      "club-sandwich",
       "sweet-baking",
       "studio-break",
       "journey-food",
@@ -210,7 +517,15 @@
       "cordial-passion",
       "cordial-elderflower",
       "cordial-raspberry",
-      "cordial-blackcurrant"
+      "cordial-blackcurrant",
+      "cordial-white-peach",
+      "cordial-pink-grapefruit",
+      "cordial-pear-cardamom",
+      "demerara-syrup",
+      "cordial-sorrento-lemon",
+      "cordial-blood-orange",
+      "cordial-lime",
+      "cordial-sweet-orange"
     ],
     "seasonalCordials": [
       "cordial-rhubarb",
@@ -220,6 +535,12 @@
       "tommys-margarita",
       "old-fashioned",
       "dry-martini"
+    ],
+    "citrusFoundations": [
+      "cordial-sorrento-lemon",
+      "cordial-blood-orange",
+      "cordial-lime",
+      "cordial-sweet-orange"
     ]
   },
   "availableFood": [
@@ -231,11 +552,11 @@
     {
       "title": "A substantial plate",
       "description": "Chicken club sandwich with pickles; chicken-and-rice bowl; roast-chicken and tarragon salad with new potatoes.",
-      "mediaId": "chicken-tarragon"
+      "mediaId": "club-sandwich"
     },
     {
       "title": "Something sweet",
-      "description": "Butter shortbread, dark-chocolate sea-salt sablés, fruit, brownies and house ice cream.",
+      "description": "Butter shortbread, dark-chocolate sea-salt sablés, fruit, brownies and house ice cream with salted caramel or chocolate fudge sauce as wanted. Bethan keeps the guest-lounge biscuit tin supplied with a rotating selection from her biscuit repertoire; fresh madeleines, financiers and brownies are served separately.",
       "mediaId": "sweet-baking"
     },
     {
@@ -273,5 +594,381 @@
     "daniel-moss",
     "rebecca-ellis",
     "michael-osei"
+  ],
+  "signatureBakes": [
+    {
+      "id": "butter-shortbread",
+      "name": "Bethan’s butter shortbread",
+      "kind": "biscuit tin",
+      "pantryId": "P21",
+      "description": "The familiar buttery house shortbread; a dependable guest-lounge tin staple.",
+      "image": "images/albury-culinary/signature-bakes/butter-shortbread.webp",
+      "imageAlt": "Bethan’s butter shortbread plated alone"
+    },
+    {
+      "id": "chocolate-sables",
+      "name": "Dark-chocolate and sea-salt sablés",
+      "kind": "biscuit tin",
+      "pantryId": "P22",
+      "description": "Chocolate-rich, lightly salted biscuits for coffee and late evenings.",
+      "image": "images/albury-culinary/signature-bakes/chocolate-sables.webp",
+      "imageAlt": "Dark-chocolate and sea-salt sablés plated alone"
+    },
+    {
+      "id": "brown-butter-oat",
+      "name": "Brown-butter oat biscuits",
+      "kind": "biscuit tin",
+      "description": "Bethan’s crisp-edged oat biscuit with warm brown-butter depth; a rotating fresh bake.",
+      "image": "images/albury-culinary/signature-bakes/brown-butter-oat.webp",
+      "imageAlt": "Brown-butter oat biscuits plated alone"
+    },
+    {
+      "id": "black-cherry-thumbprints",
+      "name": "Black-cherry thumbprint biscuits",
+      "kind": "biscuit tin",
+      "description": "Small butter biscuits with P05 bourbon and black cherry confiture; Hatfield bourbon remains credited in the filling.",
+      "image": "images/albury-culinary/signature-bakes/black-cherry-thumbprints.webp",
+      "imageAlt": "Black-cherry thumbprint biscuits plated alone"
+    },
+    {
+      "id": "lemon-madeleines",
+      "name": "Lemon madeleines",
+      "kind": "fresh sweet treat",
+      "description": "Baked for tea and served fresh rather than left in the biscuit tin.",
+      "image": "images/albury-culinary/signature-bakes/lemon-madeleines.webp",
+      "imageAlt": "Lemon madeleines plated alone"
+    },
+    {
+      "id": "pistachio-orange-financiers",
+      "name": "Pistachio and orange financiers",
+      "kind": "fresh sweet treat",
+      "description": "Small almond-and-pistachio cakes for a fresh afternoon plate.",
+      "image": "images/albury-culinary/signature-bakes/pistachio-orange-financiers.webp",
+      "imageAlt": "Pistachio and orange financiers plated alone"
+    },
+    {
+      "id": "chocolate-brownies",
+      "name": "Chocolate brownies",
+      "kind": "fresh sweet treat",
+      "description": "A generous square for coffee, studio breaks or a late return.",
+      "image": "images/albury-culinary/signature-bakes/chocolate-brownies.webp",
+      "imageAlt": "Chocolate brownies plated alone"
+    }
+  ],
+  "cordialServes": [
+    {
+      "id": "ginger-spark",
+      "name": "Ginger & lemongrass spark",
+      "cordialId": "P27",
+      "cocktail": "Hatfield bourbon, ginger and lemongrass cordial, lime and Limestone Springs sparkling water",
+      "alcoholFree": "Ginger and lemongrass cordial, lime and Limestone Springs sparkling water",
+      "cocktailImage": "images/albury-culinary/cordial-serves/ginger-spark-cocktail.webp",
+      "cocktailImageAlt": "Ginger & lemongrass spark, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/ginger-spark-alcohol-free.webp",
+      "alcoholFreeImageAlt": "Ginger & lemongrass spark, alcohol-free serve, alone in a glass"
+    },
+    {
+      "id": "passion-highball",
+      "name": "Passion fruit & lime highball",
+      "cordialId": "P28",
+      "cocktail": "Tequila, passion-fruit and lime cordial, fresh lime and Limestone Springs sparkling water",
+      "alcoholFree": "Passion-fruit and lime cordial, fresh lime and Limestone Springs sparkling water",
+      "cocktailImage": "images/albury-culinary/cordial-serves/passion-highball-cocktail.webp",
+      "cocktailImageAlt": "Passion fruit & lime highball, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/passion-highball-alcohol-free.webp",
+      "alcoholFreeImageAlt": "Passion fruit & lime highball, alcohol-free serve, alone in a glass"
+    },
+    {
+      "id": "elderflower-fizz",
+      "name": "Elderflower & lemon fizz",
+      "cordialId": "P31",
+      "cocktail": "Gin, elderflower and lemon cordial, lemon and Limestone Springs sparkling water",
+      "alcoholFree": "Elderflower and lemon cordial, lemon and Limestone Springs sparkling water",
+      "cocktailImage": "images/albury-culinary/cordial-serves/elderflower-fizz-cocktail.webp",
+      "cocktailImageAlt": "Elderflower & lemon fizz, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/elderflower-fizz-alcohol-free.webp",
+      "alcoholFreeImageAlt": "Elderflower & lemon fizz, alcohol-free serve, alone in a glass"
+    },
+    {
+      "id": "raspberry-cooler",
+      "name": "Raspberry verbena cooler",
+      "cordialId": "P32",
+      "cocktail": "Vodka, raspberry and lemon verbena cordial, lemon and Limestone Springs sparkling water",
+      "alcoholFree": "Raspberry and lemon verbena cordial, lemon and Limestone Springs sparkling water",
+      "cocktailImage": "images/albury-culinary/cordial-serves/raspberry-cooler-cocktail.webp",
+      "cocktailImageAlt": "Raspberry verbena cooler, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/raspberry-cooler-alcohol-free.webp",
+      "alcoholFreeImageAlt": "Raspberry verbena cooler, alcohol-free serve, alone in a glass"
+    },
+    {
+      "id": "blackcurrant-bay-spritz",
+      "name": "Blackcurrant & bay spritz",
+      "cordialId": "P33",
+      "cocktail": "Gin, blackcurrant and bay cordial, lemon and Limestone Springs sparkling water",
+      "alcoholFree": "Blackcurrant and bay cordial, lemon and Limestone Springs sparkling water",
+      "cocktailImage": "images/albury-culinary/cordial-serves/blackcurrant-bay-spritz-cocktail.webp",
+      "cocktailImageAlt": "Blackcurrant & bay spritz, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/blackcurrant-bay-spritz-alcohol-free.webp",
+      "alcoholFreeImageAlt": "Blackcurrant & bay spritz, alcohol-free serve, alone in a glass"
+    },
+    {
+      "id": "peach-thyme-spritz",
+      "name": "White peach & thyme spritz",
+      "cordialId": "P39",
+      "cocktail": "Sparkling wine, white peach and thyme cordial and Limestone Springs sparkling water",
+      "alcoholFree": "White peach and thyme cordial, Limestone Springs sparkling water and fresh lemon",
+      "cocktailImage": "images/albury-culinary/cordial-serves/peach-thyme-spritz-cocktail.webp",
+      "cocktailImageAlt": "White peach & thyme spritz, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/peach-thyme-spritz-alcohol-free.webp",
+      "alcoholFreeImageAlt": "White peach & thyme spritz, alcohol-free serve, alone in a glass"
+    },
+    {
+      "id": "grapefruit-rosemary-fizz",
+      "name": "Pink grapefruit & rosemary fizz",
+      "cordialId": "P40",
+      "cocktail": "Gin, pink grapefruit and rosemary cordial and Limestone Springs sparkling water",
+      "alcoholFree": "Pink grapefruit and rosemary cordial, Limestone Springs sparkling water and fresh grapefruit",
+      "cocktailImage": "images/albury-culinary/cordial-serves/grapefruit-rosemary-fizz-cocktail.webp",
+      "cocktailImageAlt": "Pink grapefruit & rosemary fizz, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/grapefruit-rosemary-fizz-alcohol-free.webp",
+      "alcoholFreeImageAlt": "Pink grapefruit & rosemary fizz, alcohol-free serve, alone in a glass"
+    },
+    {
+      "id": "pear-cardamom-highball",
+      "name": "Pear & cardamom highball",
+      "cordialId": "P41",
+      "cocktail": "Hatfield bourbon, pear and green cardamom cordial and Limestone Springs sparkling water",
+      "alcoholFree": "Pear and green cardamom cordial, chilled black tea and Limestone Springs sparkling water",
+      "cocktailImage": "images/albury-culinary/cordial-serves/pear-cardamom-highball-cocktail.webp",
+      "cocktailImageAlt": "Pear & cardamom highball, cocktail, alone in a glass",
+      "alcoholFreeImage": "images/albury-culinary/cordial-serves/pear-cardamom-highball-alcohol-free.webp",
+      "alcoholFreeImageAlt": "Pear & cardamom highball, alcohol-free serve, alone in a glass"
+    }
+  ],
+  "menuPhotos": [
+    {
+      "id": "summer-mon-breakfast",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Monday",
+      "meal": "Breakfast",
+      "main": "Soft scrambled eggs with chives on toasted sourdough; slow-roasted tomatoes.",
+      "image": "images/albury-culinary/breakfast-eggs.webp",
+      "imageAlt": "Breakfast — Soft scrambled eggs with chives on toasted sourdough; slow-roasted tomatoes."
+    },
+    {
+      "id": "summer-mon-lunch",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Monday",
+      "meal": "Lunch",
+      "main": "Roast-chicken and tarragon salad with Little Gem, warm new potatoes and dressing made with Moutarde de la maison.",
+      "image": "images/albury-culinary/chicken-tarragon.webp",
+      "imageAlt": "Lunch — Roast-chicken and tarragon salad with Little Gem, warm new potatoes and dressing made with Moutarde de la maison."
+    },
+    {
+      "id": "summer-mon-dinner",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Monday",
+      "meal": "Dinner",
+      "main": "Hake with brown butter, capers and lemon; crushed Charlotte potatoes and fine green beans.",
+      "image": "images/albury-culinary/hake-dinner.webp",
+      "imageAlt": "Dinner — Hake with brown butter, capers and lemon; crushed Charlotte potatoes and fine green beans."
+    },
+    {
+      "id": "summer-tue-breakfast",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Tuesday",
+      "meal": "Breakfast",
+      "main": "Poached eggs on sourdough with wilted spinach and sautéed chestnut mushrooms.",
+      "image": "images/albury-culinary/menu-dishes/summer-tue-breakfast.webp",
+      "imageAlt": "Breakfast — Poached eggs on sourdough with wilted spinach and sautéed chestnut mushrooms."
+    },
+    {
+      "id": "summer-tue-lunch",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Tuesday",
+      "meal": "Lunch",
+      "main": "Burrata, ripe tomatoes and basil; cannellini beans with roast red peppers, parsley and lemon.",
+      "image": "images/albury-culinary/menu-dishes/summer-tue-lunch.webp",
+      "imageAlt": "Lunch — Burrata, ripe tomatoes and basil; cannellini beans with roast red peppers, parsley and lemon."
+    },
+    {
+      "id": "summer-tue-dinner",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Tuesday",
+      "meal": "Dinner",
+      "main": "Chicken with ginger and spring onion; jasmine rice, sesame pak choi and sautéed mushrooms.",
+      "image": "images/albury-culinary/menu-dishes/summer-tue-dinner.webp",
+      "imageAlt": "Dinner — Chicken with ginger and spring onion; jasmine rice, sesame pak choi and sautéed mushrooms."
+    },
+    {
+      "id": "summer-wed-lunch",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Wednesday",
+      "meal": "Lunch",
+      "main": "Crab and lemon linguine with parsley, a little chilli and olive oil.",
+      "image": "images/albury-culinary/menu-dishes/summer-wed-lunch.webp",
+      "imageAlt": "Lunch — Crab and lemon linguine with parsley, a little chilli and olive oil."
+    },
+    {
+      "id": "summer-wed-dinner",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Wednesday",
+      "meal": "Dinner",
+      "main": "Grilled lamb cutlets with rosemary jus; warm white beans, roast tomatoes and charred courgettes.",
+      "image": "images/albury-culinary/menu-dishes/summer-wed-dinner.webp",
+      "imageAlt": "Dinner — Grilled lamb cutlets with rosemary jus; warm white beans, roast tomatoes and charred courgettes."
+    },
+    {
+      "id": "summer-thu-dinner",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Thursday",
+      "meal": "Dinner",
+      "main": "Miso-glazed salmon; short-grain rice, sesame spinach and tenderstem broccoli.",
+      "image": "images/albury-culinary/menu-dishes/summer-thu-dinner.webp",
+      "imageAlt": "Dinner — Miso-glazed salmon; short-grain rice, sesame spinach and tenderstem broccoli."
+    },
+    {
+      "id": "summer-fri-breakfast",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Friday",
+      "meal": "Breakfast",
+      "main": "Ricotta pancakes with peach and vanilla compote, raspberries and Greek yoghurt.",
+      "image": "images/albury-culinary/menu-dishes/summer-fri-breakfast.webp",
+      "imageAlt": "Breakfast — Ricotta pancakes with peach and vanilla compote, raspberries and Greek yoghurt."
+    },
+    {
+      "id": "summer-fri-dinner",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Friday",
+      "meal": "Dinner",
+      "main": "Steak frites with Béarnaise, watercress and a shallot-dressed green salad.",
+      "image": "images/albury-culinary/menu-dishes/summer-fri-dinner.webp",
+      "imageAlt": "Dinner — Steak frites with Béarnaise, watercress and a shallot-dressed green salad."
+    },
+    {
+      "id": "summer-sat-breakfast",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Saturday",
+      "meal": "Breakfast",
+      "main": "Fried eggs, bacon, sausage, mushrooms and roast tomatoes; Albury tomato ketchup, Albury brown sauce, Espelette chilli sauce or Moutarde de la maison on the side, as wanted.",
+      "image": "images/albury-culinary/menu-dishes/summer-sat-breakfast.webp",
+      "imageAlt": "Breakfast — Fried eggs, bacon, sausage, mushrooms and roast tomatoes; Albury tomato ketchup, Albury brown sauce, Espelette chilli sauce or Moutarde de la maison on the side, as wanted."
+    },
+    {
+      "id": "summer-sat-dinner",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Saturday",
+      "meal": "Dinner",
+      "main": "Chicken shawarma, warm flatbreads, garlic yoghurt, chopped lettuce and quick-pickled red onions; roast aubergine and chickpeas alongside.",
+      "image": "images/albury-culinary/menu-dishes/summer-sat-dinner.webp",
+      "imageAlt": "Dinner — Chicken shawarma, warm flatbreads, garlic yoghurt, chopped lettuce and quick-pickled red onions; roast aubergine and chickpeas alongside."
+    },
+    {
+      "id": "summer-sun-lunch",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Sunday",
+      "meal": "Lunch",
+      "main": "Lemon-and-thyme roast chicken, roast potatoes, green beans and buttered carrots; pan juices at the table.",
+      "image": "images/albury-culinary/menu-dishes/summer-sun-lunch.webp",
+      "imageAlt": "Lunch — Lemon-and-thyme roast chicken, roast potatoes, green beans and buttered carrots; pan juices at the table."
+    },
+    {
+      "id": "summer-sun-dinner",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Sunday",
+      "meal": "Dinner",
+      "main": "Roast-aubergine and tomato tagliatelle with basil and ricotta.",
+      "image": "images/albury-culinary/menu-dishes/summer-sun-dinner.webp",
+      "imageAlt": "Dinner — Roast-aubergine and tomato tagliatelle with basil and ricotta."
+    },
+    {
+      "id": "autumn-mon-dinner",
+      "season": "autumn",
+      "cycle": 1,
+      "day": "Monday",
+      "meal": "Dinner",
+      "main": "Chicken with cider, leeks and mushrooms.",
+      "image": "images/albury-culinary/menu-dishes/autumn-mon-dinner.webp",
+      "imageAlt": "Dinner — Chicken with cider, leeks and mushrooms."
+    },
+    {
+      "id": "winter-mon-dinner",
+      "season": "winter",
+      "cycle": 1,
+      "day": "Monday",
+      "meal": "Dinner",
+      "main": "Beef and mushroom stew.",
+      "image": "images/albury-culinary/menu-dishes/winter-mon-dinner.webp",
+      "imageAlt": "Dinner — Beef and mushroom stew."
+    },
+    {
+      "id": "spring-mon-dinner",
+      "season": "spring",
+      "cycle": 1,
+      "day": "Monday",
+      "meal": "Dinner",
+      "main": "Roast cod with parsley sauce.",
+      "image": "images/albury-culinary/menu-dishes/spring-mon-dinner.webp",
+      "imageAlt": "Dinner — Roast cod with parsley sauce."
+    },
+    {
+      "id": "summer-fri-lunch",
+      "season": "summer",
+      "cycle": 1,
+      "day": "Friday",
+      "meal": "Lunch",
+      "main": "Chicken club sandwich with bacon, tomato and crisp lettuce; house-pickled cucumber and lightly salted crisps.",
+      "image": "images/albury-culinary/club-sandwich-terrace.webp",
+      "imageAlt": "Golden triple-decker chicken club sandwich with bacon, tomato and crisp lettuce, house-pickled cucumber and lightly salted crisps, on an ivory plate at Albury’s terrace dining table."
+    }
+  ],
+  "cordialFoundations": [
+    {
+      "id": "cordial-sorrento-lemon",
+      "pantryId": "P43",
+      "name": "Sorrento lemon cordial",
+      "profile": "Fragrant lemon peel · Bright acidity",
+      "serve": "Chilled still or sparkling water, ice and a lemon peel.",
+      "uses": "Lemon soda, long gin or vodka drinks and alcohol-free aperitifs"
+    },
+    {
+      "id": "cordial-blood-orange",
+      "pantryId": "P44",
+      "name": "Blood orange cordial",
+      "profile": "Rich citrus · Gently bittersweet",
+      "serve": "Limestone Springs sparkling water, ice and an orange peel.",
+      "uses": "Blood-orange soda, spritz-style drinks and citrus aperitifs"
+    },
+    {
+      "id": "cordial-lime",
+      "pantryId": "P45",
+      "name": "Lime cordial",
+      "profile": "Zesty · Clean and sharp",
+      "serve": "Chilled soda water and ice; keep the lime flavour clear.",
+      "uses": "Lime and soda, Gimlet-style cocktails and long drinks"
+    },
+    {
+      "id": "cordial-sweet-orange",
+      "pantryId": "P46",
+      "name": "Sweet orange cordial",
+      "profile": "Round citrus · Soft peel",
+      "serve": "Still or sparkling water and ice, adjusted to preference.",
+      "uses": "Orange soda, breakfast or terrace drinks and alcohol-free aperitifs"
+    }
   ]
 }

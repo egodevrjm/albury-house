@@ -1,5 +1,7 @@
+import { contentKeySchema, contentPathSchema } from "../lib/content-edits.js";
 import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
+import { nodeHandler } from "../lib/node-http.js";
 
 import {
   PUBLIC_BASE_URL,
@@ -18,9 +20,12 @@ import {
   getPantryItem,
   getPartner,
   getRoom,
+  getReferenceContent,
   getStaffMember,
   getSummary,
   listAvailableFood,
+  listSignatureBakes,
+  listCordialServes,
   listCollectionCategories,
   listCollectionItems,
   listDrinks,
@@ -33,6 +38,7 @@ import {
   listStaff,
   searchAlbury,
   searchImages,
+  withPublishedRoomCatalogue,
 } from "../lib/albury-data.js";
 
 export const maxDuration = 60;
@@ -47,34 +53,44 @@ const guarded = async (operation: () => unknown | Promise<unknown>) => {
   catch (error) { return fail(error instanceof Error ? error.message : String(error)); }
 };
 
+const catalogueGuarded = (operation: () => unknown | Promise<unknown>) =>
+  guarded(() => withPublishedRoomCatalogue(operation));
+
 export const mcpWebHandler = createMcpHandler((server) => {
   server.registerTool("search_albury", {
     title: "Search Albury House",
-    description: "Search rooms, household staff, external partners, pantry preparations, house collections, food and dated London events. This is the broad discovery tool for the closed Albury House reference.",
+    description: "Search rooms, household staff, external partners, pantry preparations, house collections, food, hospitality and personal courier/post gifts, and dated London events. This is the broad discovery tool for the closed Albury House reference.",
     inputSchema: z.object({
       query: z.string().min(1),
-      domains: z.array(z.enum(["rooms", "staff", "partners", "pantry", "collections", "food", "events"])).optional(),
+      domains: z.array(z.enum(["rooms", "staff", "partners", "pantry", "collections", "food", "hospitality", "events"])).optional(),
       limit: z.number().int().min(1).max(50).default(20),
     }), annotations: readOnly,
-  }, async (input) => guarded(() => searchAlbury(input)));
+  }, async (input) => catalogueGuarded(() => searchAlbury(input)));
+
+  server.registerTool("get_reference_content", {
+    title: "Read structured Albury House content",
+    description: "Read a published content area or a specific field. Use path segments, @id for a stable record ID, or a zero-based list position. For visitors' page copy use a filename such as ALBURY_HOUSE_GUIDE.html.",
+    inputSchema: z.object({ resource: contentKeySchema, path: contentPathSchema.optional() }),
+    annotations: readOnly,
+  }, ({ resource, path }) => guarded(() => ({ resource, path: path ?? [], value: getReferenceContent(resource, path ?? []) })));
 
   server.registerTool("get_albury_summary", {
     title: "Get Albury summary",
-    description: "Return the controlling house facts, purpose, story-opening date and record totals.",
+    description: "Return the controlling house facts, purpose, story-opening date, record totals and whole-house floor-plan documents.",
     inputSchema: z.object({}), annotations: readOnly,
-  }, async () => guarded(getSummary));
+  }, async () => catalogueGuarded(getSummary));
 
   server.registerTool("list_floors", {
     title: "List Albury floors",
     description: "List only Albury's seven internal floors, including both basements. Each has its chosen name and physical level. Exterior & Garden is one separate outdoor area; use list_outdoor_areas for it.",
     inputSchema: z.object({}), annotations: readOnly,
-  }, async () => guarded(() => ({ floors: listFloors() })));
+  }, async () => catalogueGuarded(() => ({ floors: listFloors() })));
 
   server.registerTool("get_floor", {
     title: "Get an Albury floor",
-    description: "Return one of the seven internal floors, its chosen name, physical level, plan and rooms. Accepts stable IDs, current names and legacy names. For Exterior & Garden use get_outdoor_area.",
+    description: "Return one of the seven internal floors, its chosen name, physical level, plan, rooms and any floor-plan documents. Accepts stable IDs, current names and legacy names. For Exterior & Garden use get_outdoor_area.",
     inputSchema: z.object({ floor_id: z.string().min(1) }), annotations: readOnly,
-  }, async ({ floor_id }) => guarded(() => getFloor(floor_id) ?? (() => {
+  }, async ({ floor_id }) => catalogueGuarded(() => getFloor(floor_id) ?? (() => {
     if (getOutdoorArea(floor_id)) throw new Error("Exterior & Garden is an outdoor area, not a floor. Use get_outdoor_area.");
     throw new Error(`No Albury floor found for ${floor_id}.`);
   })()));
@@ -83,25 +99,25 @@ export const mcpWebHandler = createMcpHandler((server) => {
     title: "List Albury outdoor areas",
     description: "Return the single Exterior & Garden area covering the frontage, arrival, mews, terraces and garden. This is not an internal floor.",
     inputSchema: z.object({}), annotations: readOnly,
-  }, async () => guarded(() => ({ outdoorAreas: listOutdoorAreas() })));
+  }, async () => catalogueGuarded(() => ({ outdoorAreas: listOutdoorAreas() })));
 
   server.registerTool("get_outdoor_area", {
     title: "Get Albury outdoor area",
     description: "Return Exterior & Garden with its plans, outdoor spaces and image views. Accepts exterior, garden and the current area name; the old exterior and garden sections are combined.",
     inputSchema: z.object({ area_id: z.string().min(1) }), annotations: readOnly,
-  }, async ({ area_id }) => guarded(() => getOutdoorArea(area_id) ?? (() => { throw new Error(`No Albury outdoor area found for ${area_id}.`); })()));
+  }, async ({ area_id }) => catalogueGuarded(() => getOutdoorArea(area_id) ?? (() => { throw new Error(`No Albury outdoor area found for ${area_id}.`); })()));
 
   server.registerTool("list_rooms", {
     title: "List Albury rooms",
     description: "List coherent rooms and outdoor spaces, optionally by internal floor or outdoor area. Outdoor records have a section and outdoorAreaId, with floorId null. Multiple photographs of the same space are grouped as views.",
     inputSchema: z.object({ floor_id: z.string().optional(), outdoor_area_id: z.string().optional(), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
-  }, async ({ floor_id, outdoor_area_id, ...input }) => guarded(() => listRooms({ floorId: floor_id, outdoorAreaId: outdoor_area_id, ...input })));
+  }, async ({ floor_id, outdoor_area_id, ...input }) => catalogueGuarded(() => listRooms({ floorId: floor_id, outdoorAreaId: outdoor_area_id, ...input })));
 
   server.registerTool("get_room", {
     title: "Get an Albury room",
-    description: "Return one room with its floor, description, primary image and every coherent view. Use the exact id returned by list_rooms; floor-qualified IDs distinguish repeated spaces such as rear service landings. Legacy local IDs require floor_id when ambiguous.",
+    description: "Return one room with its floor, description, images and any floor-plan documents. Use the exact id returned by list_rooms; floor-qualified IDs distinguish repeated spaces such as rear service landings. Legacy local IDs require floor_id when ambiguous.",
     inputSchema: z.object({ room_id: z.string().min(1), floor_id: z.string().optional() }), annotations: readOnly,
-  }, async ({ room_id, floor_id }) => guarded(() => getRoom(room_id, floor_id) ?? (() => { throw new Error(`No Albury room found for ${room_id}.`); })()));
+  }, async ({ room_id, floor_id }) => catalogueGuarded(() => getRoom(room_id, floor_id) ?? (() => { throw new Error(`No Albury room found for ${room_id}.`); })()));
 
   server.registerTool("list_household_staff", {
     title: "List Albury household staff",
@@ -157,15 +173,27 @@ export const mcpWebHandler = createMcpHandler((server) => {
     inputSchema: z.object({ query: z.string().optional() }), annotations: readOnly,
   }, async ({ query }) => guarded(() => ({ items: listAvailableFood(query) })));
 
+  server.registerTool("list_signature_bakes", {
+    title: "List Bethan’s signature bakes",
+    description: "Return Bethan’s guest-lounge biscuit-tin choices and fresh sweet treats, each with an individual imageUrl. Rotating bakes are repertoire, not extra numbered pantry products or guaranteed daily stock.",
+    inputSchema: z.object({ query: z.string().optional() }), annotations: readOnly,
+  }, async ({ query }) => guarded(() => listSignatureBakes(query)));
+
+  server.registerTool("list_cordial_serves", {
+    title: "List cordial cocktails and alcohol-free serves",
+    description: "Return paired cocktail and alcohol-free directions and separate image URLs for each of the eight opening core cordials. These are available serve options, not past orders or live stock confirmation.",
+    inputSchema: z.object({ query: z.string().optional() }), annotations: readOnly,
+  }, async ({ query }) => guarded(() => listCordialServes(query)));
+
   server.registerTool("list_pantry_items", {
     title: "List Albury pantry items",
-    description: "List the complete individually indexed P01-P33 opening pantry, preserving category, availability, uses, label family and image group. Seasonal recipes can be added explicitly.",
+    description: "List the complete individually indexed P01-P42 opening pantry, each with its own single-product image URL, category, availability, uses, label family and image group. Seasonal recipes can be added explicitly.",
     inputSchema: z.object({ category: z.string().optional(), label_family: z.string().optional(), include_seasonal: z.boolean().default(false), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
   }, async ({ label_family, include_seasonal, ...input }) => guarded(() => listPantry({ labelFamily: label_family, includeSeasonal: include_seasonal, ...input })));
 
   server.registerTool("get_pantry_item", {
     title: "Get an Albury pantry item",
-    description: "Fetch one pantry item by P-number, seasonal recipe ID or exact name, including its associated collection image.",
+    description: "Fetch one pantry item by P-number, seasonal recipe ID or exact name. Its imageUrl is the single-product portrait; imageGroup.imageUrl is the shared group photograph.",
     inputSchema: z.object({ item: z.string().min(1) }), annotations: readOnly,
   }, async ({ item }) => guarded(() => getPantryItem(item) ?? (() => { throw new Error(`No Albury pantry item found for ${item}.`); })()));
 
@@ -177,40 +205,40 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("list_collection_categories", {
     title: "List Albury collection categories",
-    description: "List the pantry, baking, guest-room, travel, table and service collections with item counts and collection images.",
+    description: "List the art, pantry, baking, guest-room, travel, table and service collections with item counts and any collection images.",
     inputSchema: z.object({}), annotations: readOnly,
-  }, async () => guarded(() => ({ collections: listCollectionCategories() })));
+  }, async () => catalogueGuarded(() => ({ collections: listCollectionCategories() })));
 
   server.registerTool("list_collection_items", {
     title: "List Albury collection items",
-    description: "List house-marked items and pantry/baking collection records, optionally within one collection or matching text.",
+    description: "List artworks, house-marked items and pantry/baking records, optionally within one collection or matching text. Search the art collection for an artist, work or room.",
     inputSchema: z.object({ collection_id: z.string().optional(), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
-  }, async ({ collection_id, ...input }) => guarded(() => listCollectionItems({ collectionId: collection_id, ...input })));
+  }, async ({ collection_id, ...input }) => catalogueGuarded(() => listCollectionItems({ collectionId: collection_id, ...input })));
 
   server.registerTool("get_collection_item", {
     title: "Get an Albury collection item",
-    description: "Fetch one collection item by stable ID or exact title, including its image URL.",
+    description: "Fetch one collection item by stable ID or exact title, including an artwork’s opening location or an image URL where available.",
     inputSchema: z.object({ item: z.string().min(1) }), annotations: readOnly,
-  }, async ({ item }) => guarded(() => getCollectionItem(item) ?? (() => { throw new Error(`No Albury collection item found for ${item}.`); })()));
+  }, async ({ item }) => catalogueGuarded(() => getCollectionItem(item) ?? (() => { throw new Error(`No Albury collection item found for ${item}.`); })()));
 
   server.registerTool("get_guest_provision", {
     title: "Get Albury guest provision",
-    description: "Return arrival, departure and gift provision, including what a guest keeps, what stays with the house, hamper contents and image links.",
-    inputSchema: z.object({ kind: z.string().optional().describe("Optional term such as arrival, food hamper, stationery, drinkware or selected gifts.") }), annotations: readOnly,
+    description: "Return arrival, departure and gift provision, including the six personal courier/post gifts, contents, ownership, packing, gift-batch storage and image links. These are available formats, not established dispatches or retail offers.",
+    inputSchema: z.object({ kind: z.string().optional().describe("Optional term such as arrival, food hamper, stationery, drinkware, selected gifts, sent gifts, cordial pair or breakfast parcel. Use sent gifts for all six sendable formats.") }), annotations: readOnly,
   }, async ({ kind }) => guarded(() => getGuestProvision(kind)));
 
   server.registerTool("search_images", {
     title: "Search Albury images",
     description: "Search house, room, staff, culinary, pantry, hospitality and collection images. Returns stable metadata and directly viewable public WebP/SVG URLs.",
     inputSchema: z.object({ query: z.string().optional(), kind: z.enum(["asset", "room", "collection", "culinary", "staff", "pantry", "hospitality"]).optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(50).default(20) }), annotations: readOnly,
-  }, async (input) => guarded(() => searchImages(input)));
+  }, async (input) => catalogueGuarded(() => searchImages(input)));
 
   server.registerTool("get_image", {
     title: "Get an Albury image",
     description: "Fetch one image by stable image ID, deployed path or exact title. By default the image is returned inline for visual inspection; set include_data false for metadata and URL only.",
     inputSchema: z.object({ image: z.string().min(1), include_data: z.boolean().default(true) }), annotations: readOnly,
   }, async ({ image, include_data }) => {
-    const record = getImage(image);
+    const record = await withPublishedRoomCatalogue(() => getImage(image));
     if (!record) return fail(`No Albury image found for ${image}.`);
     if (!include_data) return ok(record);
     try {
@@ -261,35 +289,7 @@ export const mcpWebHandler = createMcpHandler((server) => {
   maxSubscriptions: 0,
 });
 
-type NodeRequest = { method?: string; url?: string; headers: Record<string, string | string[] | undefined>; body?: unknown };
-type NodeResponse = { status(code: number): NodeResponse; setHeader(name: string, value: string | string[]): void; send(body: Buffer): void };
-
-function requestHeaders(source: NodeRequest["headers"]) {
-  const result = new Headers();
-  for (const [name, value] of Object.entries(source)) {
-    if (Array.isArray(value)) for (const item of value) result.append(name, item);
-    else if (value !== undefined) result.set(name, value);
-  }
-  return result;
-}
-
-export default async function handler(req: NodeRequest, res: NodeResponse) {
-  const headers = requestHeaders(req.headers);
-  const host = headers.get("x-forwarded-host") ?? headers.get("host") ?? "albury-house.vercel.app";
-  const protocol = headers.get("x-forwarded-proto") ?? "https";
-  const method = req.method ?? "GET";
-  let body: BodyInit | undefined;
-  if (method !== "GET" && method !== "HEAD") {
-    if (typeof req.body === "string" || req.body instanceof Uint8Array) body = req.body as BodyInit;
-    else body = JSON.stringify(req.body ?? {});
-    if (!headers.has("content-type")) headers.set("content-type", "application/json");
-  }
-  const response = await mcpWebHandler(new Request(`${protocol}://${host}${req.url ?? "/api/mcp"}`, { method, headers, body }));
-  res.status(response.status);
-  response.headers.forEach((value, name) => res.setHeader(name, value));
-  res.setHeader("X-Robots-Tag", "noindex, nofollow");
-  res.send(Buffer.from(await response.arrayBuffer()));
-}
+export default nodeHandler(mcpWebHandler);
 
 export const serviceMetadata = {
   service: "Albury House MCP",
