@@ -1,6 +1,7 @@
 import { createHash, randomUUID } from "node:crypto";
 import sharp from "sharp";
 import { z } from "zod";
+import { createFoodCatalogue } from "./food-catalogue.js";
 import { applyCollectionEdits, changedCollections, collectionEditSchema, collectionItemId, type Collection } from "./collection-edits.js";
 import type { Draft, RoomEditorStore, State, StoredImage } from "./room-editor-store.js";
 import { applyRoomViewEdits, assetIdSchema, changedRoomViews, EditorError, roomViewEditSchema, roomViewSlug, type TourSection } from "./room-views.js";
@@ -96,8 +97,12 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
       const revision = state.current.id === draft.baseRevision ? state.current : state.previous.find(item => item.id === draft.baseRevision);
       if (!revision) throw new EditorError(409, "The draft's base revision is unavailable.");
       const preview = changedRoomViews(applyRoomViewEdits(base, revision.edits), draft.edits);
-      const collectionPreview = changedCollections(applyCollectionEdits(collections, revision.collectionEdits ?? []), draft.collectionEdits ?? []);
-      return { draft, currentRevision: state.current.id, preview, collectionPreview };
+      const published = applyCollectionEdits(collections, revision.collectionEdits ?? []);
+      const collectionPreview = changedCollections(published, draft.collectionEdits ?? []);
+      const foodPreview = collectionPreview.some(collection => collection.id === "produce" || collection.id === "baking")
+        ? createFoodCatalogue(applyCollectionEdits(published, draft.collectionEdits ?? []), collections).collections
+        : [];
+      return { draft, currentRevision: state.current.id, preview, collectionPreview, foodPreview };
     },
     async stage_view({ draftId, expectedVersion, edit }: z.infer<typeof editorSchemas.stage_view>) {
       if (!await store.hasImages([edit.assetId])) throw new EditorError(404, "Upload the image before staging the view.");

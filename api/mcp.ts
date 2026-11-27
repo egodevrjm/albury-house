@@ -183,13 +183,13 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("list_pantry_items", {
     title: "List Albury pantry items",
-    description: "List the complete individually indexed P01-P42 opening pantry, each with its own single-product image URL, category, availability, uses, label family and image group. Seasonal recipes can be added explicitly.",
+    description: "List the P01–P46 opening pantry and published house preparations, with single-product portraits and consistent pantry categories. Request include_seasonal for the unnumbered seasonal recipes.",
     inputSchema: z.object({ category: z.string().optional(), label_family: z.string().optional(), include_seasonal: z.boolean().default(false), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
   }, async ({ label_family, include_seasonal, ...input }) => guarded(() => listPantry({ labelFamily: label_family, includeSeasonal: include_seasonal, ...input })));
 
   server.registerTool("get_pantry_item", {
     title: "Get an Albury pantry item",
-    description: "Fetch one pantry item by P-number, seasonal recipe ID or exact name. Its imageUrl is the single-product portrait; imageGroup.imageUrl is the shared group photograph.",
+    description: "Fetch one pantry product by P-number, catalogue ID or exact name. imageUrl gives the individual portrait. Where an older group photograph exists, it is under imageGroup.",
     inputSchema: z.object({ item: z.string().min(1) }), annotations: readOnly,
   }, async ({ item }) => guarded(() => getPantryItem(item) ?? (() => { throw new Error(`No Albury pantry item found for ${item}.`); })()));
 

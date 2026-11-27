@@ -1,4 +1,5 @@
 import { applyCollectionEdits, collectionItemId, type Collection } from "./collection-edits.js";
+import { createFoodCatalogue, pantryGroups, pantryItems } from "./food-catalogue.js";
 import { AsyncLocalStorage } from "node:async_hooks";
 import { createRequire } from "node:module";
 import { roomEditorStore, type RoomEditorStore } from "./room-editor-store.js";
@@ -9,14 +10,12 @@ const houseSource = requireJson("../site/data/public/house.json");
 const roomsSource = requireJson("../site/data/public/rooms.json");
 const staffSource = requireJson("../site/data/public/staff.json");
 const collectionsSource = requireJson("../site/data/public/collections.json");
-const pantryGroupsSource = requireJson("../site/data/public/pantry.json");
 const culinarySource = requireJson("../site/data/public/culinary.json");
 const hospitalitySource = requireJson("../site/data/public/hospitality.json");
 const powderSuiteSource = requireJson("../site/data/public/powder-suite-2026-11-25.json");
 const basementRefreshSource = requireJson("../site/data/public/upper-basement-views-2026-11-25.json");
 const assetsSource = requireJson("../site/data/public/assets.json");
 const brandsSource = requireJson("../site/data/public/brands.json");
-const pantryItemsSource = requireJson("../mcp-data/pantry-items.json");
 const menusSource = requireJson("../site/data/public/menus.json");
 type DiningDish = { id: string; name: string; category: string; path: string; imageAlt: string; photoSeason: string };
 type DiningChoice = { dishId: string; description: string; omitPhoto?: boolean };
@@ -110,13 +109,11 @@ export const baseTourSections = (roomsSource as unknown as { tour: TourSection[]
 
 const staff = staffSource as unknown as { summary: Dict; people: Dict[]; servicePartners: Dict[]; asOf: string };
 export const baseCollections = (collectionsSource as { collections: Collection[] }).collections;
-const pantryGroups = (pantryGroupsSource as unknown as { preparations: Dict[] }).preparations;
 const culinary = culinarySource as unknown as {
   programme: Dict;
   media: Record<string, Dict>;
   mediaGroups: Record<string, string[]>;
   availableFood: Dict[];
-  signatureBakes: Dict[];
   cordialServes: Dict[];
   menuPhotos: Dict[];
   featuredTeam: string[];
@@ -128,7 +125,6 @@ const assets = (assetsSource as unknown as { assets: Dict[] }).assets.map(asset 
   updatedAssets.get(String(asset.path)) ?? asset
 ).concat(roomViewAssets);
 const brands = (brandsSource as unknown as { brands: Dict[] }).brands;
-const pantryItems = pantryItemsSource as unknown as { summary: Dict; openingItems: Dict[]; seasonalRecipes: Dict[]; asOf: string };
 const specialMenusSource = requireJson("../site/data/public/special-menus.json");
 const specialMenus = specialMenusSource.menus as Array<{ id: string; name: string; occasion: string; season: string; meal: string; notes: string; menu: Dict }>;
 function menuSeason(date: string): string {
@@ -267,7 +263,7 @@ function collectionItems(collections: Collection[]): Array<Dict & { id: string; 
   }) as Dict & { id: string; collectionId: string; collectionName: string; imageUrl?: string }));
 }
 
-function imageRecords(rooms: ReturnType<typeof roomGroups>, items: ReturnType<typeof collectionItems>) {
+function imageRecords(rooms: ReturnType<typeof roomGroups>, items: ReturnType<typeof collectionItems>, food: ReturnType<typeof createFoodCatalogue>) {
   const records = new Map<string, Dict>();
   const add = (item: Dict, kind: string, title?: unknown, description?: unknown) => {
     const path = item.image ?? item.path;
@@ -294,7 +290,7 @@ function imageRecords(rooms: ReturnType<typeof roomGroups>, items: ReturnType<ty
   }
   for (const item of staff.people) add(item, "staff", item.name, `${item.role ?? ""} ${item.description ?? ""}`);
   for (const item of pantryGroups) add(item, "pantry", item.title, item.description);
-  for (const item of [...pantryItems.openingItems, ...pantryItems.seasonalRecipes]) add(item, "pantry", item.name, `${item.category ?? ""}. ${item.uses ?? ""}`);
+  for (const item of food.pantry) add(item, "pantry", item.name, `${item.category ?? ""}. ${item.uses ?? ""}`);
   for (const item of hospitality.collections) {
     add(item, "hospitality", item.title, item.description);
     if (item.whitePath) add({ ...item, path: item.whitePath }, "hospitality", `${item.title} — white-led`, item.description);
@@ -304,8 +300,10 @@ function imageRecords(rooms: ReturnType<typeof roomGroups>, items: ReturnType<ty
 
 function buildCatalogue(sections: TourSection[], collections: Collection[]) {
   const rooms = roomGroups(sections, collections);
-  const items = collectionItems(collections);
-  return { sections, rooms, collections, items, images: imageRecords(rooms, items) };
+  const food = createFoodCatalogue(collections, baseCollections);
+  const publicCollections = collections.map(collection => food.collections.find(item => item.id === collection.id) ?? collection);
+  const items = collectionItems(publicCollections);
+  return { sections, rooms, collections: publicCollections, items, food, images: imageRecords(rooms, items, food) };
 }
 
 const builtInCatalogue = buildCatalogue(baseTourSections, baseCollections);
@@ -518,7 +516,7 @@ export function listAvailableFood(query?: string) {
 }
 
 export function listSignatureBakes(query?: string) {
-  const items = culinary.signatureBakes.filter((item) => matches(item, query));
+  const items = currentCatalogue().food.bakes.filter((item) => matches(item, query));
   return { total: items.length, items: items.map(withImage) };
 }
 
@@ -528,13 +526,13 @@ export function listCordialServes(query?: string) {
 }
 
 export function listPantry(input: { category?: string; labelFamily?: string; includeSeasonal?: boolean; query?: string; offset?: number; limit?: number }) {
-  const candidates = [...pantryItems.openingItems, ...(input.includeSeasonal ? pantryItems.seasonalRecipes : [])];
+  const candidates = currentCatalogue().food.pantry.filter(item => input.includeSeasonal || !item.season);
   const filtered = candidates.filter((item) => (!input.category || normalize(item.category) === normalize(input.category)) && (!input.labelFamily || normalize(item.labelFamily) === normalize(input.labelFamily)) && matches(item, input.query));
   return { asOf: pantryItems.asOf, summary: pantryItems.summary, categories: [...new Set(candidates.map((item) => item.category))].sort(), ...paginate(filtered.map(withImage), input.offset, input.limit) };
 }
 
 export function getPantryItem(id: string): Dict | undefined {
-  const item = [...pantryItems.openingItems, ...pantryItems.seasonalRecipes].find((entry) => normalize(entry.id) === normalize(id) || normalize(entry.name) === normalize(id));
+  const item = currentCatalogue().food.pantry.find((entry) => normalize(entry.id) === normalize(id) || normalize(entry.name) === normalize(id));
   if (!item) return undefined;
   const group = pantryGroups.find((candidate) => candidate.id === item.imageGroupId);
   return { ...withImage(item), imageGroup: group ? withImage(group) : undefined };
@@ -556,7 +554,7 @@ export function listCollectionItems(input: { collectionId?: string; query?: stri
 }
 
 export function getCollectionItem(id: string) {
-  return currentCatalogue().items.find((item) => item.id === id || normalize(item.title) === normalize(id));
+  return currentCatalogue().items.find((item) => item.id === id || item.legacyId === id || normalize(item.title) === normalize(id));
 }
 
 export function getGuestProvision(kind?: string) {
@@ -612,7 +610,7 @@ export function searchAlbury(input: { query: string; domains?: string[]; limit?:
   if (domains.has("rooms")) records.push(...currentCatalogue().rooms.map((item) => ({ domain: "rooms", id: item.id, title: item.name, floor: item.floorName, section: item.sectionName, kind: item.kind, level: item.level, text: item.description, artworks: item.artworks })));
   if (domains.has("staff")) records.push(...staff.people.map((item) => ({ domain: "staff", id: item.id, title: item.name, text: `${item.role ?? ""}. ${item.remit ?? ""} ${item.description ?? ""} ${item.career ?? ""}` })));
   if (domains.has("partners")) records.push(...staff.servicePartners.map((item) => ({ domain: "partners", id: item.id, title: item.name, text: `${item.type ?? ""}. ${item.remit ?? ""}` })));
-  if (domains.has("pantry")) records.push(...[...pantryItems.openingItems, ...pantryItems.seasonalRecipes].map((item) => ({ domain: "pantry", id: item.id, title: item.name, text: `${item.category ?? ""}. ${item.uses ?? ""} ${item.openingAvailability ?? ""} ${item.productionNotes ?? ""}` })));
+  if (domains.has("pantry")) records.push(...currentCatalogue().food.pantry.map((item) => ({ domain: "pantry", id: item.id, title: item.name, text: `${item.category ?? ""}. ${item.description ?? ""} ${item.uses ?? ""} ${item.openingAvailability ?? ""} ${item.productionNotes ?? ""}` })));
   if (domains.has("collections")) records.push(...currentCatalogue().items.map((item) => ({ domain: "collections", id: item.id, title: item.title, collection: item.collectionName, text: item.description, artist: item.artist, location: item.location })));
   if (domains.has("food")) records.push(...Object.values(culinary.media).map((item) => ({ domain: "food", id: item.id, title: item.title, text: `${item.category ?? ""}. ${item.description ?? ""} ${item.productionNotes ?? ""}` })));
   if (domains.has("hospitality")) records.push(...hospitality.collections.map((item) => ({ domain: "hospitality", id: item.id, title: item.title, text: text(item) })));
