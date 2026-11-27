@@ -543,7 +543,8 @@
       "description": "Tart enough to use by the teaspoon, with a dry blackcurrant finish. Rafael serves it with cold meats, dresses beetroot with it and adds a splash to finish a pan sauce. The slim, charcoal-grey-labelled bottle can go in a savoury hamper.",
       "uses": "Cold meats, beetroot dressings, pan sauces and selected savoury hampers",
       "openingAvailability": "House recipe, bottled for the pantry",
-      "labelFamily": "pantry"
+      "labelFamily": "pantry",
+      "editableInCollection": true
     }
   ],
   "seasonalRecipes": [

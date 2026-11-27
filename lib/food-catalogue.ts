@@ -14,6 +14,7 @@ export type PantryProduct = Record<string, unknown> & {
   uses?: string;
   description?: string;
   openingAvailability?: string;
+  editableInCollection?: boolean;
 };
 
 type Bake = Record<string, unknown> & {
@@ -95,6 +96,20 @@ function productCard(product: PantryProduct, section = categorySection(product.c
   };
 }
 
+export function withPantryEditorItems(collections: Collection[]): Collection[] {
+  const editable = productsByLabel.filter(product => product.editableInCollection).map(product => ({
+    id: `pantry-${product.id.toLowerCase()}`,
+    viewSlug: product.id.toLowerCase(),
+    pantryId: product.id,
+    title: product.name,
+    description: productCopy(product),
+    path: product.image,
+  }));
+  return collections.map(collection => collection.id === "produce"
+    ? { ...collection, rooms: [...collection.rooms, ...editable] }
+    : collection);
+}
+
 export function createFoodCatalogue(collections: Collection[], baseline: Collection[]): {
   pantry: Array<PantryProduct & { foodSection: string; foodLabel: string }>;
   bakes: Bake[];
@@ -120,7 +135,7 @@ export function createFoodCatalogue(collections: Collection[], baseline: Collect
       return;
     }
     const originalPath = original.path ?? "";
-    const productId = productIdByLegacyPath.get(originalPath);
+    const productId = original.pantryId ?? productIdByLegacyPath.get(originalPath);
     const product = productId ? products.get(productId) : undefined;
     if (product) {
       legacyCards.set(product.id, { legacyId: id, legacySlug: viewSlug });

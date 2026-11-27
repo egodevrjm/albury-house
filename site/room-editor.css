@@ -48,6 +48,7 @@ button:disabled, select:disabled { opacity: .55; cursor: default; }
 details summary { cursor: pointer; color: var(--olive); font-weight: 650; }
 details p { font-size: .87rem; }
 #history button { min-height: 1.9rem; background: transparent; color: var(--red); padding: 0; text-decoration: underline; }
+.editor-side { display: grid; gap: 1rem; }
 .draft-header, .actions { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
 .draft-header { justify-content: space-between; margin-bottom: 1rem; }
 .editor-columns { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 1rem; align-items: start; }

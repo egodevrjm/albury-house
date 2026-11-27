@@ -1,5 +1,5 @@
 import { applyCollectionEdits, collectionItemId, type Collection } from "./collection-edits.js";
-import { createFoodCatalogue, pantryGroups, pantryItems } from "./food-catalogue.js";
+import { createFoodCatalogue, pantryGroups, pantryItems, withPantryEditorItems } from "./food-catalogue.js";
 import { AsyncLocalStorage } from "node:async_hooks";
 import { createRequire } from "node:module";
 import { roomEditorStore, type RoomEditorStore } from "./room-editor-store.js";
@@ -108,7 +108,7 @@ export const baseTourSections = (roomsSource as unknown as { tour: TourSection[]
 });
 
 const staff = staffSource as unknown as { summary: Dict; people: Dict[]; servicePartners: Dict[]; asOf: string };
-export const baseCollections = (collectionsSource as { collections: Collection[] }).collections;
+export const baseCollections = withPantryEditorItems((collectionsSource as { collections: Collection[] }).collections);
 const culinary = culinarySource as unknown as {
   programme: Dict;
   media: Record<string, Dict>;

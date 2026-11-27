@@ -117,6 +117,7 @@
     if (collectionEdits.length) el('collection-preview-link').href = collectionDraftLink(draft, collectionEdits[0]);
     el('publish').disabled = older || !count;
     el('stage-view').querySelector('button').disabled = older;
+    el('stage-pantry-photo').querySelector('button').disabled = older;
     const roomMarkup = draft.edits.map((edit, index) => `<article>
       <h3>${escape(edit.title)}</h3><p class="muted">${edit.action === 'replace' ? 'Replace view' : 'Add view'}${edit.position ? ' · Position ' + edit.position : ''}</p>
       <img src="${photoPath(edit.assetId)}" alt="${escape(edit.title)}">
@@ -201,6 +202,7 @@
     el('history').replaceChildren();
     el('edits').replaceChildren();
     el('stage-view').reset();
+    el('stage-pantry-photo').reset();
     showOwner(false);
     notice('Signed out.');
   });
@@ -219,21 +221,38 @@
   };
   el('section').onchange = renderRoomOptions;
   for (const key of ['room', 'change', 'existing-view']) el(key).onchange = renderViewOptions;
-  el('image-file').onchange = task(el('image-file'), async () => {
-    const file = el('image-file').files[0];
-    if (!file) return;
+  async function uploadImage(file) {
     if (file.size > 3 * 1024 * 1024) throw new Error('Choose an image of up to 3 MiB.');
-    const encoded = await new Promise((resolve, reject) => {
+    const base64 = await new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.onerror = reject;
       reader.onload = () => resolve(String(reader.result).split(',')[1]);
       reader.readAsDataURL(file);
     });
-    const image = await call('upload_image', { name: file.name, base64: encoded });
+    return call('upload_image', { name: file.name, base64 });
+  }
+
+  el('image-file').onchange = task(el('image-file'), async () => {
+    const file = el('image-file').files[0];
+    if (!file) return;
+    const image = await uploadImage(file);
     el('image-file').value = '';
     state.images = (await call('list_images')).images;
     renderImages(image.id);
     notice('Image uploaded to the private editor.');
+  });
+  el('stage-pantry-photo').onsubmit = task(el('stage-pantry-photo').querySelector('button'), async event => {
+    const file = el('pantry-image-file').files[0];
+    if (!file) return;
+    const draft = state.draft;
+    const image = await uploadImage(file);
+    await call('stage_collection_item', {
+      draftId: draft.id, expectedVersion: draft.version,
+      edit: { action: 'replace', collectionId: 'produce', itemId: 'pantry-p47', assetId: image.id },
+    });
+    event.target.reset();
+    await refresh(draft.id);
+    notice('P47 bottle photo saved to draft.');
   });
   el('stage-view').onsubmit = task(el('stage-view').querySelector('button'), async event => {
     const form = new FormData(event.target);

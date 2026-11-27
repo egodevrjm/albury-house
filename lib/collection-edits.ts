@@ -6,6 +6,7 @@ export type CollectionItem = Record<string, unknown> & {
   title: string;
   description: string;
   path?: string;
+  pantryId?: string;
   location?: { sectionId: string; roomId: string; roomName: string; placement: string };
   viewSlug?: string;
   colourVariant?: "Full colour" | "Ivory led";

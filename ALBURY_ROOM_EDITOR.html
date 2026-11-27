@@ -7,8 +7,8 @@
   <meta name="referrer" content="same-origin">
   <title>House editor · Albury House</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="/site/room-editor.css">
-  <script defer src="/site/room-editor.js?v=collections-1"></script>
+  <link rel="stylesheet" href="/site/room-editor.css?v=pantry-photo-1">
+  <script defer src="/site/room-editor.js?v=pantry-photo-1"></script>
 </head>
 <body>
   <header class="top">
@@ -73,10 +73,19 @@
                 <button class="primary">Stage view</button>
               </form>
             </section>
-            <section class="panel" aria-labelledby="changes-heading">
-              <h3 id="changes-heading">Staged changes</h3>
-              <div id="edits"></div>
-            </section>
+            <div class="editor-side">
+              <section class="panel" aria-labelledby="pantry-photo-heading">
+                <h3 id="pantry-photo-heading">P47 · Albury Blackcurrant Vinegar</h3>
+                <form id="stage-pantry-photo">
+                  <label>Upload the bottle photo <span class="muted">JPEG, PNG or WebP, up to 3 MiB</span><input type="file" accept="image/jpeg,image/png,image/webp" id="pantry-image-file" required></label>
+                  <button class="primary">Stage bottle photo</button>
+                </form>
+              </section>
+              <section class="panel" aria-labelledby="changes-heading">
+                <h3 id="changes-heading">Staged changes</h3>
+                <div id="edits"></div>
+              </section>
+            </div>
           </div>
         </div>
       </section>

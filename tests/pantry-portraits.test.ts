@@ -3,9 +3,10 @@ import fs from 'node:fs';
 import test from 'node:test';
 
 import { publishedRoomCatalogue } from '../api/room-catalogue.js';
-import { baseCollections, getCollectionItem, getPantryItem, listPantry, searchImages, withPublishedRoomCatalogue } from '../lib/albury-data.js';
+import { baseCollections, baseTourSections, getCollectionItem, getPantryItem, listPantry, searchImages, withPublishedRoomCatalogue } from '../lib/albury-data.js';
 import { collectionItemId } from '../lib/collection-edits.js';
-import { initialState, type RoomEditorStore } from '../lib/room-editor-store.js';
+import { createRoomEditor } from '../lib/room-editor.js';
+import { initialState, type StoredImage, type RoomEditorStore } from '../lib/room-editor-store.js';
 
 test('pantry portraits are individually indexed and deployable', () => {
   const all = listPantry({ includeSeasonal: true, limit: 50 });
@@ -86,5 +87,50 @@ test('pantry catalogue views share products and retain published edits', async (
     assert.equal(getPantryItem("P43")?.description, "Published batch note");
     assert.equal(getCollectionItem(lemonLegacyId)?.id, "pantry-p43");
     assert.ok(searchImages({ query: "Albury Sauce", kind: "pantry" }).items.some(item => item.path === sauce.path));
+  }, store);
+});
+
+test('the owner can preview and publish an image onto the existing P47 product', async () => {
+  let state = initialState();
+  let version = 0;
+  const images = new Map<string, StoredImage>();
+  const store: RoomEditorStore = {
+    load: async () => ({ version: String(version), state: structuredClone(state) }),
+    save: async (expected, next) => {
+      if (expected !== String(version)) return false;
+      state = next;
+      version++;
+      return true;
+    },
+    saveImage: async image => { images.set(image.id, image); return image; },
+    image: async id => images.get(id),
+    images: async () => [...images.values()],
+    hasImages: async ids => ids.every(id => images.has(id)),
+  };
+  const editor = createRoomEditor(store, baseTourSections, baseCollections);
+  const { collections } = await editor.list_collections({ collectionId: 'produce' });
+  const item = collections[0].items.find(item => item.id === 'pantry-p47');
+  assert.equal(item?.pantryId, 'P47');
+  const draft = await editor.create_draft({ name: 'P47 bottle photo' });
+  const asset = await editor.upload_image({
+    name: 'test-portrait.webp',
+    base64: fs.readFileSync('images/albury-produce/individual/p01.webp').toString('base64'),
+  });
+  const staged = await editor.stage_collection_item({
+    draftId: draft.id, expectedVersion: draft.version,
+    edit: { action: 'replace', collectionId: 'produce', itemId: 'pantry-p47', assetId: asset.id },
+  });
+  const preview = await editor.preview_draft({ draftId: draft.id });
+  const path = `images/albury/managed/${asset.id}.webp`;
+  assert.equal(preview.foodPreview.find(c => c.id === 'produce')?.rooms.find(row => row.id === 'pantry-p47')?.path, path);
+  assert.equal(await editor.read_image(asset.id, true), undefined);
+  await editor.publish_draft({ draftId: draft.id, expectedVersion: staged.version });
+  assert.ok(await editor.read_image(asset.id, true));
+  const { food } = await publishedRoomCatalogue(store, true);
+  assert.equal(food?.pantry.filter(product => product.id === 'P47').length, 1);
+  assert.equal(food?.pantry.find(product => product.id === 'P47')?.image, path);
+  await withPublishedRoomCatalogue(() => {
+    assert.equal(getPantryItem('P47')?.imageUrl, `https://albury-house.vercel.app/${path}`);
+    assert.equal(getCollectionItem('pantry-p47')?.imageUrl, `https://albury-house.vercel.app/${path}`);
   }, store);
 });
