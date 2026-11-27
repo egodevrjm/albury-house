@@ -21,7 +21,7 @@ test('Club Alex opens on the permanent-stage speakeasy and retains a reversible 
   assert.equal(room.floorName, 'Club Alex');
   assert.deepEqual(room.configurations.map((c: { id: string }) => c.id), ['normal', 'live-music', 'nightclub']);
   assert.equal(room.defaultConfigurationId, 'normal');
-  assert.equal(room.viewCount, 6);
+  assert.equal(room.viewCount, 7);
   for (const config of room.configurations.filter((config: { path?: string }) => config.path)) {
     assert.ok(room.views.some((view: { configurationId: string; path: string }) => view.configurationId === config.id && view.path === config.path));
     assert.ok(fs.existsSync(config.path));
@@ -46,6 +46,10 @@ test('Club Alex opens on the permanent-stage speakeasy and retains a reversible 
   assert.equal(nightclub.path, djView.path);
   assert.equal(nightclub.imageUrl, djView.imageUrl);
   assert.ok(djView.legacySlugs.includes('08-nightclub-mode'));
+  const packedView = room.views.find((view: { title: string }) => view.title.endsWith('DJ and Dance Floor'));
+  assert.equal(packedView?.configurationId, 'nightclub');
+  assert.ok(fs.existsSync(packedView.path));
+  assert.ok(searchImages({ query: 'DJ and Dance Floor', kind: 'room' }).items.some(image => image.path === packedView.path));
   assert.ok(searchImages({ query: 'nightclub mode', kind: 'room' }).items.some(image => image.path === djView.path));
   assert.match(nightclub.description, /fixed stage, six-stool bar, oxblood banquette and floor-level Welmar stay in place/);
   assert.match(nightclub.description, /central dance floor and routes clear/);

@@ -365,6 +365,27 @@
           ]
         },
         {
+          "path": "images/albury/upper-basement/club-alex-2026-11-24/nightclub-dj-and-dance-floor.webp",
+          "title": "Bar & Games Room — DJ and Dance Floor",
+          "description": "Club Alex in full nightclub mode, with a DJ behind the decks and guests dancing under the blue and violet wash. The Welmar remains beside the stage.",
+          "roomName": "Bar & Games Room",
+          "roomId": "bar-games-room",
+          "configurationId": "nightclub",
+          "dimensions": {
+            "widthFt": 100,
+            "depthFt": 45,
+            "areaSqFt": 4500,
+            "basis": "Approximate working dimensions"
+          },
+          "eventCapacity": {
+            "seated": 29,
+            "standing": 250,
+            "packedStandingApprox": 350,
+            "netOpenFloorSqFtApprox": 3500,
+            "seatedBasis": "Approximate everyday seating, including about five on the banquette"
+          }
+        },
+        {
           "path": "images/albury/upper-basement/club-alex-2026-11-24/games-end.jpg",
           "title": "Bar & Games Room — Games End",
           "description": "The west games end. Its current layout has a full-size 9 ft billiards table, a 16 ft shuffleboard table, Bally’s Creature from the Black Lagoon and Theatre of Magic pinball machines, and a restored 1956 Wurlitzer 2000 Centennial. This render predates the jukebox installation.",
