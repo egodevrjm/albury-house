@@ -16,3 +16,10 @@
 .dish-card dl{margin:.5rem 0}
 .dish-card dd{margin:0 0 .35rem}
 #menu-week .day{scroll-margin-top:5rem}
+.today-snacks{margin:1.6rem 0 2.5rem;padding:1.1rem 1.25rem;background:#fbf8f0;border:1px solid #d9d4c5;border-radius:4px}
+.today-snacks h3{margin:0}
+.today-snacks .dated-menu-photo{margin-bottom:0}
+.standing-food .available-card h4{margin:1rem 0 .55rem;font-size:1.35rem}
+.standing-food .available-card p{margin:.4rem 0}
+#signature-bakes h4{margin:1.6rem 0 .5rem}
+.biscuit-grid{grid-template-columns:repeat(auto-fit,minmax(min(185px,100%),1fr))}

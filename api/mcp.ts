@@ -160,9 +160,14 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("list_available_food", {
     title: "List food available at Albury",
-    description: "Return the standing between-meal, studio, journey and late-return food provision with dish images where available.",
-    inputSchema: z.object({ query: z.string().optional() }), annotations: readOnly,
-  }, async ({ query }) => guarded(() => ({ items: listAvailableFood(query) })));
+    description: "Return the house’s usual between-meal food, with vegan options and service notes for training, studio breaks, drop-in guests, late returns and journeys. Supply a date for that day’s snacks. Use list_signature_bakes for Bethan’s biscuits and cakes.",
+    inputSchema: z.object({ query: z.string().optional(), date: isoDate.optional() }), annotations: readOnly,
+  }, async ({ query, date }) => guarded(() => {
+    const items = listAvailableFood(query);
+    if (!date) return { items };
+    const { covered, snackOptions, coverage, kitchenLead } = getMenuForDate(date);
+    return { items, date, covered, snackOptions, coverage, kitchenLead };
+  }));
 
   server.registerTool("list_signature_bakes", {
     title: "List Bethan’s signature bakes",

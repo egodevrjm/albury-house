@@ -68,6 +68,32 @@ test("MCP menu and pantry calls return structured canonical records", async () =
   assert.equal(pantry.result.structuredContent.total, 46);
 });
 
+test("MCP between-meals provision adds dated snacks and keeps the standing choices", async () => {
+  const call = async (name: string, args: Record<string, string> = {}) => {
+    const response = await post({ jsonrpc: "2.0", id: name, method: "tools/call", params: { name, arguments: args } });
+    assert.equal(response.result.isError, undefined);
+    return response.result.structuredContent;
+  };
+  const date = "2025-08-11";
+  const [provision, menu, outside, filtered, bakes] = await Promise.all([
+    call("list_available_food", { date }),
+    call("get_menu_for_date", { date }),
+    call("list_available_food", { date: "2026-02-11" }),
+    call("list_available_food", { query: "friends" }),
+    call("list_signature_bakes"),
+  ]);
+  assert.equal(provision.items.length, 6);
+  assert.ok(provision.items.every((item: { veganOption?: string }) => item.veganOption));
+  assert.equal(provision.kitchenLead, menu.kitchenLead);
+  assert.deepEqual(provision.snackOptions, menu.snackOptions);
+  assert.equal(outside.covered, false);
+  assert.deepEqual(outside.snackOptions, []);
+  assert.deepEqual(outside.items, provision.items);
+  assert.deepEqual(filtered.items.map((item: { id: string }) => item.id), ["people-drop-in"]);
+  assert.match(filtered.items[0].description, /Parmesan and black-pepper sablés/);
+  assert.equal(bakes.items.filter((item: { availability: string }) => item.availability === "Regular tin choice").length, 2);
+});
+
 test("MCP discovers sendable gifts and preserves the distinction between gift batches and chilled service cordials", async () => {
   const call = async (name: string, args = {}) => {
     const response = await post({ jsonrpc: "2.0", id: name, method: "tools/call", params: { name, arguments: args } });

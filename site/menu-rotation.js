@@ -78,9 +78,10 @@ window.AlburyMenus = (() => {
   api.photo = (choice, label, showSeason = true) => choice?.image ? `<figure class="dated-menu-photo"><a class="meal-photo" href="${esc(choice.image)}" aria-label="View ${esc(label)} photograph"><img src="${esc(choice.image)}" alt="${esc(choice.imageAlt)}" width="512" height="512" loading="lazy"></a>${showSeason ? `<figcaption>Late-summer plating</figcaption>` : ""}</figure>` : "";
   const option = (value, label) => value ? `<article class="dated-option">${api.photo(value, label, false)}
     <div><h4>${esc(label)}</h4><p>${esc(value.description)}</p>${value.advanceNotice ? `<p class="muted">With notice</p><p><strong>On hand</strong> · ${esc(value.standby.description)}</p>` : ""}</div></article>` : "";
+  api.snacks = daily => `<div class="dated-options">${daily.snackOptions.map((choice,i) => option(choice, i === 0 ? "Savoury" : "Sweet")).join("")}</div>`;
   api.extras = daily => !daily.covered ? "" : `<div class="dated-menu-extras">
     <details><summary>Vegan options</summary><div class="dated-options">${option(daily.veganLunch,"Lunch")}${option(daily.veganDinner,"Dinner")}</div></details>
-    <details><summary>Between meals</summary><div class="dated-options">${daily.snackOptions.map((choice,i) => option(choice, i === 0 ? "Savoury" : "Sweet")).join("")}</div></details>
+    <details><summary>Between meals</summary>${api.snacks(daily)}</details>
     ${daily.guestService ? `<details><summary>If people are over</summary><p>${esc(daily.guestService)}</p></details>` : ""}</div>`;
   api.specialPicker = () => `<label>Occasion menu<select id="special-menu-select"><option value="">House menu for this date</option>${specials.map(item => `<option value="${esc(item.id)}" ${api.specialId === item.id ? "selected" : ""}>${esc(item.name)}</option>`).join("")}</select></label>`;
   api.controls = () => `<div class="rotation-controls">

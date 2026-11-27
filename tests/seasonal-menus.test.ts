@@ -57,6 +57,37 @@ test("daily and weekly pages share the complete dated MCP menu", async () => {
   }
 });
 
+test("between-meals page uses the canonical standing provision and the selected date’s snacks", async () => {
+  const location = { search: "?date=2025-08-12", hash: "#available" };
+  const content = { dataset: {}, innerHTML: "" };
+  const context = vm.createContext({
+    URLSearchParams, location,
+    fetch: async () => ({ ok: true, json: async () => calendar }),
+    addEventListener() {},
+    document: {
+      querySelector: (selector: string) => selector === "#kitchen-content" ? content : null,
+      querySelectorAll: () => [],
+    },
+  });
+  context.window = context;
+  for (const script of ["content-data", "csv", "menu-rotation", "culinary-media", "kitchen"]) {
+    vm.runInContext(readFileSync(`site/${script}.js`, "utf8"), context);
+  }
+  await context.AlburyMenus.ready;
+  const culinary = JSON.parse(readFileSync("site/data/public/culinary.json", "utf8"));
+  assert.deepEqual(JSON.parse(JSON.stringify(context.ALBURY_CONTENT.culinary.availableFood)), culinary.availableFood);
+  assert.deepEqual(JSON.parse(JSON.stringify(context.ALBURY_CONTENT.culinary.signatureBakes)), culinary.signatureBakes);
+  for (const choice of getMenuForDate("2025-08-12").snackOptions) {
+    assert.ok(content.innerHTML.includes(choice.description));
+  }
+  for (const item of culinary.availableFood) {
+    assert.ok(content.innerHTML.includes(item.title));
+    readFileSync(culinary.media[item.mediaId].image);
+  }
+  assert.match(content.innerHTML, /The guest-lounge tin[\s\S]+On a plate with tea or coffee/);
+  assert.match(content.innerHTML, /ALBURY_PANTRY_ITEMS\.html#P20/);
+});
+
 test("occasion menus replace only their selected meal", () => {
   const date = "2025-12-25";
   const regular = getMenuForDate(date);

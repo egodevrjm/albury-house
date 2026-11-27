@@ -545,34 +545,49 @@
   },
   "availableFood": [
     {
-      "title": "Something warm",
-      "description": "Soup with sourdough; a mushroom and Comté toastie with mustard and leaves; an omelette with toast; tomato and basil pasta.",
-      "mediaId": "warm-toastie"
+      "id": "after-training",
+      "title": "After a run, swim or gym",
+      "mediaId": "breakfast-eggs",
+      "description": "Scrambled eggs on sourdough, yoghurt with seasonal fruit and toasted oat, almond and seed granola, or chicken and rice if you’re properly hungry.",
+      "veganOption": "Porridge made with oat milk, fruit and toasted seeds."
     },
     {
-      "title": "A substantial plate",
-      "description": "Chicken club sandwich with pickles; chicken-and-rice bowl; roast-chicken and tarragon salad with new potatoes.",
-      "mediaId": "club-sandwich"
+      "id": "something-warm",
+      "title": "A quick warm plate",
+      "mediaId": "warm-toastie",
+      "description": "A bowl of soup with sourdough, a mushroom and Comté toastie with dressed leaves, or an omelette and toast.",
+      "veganOption": "Tomato and basil soup with sourdough when the kitchen has a batch ready."
     },
     {
-      "title": "Something sweet",
-      "description": "Butter shortbread, dark-chocolate sea-salt sablés, fruit, brownies and house ice cream with salted caramel or chocolate fudge sauce as wanted. Bethan keeps the guest-lounge biscuit tin supplied with a rotating selection from her biscuit repertoire; fresh madeleines, financiers and brownies are served separately.",
-      "mediaId": "sweet-baking"
+      "id": "studio-break",
+      "title": "A break in the studio",
+      "mediaId": "studio-break",
+      "description": "Chicken club sandwiches, chicken-and-rice bowls or a substantial salad for the session.",
+      "veganOption": "Roast pepper and white bean sandwiches on olive-oil sourdough.",
+      "serviceNote": "Give the kitchen a head count and a break time. Food goes to the rec room."
     },
     {
-      "title": "Studio breaks",
-      "description": "Sandwiches, bowls, salads and pasta can be served in the rec room during a break. Food and drinks stay away from recording equipment and instruments.",
-      "mediaId": "studio-break"
+      "id": "people-drop-in",
+      "title": "When friends drop in",
+      "mediaId": "club-sandwich",
+      "description": "For a few people, cut chicken clubs into quarters or set out Parmesan and black-pepper sablés, rosemary and smoked-salt almonds and house pickles. If it turns into supper, ask the kitchen what it can put out to share.",
+      "veganOption": "White bean dip, radishes, cucumber and seeded rye crackers."
     },
     {
-      "title": "For the journey",
-      "description": "Breakfast bags, packed lunches and a separately packed food gift. Tell the team the departure time, journey and dietary requirements.",
-      "mediaId": "journey-food"
+      "id": "late-return",
+      "title": "Coming home late",
+      "mediaId": "late-supper",
+      "description": "Soup and bread, a cheese toastie or a prepared bowl of chicken and rice.",
+      "veganOption": "A baked potato with herbed white beans, arranged ahead.",
+      "serviceNote": "Tell the team when you expect to be back. The duty team can leave something ready if the kitchen will have finished service."
     },
     {
-      "title": "A late return",
-      "description": "The duty team arranges suitable prepared food and service. A late supper does not depend on Rafael personally being on duty.",
-      "mediaId": "late-supper"
+      "id": "for-the-journey",
+      "title": "Something for the journey",
+      "mediaId": "journey-food",
+      "description": "A morning pastry, fruit and a drink for an early start. For a longer journey, ask for a packed sandwich or a substantial salad.",
+      "veganOption": "White bean and roast vegetable salad, with fruit alongside.",
+      "serviceNote": "Give the team a departure time and any dietary requirements."
     }
   ],
   "featuredTeam": [
@@ -601,42 +616,47 @@
       "name": "Bethan’s butter shortbread",
       "kind": "biscuit tin",
       "pantryId": "P21",
-      "description": "The familiar buttery house shortbread; a dependable guest-lounge tin staple.",
+      "description": "Bethan’s butter shortbread, one of the regular choices for the guest-lounge tin.",
       "image": "images/albury-culinary/signature-bakes/butter-shortbread.webp",
-      "imageAlt": "Bethan’s butter shortbread plated alone"
+      "imageAlt": "Bethan’s butter shortbread plated alone",
+      "availability": "Regular tin choice"
     },
     {
       "id": "chocolate-sables",
       "name": "Dark-chocolate and sea-salt sablés",
       "kind": "biscuit tin",
       "pantryId": "P22",
-      "description": "Chocolate-rich, lightly salted biscuits for coffee and late evenings.",
+      "description": "Dark chocolate and sea-salt sablés, a regular choice for the guest-lounge tin and good with coffee.",
       "image": "images/albury-culinary/signature-bakes/chocolate-sables.webp",
-      "imageAlt": "Dark-chocolate and sea-salt sablés plated alone"
+      "imageAlt": "Dark-chocolate and sea-salt sablés plated alone",
+      "availability": "Regular tin choice"
     },
     {
       "id": "brown-butter-oat",
       "name": "Brown-butter oat biscuits",
       "kind": "biscuit tin",
-      "description": "Bethan’s crisp-edged oat biscuit with warm brown-butter depth; a rotating fresh bake.",
+      "description": "A crisp-edged oat biscuit with brown butter, baked in rotation.",
       "image": "images/albury-culinary/signature-bakes/brown-butter-oat.webp",
-      "imageAlt": "Brown-butter oat biscuits plated alone"
+      "imageAlt": "Brown-butter oat biscuits plated alone",
+      "availability": "When baked"
     },
     {
       "id": "black-cherry-thumbprints",
       "name": "Black-cherry thumbprint biscuits",
       "kind": "biscuit tin",
-      "description": "Small butter biscuits with P05 bourbon and black cherry confiture; Hatfield bourbon remains credited in the filling.",
+      "description": "Small butter biscuits filled with Albury’s bourbon and black cherry confiture, made with Hatfield Original.",
       "image": "images/albury-culinary/signature-bakes/black-cherry-thumbprints.webp",
-      "imageAlt": "Black-cherry thumbprint biscuits plated alone"
+      "imageAlt": "Black-cherry thumbprint biscuits plated alone",
+      "availability": "When baked"
     },
     {
       "id": "lemon-madeleines",
       "name": "Lemon madeleines",
       "kind": "fresh sweet treat",
-      "description": "Baked for tea and served fresh rather than left in the biscuit tin.",
+      "description": "Small lemon cakes served fresh with tea.",
       "image": "images/albury-culinary/signature-bakes/lemon-madeleines.webp",
-      "imageAlt": "Lemon madeleines plated alone"
+      "imageAlt": "Lemon madeleines plated alone",
+      "availability": "Fresh plate"
     },
     {
       "id": "pistachio-orange-financiers",
@@ -644,15 +664,17 @@
       "kind": "fresh sweet treat",
       "description": "Small almond-and-pistachio cakes for a fresh afternoon plate.",
       "image": "images/albury-culinary/signature-bakes/pistachio-orange-financiers.webp",
-      "imageAlt": "Pistachio and orange financiers plated alone"
+      "imageAlt": "Pistachio and orange financiers plated alone",
+      "availability": "Fresh plate"
     },
     {
       "id": "chocolate-brownies",
       "name": "Chocolate brownies",
       "kind": "fresh sweet treat",
-      "description": "A generous square for coffee, studio breaks or a late return.",
+      "description": "A square of dark chocolate brownie for coffee or a studio break.",
       "image": "images/albury-culinary/signature-bakes/chocolate-brownies.webp",
-      "imageAlt": "Chocolate brownies plated alone"
+      "imageAlt": "Chocolate brownies plated alone",
+      "availability": "Fresh plate"
     }
   ],
   "cordialServes": [
