@@ -39,8 +39,8 @@
       const response = await fetch('/api/room-catalogue', { signal });
       if (response.ok) {
         const { updates, collectionUpdates } = await response.json();
-        if (!window.ALBURY_MANAGED_CONTENT?.rooms) apply(updates);
-        if (!window.ALBURY_MANAGED_CONTENT?.collections && collectionUpdates?.length) {
+        apply(updates);
+        if (collectionUpdates?.length) {
           const edits = new Map(collectionUpdates.map(collection => [collection.id, collection]));
           const collections = window.ALBURY_CONTENT.collections.collections;
           const published = collections.map(collection => edits.get(collection.id) ?? collection);

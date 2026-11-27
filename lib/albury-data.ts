@@ -1,6 +1,3 @@
-import { applyContentEdits, readContent, type Content, type ContentKey } from "./content-edits.js";
-import { pantryPublic, updateProduce, type Pantry } from "./pantry-public.js";
-import type { Revision } from "./room-editor-store.js";
 import { applyCollectionEdits, collectionItemId, type Collection } from "./collection-edits.js";
 import { AsyncLocalStorage } from "node:async_hooks";
 import { createRequire } from "node:module";
@@ -21,6 +18,18 @@ const assetsSource = requireJson("../site/data/public/assets.json");
 const brandsSource = requireJson("../site/data/public/brands.json");
 const pantryItemsSource = requireJson("../mcp-data/pantry-items.json");
 const menusSource = requireJson("../site/data/public/menus.json");
+type DiningDish = { id: string; name: string; category: string; path: string; imageAlt: string; photoSeason: string };
+type DiningChoice = { dishId: string; description: string; omitPhoto?: boolean };
+type VeganChoice = DiningChoice & { advanceNotice?: boolean; standby?: DiningChoice };
+type DiningDay = { date: string; day: string; lead: string; season: string; lunch: DiningChoice; dinner: DiningChoice;
+  pudding?: DiningChoice & { meal: string }; veganLunch: VeganChoice; veganDinner: VeganChoice;
+  snacks: DiningChoice[]; guestService: string };
+const diningCalendar = requireJson("../site/data/public/dining-calendar.json") as {
+  coverage: { start: string; end: string }; breakfast: string;
+  dishes: Record<string, DiningDish>; days: DiningDay[];
+};
+const diningByDate = new Map(diningCalendar.days.map(day => [day.date, day]));
+
 const eventsSource = requireJson("../mcp-data/london-events.json");
 const weatherSource = requireJson("../site/data/public/weather.json");
 const floorPlanDocumentsSource = requireJson("../mcp-data/floor-plan-documents.json");
@@ -39,7 +48,7 @@ const basementRefresh = basementRefreshSource as {
   views: ViewUpdate[];
 };
 const house = houseSource as unknown as Dict;
-const floorPlanDocuments = (source: typeof floorPlanDocumentsSource) => (source as Array<{
+const floorPlanDocuments = (floorPlanDocumentsSource as Array<{
   id: string;
   title: string;
   path: string;
@@ -119,14 +128,12 @@ const assets = (assetsSource as unknown as { assets: Dict[] }).assets.map(asset 
   updatedAssets.get(String(asset.path)) ?? asset
 ).concat(roomViewAssets);
 const brands = (brandsSource as unknown as { brands: Dict[] }).brands;
-const pantryItems = pantryItemsSource as Pantry;
-const menus = menusSource.menus as Dict[];
-
+const pantryItems = pantryItemsSource as unknown as { summary: Dict; openingItems: Dict[]; seasonalRecipes: Dict[]; asOf: string };
 const specialMenusSource = requireJson("../site/data/public/special-menus.json");
 const specialMenus = specialMenusSource.menus as Array<{ id: string; name: string; occasion: string; season: string; meal: string; notes: string; menu: Dict }>;
 function menuSeason(date: string): string {
   const month = isoDate(date).getUTCMonth() + 1;
-  const seasons = currentCatalogue().content.menus.seasonMonths;
+  const seasons = menusSource.seasonMonths as Record<string, number[]>;
   const match = Object.entries(seasons).find(([, months]) => months.includes(month));
   if (!match) throw new Error(`No menu season for ${date}.`);
   return match[0];
@@ -143,92 +150,7 @@ const weather = weatherSource as {
   location: string; timeZone: string; fictional: boolean; source: string;
   coverage: { start: string; end: string }; days: WeatherDay[];
 };
-type CatalogueResources = Content & {
-  house: Dict; rooms: Dict & { tour: TourSection[] }; staff: typeof staff; pantry: Pantry;
-  pantryGroups: Dict & { preparations: Dict[] }; collections: Dict & { collections: Collection[] };
-  culinary: typeof culinary; hospitality: typeof hospitality; brands: Dict & { brands: Dict[] };
-  menus: Dict & { menus: Dict[]; seasonMonths: Record<string, number[]> };
-  specialMenus: Dict & { menus: typeof specialMenus }; floorPlans: typeof floorPlanDocumentsSource;
-  events: Dict[]; weather: typeof weather; pageCopy: Record<string, Array<{ id: string }>>;
-};
-
-const baseContent: CatalogueResources = {
-  house, rooms: { ...roomsSource, tour: baseTourSections }, staff, pantry: pantryItems,
-  pantryGroups: { ...pantryGroupsSource, preparations: pantryGroups },
-  collections: { ...collectionsSource, collections: baseCollections },
-  culinary, hospitality, brands: { ...brandsSource, brands }, menus: { ...menusSource, menus,
-    seasonMonths: menusSource.seasonMonths as Record<string, number[]> },
-  specialMenus: { ...specialMenusSource, menus: specialMenus },
-  floorPlans: floorPlanDocumentsSource, events, weather,
-  walk: requireJson("../site/data/public/walk.json"),
-  houseStyle: requireJson("../site/data/public/house-style.json"),
-  houseAtWork: requireJson("../site/data/public/house-at-work.json"),
-  pageCopy: requireJson("../site/data/public/page-copy.json") as Record<string, Array<{ id: string }>>,
-};
-
-export function contentAtRevision(revision: Pick<Revision, "edits" | "collectionEdits" | "contentEdits">): typeof baseContent {
-  const initial = { ...baseContent, rooms: { ...baseContent.rooms, tour: applyRoomViewEdits(baseTourSections, revision.edits) },
-    collections: { ...baseContent.collections,
-      collections: applyCollectionEdits(baseCollections, revision.collectionEdits ?? []) } };
-  const content = applyContentEdits(initial, revision.contentEdits ?? []) as typeof baseContent;
-  return content;
-}
-
-export function visibleContent(content: typeof baseContent) {
-  const publishedPantry = content.pantry;
-  const staffDirectory = content.staff;
-  const productsChanged = publishedPantry !== pantryItems;
-  const staffChanged = staffDirectory !== staff;
-  const collections = productsChanged ? updateProduce(content.collections.collections, pantryItems, publishedPantry)
-    : content.collections.collections;
-  const locatedCollections: Collection[] = content.rooms.tour === baseTourSections &&
-      content.collections.collections === baseCollections ? collections : collections.map(collection => ({
-    ...collection, rooms: collection.rooms.map(item => {
-      if (!item.location) return item;
-      const room = content.rooms.tour.find(section => section.id === item.location!.sectionId)
-        ?.rooms.find(view => view.roomId === item.location!.roomId);
-      return room?.roomName ? { ...item, location: { ...item.location, roomName: room.roomName } } : item;
-    }),
-  }));
-  return {
-    ...content,
-    collections: { ...content.collections, collections: locatedCollections },
-    pantry: productsChanged ? { ...publishedPantry, summary: { ...publishedPantry.summary,
-      openingItems: publishedPantry.openingItems.length, seasonalRecipes: publishedPantry.seasonalRecipes.length,
-      imageGroups: content.pantryGroups.preparations.length } } : publishedPantry,
-    staff: staffChanged ? { ...staffDirectory, summary: { ...staffDirectory.summary,
-      permanentEmployees: staffDirectory.people.filter(person => person.employmentType === "permanent").length,
-      scheduledSpecialists: staffDirectory.people.filter(person => String(person.employmentType).startsWith("scheduled")).length,
-      servicePartners: staffDirectory.servicePartners.length,
-      departments: new Set(staffDirectory.people.map(person => person.department)).size } } : staffDirectory,
-  };
-}
-
-export function publicContentUpdates(revision: Pick<Revision, "edits" | "collectionEdits" | "contentEdits">) {
-  const updates = new Set((revision.contentEdits ?? []).map(edit => edit.resource));
-  if (!updates.size) return {};
-  const content = visibleContent(contentAtRevision(revision));
-  const published: Record<string, unknown> = {};
-  if (updates.has("rooms")) published.collections = content.collections;
-  for (const resource of updates) {
-    if (resource === "pantry") {
-      const originalProducts = new Map([...pantryItems.openingItems, ...pantryItems.seasonalRecipes].map(item => [item.id, JSON.stringify(item)]));
-      const changedIds = [...content.pantry.openingItems, ...content.pantry.seasonalRecipes]
-        .filter(item => originalProducts.get(item.id) !== JSON.stringify(item)).map(item => item.id);
-      published.pantryProducts = { ...pantryPublic(content.pantry), changedIds };
-      published.collections = content.collections;
-    } else if (resource === "pageCopy") {
-      published.pageCopy = Object.fromEntries(Object.entries(content.pageCopy).map(([page, items]) => {
-        const originals = new Map((baseContent.pageCopy[page] ?? []).map(item => [item.id, JSON.stringify(item)]));
-        return [page, items.filter(item => originals.get(item.id) !== JSON.stringify(item))];
-      }).filter(([, records]) => records.length));
-    } else {
-      published[({ pantryGroups: "pantry", specialMenus: "special-menus",
-        houseStyle: "house-style", houseAtWork: "house-at-work" } as Record<string, string>)[resource] ?? resource] = content[resource];
-    }
-  }
-  return published;
-}
+const weatherByDate = new Map(weather.days.map(day => [day.date, day]));
 
 
 function text(value: unknown): string {
@@ -345,7 +267,7 @@ function collectionItems(collections: Collection[]): Array<Dict & { id: string; 
   }) as Dict & { id: string; collectionId: string; collectionName: string; imageUrl?: string }));
 }
 
-function imageRecords(rooms: ReturnType<typeof roomGroups>, items: ReturnType<typeof collectionItems>, content: typeof baseContent) {
+function imageRecords(rooms: ReturnType<typeof roomGroups>, items: ReturnType<typeof collectionItems>) {
   const records = new Map<string, Dict>();
   const add = (item: Dict, kind: string, title?: unknown, description?: unknown) => {
     const path = item.image ?? item.path;
@@ -366,30 +288,27 @@ function imageRecords(rooms: ReturnType<typeof roomGroups>, items: ReturnType<ty
   for (const asset of assets) add(asset, "asset");
   for (const room of rooms) for (const view of room.views) add(view, "room", view.title, view.description);
   for (const item of items) add(item, "collection", item.title, item.description);
-  for (const item of Object.values(content.culinary.media)) add(item, "culinary", item.title, item.description);
-  for (const item of content.staff.people) add(item, "staff", item.name, `${item.role ?? ""} ${item.description ?? ""}`);
-  for (const item of content.pantryGroups.preparations) add(item, "pantry", item.title, item.description);
-  for (const item of [...content.pantry.openingItems, ...content.pantry.seasonalRecipes]) add(item, "pantry", item.name, `${item.category ?? ""}. ${item.uses ?? ""}`);
-  for (const item of content.hospitality.collections) {
+  for (const item of Object.values(culinary.media)) add(item, "culinary", item.title, item.description);
+  for (const dish of Object.values(diningCalendar.dishes)) {
+    add({ ...dish, id: "menu-" + dish.id.toLowerCase() }, "culinary", dish.name, dish.imageAlt + " · " + dish.photoSeason);
+  }
+  for (const item of staff.people) add(item, "staff", item.name, `${item.role ?? ""} ${item.description ?? ""}`);
+  for (const item of pantryGroups) add(item, "pantry", item.title, item.description);
+  for (const item of [...pantryItems.openingItems, ...pantryItems.seasonalRecipes]) add(item, "pantry", item.name, `${item.category ?? ""}. ${item.uses ?? ""}`);
+  for (const item of hospitality.collections) {
     add(item, "hospitality", item.title, item.description);
     if (item.whitePath) add({ ...item, path: item.whitePath }, "hospitality", `${item.title} — white-led`, item.description);
   }
   return [...records.values()];
 }
 
-function buildCatalogue(resources: typeof baseContent) {
-  const content = visibleContent(resources);
-  const sections: TourSection[] = content.rooms.tour;
-  const collections = content.collections.collections;
+function buildCatalogue(sections: TourSection[], collections: Collection[]) {
   const rooms = roomGroups(sections, collections);
   const items = collectionItems(collections);
-  const weatherByDate = new Map(content.weather.days.map(day => [day.date, day]));
-  const menuPhotos = new Map(content.culinary.menuPhotos.map(photo =>
-    [[photo.season, photo.cycle, photo.day, photo.meal, photo.main].join("|"), photo]));
-  return { sections, rooms, collections, items, content, weatherByDate, menuPhotos, images: imageRecords(rooms, items, content) };
+  return { sections, rooms, collections, items, images: imageRecords(rooms, items) };
 }
 
-const builtInCatalogue = buildCatalogue(baseContent);
+const builtInCatalogue = buildCatalogue(baseTourSections, baseCollections);
 const catalogueContext = new AsyncLocalStorage<typeof builtInCatalogue>();
 let cachedCatalogue: { store: RoomEditorStore; revision: number; value: typeof builtInCatalogue } | undefined;
 
@@ -404,7 +323,9 @@ export async function withPublishedRoomCatalogue<T>(operation: () => T, store = 
     const { state } = await store.load();
     const revision = state.current;
     if (cachedCatalogue?.store !== store || cachedCatalogue.revision !== revision.id) {
-      cachedCatalogue = { store, revision: revision.id, value: buildCatalogue(contentAtRevision(revision)) };
+      const sections = applyRoomViewEdits(baseTourSections, revision.edits);
+      const collections = applyCollectionEdits(baseCollections, revision.collectionEdits ?? []);
+      cachedCatalogue = { store, revision: revision.id, value: buildCatalogue(sections, collections) };
     }
     catalogue = cachedCatalogue.value;
   } catch {
@@ -414,35 +335,29 @@ export async function withPublishedRoomCatalogue<T>(operation: () => T, store = 
   return catalogueContext.run(catalogue, operation);
 }
 
-export function getReferenceContent(resource: ContentKey, path: string[]) {
-  const catalogue = currentCatalogue();
-  if (resource === "pantry") return readContent(pantryPublic(catalogue.content.pantry), path);
-  return readContent(catalogue.content[resource], path);
-}
-
 export function getSummary() {
   const { sections, rooms, images, items } = currentCatalogue();
   return {
-    house: { ...currentCatalogue().content.house, floorPlanDocuments: floorPlanDocuments(currentCatalogue().content.floorPlans).filter((document) => !document.floorId) } as typeof house & {
-      floorPlanDocuments: ReturnType<typeof floorPlanDocuments>;
+    house: { ...house, floorPlanDocuments: floorPlanDocuments.filter((document) => !document.floorId) } as typeof house & {
+      floorPlanDocuments: typeof floorPlanDocuments;
     },
-    asOf: currentCatalogue().content.house.storyDate ?? STORY_DATE,
+    asOf: STORY_DATE,
     totals: {
       floors: sections.filter(section => section.kind === "floor").length,
       outdoorAreas: sections.filter(section => section.kind === "outdoor").length,
       tourSections: sections.length,
       rooms: rooms.length,
       roomViews: sections.reduce((sum, section) => sum + (((section.rooms as Dict[]) ?? []).length), 0),
-      permanentStaff: currentCatalogue().content.staff.summary.permanentEmployees,
-      scheduledSpecialists: currentCatalogue().content.staff.summary.scheduledSpecialists,
-      externalPartners: currentCatalogue().content.staff.servicePartners.length,
-      pantryOpeningItems: currentCatalogue().content.pantry.openingItems.length,
-      pantrySeasonalRecipes: currentCatalogue().content.pantry.seasonalRecipes.length,
-      sentGiftFormats: currentCatalogue().content.hospitality.collections.filter(item => item.category === "sent-gifts").length,
-      pantryImageGroups: currentCatalogue().content.pantryGroups.preparations.length,
+      permanentStaff: staff.summary.permanentEmployees,
+      scheduledSpecialists: staff.summary.scheduledSpecialists,
+      externalPartners: staff.servicePartners.length,
+      pantryOpeningItems: pantryItems.openingItems.length,
+      pantrySeasonalRecipes: pantryItems.seasonalRecipes.length,
+      sentGiftFormats: hospitality.collections.filter(item => item.category === "sent-gifts").length,
+      pantryImageGroups: pantryGroups.length,
       collectionItems: items.length,
       images: images.length,
-      calendarEvents: currentCatalogue().content.events.length,
+      calendarEvents: events.length,
     },
     purpose: "Closed-world, read-only reference for Albury House, its operation and its hospitality programme.",
   };
@@ -479,7 +394,7 @@ export function listOutdoorAreas() {
 export function getFloor(id: string) {
   const floor = currentCatalogue().sections.find(item => item.kind === "floor" && matchesSection(item, id));
   if (!floor) return undefined;
-  const documents = floorPlanDocuments(currentCatalogue().content.floorPlans).filter((document) => document.floorId === floor.id);
+  const documents = floorPlanDocuments.filter((document) => document.floorId === floor.id);
   return {
     ...sectionSummary(floor),
     floorPlanDocuments: documents.length ? documents : undefined,
@@ -508,49 +423,84 @@ export function getRoom(id: string, floorId?: string) {
   if (candidates.length > 1) throw new Error(`Ambiguous room ${id}; use a floor-qualified room_id (${candidates.map(room => room.id).join(", ")}) or provide floor_id.`);
   const room = candidates[0];
   if (!room) return undefined;
-  const documents = floorPlanDocuments(currentCatalogue().content.floorPlans).filter((document) =>
+  const documents = floorPlanDocuments.filter((document) =>
     document.floorId === room.floorId && document.roomIds?.includes(room.localId));
   return { ...room, floorPlanDocuments: documents.length ? documents : undefined };
 }
 
 export function listStaff(input: { department?: string; employmentType?: string; query?: string; offset?: number; limit?: number }) {
   const employment = normalize(input.employmentType);
-  const filtered = currentCatalogue().content.staff.people.filter((person) => (!input.department || normalize(person.department) === normalize(input.department)) && (!employment || normalize(person.employmentType).startsWith(employment)) && matches(person, input.query));
-  return { asOf: currentCatalogue().content.staff.asOf, summary: currentCatalogue().content.staff.summary, ...paginate(filtered.map(withImage), input.offset, input.limit) };
+  const filtered = staff.people.filter((person) => (!input.department || normalize(person.department) === normalize(input.department)) && (!employment || normalize(person.employmentType).startsWith(employment)) && matches(person, input.query));
+  return { asOf: staff.asOf, summary: staff.summary, ...paginate(filtered.map(withImage), input.offset, input.limit) };
 }
 
 export function getStaffMember(id: string) {
-  const person = currentCatalogue().content.staff.people.find((item) => item.id === id || normalize(item.name) === normalize(id));
+  const person = staff.people.find((item) => item.id === id || normalize(item.name) === normalize(id));
   return person ? withImage(person) : undefined;
 }
 
 export function listPartners(query?: string) {
-  return currentCatalogue().content.staff.servicePartners.filter((item) => matches(item, query));
+  return staff.servicePartners.filter((item) => matches(item, query));
 }
 
 export function getPartner(id: string) {
-  return currentCatalogue().content.staff.servicePartners.find((item) => item.id === id || normalize(item.name) === normalize(id));
+  return staff.servicePartners.find((item) => item.id === id || normalize(item.name) === normalize(id));
 }
 
-export function listSpecialMenus() { return currentCatalogue().content.specialMenus.menus; }
+export function listSpecialMenus() { return specialMenus; }
 
 export function getSpecialMenu(id: string) {
-  const menu = currentCatalogue().content.specialMenus.menus.find(item => item.id === id);
+  const menu = specialMenus.find(item => item.id === id);
   if (!menu) throw new Error(`Unknown special menu: ${id}. Use list_special_menus to choose one.`);
   return menu;
 }
 
+function illustratedChoice(choice: DiningChoice) {
+  const dish = diningCalendar.dishes[choice.dishId];
+  return choice.omitPhoto ? { dishId: choice.dishId, description: choice.description } : {
+    dishId: choice.dishId, description: choice.description, image: dish.path, imageAlt: dish.imageAlt,
+    imageUrl: imageUrl(dish.path), photoSeason: dish.photoSeason,
+  };
+}
+
+function veganChoice(choice: VeganChoice) {
+  return { ...illustratedChoice(choice), advanceNotice: !!choice.advanceNotice,
+    ...(choice.standby ? { standby: illustratedChoice(choice.standby) } : {}) };
+}
+
 export function getMenuForDate(date: string, specialMenuId?: string) {
   const position = menuPosition(date);
-  const season = menuSeason(date);
+  const day = diningByDate.get(date);
   const special = specialMenuId ? getSpecialMenu(specialMenuId) : undefined;
-  const meals: Dict[] = currentCatalogue().content.menus.menus.filter(row => row.season === season && Number(row.cycle) === position.cycle && row.day === position.day)
-    .map(row => {
-      if (special && row.meal === special.meal) return { ...row, ...special.menu, specialMenuId: special.id };
-      const photo = currentCatalogue().menuPhotos.get([row.season, row.cycle, row.day, row.meal, row.main].join("|"));
-      return photo ? { ...row, image: photo.image, imageAlt: photo.imageAlt, imageUrl: imageUrl(photo.image) } : { ...row };
-    });
-  return { ...position, season, sourceAnchor: STORY_DATE, rotation: "Four seasonal two-week rotations, anchored to Monday 11 August 2025. Special menus are optional and do not establish a booking.", serviceContext: DRINK_SERVICE_CONTEXT, theme: special?.name ?? meals[0]?.theme ?? "", specialMenu: special ? {id: special.id, name: special.name, meal: special.meal, notes: special.notes} : null, meals };
+  const meals: Dict[] = [];
+  const season = day?.season === "Late summer" ? "summer" : day?.season.toLowerCase() ?? menuSeason(date);
+  if (day) {
+    meals.push({ meal: "Breakfast", main: diningCalendar.breakfast });
+    for (const [meal, choice, vegan] of [["Lunch", day.lunch, day.veganLunch], ["Dinner", day.dinner, day.veganDinner]] as const) {
+      const plantBased = veganChoice(vegan);
+      const pudding = day.pudding?.meal === meal ? illustratedChoice(day.pudding) : undefined;
+      meals.push({
+        meal, main: choice.description, ...illustratedChoice(choice),
+        ...(pudding ? { dessert: pudding.description, pudding } : {}),
+        vegetarian: plantBased.description, vegan: plantBased,
+      });
+    }
+  }
+  if (special) {
+    const index = meals.findIndex(row => row.meal === special.meal);
+    const row = { meal: special.meal, ...special.menu, specialMenuId: special.id };
+    if (index === -1) meals.push(row); else meals[index] = row;
+  }
+  return {
+    ...position, season, seasonLabel: day?.season ?? null, sourceAnchor: STORY_DATE,
+    source: "dated calendar", coverage: diningCalendar.coverage, covered: !!day,
+    kitchenLead: day?.lead ?? null, theme: special?.name ?? day?.season ?? "",
+    serviceContext: DRINK_SERVICE_CONTEXT, guestService: day?.guestService || null,
+    snackOptions: day?.snacks.map(illustratedChoice) ?? [],
+    specialMenu: special ? { id: special.id, name: special.name, meal: special.meal, notes: special.notes } : null,
+    meals: meals.map<Dict>(meal => ({ day: position.day, cycle: String(position.cycle), season,
+      theme: special && meal.meal === special.meal ? special.name : day?.season ?? "", ...meal })),
+  };
 }
 
 export function getMenuRange(startDate: string, days: number) {
@@ -564,36 +514,36 @@ export function getMenuRange(startDate: string, days: number) {
 }
 
 export function listAvailableFood(query?: string) {
-  return currentCatalogue().content.culinary.availableFood.filter((item) => matches(item, query)).map((item) => ({ ...item, media: currentCatalogue().content.culinary.media[String(item.mediaId)] ? withImage(currentCatalogue().content.culinary.media[String(item.mediaId)]) : undefined }));
+  return culinary.availableFood.filter((item) => matches(item, query)).map((item) => ({ ...item, media: culinary.media[String(item.mediaId)] ? withImage(culinary.media[String(item.mediaId)]) : undefined }));
 }
 
 export function listSignatureBakes(query?: string) {
-  const items = currentCatalogue().content.culinary.signatureBakes.filter((item) => matches(item, query));
+  const items = culinary.signatureBakes.filter((item) => matches(item, query));
   return { total: items.length, items: items.map(withImage) };
 }
 
 export function listCordialServes(query?: string) {
-  const items = currentCatalogue().content.culinary.cordialServes.filter((item) => matches(item, query));
+  const items = culinary.cordialServes.filter((item) => matches(item, query));
   return { total: items.length, serves: items.map((item) => ({ ...item, cocktailImageUrl: imageUrl(String(item.cocktailImage)), alcoholFreeImageUrl: imageUrl(String(item.alcoholFreeImage)) })) };
 }
 
 export function listPantry(input: { category?: string; labelFamily?: string; includeSeasonal?: boolean; query?: string; offset?: number; limit?: number }) {
-  const candidates = [...currentCatalogue().content.pantry.openingItems, ...(input.includeSeasonal ? currentCatalogue().content.pantry.seasonalRecipes : [])];
+  const candidates = [...pantryItems.openingItems, ...(input.includeSeasonal ? pantryItems.seasonalRecipes : [])];
   const filtered = candidates.filter((item) => (!input.category || normalize(item.category) === normalize(input.category)) && (!input.labelFamily || normalize(item.labelFamily) === normalize(input.labelFamily)) && matches(item, input.query));
-  return { asOf: currentCatalogue().content.pantry.asOf, summary: currentCatalogue().content.pantry.summary, categories: [...new Set(candidates.map((item) => item.category))].sort(), ...paginate(filtered.map(withImage), input.offset, input.limit) };
+  return { asOf: pantryItems.asOf, summary: pantryItems.summary, categories: [...new Set(candidates.map((item) => item.category))].sort(), ...paginate(filtered.map(withImage), input.offset, input.limit) };
 }
 
 export function getPantryItem(id: string): Dict | undefined {
-  const item = [...currentCatalogue().content.pantry.openingItems, ...currentCatalogue().content.pantry.seasonalRecipes].find((entry) => normalize(entry.id) === normalize(id) || normalize(entry.name) === normalize(id));
+  const item = [...pantryItems.openingItems, ...pantryItems.seasonalRecipes].find((entry) => normalize(entry.id) === normalize(id) || normalize(entry.name) === normalize(id));
   if (!item) return undefined;
-  const group = currentCatalogue().content.pantryGroups.preparations.find((candidate) => candidate.id === item.imageGroupId);
+  const group = pantryGroups.find((candidate) => candidate.id === item.imageGroupId);
   return { ...withImage(item), imageGroup: group ? withImage(group) : undefined };
 }
 
 export function listDrinks(input: { category?: string; query?: string }) {
   const allowed = new Set(["house drink", "core cordial", "seasonal cordial", "cocktail", "cordial cocktail", "alcohol-free cordial"]);
-  const drinks = Object.values(currentCatalogue().content.culinary.media).filter((item) => allowed.has(String(item.category)) && (!input.category || normalize(item.category) === normalize(input.category)) && matches(item, input.query)).map(withImage);
-  return { serviceContext: DRINK_SERVICE_CONTEXT, houseDrinks: drinks, waterAndHouseBrands: currentCatalogue().content.brands.brands.map((brand) => ({ ...brand, externalUrl: brand.externalUrl })) };
+  const drinks = Object.values(culinary.media).filter((item) => allowed.has(String(item.category)) && (!input.category || normalize(item.category) === normalize(input.category)) && matches(item, input.query)).map(withImage);
+  return { serviceContext: DRINK_SERVICE_CONTEXT, houseDrinks: drinks, waterAndHouseBrands: brands.map((brand) => ({ ...brand, externalUrl: brand.externalUrl })) };
 }
 
 export function listCollectionCategories() {
@@ -610,8 +560,8 @@ export function getCollectionItem(id: string) {
 }
 
 export function getGuestProvision(kind?: string) {
-  const provisions = currentCatalogue().content.hospitality.collections.filter((item) => !kind || normalize(item.id).includes(normalize(kind)) || matches(item, kind)).map((item) => ({ ...withImage(item), whiteImageUrl: imageUrl(item.whitePath) }));
-  return { principles: currentCatalogue().content.hospitality.principles, serviceContext: DRINK_SERVICE_CONTEXT, provisions };
+  const provisions = hospitality.collections.filter((item) => !kind || normalize(item.id).includes(normalize(kind)) || matches(item, kind)).map((item) => ({ ...withImage(item), whiteImageUrl: imageUrl(item.whitePath) }));
+  return { principles: hospitality.principles, serviceContext: DRINK_SERVICE_CONTEXT, provisions };
 }
 
 export function searchImages(input: { query?: string; kind?: string; offset?: number; limit?: number }) {
@@ -625,7 +575,7 @@ export function getImage(idOrPath: string) {
 
 export function eventsForDate(date: string, category?: string) {
   isoDate(date);
-  return currentCatalogue().content.events.filter((event) => String(event.start_date) <= date && String(event.end_date) >= date && (!category || normalize(event.category) === normalize(category)));
+  return events.filter((event) => String(event.start_date) <= date && String(event.end_date) >= date && (!category || normalize(event.category) === normalize(category)));
 }
 
 export function listEvents(input: { startDate: string; endDate?: string; category?: string; query?: string; offset?: number; limit?: number }) {
@@ -633,43 +583,43 @@ export function listEvents(input: { startDate: string; endDate?: string; categor
   const endDate = input.endDate ?? input.startDate;
   isoDate(endDate);
   if (endDate < input.startDate) throw new Error("endDate must be on or after startDate.");
-  const filtered = currentCatalogue().content.events.filter((event) => String(event.start_date) <= endDate && String(event.end_date) >= input.startDate && (!input.category || normalize(event.category) === normalize(input.category)) && matches(event, input.query));
+  const filtered = events.filter((event) => String(event.start_date) <= endDate && String(event.end_date) >= input.startDate && (!input.category || normalize(event.category) === normalize(input.category)) && matches(event, input.query));
   return { startDate: input.startDate, endDate, ...paginate(filtered, input.offset, input.limit) };
 }
 
 export function getForecast(date: string) {
   isoDate(date);
-  const day = currentCatalogue().weatherByDate.get(date);
-  if (!day) throw new Error(`No authored weather available for ${date}. Available dates: ${currentCatalogue().content.weather.coverage.start} through ${currentCatalogue().content.weather.coverage.end}.`);
+  const day = weatherByDate.get(date);
+  if (!day) throw new Error(`No authored weather available for ${date}. Available dates: ${weather.coverage.start} through ${weather.coverage.end}.`);
   return {
     ...day,
-    location: currentCatalogue().content.weather.location,
-    timeZone: currentCatalogue().content.weather.timeZone,
-    fictional: currentCatalogue().content.weather.fictional,
-    source: currentCatalogue().content.weather.source,
-    coverage: { ...currentCatalogue().content.weather.coverage },
+    location: weather.location,
+    timeZone: weather.timeZone,
+    fictional: weather.fictional,
+    source: weather.source,
+    coverage: { ...weather.coverage },
     forecastUrl: `${PUBLIC_BASE_URL}/ALBURY_WEATHER.html?date=${date}`,
   };
 }
 
 export function getDateContext(date: string) {
-  return { date, menu: getMenuForDate(date), events: eventsForDate(date), weather: currentCatalogue().weatherByDate.has(date) ? getForecast(date) : null, weatherCoverage: { ...currentCatalogue().content.weather.coverage }, isStoryOpeningDate: date === STORY_DATE };
+  return { date, menu: getMenuForDate(date), events: eventsForDate(date), weather: weatherByDate.has(date) ? getForecast(date) : null, weatherCoverage: { ...weather.coverage }, isStoryOpeningDate: date === STORY_DATE };
 }
 
 export function searchAlbury(input: { query: string; domains?: string[]; limit?: number }) {
   const domains = new Set(input.domains?.length ? input.domains : ["rooms", "staff", "partners", "pantry", "collections", "food", "hospitality", "events"]);
   const records: Dict[] = [];
   if (domains.has("rooms")) records.push(...currentCatalogue().rooms.map((item) => ({ domain: "rooms", id: item.id, title: item.name, floor: item.floorName, section: item.sectionName, kind: item.kind, level: item.level, text: item.description, artworks: item.artworks })));
-  if (domains.has("staff")) records.push(...currentCatalogue().content.staff.people.map((item) => ({ domain: "staff", id: item.id, title: item.name, text: `${item.role ?? ""}. ${item.remit ?? ""} ${item.description ?? ""} ${item.career ?? ""}` })));
-  if (domains.has("partners")) records.push(...currentCatalogue().content.staff.servicePartners.map((item) => ({ domain: "partners", id: item.id, title: item.name, text: `${item.type ?? ""}. ${item.remit ?? ""}` })));
-  if (domains.has("pantry")) records.push(...[...currentCatalogue().content.pantry.openingItems, ...currentCatalogue().content.pantry.seasonalRecipes].map((item) => ({ domain: "pantry", id: item.id, title: item.name, text: `${item.category ?? ""}. ${item.uses ?? ""} ${item.openingAvailability ?? ""} ${item.productionNotes ?? ""}` })));
+  if (domains.has("staff")) records.push(...staff.people.map((item) => ({ domain: "staff", id: item.id, title: item.name, text: `${item.role ?? ""}. ${item.remit ?? ""} ${item.description ?? ""} ${item.career ?? ""}` })));
+  if (domains.has("partners")) records.push(...staff.servicePartners.map((item) => ({ domain: "partners", id: item.id, title: item.name, text: `${item.type ?? ""}. ${item.remit ?? ""}` })));
+  if (domains.has("pantry")) records.push(...[...pantryItems.openingItems, ...pantryItems.seasonalRecipes].map((item) => ({ domain: "pantry", id: item.id, title: item.name, text: `${item.category ?? ""}. ${item.uses ?? ""} ${item.openingAvailability ?? ""} ${item.productionNotes ?? ""}` })));
   if (domains.has("collections")) records.push(...currentCatalogue().items.map((item) => ({ domain: "collections", id: item.id, title: item.title, collection: item.collectionName, text: item.description, artist: item.artist, location: item.location })));
-  if (domains.has("food")) records.push(...Object.values(currentCatalogue().content.culinary.media).map((item) => ({ domain: "food", id: item.id, title: item.title, text: `${item.category ?? ""}. ${item.description ?? ""} ${item.productionNotes ?? ""}` })));
-  if (domains.has("hospitality")) records.push(...currentCatalogue().content.hospitality.collections.map((item) => ({ domain: "hospitality", id: item.id, title: item.title, text: text(item) })));
-  if (domains.has("events")) records.push(...currentCatalogue().content.events.map((item) => ({ domain: "events", id: item.id, title: item.title, text: `${item.category ?? ""}. ${item.location ?? ""}. ${item.description ?? ""}`, startDate: item.start_date, endDate: item.end_date })));
+  if (domains.has("food")) records.push(...Object.values(culinary.media).map((item) => ({ domain: "food", id: item.id, title: item.title, text: `${item.category ?? ""}. ${item.description ?? ""} ${item.productionNotes ?? ""}` })));
+  if (domains.has("hospitality")) records.push(...hospitality.collections.map((item) => ({ domain: "hospitality", id: item.id, title: item.title, text: text(item) })));
+  if (domains.has("events")) records.push(...events.map((item) => ({ domain: "events", id: item.id, title: item.title, text: `${item.category ?? ""}. ${item.location ?? ""}. ${item.description ?? ""}`, startDate: item.start_date, endDate: item.end_date })));
   const filtered = records.filter((item) => matches(item, input.query));
   return { query: input.query, total: filtered.length, results: filtered.slice(0, Math.max(1, Math.min(input.limit ?? 20, 50))) };
 }
 
 export const testOnly = { menuPosition, allRooms: builtInCatalogue.rooms, allCollectionItems: builtInCatalogue.items,
-  allImages: builtInCatalogue.images, menus, events };
+  allImages: builtInCatalogue.images, events };

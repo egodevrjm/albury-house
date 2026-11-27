@@ -15,12 +15,7 @@
   };
   try{
     const response=await fetch('/api/room-catalogue',{signal:AbortSignal.timeout(4500)});
-    if(response.ok){
-      const published=await response.json();
-      const content=published.contentUpdates?.collections;
-      if(content)categories=content.collections;
-      else apply(published.collectionUpdates);
-    }
+    if(response.ok)apply((await response.json()).collectionUpdates);
   }catch{
     // The embedded catalogue also works from disk and during a storage outage.
   }
@@ -49,7 +44,7 @@
   categories.forEach(category=>{const local=new Map();category.rooms.forEach(item=>{const number=slug(item).match(/^\d+/)?.[0];const key=variant(item)&&number?number:slug(item);if(!local.has(key))local.set(key,{category,items:[]});local.get(key).items.push(item);});groups.push(...local.values());});
   groups.forEach(group=>{group.cover=group.items.find(i=>variant(i)==='Full colour')||group.items[0];group.title=group.cover.title.replace(/ — (?:Full Colour|White(?:\/Clear)? Led)$/,'');});
   const dialog=document.querySelector('#collection-dialog'),search=document.querySelector('#collection-search');let category='all',selected=null,visible=groups,lastGroup=null;
-  document.querySelector('#collection-categories').innerHTML='<a href="#all">All collections</a>'+categories.map(c=>`<a href="#${encodeURIComponent(c.id)}">${esc(c.name)}</a>`).join('');
+  document.querySelector('#collection-categories').innerHTML='<a href="#all">All collections</a>'+categories.map(c=>`<a href="#${c.id}">${esc(c.name)}</a>`).join('');
   function route(value,replace=false){history[replace?'replaceState':'pushState'](null,'','#'+value);render();}
   function render(){
     let parts=decodeURIComponent(location.hash.replace(/^#\/?/,'')).replace(/^collections\//,'').split('/');
@@ -61,7 +56,7 @@
     const scope=document.querySelector('#collection-scope');
     scope.textContent=categories.find(c=>c.id===category)?.description||'';scope.hidden=!scope.textContent;
     document.querySelectorAll('#collection-categories a').forEach(a=>a.setAttribute('aria-current',a.hash==='#'+category?'page':'false'));
-    document.querySelector('#collection-grid').innerHTML=visible.length?visible.map(g=>`<a class="collection-card${g.cover.path ? '' : ' collection-card--text'}" href="#${encodeURIComponent(g.category.id)}/${encodeURIComponent(slug(g.cover))}">${g.cover.path ? `<img src="${esc(g.cover.path)}" alt="${esc(g.title)}" loading="lazy">` : ''}<h2>${esc(g.title)}</h2><p>${esc(g.cover.location ? [g.cover.artist,g.cover.location.roomName].filter(Boolean).join(' · ') : g.category.name)}${g.items.length>1?' · '+g.items.length+' colour variants':''}</p></a>`).join(''):'<div class="collection-empty"><h2>No matching items</h2><p>Try another search or collection.</p><button id="collection-reset">Show everything</button></div>';
+    document.querySelector('#collection-grid').innerHTML=visible.length?visible.map(g=>`<a class="collection-card${g.cover.path ? '' : ' collection-card--text'}" href="#${g.category.id}/${slug(g.cover)}">${g.cover.path ? `<img src="${esc(g.cover.path)}" alt="${esc(g.title)}" loading="lazy">` : ''}<h2>${esc(g.title)}</h2><p>${esc(g.cover.location ? [g.cover.artist,g.cover.location.roomName].filter(Boolean).join(' · ') : g.category.name)}${g.items.length>1?' · '+g.items.length+' colour variants':''}</p></a>`).join(''):'<div class="collection-empty"><h2>No matching items</h2><p>Try another search or collection.</p><button id="collection-reset">Show everything</button></div>';
     const count=document.querySelector('#collection-count');
     count.textContent=category==='art' ? `${visible.length} art ${visible.length===1?'record':'records'}` :
       `${visible.length} ${category==='all'?'entries':'families'} · ${visible.reduce((n,g)=>n+g.items.filter(item=>item.path).length,0)} images`;

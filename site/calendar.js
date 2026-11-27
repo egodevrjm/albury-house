@@ -28,10 +28,8 @@
     const params=new URLSearchParams();if(month.value!=='all')params.set('month',month.value);if(category.value!=='all')params.set('category',category.value);if(q)params.set('q',search.value);
     history.replaceState(null,'',location.pathname+(params.size?'?'+params:'')+location.hash);
   }
-  (window.ALBURY_MANAGED_CONTENT?.events
-   ? Promise.resolve({rows:window.ALBURY_MANAGED_CONTENT.events,source:'published'})
-   : AlburyCSV.load('site/data/london-events.csv',window.ALBURY_EVENTS_CSV).then(({text,source})=>({rows:AlburyCSV.parse(text),source}))).then(({rows,source})=>{
-    events=rows.slice().sort((a,b)=>a.start_date.localeCompare(b.start_date)||a.title.localeCompare(b.title));
+  AlburyCSV.load('site/data/london-events.csv',window.ALBURY_EVENTS_CSV).then(({text,source})=>{
+    events=AlburyCSV.parse(text).sort((a,b)=>a.start_date.localeCompare(b.start_date)||a.title.localeCompare(b.title));
     const ids=new Set();
     for(const e of events){if(!e.id||ids.has(e.id)||!e.title||!e.category||!/^https:\/\//.test(e.source_url)||![e.start_date,e.end_date].every(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d+'T00:00:00Z').toISOString().slice(0,10)===d)||e.end_date<e.start_date||e.start_date>'2026-07-31'||e.end_date<'2025-08-01')throw new Error('Invalid or duplicate calendar entry: '+e.id);ids.add(e.id);}
     month.insertAdjacentHTML('beforeend',months.map(m=>`<option value="${m}">${monthName(m)}</option>`).join(''));

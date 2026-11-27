@@ -1,35 +1,22 @@
 # Albury site
 
-This is a static, local-file-compatible site. No package installation, network connection or external fonts are required to view it. Canonical content lives in `../content/`; run `python3 site/build_content.py` after editing JSON or CSV data.
+Serve this static site over HTTP to use the dated menus. Canonical content lives in `../content/`; run `python3 site/build_content.py` after editing JSON or CSV data.
 
 - `../index.html` leads to `../ALBURY_WELCOME.html`, the visitor welcome page. The bare `../ALBURY_HOUSE_TOUR.html` opens the room tour.
 - Existing tour hash links still open the requested room; old guide and collection links redirect to their new dedicated pages, preserving the selected section or item.
 - `../ALBURY_CULINARY_MENU.html` is Kitchen & Front of House, managed in-world by Rafael Bellocq and Crispin Vale.
-- `../ALBURY_WEEKLY_MENUS.html` renders the selected 21-meal week from the same CSV as the kitchen page. A static copy of the original week remains as a no-JavaScript fallback.
+- `../ALBURY_WEEKLY_MENUS.html` renders the selected week from the same calendar as the kitchen page and MCP.
 - `../ALBURY_KITCHEN_LIBRARY.html` preserves the food repertoire, pantry photographs and hospitality catalogue.
 - `shared.css` / `shared.js` supply cross-site navigation; `kitchen.css` / `kitchen.js` supply the intranet and welcome page.
-- `../content/schedules/menus.csv` holds 168 complete menus across four seasonal two-week rotations. The compiler publishes it to `site/data/menus.csv`. Summer cycle 1 preserves the existing menu repertoire in `upload/ALBURY_MENUS_AND_COMMON_FOODS.md`; summer cycle 2 extends the site’s summer repertoire. Neither creates attendance or bookings. The rotation starts on Monday 11 August 2025, not the computer’s current date.
 - `../ALBURY_LONDON_CALENDAR.html` is a filterable August 2025–July 2026 event guide using `data/london-events.csv`, with source links and calendar export.
 
 Service brief: produces copyable text only, never sends, books or saves information. There is no authentication, live inventory, rota feed, remote submission or Wi-Fi captive-portal configuration. Do not treat a hidden tab as access control. Configure the actual Wi-Fi landing URL separately when hosting the site.
 
-Historical build scripts in admin predate this integrated site and can overwrite the new pages. Do not run `culinary-programme-2026-09-05/build_menu.py` or `culinary-week-2026-09-07/build_week.py` directly over the live pages. Edit `../content/schedules/menus.csv` and regenerate the site as described below. Never edit generated files in `site/data/public/`, `content-data.js`, `house-catalogue.js`, `menu-data.js`, `events-data.js` or `weather-data.js` by hand. If promoting menu additions into narrative canon, update the owning upload document and its manifest separately.
+## Editing the dated menus
 
-The separate `vercel-albury-tour/` export was not deployed or overwritten. This change updates the local aw_v45 site. All paths are relative and can be served together from a static host.
+The six-month workbook supplies `site/data/public/dining-calendar.json`. Its `days` records cover 11 August 2025 through 10 February 2026 in sequence. Each meal, vegan option, snack and pudding refers to a stable dish ID, with the actual seasonal text specified on the day’s record. The `dishes` catalogue supplies photographs and seasonal variants for the House dishes gallery. The daily view, weekly view and MCP all read the same JSON.
 
-## Editing the menus
-
-`../content/schedules/menus.csv` is the editable table: one row per complete breakfast, lunch or dinner. Use UTF-8 CSV. Commas, double quotes and line breaks inside quoted cells are supported.
-
-Required identity fields: `cycle` (consecutive integers from 1), `day` (Monday–Sunday), `theme` (the same for all three meals that day), `meal` (Breakfast/Lunch/Dinner), and `main`. Optional course columns: `with_drinks`, `starter`, `bowl`, `alongside`, `dessert`, `bread_preserves`, `vegetarian`. Leave unused courses empty. Each cycle must have exactly 21 unique meals. Add complete cycles for a longer rotation; do not shuffle individual courses at random.
-
-The date picker determines the weekday and cycle. Every seven days advances one cycle; after the last cycle it repeats from 1. It deliberately remains a summer rotation, not a year-round seasonal menu. Dates before the anchor wrap backwards. Opening week resets to 11 August 2025. `?date=2025-08-18` opens cycle 2. The daily page’s weekly-menu link carries the selected date.
-
-- **Hosted site:** JavaScript fetches the CSV on load, bypassing the browser cache. If fetching fails, it displays the bundle and identifies the fallback. Invalid fetched CSV is reported rather than silently replaced.
-- **Opening from disk:** browsers restrict `fetch(file://...)`; generated JavaScript embeds the exact CSV text for the same parser. After saving structured content, run `python3 site/build_content.py` from `aw_v45`, then reload the page. The older `site/build_data.py` command delegates to the same compiler.
-- **Quick preview:** open “Menu CSV · download or preview edits”, download/edit the CSV, then select it in the file picker. This preview changes only the current page until reload. It does not write files, persist across pages or update other guests’ browsers. Invalid imports leave the previous valid menus intact.
-
-Both daily and weekly views use `menu-rotation.js`; `menu-data.js` is generated, not a separate source of truth. The old static weekly markup is only the original-week no-JS fallback. The compiler uses Python’s standard library and does not fetch anything.
+The daily page’s weekly link retains the selected date. Use `?date=2025-11-16` to open a specific date and `#repertoire` on the Kitchen page for the full gallery. The historical rotation CSV and its compilation utilities are retained as source material.
 
 ## Editing the London calendar
 
@@ -112,10 +99,6 @@ Edit the existing geometry in `images/albury/floor-plans/build-floor-plans.js`; 
 
 Plans are illustrative, not measured construction drawings or verified doorway routes. The overnight room and passenger lift inset complete omissions in the old drawings; their schematic placement does not establish new dimensions. Room focus enlarges the mapped footprint, with photographic views supplying interior detail. Normal-height booths remain within Studio Albury’s double-height live room. No. 34 proposals are not current walkable spaces.
 
-## Year-round menus and special occasions
+## Occasion menus
 
-The house has four seasonal two-week rotations: spring (March–May), summer (June–August), autumn (September–November) and winter (December–February). Together these provide 168 breakfast, lunch and dinner menus. The two-week cycle remains anchored to Monday 11 August 2025; each date uses its own season, even within a week that crosses a seasonal boundary.
-
-The complete regular menus are maintained in `content/schedules/menus.csv`. Six optional occasion menus are maintained in `content/public/special-menus.json`: Christmas lunch, Boxing Day lunch, New Year's Eve dinner, Easter lunch, a summer garden party and a celebration dinner. Each includes vegetarian provision and service notes.
-
-Use the Albury House MCP `get_menu_for_date` for regular provision, `list_special_menus` to browse occasions and `get_special_menu` for full details. Supplying `special_menu_id` to `get_menu_for_date` substitutes only the designated lunch or dinner on that date. A special menu is an available kitchen plan; it does not establish guests, a booking or a meal already eaten. Christmas and other occasions do not override ordinary menus automatically.
+The six selectable occasion menus are defined in `site/data/public/special-menus.json`. Choosing one on the daily or weekly page, or supplying its `special_menu_id` to the public MCP, substitutes its designated lunch or dinner on that date. Consult `list_special_menus` and `get_special_menu` for the options and service notes.

@@ -109,18 +109,15 @@ test("Studio Albury is within Music Nobile and both normal-height booths are ins
   assert.equal(strings?.seatingArrangement, "in the round");
 });
 
-test("menu rotation remains anchored to Monday 11 August 2025", () => {
+test("opening-day menus include kitchen lead and standing breakfast provision", () => {
   const opening = getMenuForDate("2025-08-11");
-  assert.equal(opening.cycle, 1);
+  assert.equal(opening.covered, true);
   assert.equal(opening.day, "Monday");
-  assert.equal(opening.meals.length, 3);
+  assert.equal(opening.kitchenLead, "Élodie Martin");
   assert.deepEqual(opening.meals.map((meal) => meal.meal), ["Breakfast", "Lunch", "Dinner"]);
-
-  const following = getMenuForDate("2025-08-18");
-  assert.equal(following.cycle, 2);
-  assert.equal(following.day, "Monday");
-  assert.equal(getMenuForDate("2025-08-25").cycle, 1);
-  assert.equal(getMenuForDate("2025-08-10").cycle, 2);
+  assert.match(String(opening.meals[0].main), /Continental breakfast/);
+  assert.equal(opening.meals[1].dishId, "L01");
+  assert.equal(opening.snackOptions.length, 2);
 });
 
 test("pantry exposes every P-number and seasonal recipes only on request", () => {

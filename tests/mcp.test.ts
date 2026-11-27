@@ -23,8 +23,8 @@ async function post(body: unknown) {
 test("MCP advertises the complete read-only Albury toolset", async () => {
   const response = await post({ jsonrpc: "2.0", id: 1, method: "tools/list", params: {} });
   const names = response.result.tools.map((tool: { name: string }) => tool.name);
-  assert.equal(names.length, 33);
-  for (const name of ["get_reference_content", "list_special_menus", "get_special_menu", "get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "list_signature_bakes", "list_cordial_serves", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area", "get_forecast"]) assert.ok(names.includes(name), name);
+  assert.equal(names.length, 32);
+  for (const name of ["list_special_menus", "get_special_menu", "get_room", "list_household_staff", "get_menu_for_date", "list_pantry_items", "list_signature_bakes", "list_cordial_serves", "get_image", "get_events_for_date", "list_outdoor_areas", "get_outdoor_area", "get_forecast"]) assert.ok(names.includes(name), name);
 });
 
 test("MCP counts seven floors and exposes the garden separately", async () => {
@@ -61,7 +61,7 @@ test("MCP keeps preserving and rota responsibilities with the right staff", asyn
 
 test("MCP menu and pantry calls return structured canonical records", async () => {
   const menu = await post({ jsonrpc: "2.0", id: 2, method: "tools/call", params: { name: "get_menu_for_date", arguments: { date: "2025-08-18" } } });
-  assert.equal(menu.result.structuredContent.cycle, 2);
+  assert.equal(menu.result.structuredContent.covered, true);
   assert.equal(menu.result.structuredContent.meals.length, 3);
 
   const pantry = await post({ jsonrpc: "2.0", id: 3, method: "tools/call", params: { name: "list_pantry_items", arguments: {} } });

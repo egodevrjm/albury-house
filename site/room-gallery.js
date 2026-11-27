@@ -3,7 +3,6 @@
  const floors=window.ALBURY_CONTENT.rooms.tour,groups=[];
  const roomArt=new Map();
  for(const item of ALBURY_HOUSE_CATALOGUE.collections.find(collection=>collection.id==='art')?.rooms||[]){
-   if(!item.location)continue;
    const key=item.location.sectionId+'/'+item.location.roomId;
    const items=roomArt.get(key)||[];
    items.push(item);
@@ -15,7 +14,7 @@
  const grid=document.querySelector('#room-grid'),search=document.querySelector('#room-search'),dialog=document.querySelector('#room-dialog'),planDialog=document.querySelector('#plan-dialog');
  let browseFloor='all',selected=null,viewIndex=0,visible=groups,gridKey='',lastGroup=null;
  const matchesSlug=(view,value)=>slug(view)===value||(view.legacySlugs||[]).includes(value);
- const url=(g,v=g.views[0])=>'#/'+[g.floor.id,g.id,slug(v)].map(encodeURIComponent).join('/');
+ const url=(g,v=g.views[0])=>'#/'+g.floor.id+'/'+g.id+'/'+slug(v);
  function parts(){try{return decodeURIComponent(location.hash.replace(/^#\/?/,'')).split('/')}catch{return []}}
  function legacyRedirect(p){if(p[0]==='guide'){location.replace('ALBURY_HOUSE_GUIDE.html#'+(p[1]||'overview'));return true}if(p[0]==='collections'){location.replace('ALBURY_HOUSE_COLLECTIONS.html#'+p.slice(1).join('/'));return true}return false}
  const canonicalId=id=>floors.find(f=>f.id===id||(f.legacyIds||[]).includes(id))?.id||id;
@@ -35,7 +34,7 @@
  if(!selected){browseFloor=f?f.id:'all';if(dialog.open)dialog.close();document.title='Room tour — Albury';renderGrid();return}
  renderGrid();const g=selected,v=g.views[viewIndex];lastGroup=g;
  document.querySelector('#room-position').textContent=g.floor.name+(g.floor.level&&g.floor.name!==g.floor.level?' · '+g.floor.level:'')+' · '+g.views.length+(g.views.length===1?' view':' views');document.querySelector('#room-title').textContent=g.name;
- document.querySelector('#view-title').textContent=v.title;document.querySelector('#room-description').textContent=v===g.views[0]?(v.roomDescription||v.description):v.description;document.querySelector('#view-position').textContent=(viewIndex+1)+' / '+g.views.length;
+ document.querySelector('#view-title').textContent=v.title;document.querySelector('#room-description').textContent=v.description;document.querySelector('#view-position').textContent=(viewIndex+1)+' / '+g.views.length;
  const img=document.querySelector('#room-image');document.querySelector('#image-error').hidden=true;img.onload=()=>{document.querySelector('#image-error').hidden=true};img.onerror=()=>{document.querySelector('#image-error').hidden=false};img.src=v.path;img.alt=v.title+', '+g.floor.name+', Albury';document.querySelector('#room-image-link').href=v.path;document.querySelector('#room-download').href=v.path;
  document.querySelector('#view-previous').disabled=viewIndex===0;document.querySelector('#view-next').disabled=viewIndex===g.views.length-1;
  const configurations=(g.views[0].configurations||[]).filter(c=>g.views.some(view=>view.path===c.path)),configurationPanel=document.querySelector('#room-configurations');

@@ -41,16 +41,10 @@
   }
   const url=d=>'ALBURY_WEATHER.html?date='+encodeURIComponent(d);
   function forecast(rows){return '<div class="weather-days">'+rows.map(r=>`<a class="weather-forecast" href="${url(r.Date)}"><time datetime="${r.Date}">${dateLabel(r.Date,true)}</time>${icon(r.Condition)}<strong>${esc(r.High_C)}° <span class="forecast-low">/ ${esc(r.Low_C)}°C</span></strong><small>${esc(r.Condition)}</small><small>${esc(r.Precip_mm)} mm · ${esc(r.Precip_Chance_pct)}% precipitation</small></a>`).join('')+'</div>';}
-  const weather=window.ALBURY_MANAGED_CONTENT?.weather;
-  const result=weather ? Promise.resolve({source:'published',rows:weather.days.map(r=>({
-    Date:r.date,Day:r.day,Condition:r.condition,High_C:r.highC,Low_C:r.lowC,High_F:r.highF,Low_F:r.lowF,
-    Precip_mm:r.precipitationMm,Precip_Chance_pct:r.precipitationChancePct,Wind_mph:r.windMph
-  })).sort((a,b)=>a.Date.localeCompare(b.Date))}) :
-    load('site/data/weather.csv?schema=2',window.ALBURY_WEATHER_CSV).then(({text,source})=>({rows:validate(text),source}));
-  result.then(({rows,source})=>{
-    const input=document.querySelector('#weather-date'),status=document.querySelector('#weather-status');
+  load('site/data/weather.csv?schema=2',window.ALBURY_WEATHER_CSV).then(({text,source})=>{
+    const rows=validate(text),input=document.querySelector('#weather-date'),status=document.querySelector('#weather-status');
     const requested=new URLSearchParams(location.search).get('date');
-    let date=rows.some(r=>r.Date===requested)?requested:rows.find(r=>r.Date===opening)?.Date??rows[0].Date;
+    let date=rows.some(r=>r.Date===requested)?requested:opening;
     const invalid=requested&&!rows.some(r=>r.Date===requested);
     function render(){
       const index=rows.findIndex(r=>r.Date===date),r=rows[index];

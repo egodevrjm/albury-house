@@ -36,9 +36,5 @@ window.AlburyCSV = (() => {
     const url = URL.createObjectURL(new Blob([text], {type}));
     const a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
-  const encode = (keys, records) => {
-    const cell = value => '"' + String(value ?? '').replaceAll('"', '""') + '"';
-    return [keys.map(cell).join(','), ...records.map(record => keys.map(key => cell(record[key])).join(','))].join('\r\n');
-  };
-  return {parse, load, esc, download, encode};
+  return {parse, load, esc, download};
 })();

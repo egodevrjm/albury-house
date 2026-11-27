@@ -1,5 +1,5 @@
 import { changedCollections } from "../lib/collection-edits.js";
-import { baseCollections, baseTourSections, publicContentUpdates } from "../lib/albury-data.js";
+import { baseCollections, baseTourSections } from "../lib/albury-data.js";
 import { nodeHandler } from "../lib/node-http.js";
 import { initialState, roomEditorStore, type RoomEditorStore } from "../lib/room-editor-store.js";
 import { changedRoomViews } from "../lib/room-views.js";
@@ -7,7 +7,7 @@ import { changedRoomViews } from "../lib/room-views.js";
 export async function publishedRoomCatalogue(store = roomEditorStore()) {
   const { current } = store ? (await store.load()).state : initialState();
   const collectionUpdates = changedCollections(baseCollections, current.collectionEdits ?? []);
-  return { revision: current.id, contentUpdates: publicContentUpdates(current), updates: changedRoomViews(baseTourSections, current.edits),
+  return { revision: current.id, updates: changedRoomViews(baseTourSections, current.edits),
     ...(collectionUpdates.length ? { collectionUpdates } : {}) };
 
 }

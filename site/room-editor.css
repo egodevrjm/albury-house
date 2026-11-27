@@ -65,15 +65,3 @@ dialog::backdrop { background: #171b13a6; }
 dialog .actions { justify-content: flex-end; }
 @media(max-width: 62rem) { .editor-columns { grid-template-columns: 1fr; } }
 @media(max-width: 42rem) { .workspace { grid-template-columns: 1fr; } .form-columns { grid-template-columns: 1fr; } }
-
-.content-manager { margin-bottom: 1rem; }
-.content-manager h3 { margin-top: 0; }
-.content-manager .actions { margin: .85rem 0; justify-content: flex-start; flex-wrap: wrap; }
-.content-manager .actions button { font-size: .8rem; }
-.content-manager .actions [aria-current] { font-weight: 700; }
-.content-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: .5rem; padding: 0; list-style: none; max-height: 24rem; overflow: auto; }
-.content-field { display: grid; width: 100%; gap: .25rem; height: 100%; text-align: left; }
-.content-field small { color: inherit; opacity: .7; overflow-wrap: anywhere; }
-.content-manager textarea { width: 100%; }
-.content-manager .content-image { display: block; width: auto; max-width: min(100%, 24rem); max-height: 16rem; margin: .75rem 0; }
-.content-manager #content-node > button { margin: .4rem .45rem .4rem 0; }

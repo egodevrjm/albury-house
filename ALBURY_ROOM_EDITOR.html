@@ -8,7 +8,7 @@
   <title>House editor · Albury House</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/site/room-editor.css">
-  <script defer src="/site/room-editor.js?v=content-1"></script>
+  <script defer src="/site/room-editor.js?v=collections-1"></script>
 </head>
 <body>
   <header class="top">
@@ -30,7 +30,7 @@
         <h2>Drafts</h2>
         <form id="new-draft">
           <label for="draft-name">New draft name</label>
-          <input id="draft-name" name="name" maxlength="120" placeholder="e.g. Pantry and garden room" required>
+          <input id="draft-name" name="name" maxlength="120" placeholder="e.g. Garden Room views" required>
           <button class="primary">Create draft</button>
         </form>
         <div id="drafts" class="drafts"></div>
@@ -42,7 +42,7 @@
       <section class="desk" aria-label="Draft workspace">
         <div class="panel" id="empty-draft">
           <h2>Choose a draft</h2>
-          <p>Create a draft or open one to edit house content, organise images or review changes from ChatGPT.</p>
+          <p>Create a draft or open one to review room and collection edits.</p>
         </div>
         <div id="draft-detail" hidden>
           <header class="panel draft-header">
@@ -53,13 +53,6 @@
               <button id="publish" class="primary" type="button">Publish draft</button>
             </div>
           </header>
-          <section class="panel content-manager" aria-labelledby="content-heading">
-            <h3 id="content-heading">Edit house content</h3>
-            <label>Content area<select id="content-resource"></select></label>
-            <div id="content-breadcrumbs" class="actions" aria-label="Content location"></div>
-            <label id="content-filter-label" hidden>Find a field or record<input id="content-filter" type="search"></label>
-            <div id="content-node"></div>
-          </section>
           <div class="editor-columns">
             <section class="panel" aria-labelledby="view-heading">
               <h3 id="view-heading">Stage a room view</h3>

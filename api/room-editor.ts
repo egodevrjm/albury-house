@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { baseCollections, baseTourSections, contentAtRevision } from "../lib/albury-data.js";
+import { baseCollections, baseTourSections } from "../lib/albury-data.js";
 import { editorAuth, editorRole, keyMatches, signIn, signOut, type EditorAuth } from "../lib/editor-auth.js";
 import { nodeHandler } from "../lib/node-http.js";
 import { createRoomEditor, editorSchemas, type EditorAction } from "../lib/room-editor.js";
@@ -13,7 +13,7 @@ function reply(value: unknown, status = 200, headers?: HeadersInit) {
 export function roomEditorWebHandler(store: RoomEditorStore | undefined, auth: EditorAuth) {
   return async (request: Request): Promise<Response> => {
     if (!store || !auth.ownerKey || auth.ownerKey.length < 32) return reply({ error: "The editor has not been configured." }, 503);
-    const editor = createRoomEditor(store, baseTourSections, baseCollections, contentAtRevision);
+    const editor = createRoomEditor(store, baseTourSections, baseCollections);
     const role = editorRole(request, auth);
     try {
       if (request.method === "GET") {

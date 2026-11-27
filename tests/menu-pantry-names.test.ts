@@ -26,7 +26,7 @@ async function call(name: string, args: Record<string, string>) {
   return result.structuredContent;
 }
 
-test('named pantry items in every regular and special menu use their registered names', () => {
+test('named pantry items in the historical repertoire and special menus use their registered names', () => {
   assert.equal(menus.menus.length, 168);
   assert.equal(specials.menus.length, 6);
   for (const id of ['P01', 'P02', 'P03', 'P04', 'P08', 'P09', 'P10', 'P15', 'P18', 'P20', 'P21', 'P22', 'P29', 'P31', 'P33']) {
@@ -43,13 +43,7 @@ test('named pantry items in every regular and special menu use their registered 
   assert.match(menuText, /apricot compote/); // A fresh preparation, distinct from P04 preserve.
 });
 
-test('the MCP serves pantry-aligned names in regular and occasion menus', async () => {
-  const opening = await call('get_menu_for_date', { date: '2025-08-11' });
-  assert.match(opening.meals[0].bread_preserves, /Seville bitter-orange marmalade/);
-  assert.match(opening.meals[0].alongside, /Toasted oat, almond and seed granola/i);
-  assert.match(opening.meals[0].alongside, /Peach and vanilla compote/i);
-  const tuesday = await call('get_menu_for_date', { date: '2025-08-12' });
-  assert.match(tuesday.meals[0].bread_preserves, /Strawberry and vanilla confiture/i);
+test('the MCP serves pantry-aligned names in occasion menus', async () => {
   const christmas = await call('get_special_menu', { menu_id: 'christmas-lunch' });
   assert.match(christmas.menu.with_drinks, /Blackcurrant and bay cordial/i);
   const easter = await call('get_special_menu', { menu_id: 'easter-lunch' });

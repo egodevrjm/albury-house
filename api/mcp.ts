@@ -1,4 +1,3 @@
-import { contentKeySchema, contentPathSchema } from "../lib/content-edits.js";
 import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
 import { nodeHandler } from "../lib/node-http.js";
@@ -20,7 +19,6 @@ import {
   getPantryItem,
   getPartner,
   getRoom,
-  getReferenceContent,
   getStaffMember,
   getSummary,
   listAvailableFood,
@@ -66,13 +64,6 @@ export const mcpWebHandler = createMcpHandler((server) => {
       limit: z.number().int().min(1).max(50).default(20),
     }), annotations: readOnly,
   }, async (input) => catalogueGuarded(() => searchAlbury(input)));
-
-  server.registerTool("get_reference_content", {
-    title: "Read structured Albury House content",
-    description: "Read a published content area or a specific field. Use path segments, @id for a stable record ID, or a zero-based list position. For visitors' page copy use a filename such as ALBURY_HOUSE_GUIDE.html.",
-    inputSchema: z.object({ resource: contentKeySchema, path: contentPathSchema.optional() }),
-    annotations: readOnly,
-  }, ({ resource, path }) => guarded(() => ({ resource, path: path ?? [], value: getReferenceContent(resource, path ?? []) })));
 
   server.registerTool("get_albury_summary", {
     title: "Get Albury summary",
@@ -157,13 +148,13 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("get_menu_for_date", {
     title: "Get the menu for a date",
-    description: "Return breakfast, lunch and dinner for any calendar date from the spring, summer, autumn or winter two-week rotation. Optional special_menu_id replaces only its designated lunch or dinner. Selecting a special menu does not establish a booking. Cycle 1 is anchored to Monday 11 August 2025.",
+    description: "Return the dated Albury menu from 11 August 2025 through 10 February 2026, including vegan options, snacks, photographs and host notes. Outside the date range, the result reports no dated menu. Optional special_menu_id supplies its designated lunch or dinner.",
     inputSchema: z.object({ date: isoDate, special_menu_id: z.string().min(1).optional() }), annotations: readOnly,
   }, async ({ date, special_menu_id }) => guarded(() => getMenuForDate(date, special_menu_id)));
 
   server.registerTool("get_menu_range", {
     title: "Get menus for a date range",
-    description: "Return dated breakfast, lunch and dinner menus for up to 31 consecutive days.",
+    description: "Return up to 31 consecutive dated menu results, with coverage and availability for each day.",
     inputSchema: z.object({ start_date: isoDate, days: z.number().int().min(1).max(31).default(7) }), annotations: readOnly,
   }, async ({ start_date, days }) => guarded(() => getMenuRange(start_date, days)));
 

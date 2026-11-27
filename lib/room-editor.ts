@@ -2,8 +2,7 @@ import { createHash, randomUUID } from "node:crypto";
 import sharp from "sharp";
 import { z } from "zod";
 import { applyCollectionEdits, changedCollections, collectionEditSchema, collectionItemId, type Collection } from "./collection-edits.js";
-import { contentAssets, contentEditSchema, contentKeySchema, contentLabels, contentPathSchema, readContent, validateContent, type Content } from "./content-edits.js";
-import type { Draft, Revision, RoomEditorStore, State, StoredImage } from "./room-editor-store.js";
+import type { Draft, RoomEditorStore, State, StoredImage } from "./room-editor-store.js";
 import { applyRoomViewEdits, assetIdSchema, changedRoomViews, EditorError, roomViewEditSchema, roomViewSlug, type TourSection } from "./room-views.js";
 
 export const maxImageBytes = 3 * 1024 * 1024;
@@ -14,10 +13,6 @@ const draftVersion = { draftId, expectedVersion: version };
 const optionalId = z.string().min(1).max(110).optional();
 
 export const editorSchemas = {
-  list_content: z.strictObject({}),
-  read_content: z.strictObject({ resource: contentKeySchema, path: contentPathSchema.optional(), draftId: draftId.optional() }),
-  stage_content_edits: z.strictObject({ ...draftVersion, edits: z.array(contentEditSchema).min(1).max(80) }),
-  remove_content_edit: z.strictObject({ ...draftVersion, index: z.number().int().min(0) }),
   list_rooms: z.strictObject({ sectionId: optionalId, roomId: optionalId }),
   list_collections: z.strictObject({ collectionId: optionalId }),
   list_drafts: z.strictObject({}),
@@ -47,35 +42,7 @@ function findDraft(state: State, id: string, expectedVersion?: number): Draft {
   return draft;
 }
 
-function countEdits(draft: Draft) {
-  return draft.edits.length + (draft.collectionEdits?.length ?? 0) + (draft.contentEdits?.length ?? 0);
-}
-
-function revisionWithDraft(revision: Revision, draft: Draft): Revision {
-  return { ...revision, edits: [...revision.edits, ...draft.edits],
-    collectionEdits: [...revision.collectionEdits ?? [], ...draft.collectionEdits ?? []],
-    contentEdits: [...revision.contentEdits ?? [], ...draft.contentEdits ?? []] };
-}
-
-function baseForDraft(state: State, draft: Draft): Revision {
-  const revision = state.current.id === draft.baseRevision ? state.current
-    : state.previous.find(item => item.id === draft.baseRevision);
-  if (!revision) throw new EditorError(409, "The draft's base revision is unavailable.");
-  return revision;
-}
-
-export function createRoomEditor(store: RoomEditorStore, base: TourSection[], collections: Collection[] = [],
-  contentAtRevision?: (revision: Revision) => Content) {
-  function content(revision: Revision) {
-    if (!contentAtRevision) throw new EditorError(503, "The content editor is unavailable.");
-    return contentAtRevision(revision);
-  }
-
-  function validateDraft(state: State, draft: Draft) {
-    if (!draft.contentEdits?.length && !state.current.contentEdits?.length) return;
-    const next = revisionWithDraft(state.current, draft);
-    validateContent(content(next), next.contentEdits ?? []);
-  }
+export function createRoomEditor(store: RoomEditorStore, base: TourSection[], collections: Collection[] = []) {
   async function change<T>(operation: (state: State) => T | Promise<T>): Promise<T> {
     const loaded = await store.load();
     const result = await operation(loaded.state);
@@ -86,41 +53,6 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
   }
 
   return {
-    async list_content() {
-      return { resources: Object.entries(contentLabels).map(([id, label]) => ({ id, label })) };
-    },
-    async read_content({ resource, path = [], draftId }: z.infer<typeof editorSchemas.read_content>) {
-      const { state } = await store.load();
-      const draft = draftId ? findDraft(state, draftId) : undefined;
-      const revision = draft ? revisionWithDraft(baseForDraft(state, draft), draft) : state.current;
-      return { resource, path, value: readContent(content(revision)[resource], path),
-        revision: revision.id, ...(draft ? { draftVersion: draft.version } : {}) };
-    },
-    async stage_content_edits({ draftId, expectedVersion, edits }: z.infer<typeof editorSchemas.stage_content_edits>) {
-      if (Buffer.byteLength(JSON.stringify(edits)) > 100_000) {
-        throw new EditorError(413, "Stage smaller batches of content edits.");
-      }
-      if (!await store.hasImages(contentAssets(edits))) throw new EditorError(404, "Upload images before staging them.");
-      return change(state => {
-        const draft = findDraft(state, draftId, expectedVersion);
-        if (draft.baseRevision !== state.current.id) throw new EditorError(409, "The published revision changed. Start a new draft.");
-        draft.contentEdits = [...draft.contentEdits ?? [], ...edits];
-        validateDraft(state, draft);
-        draft.version++;
-        return { draftId, version: draft.version, editCount: countEdits(draft) };
-      });
-    },
-    async remove_content_edit({ draftId, expectedVersion, index }: z.infer<typeof editorSchemas.remove_content_edit>) {
-      return change(state => {
-        const draft = findDraft(state, draftId, expectedVersion);
-        const edits = draft.contentEdits ?? [];
-        if (index >= edits.length) throw new EditorError(404, "This staged change is unavailable.");
-        draft.contentEdits = edits.filter((_, at) => at !== index);
-        validateDraft(state, draft);
-        draft.version++;
-        return { draftId, version: draft.version, editCount: countEdits(draft) };
-      });
-    },
     async list_rooms({ sectionId, roomId }: z.infer<typeof editorSchemas.list_rooms>) {
       const { state } = await store.load();
       const sections = applyRoomViewEdits(base, state.current.edits);
@@ -149,7 +81,7 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
     },
     async list_drafts() {
       const { state } = await store.load();
-      return { currentRevision: state.current.id, drafts: state.drafts.map(draft => ({ id: draft.id, name: draft.name, baseRevision: draft.baseRevision, version: draft.version, editCount: countEdits(draft) })) };
+      return { currentRevision: state.current.id, drafts: state.drafts.map(({ edits, collectionEdits, ...draft }) => ({ ...draft, editCount: edits.length + (collectionEdits?.length ?? 0) })) };
     },
     async create_draft({ name }: z.infer<typeof editorSchemas.create_draft>) {
       return change(state => {
@@ -161,7 +93,8 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
     async preview_draft({ draftId }: z.infer<typeof editorSchemas.preview_draft>) {
       const { state } = await store.load();
       const draft = findDraft(state, draftId);
-      const revision = baseForDraft(state, draft);
+      const revision = state.current.id === draft.baseRevision ? state.current : state.previous.find(item => item.id === draft.baseRevision);
+      if (!revision) throw new EditorError(409, "The draft's base revision is unavailable.");
       const preview = changedRoomViews(applyRoomViewEdits(base, revision.edits), draft.edits);
       const collectionPreview = changedCollections(applyCollectionEdits(collections, revision.collectionEdits ?? []), draft.collectionEdits ?? []);
       return { draft, currentRevision: state.current.id, preview, collectionPreview };
@@ -174,7 +107,6 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
         const edits = [...draft.edits, edit];
         applyRoomViewEdits(base, [...state.current.edits, ...edits]);
         draft.edits = edits;
-        validateDraft(state, draft);
         draft.version++;
         return draft;
       });
@@ -199,7 +131,6 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
         const edits = draft.edits.filter((_, i) => i !== index);
         applyRoomViewEdits(base, [...revision.edits, ...edits]);
         draft.edits = edits;
-        validateDraft(state, draft);
         draft.version++;
         return draft;
       });
@@ -212,7 +143,6 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
         const edits = draft.collectionEdits!.filter((_, i) => i !== index);
         applyCollectionEdits(collections, [...revision.collectionEdits ?? [], ...edits]);
         draft.collectionEdits = edits;
-        validateDraft(state, draft);
         draft.version++;
         return draft;
       });
@@ -220,20 +150,18 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
     async publish_draft({ draftId, expectedVersion }: z.infer<typeof editorSchemas.publish_draft>) {
       return change(async state => {
         const draft = findDraft(state, draftId, expectedVersion);
-        const editCount = countEdits(draft);
+        const editCount = draft.edits.length + (draft.collectionEdits?.length ?? 0);
         if (!editCount) throw new EditorError(400, "This draft has no changes.");
         if (draft.baseRevision !== state.current.id) throw new EditorError(409, "This draft is based on an older revision. Review the current views and create a new draft.");
         const edits = [...state.current.edits, ...draft.edits];
         applyRoomViewEdits(base, edits);
         const collectionEdits = [...state.current.collectionEdits ?? [], ...draft.collectionEdits ?? []];
         applyCollectionEdits(collections, collectionEdits);
-        validateDraft(state, draft);
-        const contentEdits = [...state.current.contentEdits ?? [], ...draft.contentEdits ?? []];
-        const ids = [...new Set([...contentAssets(draft.contentEdits ?? []), ...draft.edits.map(edit => edit.assetId),
+        const ids = [...new Set([...draft.edits.map(edit => edit.assetId),
           ...(draft.collectionEdits ?? []).flatMap(edit => edit.assetId ? [edit.assetId] : [])])];
         if (!await store.hasImages(ids)) throw new EditorError(409, "A draft image is unavailable.");
         state.previous.unshift(state.current);
-        state.current = { id: state.current.id + 1, name: draft.name, publishedAt: new Date().toISOString(), edits, ...(collectionEdits.length ? { collectionEdits } : {}), ...(contentEdits.length ? { contentEdits } : {}) };
+        state.current = { id: state.current.id + 1, name: draft.name, publishedAt: new Date().toISOString(), edits, ...(collectionEdits.length ? { collectionEdits } : {}) };
         state.exposedImages = [...new Set([...state.exposedImages, ...ids])];
         state.drafts = state.drafts.filter(item => item.id !== draftId);
         return { revision: state.current.id, name: draft.name, editCount };
@@ -241,7 +169,7 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
     },
     async list_revisions() {
       const { state } = await store.load();
-      return { currentRevision: state.current.id, revisions: [state.current, ...state.previous].map(({ edits: _edits, collectionEdits: _collectionEdits, contentEdits: _contentEdits, ...item }) => item) };
+      return { currentRevision: state.current.id, revisions: [state.current, ...state.previous].map(({ edits: _edits, collectionEdits: _collectionEdits, ...item }) => item) };
     },
     async rollback({ revision, expectedRevision }: z.infer<typeof editorSchemas.rollback>) {
       return change(state => {
@@ -251,7 +179,7 @@ export function createRoomEditor(store: RoomEditorStore, base: TourSection[], co
         applyRoomViewEdits(base, prior.edits);
         applyCollectionEdits(collections, prior.collectionEdits ?? []);
         state.previous.unshift(state.current);
-        state.current = { id: expectedRevision + 1, name: `Restored revision ${revision}`, publishedAt: new Date().toISOString(), edits: prior.edits, collectionEdits: prior.collectionEdits, contentEdits: prior.contentEdits };
+        state.current = { id: expectedRevision + 1, name: `Restored revision ${revision}`, publishedAt: new Date().toISOString(), edits: prior.edits };
         return { revision: state.current.id, restored: revision };
       });
     },

@@ -1,10 +1,9 @@
 import { neon } from "@neondatabase/serverless";
-import type { ContentEdit } from "./content-edits.js";
 import type { CollectionEdit } from "./collection-edits.js";
 import type { RoomViewEdit } from "./room-views.js";
 
-export type Draft = { id: string; name: string; baseRevision: number; version: number; edits: RoomViewEdit[]; collectionEdits?: CollectionEdit[]; contentEdits?: ContentEdit[] };
-export type Revision = { id: number; name: string; publishedAt: string | null; edits: RoomViewEdit[]; collectionEdits?: CollectionEdit[]; contentEdits?: ContentEdit[] };
+export type Draft = { id: string; name: string; baseRevision: number; version: number; edits: RoomViewEdit[]; collectionEdits?: CollectionEdit[] };
+export type Revision = { id: number; name: string; publishedAt: string | null; edits: RoomViewEdit[]; collectionEdits?: CollectionEdit[] };
 export type State = { current: Revision; previous: Revision[]; drafts: Draft[]; exposedImages: string[] };
 export type ImageRecord = { id: string; name: string; width: number; height: number };
 export type StoredImage = ImageRecord & { content: Buffer };

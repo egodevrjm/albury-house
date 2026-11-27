@@ -1,46 +1,75 @@
-import assert from 'node:assert/strict';
-import test from 'node:test';
-import fs from 'node:fs';
-import vm from 'node:vm';
-import {getMenuForDate,getMenuRange,listSpecialMenus} from '../lib/albury-data.js';
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import test from "node:test";
+import vm from "node:vm";
 
-test('All seasons and both cycles have three meals, with exact browser/MCP parity',async()=>{
- const context:any={URLSearchParams,location:{search:''}}; context.window=context;
- vm.createContext(context);
- vm.runInContext(fs.readFileSync('site/csv.js','utf8'),context);
- context.ALBURY_CONTENT={'special-menus':JSON.parse(fs.readFileSync('site/data/public/special-menus.json','utf8')),culinary:JSON.parse(fs.readFileSync('site/data/public/culinary.json','utf8'))};
- context.AlburyCSV.load=async()=>({text:fs.readFileSync('site/data/menus.csv','utf8'),source:'test'});
- vm.runInContext(fs.readFileSync('site/menu-rotation.js','utf8'),context);
- await context.AlburyMenus.ready;
- assert.equal(context.AlburyMenus.rows.length,168);
- for(const month of ['01','02','03','04','05','06','07','08','09','10','11','12']) {
-  for(let day=1;day<=14;day++) {
-   const date=`2026-${month}-${String(day).padStart(2,'0')}`;
-   const server=getMenuForDate(date), browser=context.AlburyMenus.forDate(date);
-   assert.equal(server.meals.length,3);
-   assert.equal(server.season,browser.season);
-   assert.deepEqual(JSON.parse(JSON.stringify(browser.rows)),server.meals);
+import { getMenuForDate, getMenuRange, listSpecialMenus } from "../lib/albury-data.js";
+
+const calendar = JSON.parse(readFileSync("site/data/public/dining-calendar.json", "utf8"));
+const occasionMenus = JSON.parse(readFileSync("site/data/public/special-menus.json", "utf8"));
+
+test("daily and weekly pages share the complete dated MCP menu", async () => {
+  const context = vm.createContext({
+    URLSearchParams, location: { search: "" }, ALBURY_CONTENT: { "special-menus": occasionMenus },
+    fetch: async () => ({ ok: true, json: async () => calendar }),
+  });
+  context.window = context;
+  vm.runInContext(readFileSync("site/csv.js", "utf8"), context);
+  vm.runInContext(readFileSync("site/menu-rotation.js", "utf8"), context);
+  const browser = context.AlburyMenus;
+  await browser.ready;
+  assert.equal(calendar.days.length, 184);
+  assert.equal(Object.keys(calendar.dishes).length, 96);
+  for (const dish of Object.values(calendar.dishes) as { path: string }[]) {
+    const photo = readFileSync(dish.path);
+    assert.equal(photo.subarray(8, 12).toString(), "WEBP", dish.path);
   }
- }
- for(const [date,a,b] of [['2026-02-28','winter','spring'],['2026-05-31','spring','summer'],['2025-08-31','summer','autumn'],['2025-11-30','autumn','winter']]) {
-  const range=getMenuRange(date,2); assert.deepEqual(range.menus.map(m=>m.season),[a,b]);
- }
- assert.equal(getMenuForDate('2024-02-29').season,'winter');
- const week=context.AlburyMenus.week('2026-06-01');
- assert.equal(week[0][1],getMenuForDate('2026-06-01').theme);
- const cross=context.AlburyMenus.week('2026-03-01');
- assert.equal(cross[0][1],getMenuForDate('2026-02-23').theme);
- assert.equal(cross[6][1],getMenuForDate('2026-03-01').theme);
- for(const special of listSpecialMenus()) {
-  const date='2025-12-25',regular=getMenuForDate(date),selected=getMenuForDate(date,special.id);
-  assert.equal(selected.meals.length,3);
-  for(let i=0;i<3;i++) if(regular.meals[i].meal!==special.meal)assert.deepEqual(selected.meals[i],regular.meals[i]);
-  assert.equal(selected.meals.find(m=>m.meal===special.meal)?.main,special.menu.main);
- }
- assert.throws(()=>getMenuForDate('2025-12-25','unknown'));
- assert.equal(getMenuForDate('2025-12-25').specialMenu,null);
- const opening=getMenuForDate('2025-08-11');
- assert.equal(opening.meals.filter(meal=>meal.imageUrl).length,3);
- assert.match(String(opening.meals[0].imageUrl),/breakfast-eggs\.webp$/);
- assert.equal(getMenuForDate('2025-08-12').meals.filter(meal=>meal.imageUrl).length,3);
+  assert.equal((browser.repertoire().match(/class="panel dish-card"/g) ?? []).length, 96);
+
+  const opening = Date.parse(calendar.coverage.start);
+  for (const [index, day] of calendar.days.entries()) {
+    assert.equal(day.date, new Date(opening + index * 86_400_000).toISOString().slice(0, 10));
+    const mcp = getMenuForDate(day.date);
+    const page = browser.forDate(day.date);
+    assert.equal(mcp.kitchenLead, day.lead);
+    assert.equal(mcp.kitchenLead, page.lead);
+    assert.equal(mcp.guestService, page.guestService || null);
+    assert.equal(mcp.seasonLabel, page.season);
+    assert.equal(mcp.covered, true);
+    assert.equal(mcp.meals.length, 3);
+    for (const [i, meal] of mcp.meals.entries()) {
+      assert.equal(meal.main, page.rows[i].main, day.date);
+      assert.equal(meal.image, page.rows[i].image, day.date);
+      assert.equal(meal.dessert, page.rows[i].dessert, day.date);
+    }
+    assert.equal((mcp.meals[1].vegan as { description: string }).description, page.veganLunch.description);
+    assert.equal((mcp.meals[2].vegan as { description: string }).description, page.veganDinner.description);
+    assert.deepEqual(mcp.snackOptions.map(choice => choice.description), page.snackOptions.map((choice: { description: string }) => choice.description));
+  }
+  const lastWeek = browser.week("2026-02-10");
+  assert.equal(lastWeek[1][3].date, "2026-02-10");
+  assert.equal(lastWeek[2][3].covered, false);
+  assert.deepEqual(getMenuRange("2026-02-09", 3).menus.map(menu => menu.covered), [true, true, false]);
+  for (const date of ["2025-08-10", "2026-02-11"]) {
+    assert.equal(getMenuForDate(date).covered, false);
+    assert.deepEqual(getMenuForDate(date).meals, []);
+    assert.equal(browser.forDate(date).rows.length, 0);
+  }
+});
+
+test("occasion menus replace only their selected meal", () => {
+  const date = "2025-12-25";
+  const regular = getMenuForDate(date);
+  assert.equal(regular.specialMenu, null);
+  assert.match(String(regular.meals[1].main), /turkey/i);
+  assert.equal(regular.meals[1].imageUrl, undefined);
+  for (const special of listSpecialMenus()) {
+    const selected = getMenuForDate(date, special.id);
+    assert.equal(selected.meals.length, 3);
+    assert.equal(selected.meals.find(meal => meal.meal === special.meal)?.main, special.menu.main);
+    for (const [i, meal] of regular.meals.entries()) {
+      if (meal.meal !== special.meal) assert.deepEqual(selected.meals[i], meal);
+    }
+  }
+  assert.throws(() => getMenuForDate(date, "unknown"));
 });

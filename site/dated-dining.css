@@ -1,0 +1,18 @@
+.dated-menu-photo{margin:0 0 1rem}
+.dated-menu-photo .meal-photo{display:block;margin:0;overflow:hidden;border-radius:4px}
+.dated-menu-photo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+.dated-menu-photo figcaption{font-size:.78rem;color:#57594d;margin:.4rem 0 0}
+.dated-menu-extras{margin:1.4rem 0;display:grid;gap:.5rem}
+.dated-menu-extras>details{border:1px solid #d9d4c5;border-radius:4px;padding:.7rem 1rem;background:#fbf8f0}
+.dated-menu-extras summary,.dish-card details summary{cursor:pointer;color:#304a3d;font-weight:600}
+.dated-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(255px, 100%),1fr));gap:1rem;margin-top:1rem}
+.dated-option{display:grid;grid-template-columns:5.4rem 1fr;gap:.7rem;align-items:start}
+.dated-option h4,.dated-option p{margin:0 0 .3rem}
+.dish-category-links{display:flex;flex-wrap:wrap;gap:1rem;margin:1rem 0}
+.dish-repertoire-section{scroll-margin-top:5rem;margin:2rem 0}
+.dish-repertoire-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px, 100%),1fr));gap:1.05rem}
+.dish-card h4{margin:0 0 .35rem}
+.dish-card p{margin:.25rem 0 .6rem}
+.dish-card dl{margin:.5rem 0}
+.dish-card dd{margin:0 0 .35rem}
+#menu-week .day{scroll-margin-top:5rem}

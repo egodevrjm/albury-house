@@ -1,5 +1,5 @@
 import { createMcpHandler } from "mcp-handler";
-import { baseCollections, baseTourSections, contentAtRevision } from "../lib/albury-data.js";
+import { baseCollections, baseTourSections } from "../lib/albury-data.js";
 import { draftKeyAuthorizes, editorAuth, type EditorAuth } from "../lib/editor-auth.js";
 import { nodeHandler } from "../lib/node-http.js";
 import { createRoomEditor, editorSchemas } from "../lib/room-editor.js";
@@ -7,11 +7,6 @@ import { roomEditorStore, type RoomEditorStore } from "../lib/room-editor-store.
 import { EditorError } from "../lib/room-views.js";
 
 const definitions = [
-  { name: "list_content", title: "List editable content", details: "Discover the editable Albury resources before reading or staging a change.", mutates: false },
-  { name: "read_content", title: "Read editable content", details: "Read a section of the current content or a draft. Use path segments for fields, @id for a stable list item ID, or a zero-based list position for entries without IDs.", mutates: false },
-  { name: "stage_content_edits", title: "Stage changes to house content", details: "Set a field, append a new record, remove a record, or attach a previously uploaded image. Always read the target first and keep the returned draft version for subsequent edits.", mutates: true },
-  { name: "remove_content_edit", title: "Remove a staged content change", details: "Remove a staged content change by zero-based index.", mutates: true },
-  { name: "upload_image", title: "Upload an image to the editor", details: "Send base64 bytes for a JPEG, PNG or WebP image up to 3 MiB. Use the returned asset ID in a draft. The image stays private until publication.", mutates: true },
   { name: "list_rooms", title: "List room view IDs", details: "Find floor and room IDs and the existing view IDs. Narrow to a section or room when possible.", mutates: false },
   { name: "list_collections", title: "List house collections", details: "Find collection IDs, existing items and item IDs. Supply a collection ID to narrow the result.", mutates: false },
   { name: "list_drafts", title: "List publication drafts", details: "Find open drafts and their current edit versions.", mutates: false },
@@ -26,7 +21,7 @@ const definitions = [
 
 export function writeMcpWebHandler(store: RoomEditorStore | undefined, auth: EditorAuth) {
   const handler = store && createMcpHandler(server => {
-    const editor = createRoomEditor(store, baseTourSections, baseCollections, contentAtRevision);
+    const editor = createRoomEditor(store, baseTourSections, baseCollections);
     for (const { name, title, details, mutates } of definitions) {
       const schema = editorSchemas[name];
       server.registerTool(name, {
@@ -51,7 +46,7 @@ export function writeMcpWebHandler(store: RoomEditorStore | undefined, auth: Edi
   }, {
     serverInfo: { name: "Albury House Editor", version: "1.1.0" },
     maxSubscriptions: 0,
-    instructions: "Use these private tools to prepare Albury House drafts. Discover resources, read current values and retain each draft version. Upload images before staging them. The owner reviews, publishes and restores revisions in the web editor.",
+    instructions: "Use these private tools to prepare room-photo and house-collection drafts. Use list_rooms or list_collections for IDs and retain each draft version. Give the owner the preview URL for sign-off. The owner publishes and restores revisions in the web editor.",
   });
 
   return async (request: Request) => {

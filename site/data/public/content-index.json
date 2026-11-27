@@ -101,10 +101,10 @@
     },
     {
       "id": "menus",
-      "path": "site/data/public/menus.json",
+      "path": "site/data/public/dining-calendar.json",
       "mimeType": "application/json",
       "visibility": "public",
-      "generatedFrom": "content/schedules/menus.csv"
+      "generatedFrom": "Albury-House-Six-Month-Menus.xlsx"
     }
   ],
   "privateResources": [
@@ -116,11 +116,6 @@
     }
   ],
   "schedules": [
-    {
-      "id": "menus",
-      "path": "site/data/menus.csv",
-      "mimeType": "text/csv"
-    },
     {
       "id": "london-events",
       "path": "site/data/london-events.csv",

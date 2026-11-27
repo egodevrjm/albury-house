@@ -4,9 +4,8 @@
  const label=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',timeZone:'UTC'});
  const valid=d=>/^\d{4}-\d{2}-\d{2}$/.test(d||'')&&Number.isFinite(Date.parse(d))&&new Date(d+'T00:00:00Z').toISOString().slice(0,10)===d;
  const requested=new URLSearchParams(location.search).get('date');const date=valid(requested)?requested:'2025-08-11';
- (window.ALBURY_MANAGED_CONTENT?.events
-   ? Promise.resolve({rows:window.ALBURY_MANAGED_CONTENT.events,source:'published'})
-   : AlburyCSV.load('site/data/london-events.csv',window.ALBURY_EVENTS_CSV).then(({text,source})=>({rows:AlburyCSV.parse(text),source}))).then(({rows,source})=>{
+ AlburyCSV.load('site/data/london-events.csv',window.ALBURY_EVENTS_CSV).then(({text,source})=>{
+ const rows=AlburyCSV.parse(text);
  if(rows.some(e=>!e.title||!valid(e.start_date)||!valid(e.end_date)||e.end_date<e.start_date))throw Error('Invalid event data.');
  const ongoing=rows.filter(e=>e.start_date<=date&&e.end_date>=date).sort((a,b)=>a.end_date.localeCompare(b.end_date)||a.title.localeCompare(b.title)).slice(0,1);
  const upcoming=rows.filter(e=>e.start_date>date).sort((a,b)=>a.start_date.localeCompare(b.start_date)||a.title.localeCompare(b.title)).slice(0,3-ongoing.length);
