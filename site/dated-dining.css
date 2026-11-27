@@ -23,3 +23,4 @@
 .standing-food .available-card p{margin:.4rem 0}
 #signature-bakes h4{margin:1.6rem 0 .5rem}
 .biscuit-grid{grid-template-columns:repeat(auto-fit,minmax(min(185px,100%),1fr))}
+#menu-week .day[aria-current=date] .day-title{border-left:3px solid #ad9062;padding-left:.85rem}

@@ -3,7 +3,7 @@
   function render() {
     document.querySelector("#weekly-controls").innerHTML = AlburyMenus.controls();
     document.querySelector("#menu-week").innerHTML = AlburyMenus.week().map(([day,theme,meals,daily],i) => `
-      <section class="day" id="${day.toLowerCase()}" aria-labelledby="title-${i+1}">
+      <section class="day" id="${day.toLowerCase()}" aria-labelledby="title-${i+1}"${daily.date===AlburyMenus.date?' aria-current="date"':''}>
         <div class="day-title"><div><h2 id="title-${i+1}">${day} · ${AlburyMenus.label(daily.date)}</h2>
         <p>${esc(daily.lead ?? theme)}</p></div></div>
         ${meals.length ? `<div class="meals">${meals.map(([meal,courses,row])=>`

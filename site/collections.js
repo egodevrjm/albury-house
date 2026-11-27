@@ -57,7 +57,8 @@
     let parts=decodeURIComponent(location.hash.replace(/^#\/?/,'')).replace(/^collections\//,'').split('/');
     if(parts[0]==='house-items'&&parts[1]){const found=categories.find(c=>c.rooms.some(i=>matchesSlug(i,parts[1])));if(found)parts[0]=found.id;}
     category=categories.some(c=>c.id===parts[0])?parts[0]:'all';
-    selected=parts[1]?groups.find(g=>(category==='all'||g.category.id===category)&&g.items.some(i=>matchesSlug(i,parts[1]))):null;
+    const groupPhotos=category==='produce'&&parts[1]==='group-photographs';
+    selected=parts[1]&&!groupPhotos?groups.find(g=>(category==='all'||g.category.id===category)&&g.items.some(i=>matchesSlug(i,parts[1]))):null;
     const terms=normalize(search.value.trim()).split(/\s+/).filter(Boolean);
     visible=groups.filter(g=>(category==='all'||g.category.id===category)&&terms.every(term=>normalize(g.items.map(searchText).join(' ')).includes(term)));
     const scope=document.querySelector('#collection-scope');
@@ -77,7 +78,7 @@
         if(!sections.has(heading))sections.set(heading,[]);
         sections.get(heading).push(group);
       }
-      grid.innerHTML=[...sections].map(([heading,items])=>`<section class="collection-food-section">
+      grid.innerHTML=[...sections].map(([heading,items])=>`<section class="collection-food-section"${heading==='Group photographs'?' id="collection-group-photographs"':''}>
         <h2>${esc(heading)}</h2>
         <div class="collection-grid">${items.map(group=>card(group,'h3')).join('')}</div>
       </section>`).join('');
@@ -88,7 +89,12 @@
     count.textContent=category==='art' ? `${visible.length} art ${visible.length===1?'record':'records'}` :
       `${visible.length} entries · ${visible.reduce((n,g)=>n+g.items.filter(item=>item.path).length,0)} images`;
     document.querySelector('#collection-reset')?.addEventListener('click',()=>{search.value='';route('all')});
-    if(!selected){if(dialog.open)dialog.close();document.title='House collections — Albury';return;}
+    if(!selected){
+      if(dialog.open)dialog.close();
+      document.title='House collections — Albury';
+      if(groupPhotos&&!search.value)document.querySelector('#collection-group-photographs')?.scrollIntoView();
+      return;
+    }
     const item=selected.items.find(i=>matchesSlug(i,parts[1]))||selected.cover;lastGroup=selected;
     document.querySelector('#collection-title').textContent=selected.title;document.querySelector('#collection-description').textContent=item.description;
     const image=document.querySelector('#collection-image'), imageLink=document.querySelector('#collection-image-link');

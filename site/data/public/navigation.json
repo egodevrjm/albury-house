@@ -26,24 +26,28 @@
   },
   "food": [
     {
-      "label": "Today’s menu",
-      "href": "ALBURY_CULINARY_MENU.html#today"
+      "label": "Food & Drink overview",
+      "href": "ALBURY_CULINARY_MENU.html#food"
     },
     {
-      "label": "Weekly & occasion menus",
-      "href": "ALBURY_WEEKLY_MENUS.html"
+      "label": "Menus & house dishes",
+      "href": "ALBURY_CULINARY_MENU.html#menus"
     },
     {
-      "label": "Between meals & baking",
+      "label": "Between meals",
       "href": "ALBURY_CULINARY_MENU.html#available"
     },
     {
-      "label": "Drinks & the bar",
+      "label": "Drinks & bar",
       "href": "ALBURY_CULINARY_MENU.html#drinks"
     },
     {
-      "label": "The house pantry",
-      "href": "ALBURY_PANTRY_ITEMS.html"
+      "label": "Pantry & Bethan’s baking",
+      "href": "ALBURY_CULINARY_MENU.html#pantry"
+    },
+    {
+      "label": "Gifts from Albury",
+      "href": "ALBURY_GIFTS.html#hampers"
     }
   ],
   "stay": [

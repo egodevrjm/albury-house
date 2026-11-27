@@ -7,3 +7,14 @@
 .albury-house-menu{position:relative}.albury-house-menu summary{cursor:pointer;padding:9px 0;border-bottom:2px solid transparent;list-style:none}.albury-house-menu summary::-webkit-details-marker{display:none}.albury-house-menu summary:after{content:'⌄';margin-left:8px}.albury-house-menu.is-current summary{border-color:#ad9062}.albury-house-links{position:absolute;top:100%;left:-18px;min-width:205px;padding:12px 18px;background:#203b2e;box-shadow:0 8px 20px #0002;z-index:100}.albury-house-links a{display:block;padding:12px 0;white-space:nowrap}.albury-bar{position:relative;z-index:20}.albury-house-menu summary:focus-visible{outline:2px solid #e4bd75;outline-offset:5px}@media(max-width:1050px){.albury-house-links{position:static;box-shadow:none;padding:0 0 0 18px}.albury-house-menu summary{padding:12px 0}}
 
 .albury-house-menu{margin:0;border:0;padding:0}.albury-house-menu summary{font:14px/1.4 system-ui,sans-serif;color:inherit}.albury-house-links a{min-height:44px}.albury-house-menu:nth-of-type(2) .albury-house-links{background:var(--albury-oxblood)}.albury-house-menu:nth-of-type(3) .albury-house-links{background:var(--albury-blue);color:#142126}.albury-house-menu:nth-of-type(3) a[aria-current=page]{border-color:#142126}
+
+.albury-story-date{flex-shrink:0}
+.albury-story-date summary{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
+.albury-story-date time{color:#f0d5a3}
+.albury-date-panel{position:absolute;top:100%;right:0;min-width:235px;padding:1rem;color:#25342c;background:#f4f0e7;border:1px solid #b9a98d;box-shadow:0 8px 20px #0003;z-index:110}
+.albury-date-panel label{display:grid;gap:.45rem}
+.albury-date-panel input{width:100%;font:inherit;color:#25342c;background:#fffdf6;border:1px solid #b9a98d;border-radius:0;padding:.55rem}
+.albury-date-panel button{margin-top:.65rem;font:inherit;text-align:left;text-decoration:underline;text-underline-offset:3px;background:transparent;color:#203b2e;border:0;padding:0;cursor:pointer}
+.albury-date-panel button:hover{background:transparent;color:#642d36}
+@media(max-width:1050px){.albury-bar .albury-wordmark{order:0}.albury-story-date{order:1}.albury-menu-toggle{order:2}.albury-links{order:3}}
+@media(max-width:420px){.albury-story-date summary{display:grid;grid-template-columns:auto auto;gap:0 .4rem;padding:.25rem 0;font-size:.75rem}.albury-story-date summary span{grid-column:1/-1}.albury-story-date summary:after{margin:0}.albury-bar{padding-inline:14px}}

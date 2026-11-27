@@ -5,10 +5,12 @@ window.AlburyMenus = (() => {
   const esc = AlburyCSV.esc;
   const specials = window.ALBURY_CONTENT["special-menus"].menus;
   const dayMS = 86_400_000;
-  const opening = "2025-08-11";
+  const story = window.AlburyStoryDate;
+  const opening = story?.opening ?? "2025-08-11";
   const epoch = Date.parse(opening + "T00:00:00Z");
   let data;
   let byDate;
+  let renderPage;
   const api = { date: opening, specialId: "", specials, days };
 
   const stamp = value => Date.parse(value + "T00:00:00Z");
@@ -102,12 +104,19 @@ window.AlburyMenus = (() => {
           <h4>${esc(dish.name)}</h4><p>${esc(dish.versions["Late summer"])}</p>
           <details><summary>Seasonal versions</summary><dl><dt>Autumn</dt><dd>${esc(dish.versions.Autumn)}</dd><dt>Winter</dt><dd>${esc(dish.versions.Winter)}</dd></dl><p>${esc(dish.notes)}</p></details></article>`).join("")}</div></section>`).join("")}</section>`;
   };
+  story?.subscribe(date => {
+    if (date === api.date) return;
+    api.setDate(date);
+    renderPage?.();
+  });
   api.bind = render => {
+    renderPage = render;
     const update = () => {
+      story?.set(api.date);
       const url = new URL(location.href);
       url.searchParams.set("date", api.date);
       if (api.specialId) url.searchParams.set("special_menu_id", api.specialId); else url.searchParams.delete("special_menu_id");
-      history.replaceState(null, "", url);
+      history.replaceState(history.state, "", url);
       render();
     };
     document.querySelector("#menu-date")?.addEventListener("change", event => { if (api.setDate(event.target.value)) update(); });
@@ -120,7 +129,7 @@ window.AlburyMenus = (() => {
     }; });
   };
   const params = new URLSearchParams(location.search);
-  api.setDate(params.get("date"));
+  api.setDate(story?.date ?? params.get("date"));
   if (specials.some(item => item.id === params.get("special_menu_id"))) api.specialId = params.get("special_menu_id");
   api.ready = fetch("site/data/public/dining-calendar.json?v=1").then(response => {
     if (!response.ok) throw Error("The menu calendar is unavailable.");

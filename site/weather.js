@@ -1,7 +1,8 @@
 /* Authored daily London weather. The supplied CSV owns every weather value. */
 (() => {
   const {esc,parse,load}=AlburyCSV;
-  const opening='2025-08-11', dayMS=86400000;
+  const story=window.AlburyStoryDate;
+  const opening=story?.opening ?? '2025-08-11', dayMS=86400000;
   const widget=document.querySelector('#welcome-weather'), content=document.querySelector('#weather-content');
   const dateLabel=(date,short=false)=>new Date(date+'T12:00:00Z').toLocaleDateString('en-GB',{weekday:short?'short':'long',day:'numeric',month:short?'short':'long',...(short?{}:{year:'numeric'}),timeZone:'UTC'});
   const validDate=d=>/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d+'T00:00:00Z').toISOString().slice(0,10)===d;
@@ -44,31 +45,47 @@
   load('site/data/weather.csv?schema=2',window.ALBURY_WEATHER_CSV).then(({text,source})=>{
     const rows=validate(text),input=document.querySelector('#weather-date'),status=document.querySelector('#weather-status');
     const requested=new URLSearchParams(location.search).get('date');
-    let date=rows.some(r=>r.Date===requested)?requested:opening;
-    const invalid=requested&&!rows.some(r=>r.Date===requested);
+    let date=story?.date ?? (validDate(requested) ? requested : opening);
+    const first=rows[0].Date,last=rows.at(-1).Date;
+    const range='Weather is available from '+dateLabel(first)+' through '+dateLabel(last)+'.';
+    const unavailable=()=>'<h2>'+dateLabel(date)+'</h2><p>No daily weather is published for this date.</p><p>'+range+'</p>';
     function render(){
       const index=rows.findIndex(r=>r.Date===date),r=rows[index];
       if(widget){
-        widget.innerHTML=`<div><h2>London, ${dateLabel(date,true)}</h2><div class="weather-reading">${icon(r.Condition)}<span class="weather-temperature">${esc(r.High_C)}°</span><div>${esc(r.Condition)}<br><small>High ${esc(r.High_C)}° · Low ${esc(r.Low_C)}°C</small></div></div><p>${esc(r.Precip_mm)} mm precipitation · ${esc(r.Precip_Chance_pct)}% chance · Wind ${esc(r.Wind_mph)} mph</p><small>Story weather · fictional daily outlook${invalid?' · showing 11 August; requested date unavailable':''}${source==='fallback'?' · saved forecast':''}</small><br><a class="weather-more" href="${url(date)}">Full forecast &amp; choose a date →</a></div>${forecast(rows.slice(index+1,index+4))}`;
+        if(!r){
+          widget.innerHTML='<div>'+unavailable()+'<a class="weather-more" href="'+url(date)+'">Open the weather page →</a></div>';
+          return;
+        }
+        widget.innerHTML=`<div><h2>London, ${dateLabel(date,true)}</h2><div class="weather-reading">${icon(r.Condition)}<span class="weather-temperature">${esc(r.High_C)}°</span><div>${esc(r.Condition)}<br><small>High ${esc(r.High_C)}° · Low ${esc(r.Low_C)}°C</small></div></div><p>${esc(r.Precip_mm)} mm precipitation · ${esc(r.Precip_Chance_pct)}% chance · Wind ${esc(r.Wind_mph)} mph</p><small>Story weather · fictional daily outlook${source==='fallback'?' · saved forecast':''}</small><br><a class="weather-more" href="${url(date)}">Full forecast &amp; choose a date →</a></div>${forecast(rows.slice(index+1,index+4))}`;
         return;
       }
-      input.value=date;input.min=rows[0].Date;input.max=rows.at(-1).Date;
-      document.querySelector('#weather-previous').disabled=index===0;
-      document.querySelector('#weather-next').disabled=index===rows.length-1;
-      content.innerHTML=`<section class="weather-day"><div><h2>${dateLabel(date)}</h2><div class="weather-reading">${icon(r.Condition)}<span class="weather-temperature">${esc(r.High_C)}°C</span></div><p class="weather-condition">${esc(r.Condition)} · daytime high</p><p class="weather-fahrenheit">High ${esc(r.High_F)}°F · Low ${esc(r.Low_F)}°F</p><dl class="weather-metrics"><div><dt>Daily low</dt><dd>${esc(r.Low_C)}°C</dd></div><div><dt>Precipitation</dt><dd>${esc(r.Precip_mm)} mm</dd></div><div><dt>Wind</dt><dd>${esc(r.Wind_mph)} mph</dd></div></dl></div><aside class="weather-note"><h3>Precipitation outlook</h3><p><strong class="weather-chance">${esc(r.Precip_Chance_pct)}%</strong> chance of precipitation</p><p>${esc(r.Precip_mm)} mm total for the day.</p></aside></section><section class="weather-outlook"><h2>${Math.min(7,rows.length-index)}-day outlook</h2>${forecast(rows.slice(index,index+7))}${rows.length-index<7?'<p class="muted">The weather file ends on '+dateLabel(rows.at(-1).Date)+'.</p>':''}</section>`;
+      input.value=date;input.min=first;input.max=last;
+      document.querySelector('#weather-previous').disabled=date<=first;
+      document.querySelector('#weather-next').disabled=date>=last;
+      status.textContent=source==='fallback'?'The latest CSV could not be reached; showing the saved weather.':'';
       document.title=dateLabel(date,true)+' · Weather — Albury';
+      if(!r){ content.innerHTML='<section>'+unavailable()+'</section>'; return; }
+      content.innerHTML=`<section class="weather-day"><div><h2>${dateLabel(date)}</h2><div class="weather-reading">${icon(r.Condition)}<span class="weather-temperature">${esc(r.High_C)}°C</span></div><p class="weather-condition">${esc(r.Condition)} · daytime high</p><p class="weather-fahrenheit">High ${esc(r.High_F)}°F · Low ${esc(r.Low_F)}°F</p><dl class="weather-metrics"><div><dt>Daily low</dt><dd>${esc(r.Low_C)}°C</dd></div><div><dt>Precipitation</dt><dd>${esc(r.Precip_mm)} mm</dd></div><div><dt>Wind</dt><dd>${esc(r.Wind_mph)} mph</dd></div></dl></div><aside class="weather-note"><h3>Precipitation outlook</h3><p><strong class="weather-chance">${esc(r.Precip_Chance_pct)}%</strong> chance of precipitation</p><p>${esc(r.Precip_mm)} mm total for the day.</p></aside></section><section class="weather-outlook"><h2>${Math.min(7,rows.length-index)}-day outlook</h2>${forecast(rows.slice(index,index+7))}${rows.length-index<7?'<p class="muted">The weather file ends on '+dateLabel(rows.at(-1).Date)+'.</p>':''}</section>`;
     }
     function setDate(value){
-      if(!rows.some(r=>r.Date===value)){status.textContent='Choose a date between '+dateLabel(rows[0].Date)+' and '+dateLabel(rows.at(-1).Date)+'.';input.value=date;return;}
-      date=value;const u=new URL(location.href);u.searchParams.set('date',date);history.replaceState(null,'',u);
-      status.textContent=source==='fallback'?'The latest CSV could not be reached; showing the saved weather.':'';render();
+      if(!validDate(value)){ input.value=date;return; }
+      if(story){story.set(value);return;}
+      date=value;const u=new URL(location.href);u.searchParams.set('date',date);history.replaceState(history.state,'',u);
+      render();
     }
     if(content){
       input.addEventListener('change',e=>setDate(e.target.value));
-      for(const [id,n] of [['previous',-1],['next',1]])document.querySelector('#weather-'+id).onclick=()=>{const row=rows[rows.findIndex(r=>r.Date===date)+n];if(row)setDate(row.Date);};
+      document.querySelector('#weather-previous').onclick=()=>{
+        const previous=date>last ? last : rows.findLast(row=>row.Date<date)?.Date;
+        if(previous)setDate(previous);
+      };
+      document.querySelector('#weather-next').onclick=()=>{
+        const next=date<first ? first : rows.find(row=>row.Date>date)?.Date;
+        if(next)setDate(next);
+      };
       document.querySelector('#weather-reset').onclick=()=>setDate(opening);
-      status.textContent=invalid?'That date is outside the weather file; showing the story opening.':source==='fallback'?'The latest CSV could not be reached; showing the saved weather.':'';
     }
+    story?.subscribe(value=>{date=value;render();});
     render();
   }).catch(error=>{const target=content||widget;target.innerHTML='<p>Weather could not be loaded: '+esc(error.message)+'</p><p><a href="site/data/weather.csv">View the weather CSV</a></p>';});
 })();
