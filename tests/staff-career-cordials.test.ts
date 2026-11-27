@@ -35,9 +35,9 @@ test('Career discoveries lead to complete staff records through the MCP', async 
 
 test('Core and seasonal cordial lookups retain inventory and expose specification versus production', async () => {
   const opening = await call('list_pantry_items');
-  assert.equal(opening.total, 46);
+  assert.equal(opening.total, 47);
   const all = await call('list_pantry_items', { include_seasonal: true });
-  assert.equal(all.total, 48);
+  assert.equal(all.total, 49);
   const cordials = all.items.filter((item: { name: string }) => item.name.toLowerCase().includes('cordial'));
   assert.equal(cordials.length, 14);
   for (const listed of cordials) {

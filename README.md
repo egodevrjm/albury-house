@@ -5,7 +5,7 @@ The deployed project contains the Albury House visitor site, a public MCP refere
 - Website: <https://albury-house.vercel.app/ALBURY_WELCOME.html>
 - MCP endpoint: <https://albury-house.vercel.app/mcp>
 
-The MCP covers the house and its rooms, household staff, external partners, menus resolved against a date, the complete P01–P46 pantry, house collections, guest provision, image retrieval, and dated London events. The dated kitchen calendar covers 11 August 2025 through 10 February 2026.
+The MCP covers the house and its rooms, household staff, external partners, menus resolved against a date, the complete P01–P47 pantry, house collections, guest provision, image retrieval, and dated London events. The dated kitchen calendar covers 11 August 2025 through 10 February 2026.
 
 The public Albury House website: guest welcome, house guide, interactive Walk Albury maps, room tour, collections, house identity, kitchen and front of house, weekly menus, London calendar and authored story weather.
 
@@ -48,7 +48,7 @@ Use `get_menu_for_date` for one day and `get_menu_range` for a span of dates. Un
 
 Pantry images: `11-house-sauces.webp` shows P34–P37, and the updated `10-house-ice-creams.webp` shows P29, P30 and P38. The former two-tub photograph is archived with the REFRESH maintenance files.
 
-The individual pantry gallery is at `ALBURY_PANTRY_ITEMS.html`. All 46 numbered products and both unnumbered seasonal cordial recipes have one-product images. `get_pantry_item.imageUrl` is the single-product photograph; `imageGroup.imageUrl` is the existing group photograph. Rebuild the canonical page with `python3 aw_v45/site/build_content.py` and the optimized copy with `python3 aw_v45/site/build_pantry_portraits.py --optimized` after changing pantry records.
+The individual pantry gallery is at `ALBURY_PANTRY_ITEMS.html`. It lists the numbered products, seasonal cordial recipes and additional published preparations, with individual portraits where available. `get_pantry_item.imageUrl` is the single-product photograph; `imageGroup.imageUrl` is the existing group photograph. Rebuild the canonical page with `python3 aw_v45/site/build_content.py` and the optimized copy with `python3 aw_v45/site/build_pantry_portraits.py --optimized` after changing pantry records.
 
 Bethan’s seven signature bakes and all eight cordial cocktail/alcohol-free pairs now have individual photographs. They are shown in the Available food and Drinks sections; `list_signature_bakes` returns a single `imageUrl` for each bake and `list_cordial_serves` returns separate `cocktailImageUrl` and `alcoholFreeImageUrl` values. The site assets are under `images/albury-culinary/signature-bakes/` and `images/albury-culinary/cordial-serves/`.
 

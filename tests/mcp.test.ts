@@ -65,7 +65,7 @@ test("MCP menu and pantry calls return structured canonical records", async () =
   assert.equal(menu.result.structuredContent.meals.length, 3);
 
   const pantry = await post({ jsonrpc: "2.0", id: 3, method: "tools/call", params: { name: "list_pantry_items", arguments: {} } });
-  assert.equal(pantry.result.structuredContent.total, 46);
+  assert.equal(pantry.result.structuredContent.total, 47);
 });
 
 test("MCP between-meals provision adds dated snacks and keeps the standing choices", async () => {

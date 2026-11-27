@@ -30,7 +30,7 @@ test("summary exposes the complete Albury reference", () => {
   assert.equal(summary.totals.permanentStaff, 48);
   assert.equal(summary.totals.scheduledSpecialists, 5);
   assert.equal(summary.totals.externalPartners, 13);
-  assert.equal(summary.totals.pantryOpeningItems, 46);
+  assert.equal(summary.totals.pantryOpeningItems, 47);
   assert.equal(summary.totals.pantrySeasonalRecipes, 2);
   assert.equal(summary.totals.pantryImageGroups, 21);
   assert.ok(Number(summary.totals.rooms) > 80);
@@ -122,8 +122,8 @@ test("opening-day menus include kitchen lead and standing breakfast provision", 
 
 test("pantry exposes every P-number and seasonal recipes only on request", () => {
   const opening = listPantry({ includeSeasonal: false });
-  assert.equal(opening.total, 46);
-  assert.deepEqual(opening.items.map((item) => item.id), Array.from({ length: 46 }, (_, index) => `P${String(index + 1).padStart(2, "0")}`));
+  assert.equal(opening.total, 47);
+  assert.deepEqual(opening.items.map((item) => item.id), Array.from({ length: 47 }, (_, index) => `P${String(index + 1).padStart(2, "0")}`));
   assert.equal(opening.summary.imageGroups, 21);
   assert.equal(opening.summary.seasonalRecipes, 2);
   assert.ok(opening.categories.includes("house sauces"));
@@ -132,7 +132,7 @@ test("pantry exposes every P-number and seasonal recipes only on request", () =>
   assert.equal(getPantryItem("P26")?.productionLead, "rafael-bellocq");
   assert.match(String(getPantryItem("P26")?.productionNotes), /vanilla syrup/);
   assert.match(String(getPantryItem("P05")?.uses), /Hatfield bourbon/);
-  assert.equal(listPantry({ includeSeasonal: true }).total, 48);
+  assert.equal(listPantry({ includeSeasonal: true }).total, 49);
   for (const [id, name, group] of [
     ["P34", "Albury brown sauce", "11-house-sauces"],
     ["P35", "Espelette chilli sauce", "11-house-sauces"],

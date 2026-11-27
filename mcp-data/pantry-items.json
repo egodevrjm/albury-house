@@ -3,7 +3,7 @@
   "visibility": "mcp-only",
   "asOf": "2025-08-11",
   "summary": {
-    "openingItems": 46,
+    "openingItems": 47,
     "seasonalRecipes": 2,
     "imageGroups": 21
   },
@@ -535,6 +535,15 @@
       "specificationLead": "crispin-vale",
       "productionLead": "rafael-bellocq",
       "productionNotes": "Crispin Vale specified the cordial programme and its intended flavour, fruit/acidity/sweetness balance and service character. The kitchen makes it to his specifications. Rafael Bellocq retains kitchen production methods, food safety and batch release; Élodie coordinates quantities and Bethan and the team make the batches. Crispin checks the finished drinks against his specifications and agrees service selection with Harjit."
+    },
+    {
+      "id": "P47",
+      "name": "Albury Blackcurrant Vinegar",
+      "category": "table condiments",
+      "description": "Tart enough to use by the teaspoon, with a dry blackcurrant finish. Rafael serves it with cold meats, dresses beetroot with it and adds a splash to finish a pan sauce. The slim, charcoal-grey-labelled bottle can go in a savoury hamper.",
+      "uses": "Cold meats, beetroot dressings, pan sauces and selected savoury hampers",
+      "openingAvailability": "House recipe, bottled for the pantry",
+      "labelFamily": "pantry"
     }
   ],
   "seasonalRecipes": [
