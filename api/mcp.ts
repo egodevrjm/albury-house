@@ -148,13 +148,13 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("get_menu_for_date", {
     title: "Get the menu for a date",
-    description: "Return the dated Albury menu from 11 August 2025 through 10 February 2026, including vegan options, snacks, photographs and host notes. Outside the date range, the result reports no dated menu. Optional special_menu_id supplies its designated lunch or dinner.",
-    inputSchema: z.object({ date: isoDate, special_menu_id: z.string().min(1).optional() }), annotations: readOnly,
+    description: "Look up the authoritative Albury menu for a story date in the same dated calendar as the website. Covers 11 August 2025 through 10 February 2026, with vegan options, snacks, photographs and host notes. A result with covered false has no scheduled meals. Supply special_menu_id only when an occasion menu is requested.",
+    inputSchema: z.object({ date: isoDate.describe("Exact story date in YYYY-MM-DD form, for example 2025-08-20."), special_menu_id: z.string().min(1).optional() }), annotations: readOnly,
   }, async ({ date, special_menu_id }) => guarded(() => getMenuForDate(date, special_menu_id)));
 
   server.registerTool("get_menu_range", {
     title: "Get menus for a date range",
-    description: "Return up to 31 consecutive dated menu results, with coverage and availability for each day.",
+    description: "Return up to 31 consecutive menus from the same dated calendar as the website, with coverage and availability for each day.",
     inputSchema: z.object({ start_date: isoDate, days: z.number().int().min(1).max(31).default(7) }), annotations: readOnly,
   }, async ({ start_date, days }) => guarded(() => getMenuRange(start_date, days)));
 
@@ -276,12 +276,16 @@ export const mcpWebHandler = createMcpHandler((server) => {
 
   server.registerTool("get_date_context", {
     title: "Get Albury date context",
-    description: "Return the rotated full-day menu, every active calendar event and authored weather for one date. Weather is null outside its supplied date range; menu and event lookup remain available.",
-    inputSchema: z.object({ date: isoDate }), annotations: readOnly,
+    description: "Return the same dated Albury menu as get_menu_for_date and the Albury website, alongside every active calendar event and authored weather for one story date. The menu reports its own date coverage. Weather is null outside its supplied date range.",
+    inputSchema: z.object({ date: isoDate.describe("Exact story date in YYYY-MM-DD form, for example 2025-08-20.") }), annotations: readOnly,
   }, async ({ date }) => guarded(() => getDateContext(date)));
 }, {
-  serverInfo: { name: "Albury House MCP", version: "1.0.0" },
-  instructions: "Use this read-only server for Albury House rooms, household staff, contracted partners, dated menus, pantry preparations, house collections, imagery, dated London events and authored daily London weather. Use get_forecast with the story date for weather; never substitute the computer date or invent values outside its coverage. Treat returned records as the closed-world Albury reference and do not invent absent room, staff, menu, pantry or partner details.",
+  serverInfo: { name: "Albury House MCP", version: "1.1.0" },
+  instructions: [
+    "Use this read-only server for Albury House rooms, household staff, contracted partners, dated menus, pantry preparations, house collections, imagery, dated London events and authored daily London weather.",
+    "For a meal on a specific story date, call get_menu_for_date or get_date_context with the full YYYY-MM-DD date. The returned dated calendar is shared with the website and supersedes the old two-week rotation, sample menus and remembered menus. If covered is false, report that no regular menu is available for that date.",
+    "Use get_forecast with the story date for weather; never substitute the computer date or invent values outside its coverage. Treat returned records as the closed-world Albury reference and do not invent absent room, staff, menu, pantry or partner details.",
+  ].join(" "),
   maxSubscriptions: 0,
 });
 

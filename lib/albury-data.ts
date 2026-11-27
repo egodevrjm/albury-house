@@ -16,7 +16,6 @@ const powderSuiteSource = requireJson("../site/data/public/powder-suite-2026-11-
 const basementRefreshSource = requireJson("../site/data/public/upper-basement-views-2026-11-25.json");
 const assetsSource = requireJson("../site/data/public/assets.json");
 const brandsSource = requireJson("../site/data/public/brands.json");
-const menusSource = requireJson("../site/data/public/menus.json");
 type DiningDish = { id: string; name: string; category: string; path: string; imageAlt: string; photoSeason: string };
 type DiningChoice = { dishId: string; description: string; omitPhoto?: boolean };
 type VeganChoice = DiningChoice & { advanceNotice?: boolean; standby?: DiningChoice };
@@ -129,10 +128,8 @@ const specialMenusSource = requireJson("../site/data/public/special-menus.json")
 const specialMenus = specialMenusSource.menus as Array<{ id: string; name: string; occasion: string; season: string; meal: string; notes: string; menu: Dict }>;
 function menuSeason(date: string): string {
   const month = isoDate(date).getUTCMonth() + 1;
-  const seasons = menusSource.seasonMonths as Record<string, number[]>;
-  const match = Object.entries(seasons).find(([, months]) => months.includes(month));
-  if (!match) throw new Error(`No menu season for ${date}.`);
-  return match[0];
+  const seasons = ["winter", "spring", "summer", "autumn"];
+  return seasons[Math.floor((month % 12) / 3)];
 }
 
 const events = eventsSource as unknown as Dict[];
@@ -202,9 +199,8 @@ function menuPosition(dateText: string) {
   const offset = dayDifference(date, epoch);
   const dayIndex = ((offset % 7) + 7) % 7;
   const weekIndex = Math.floor(offset / 7);
-  const cycle = ((weekIndex % 2) + 2) % 2 + 1;
   const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  return { date: dateText, cycle, day: days[dayIndex], weekOffset: weekIndex };
+  return { date: dateText, day: days[dayIndex], weekOffset: weekIndex };
 }
 
 function roomGroups(sections: TourSection[], collections: Collection[]) {
@@ -470,6 +466,9 @@ export function getMenuForDate(date: string, specialMenuId?: string) {
   const position = menuPosition(date);
   const day = diningByDate.get(date);
   const special = specialMenuId ? getSpecialMenu(specialMenuId) : undefined;
+  const menuUrl = new URL("/ALBURY_CULINARY_MENU.html#today", PUBLIC_BASE_URL);
+  menuUrl.searchParams.set("date", date);
+  if (special) menuUrl.searchParams.set("special_menu_id", special.id);
   const meals: Dict[] = [];
   const season = day?.season === "Late summer" ? "summer" : day?.season.toLowerCase() ?? menuSeason(date);
   if (day) {
@@ -491,12 +490,12 @@ export function getMenuForDate(date: string, specialMenuId?: string) {
   }
   return {
     ...position, season, seasonLabel: day?.season ?? null, sourceAnchor: STORY_DATE,
-    source: "dated calendar", coverage: diningCalendar.coverage, covered: !!day,
+    source: "dated calendar", menuUrl: menuUrl.href, coverage: diningCalendar.coverage, covered: !!day,
     kitchenLead: day?.lead ?? null, theme: special?.name ?? day?.season ?? "",
     serviceContext: DRINK_SERVICE_CONTEXT, guestService: day?.guestService || null,
     snackOptions: day?.snacks.map(illustratedChoice) ?? [],
     specialMenu: special ? { id: special.id, name: special.name, meal: special.meal, notes: special.notes } : null,
-    meals: meals.map<Dict>(meal => ({ day: position.day, cycle: String(position.cycle), season,
+    meals: meals.map<Dict>(meal => ({ day: position.day, season,
       theme: special && meal.meal === special.meal ? special.name : day?.season ?? "", ...meal })),
   };
 }

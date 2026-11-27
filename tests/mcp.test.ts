@@ -68,6 +68,20 @@ test("MCP menu and pantry calls return structured canonical records", async () =
   assert.equal(pantry.result.structuredContent.total, 47);
 });
 
+test("MCP date lookups serve the website's pappardelle dinner for 20 August 2025", async () => {
+  const date = "2025-08-20";
+  const call = async (name: string) => (await post({
+    jsonrpc: "2.0", id: name, method: "tools/call", params: { name, arguments: { date } },
+  })).result.structuredContent;
+  const [menu, context] = await Promise.all([call("get_menu_for_date"), call("get_date_context")]);
+  assert.deepEqual(context.menu, menu);
+  assert.equal(menu.source, "dated calendar");
+  assert.equal(menu.menuUrl, "https://albury-house.vercel.app/ALBURY_CULINARY_MENU.html?date=2025-08-20#today");
+  assert.equal(menu.meals[2].main, "Pappardelle with field mushrooms, thyme and aged Parmesan");
+  assert.ok(!Object.hasOwn(menu, "cycle"));
+  assert.ok(menu.meals.every((meal: object) => !Object.hasOwn(meal, "cycle")));
+});
+
 test("MCP between-meals provision adds dated snacks and keeps the standing choices", async () => {
   const call = async (name: string, args: Record<string, string> = {}) => {
     const response = await post({ jsonrpc: "2.0", id: name, method: "tools/call", params: { name, arguments: args } });
