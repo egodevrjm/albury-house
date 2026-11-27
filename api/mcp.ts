@@ -173,7 +173,7 @@ export const mcpWebHandler = createMcpHandler((server) => {
     title: "List Bethan’s signature bakes",
     description: "Return Bethan’s guest-lounge biscuit-tin choices and fresh sweet treats, each with an individual imageUrl. Rotating bakes are repertoire, not extra numbered pantry products or guaranteed daily stock.",
     inputSchema: z.object({ query: z.string().optional() }), annotations: readOnly,
-  }, async ({ query }) => guarded(() => listSignatureBakes(query)));
+  }, async ({ query }) => catalogueGuarded(() => listSignatureBakes(query)));
 
   server.registerTool("list_cordial_serves", {
     title: "List cordial cocktails and alcohol-free serves",
@@ -185,13 +185,13 @@ export const mcpWebHandler = createMcpHandler((server) => {
     title: "List Albury pantry items",
     description: "List the P01–P46 opening pantry and published house preparations, with single-product portraits and consistent pantry categories. Request include_seasonal for the unnumbered seasonal recipes.",
     inputSchema: z.object({ category: z.string().optional(), label_family: z.string().optional(), include_seasonal: z.boolean().default(false), query: z.string().optional(), offset: z.number().int().min(0).default(0), limit: z.number().int().min(1).max(100).default(50) }), annotations: readOnly,
-  }, async ({ label_family, include_seasonal, ...input }) => guarded(() => listPantry({ labelFamily: label_family, includeSeasonal: include_seasonal, ...input })));
+  }, async ({ label_family, include_seasonal, ...input }) => catalogueGuarded(() => listPantry({ labelFamily: label_family, includeSeasonal: include_seasonal, ...input })));
 
   server.registerTool("get_pantry_item", {
     title: "Get an Albury pantry item",
     description: "Fetch one pantry product by P-number, catalogue ID or exact name. imageUrl gives the individual portrait. Where an older group photograph exists, it is under imageGroup.",
     inputSchema: z.object({ item: z.string().min(1) }), annotations: readOnly,
-  }, async ({ item }) => guarded(() => getPantryItem(item) ?? (() => { throw new Error(`No Albury pantry item found for ${item}.`); })()));
+  }, async ({ item }) => catalogueGuarded(() => getPantryItem(item) ?? (() => { throw new Error(`No Albury pantry item found for ${item}.`); })()));
 
   server.registerTool("list_drinks", {
     title: "List Albury drinks",
